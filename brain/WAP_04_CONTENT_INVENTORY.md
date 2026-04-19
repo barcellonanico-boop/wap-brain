@@ -137,82 +137,150 @@ TO DO: Open Google Search Console. Export performance data. Check clicks and imp
 
 ---
 
-## YouTube Videos (68 total)
+## YouTube Videos (136 total)
 
-Sorted by total views descending. Data exported from YouTube Studio.
+Sorted by total views descending. Data from YouTube Studio export April 2026.
 
-| ID | Title | Views | Published | Notes |
+| ID | Title | URL | Views | Published |
 |---|---|---|---|---|
-| YT001 | Your Complete Guide to Exploring Palermo Like a Local in 2025! | 4496 | May 2025 | Top performer |
-| YT002 | Palermo's street food: Scary good eats you gotta try! | 2955 | Jul 2024 | Top performer |
-| YT003 | Traveling to Palermo: First Timer's Guide with Authentic Sicilian Insights | 2024 | Oct 2023 | Strong |
-| YT004 | Where to Stay in Palermo: 3 Best Areas (And Which to AVOID) | 1520 | Oct 2025 | Recent, strong |
-| YT005 | The Complete Guide to Mondello: Tips and Insights from a Local Sicilian | 1520 | Jun 2024 | Strong |
-| YT006 | Palermo Safety Guide: Insider Tips and Scams to Avoid from a Sicilian | 1215 | Oct 2025 | Recent |
-| YT007 | Palermo: The Can't-Miss List (From a Sicilian!) | 1123 | Mar 2025 | Strong |
-| YT008 | San Vito Lo Capo: An Authentic Local's Guide | 1075 | Jul 2024 | Strong |
-| YT009 | The TRUTH About What to Eat in Sicily | 1013 | Apr 2025 | Strong |
-| YT010 | Getting Around Palermo Like a Pro: The Ultimate Guide! | 844 | Apr 2023 | Solid |
-| YT011 | Regret-Free Palermo: What to Book and How to Do It Right! | 857 | Feb 2025 | Solid |
-| YT012 | Insider's Guide to Car Rentals in Palermo: Top Tips, Tricks and Scams | 747 | Jan 2024 | Solid |
-| YT013 | Eat This in Sicily (Or You're Doing It Wrong) | 685 | Dec 2025 | Recent |
-| YT014 | The 10 Common Mistakes that Tourists Make in Palermo | 699 | Jun 2021 | Old but solid |
-| YT015 | Don't Make These 5 Mistakes When Visiting Palermo, Sicily | 617 | Dec 2022 | Solid |
-| YT016 | Palermo Transportation Hacks: What Tourists Need to Know | 617 | Jan 2025 | Solid |
-| YT017 | The Top 3 Local-Recommended Areas for a Memorable Stay in Palermo | 703 | Feb 2023 | Solid |
-| YT018 | Dressing for Sicily: A Local's Guide to Blending In | 573 | May 2023 | Solid |
-| YT019 | 3 Beautiful Beaches that are Near Palermo City | 435 | Feb 2022 | Solid |
-| YT020 | 7 must-do tours in Palermo, Sicily | 435 | Mar 2025 | Solid |
-| YT021 | 20 Common Types of Restaurants in Palermo | 473 | Sep 2021 | Old but solid |
-| YT022 | How Much Money Do You Need for Palermo, Sicily? | 219 | Jun 2025 | Recent |
-| YT023 | What No One Tells You About Palermo Safety! | 249 | Jun 2025 | Recent |
-| YT024 | 15 Commonly Asked Questions About Palermo Answered by Nicobot | 468 | Feb 2024 | Solid |
-| YT025 | 5 Things you Need to Consider When Booking Accommodations in Palermo | 266 | Jun 2021 | Old |
-| YT026 | The 5 Precautions to Take in Palermo to Stay Safe | 339 | Jun 2021 | Old |
-| YT027 | 3 Top Areas To Stay In Palermo For An Unforgettable Beach Vacation | 293 | Feb 2023 | Solid |
-| YT028 | 3 Tips for Gay and Lesbian Travelers in Sicily | 293 | Jun 2021 | Old |
-| YT029 | The Three Major Reasons You Should Visit Scopello | 209 | Jun 2022 | Low views |
-| YT030 | Three Things to Know Before Renting a Scooter in Palermo | 142 | Mar 2022 | Low views |
-| YT031 | ITsHInZWsEs Palermo's Top 3 Must-Do Tours | 264 | Mar 2023 | Low views |
-| YT032 | The Three Things You Need to Know about Cefalù Beach | 179 | Jul 2021 | Low views |
-| YT033 | The Three Things You Need to Know about Mondello Beach | 141 | Jul 2021 | Low views |
-| YT034 | Is Palermo Really Worth Your Trip? Let Me Show You! | 197 | Mar 2023 | Low views |
-| YT035 | Easter in Palermo: Top 3 Must-Do Activities | 229 | Apr 2023 | Seasonal |
-| YT036 | 3 Exciting Things to Do in Palermo for Easter | 152 | Mar 2023 | Seasonal |
-| YT037 | Palermo's Must-See: Top Reasons to Visit the Four Corners | 217 | Feb 2024 | Low views |
-| YT038 | Palermo's Must-See: Top 3 Reasons to See Massimo Theater | 164 | Jan 2024 | Low views |
-| YT039 | Palermo's Must-See: Top 3 Reasons to Visit the Palatine Chapel | 217 | Feb 2024 | Low views |
-| YT040 | Palermo's Must-See: Top Reasons to Visit the Catacombs | 316 | Mar 2024 | Low views |
-| YT041 | Palermo's Must-See: The Fountain of Shame Unveiled | 268 | Mar 2024 | Low views |
-| YT042 | 10 Important UNESCO Sites in Palermo | 299 | May 2022 | Low views |
-| YT043 | Palermo's Must-See: Top Reasons to Visit the Four Corners | 268 | Feb 2024 | Low views |
-| YT044 | Where to Stay in Palermo | 185 | Jun 2021 | Old, low views |
-| YT045 | Three Top Reasons to Stay in Mondello | 193 | Jun 2021 | Old, low views |
-| YT046 | The Top Three Reasons to stay in Politeama Liberta district | 168 | Jun 2021 | Old, low views |
-| YT047 | Three Major Reasons to Visit the Ancient City of Selinunte | 268 | Jul 2021 | Low views |
-| YT048 | Three Major Reasons to Visit San Nicolo Tower | 182 | Jul 2021 | Low views |
-| YT049 | Going to Sicily? Get insider tips from Nico Barcellona | 143 | Dec 2022 | Low views |
-| YT050 | Get Ready to Be Blown Away by San Vito Lo Capo | 238 | Mar 2023 | Low views |
-| YT051 | 3 Biggest Palermo Myths Tourists Believe | 149 | Oct 2024 | Low views |
-| YT052 | Saint Rosalia: The Patron Saint Who Erases Sins? | 193 | May 2023 | Low views |
-| YT053 | Discover Ustica: Sicily's Secret Island | 61 | Jul 2023 | Very low |
-| YT054 | The Sicilian Cassata | 194 | Nov 2022 | Very low |
-| YT055 | Palermo's Culinary Delight: Discover the Irresistible Pani Cunzatu | 6 | Jul 2023 | Very low |
-| YT056 | Palermo: A city where each stone tells a story | 6 | Jan 2024 | Very low |
-| YT057 | 7 Words that have a different meaning in Sicily and in Italy | 6 | Sep 2021 | Very low |
-| YT058 | Sicilian Carts: A Journey into Timeless Artistry | 6 | Jul 2023 | Very low |
-| YT059 | The Enigmatic Smile: Exploring Antonello da Messina's Masterpiece | 5 | Jul 2023 | Very low |
-| YT060 | Top 5 Experiences in Palermo During Christmas Time | 5 | Dec 2022 | Very low |
-| YT061 | From Sicily with Love and Seven Layers of Chocolate! | 5 | Nov 2022 | Very low |
-| YT062 | Road Roulette: The Palermo Edition | 4 | Nov 2023 | Very low |
-| YT063 | Palermo's Hidden Oasis: Walk, Relax, and Unwind at La Cala | 4 | Jun 2023 | Very low |
-| YT064 | Here's Why Italians Are So Obsessed With Fashion | 3 | Jan 2023 | Very low |
-| YT065 | Sfincione: The Sicilian Pizza You MUST Try in Palermo! | 3 | Jul 2023 | Very low |
-| YT066 | Welcome to Palermo! | 3 | Jan 2018 | Old, very low |
-| YT067 | The Four Corners (Quattro Canti) | 5 | Sep 2017 | Old, very low |
-| YT068 | The Fountain of Shame in Palermo | 5 | Sep 2017 | Old, very low |
+| YT001 | Your Complete Guide to Exploring Palermo Like a Local in 2025! | https://www.youtube.com/watch?v=9hMmJYnp_pw | 4496 | May 2025 |
+| YT002 | Palermo's street food: Scary good eats you gotta try! | https://www.youtube.com/watch?v=qm3lKquvNoU | 2955 | Jul 2024 |
+| YT003 | Traveling to Palermo: First Timer's Guide with Authentic Sicilian Insights | https://www.youtube.com/watch?v=ty3xYzlWV0I | 2024 | Oct 2023 |
+| YT004 | The Complete Guide to Mondello: Tips and Insights from a Local Sicilian | https://www.youtube.com/watch?v=VuO8nzqyWZs | 1520 | Jun 2024 |
+| YT005 | Where to Stay in Palermo: 3 Best Areas (And Which to AVOID) | https://www.youtube.com/watch?v=9P1NaeNqAfk | 1215 | Oct 2025 |
+| YT006 | Palermo Safety Guide: Insider Tips and Scams to Avoid | https://www.youtube.com/watch?v=Y96LiXLllEY | 1123 | Apr 2024 |
+| YT007 | Palermo: The Can't-Miss List (From a Sicilian!) | https://www.youtube.com/watch?v=1appc8KTxC0 | 1114 | Mar 2025 |
+| YT008 | San Vito Lo Capo: An Authentic Local's Guide | https://www.youtube.com/watch?v=Fxi4npfPJ00 | 1075 | Jul 2024 |
+| YT009 | The TRUTH About What to Eat in Sicily | https://www.youtube.com/watch?v=g0hQZ6rPDlY | 1013 | Apr 2025 |
+| YT010 | Regret-Free Palermo: What to Book and How to Do It Right! | https://www.youtube.com/watch?v=hnBEx8mP0MQ | 857 | Feb 2025 |
+| YT011 | Getting Around Palermo Like a Pro: The Ultimate Guide! | https://www.youtube.com/watch?v=NeaUNv8cgJU | 844 | Apr 2023 |
+| YT012 | Insider's Guide to Car Rentals in Palermo | https://www.youtube.com/watch?v=d9NxL29xvVQ | 747 | Jan 2024 |
+| YT013 | The 10 Common Mistakes that Tourists Make in Palermo | https://www.youtube.com/watch?v=Q9Ebwvhv9OI | 699 | Jun 2021 |
+| YT014 | The Top 3 Local-Recommended Areas for a Memorable Stay in Palermo | https://www.youtube.com/watch?v=O8qtK-xBlfw | 703 | Feb 2023 |
+| YT015 | Eat This in Sicily (Or You're Doing It Wrong) | https://www.youtube.com/watch?v=YuF9oGKsKYI | 685 | Dec 2025 |
+| YT016 | Don't Make These 5 Mistakes When Visiting Palermo | https://www.youtube.com/watch?v=f_aTyokMvZ8 | 617 | Dec 2022 |
+| YT017 | Palermo Transportation Hacks: What Tourists Need to Know | https://www.youtube.com/watch?v=TrdKK2QkvBY | 617 | Jan 2025 |
+| YT018 | Dressing for Sicily: A Local's Guide to Blending In | https://www.youtube.com/watch?v=konn-eESw-E | 573 | May 2023 |
+| YT019 | 20 Tips For Your Trip To Palermo From The Locals | https://www.youtube.com/watch?v=pmfx6EPlbWw | 511 | Jul 2018 |
+| YT020 | 20 Common Types of Restaurants in Palermo | https://www.youtube.com/watch?v=vyDJJWvvGaY | 473 | Sep 2021 |
+| YT021 | 15 Commonly Asked Questions About Palermo Answered by Nicobot | https://www.youtube.com/watch?v=1nDDFmxnAtI | 468 | Feb 2024 |
+| YT022 | 7 must-do tours in Palermo Sicily | https://www.youtube.com/watch?v=x1BS2McoGQo | 435 | Mar 2025 |
+| YT023 | 3 Beautiful Beaches that are Near Palermo City | https://www.youtube.com/watch?v=kXuTJvL_Wtc | 435 | Feb 2022 |
+| YT024 | Palermo for First Timers: 5 Crucial Pointers Part 1 | https://www.youtube.com/watch?v=QALMoTfOVTg | 432 | Nov 2023 |
+| YT025 | Airbnb - Virtual Tour | https://www.youtube.com/watch?v=6DAHQe6yCDA | 408 | n/a |
+| YT026 | What's Palermo REALLY Famous For? | https://www.youtube.com/watch?v=xBRJj20J8OE | 372 | Feb 2023 |
+| YT027 | 7 Traditional Scary Foods Sicilians Want You to Try | https://www.youtube.com/watch?v=g_Zrk1yhrQU | 377 | Jun 2021 |
+| YT028 | Things to Do in Palermo | https://www.youtube.com/watch?v=Wy-Oo-mAXQM | 378 | Jun 2021 |
+| YT029 | The 5 Precautions to Take in Palermo to Stay Safe | https://www.youtube.com/watch?v=f5TWBhXOevE | 339 | Jun 2021 |
+| YT030 | 5 Life Changing Tips for your First Day in Palermo | https://www.youtube.com/watch?v=A_QjZ_qJE4k | 344 | Jun 2021 |
+| YT031 | The Palermo Must-See: Domes Mosaics and Sweets in Bellini Square | https://www.youtube.com/watch?v=TvRXLUBClsc | 967 | Mar 2024 |
+| YT032 | 3 Top Areas To Stay In Palermo For An Unforgettable Beach Vacation | https://www.youtube.com/watch?v=8-3yn_WilsE | 293 | Feb 2023 |
+| YT033 | 3 Tips for Gay and Lesbian Travelers in Sicily | https://www.youtube.com/watch?v=8mq2GSbSvWU | 293 | Jun 2021 |
+| YT034 | What To Eat in Palermo | https://www.youtube.com/watch?v=jhnM_6dUf40 | 303 | Jun 2021 |
+| YT035 | 3 Reasons You Shouldn't Miss the Norman Palace in Palermo | https://www.youtube.com/watch?v=RGEsgruHNaw | 263 | Jul 2021 |
+| YT036 | 3 Major Points about the Quattro Canti Four Corners in Palermo | https://www.youtube.com/watch?v=C16jYb6mHVo | 254 | Jul 2021 |
+| YT037 | Palermo's Must-See: The Fountain of Shame Unveiled | https://www.youtube.com/watch?v=vec2rQZpaO4 | 268 | Mar 2024 |
+| YT038 | Three Major Reasons to Visit the Ancient City of Selinunte | https://www.youtube.com/watch?v=DJfSq6wxFbI | 268 | Jul 2021 |
+| YT039 | What No One Tells You About Palermo Safety! | https://www.youtube.com/watch?v=7FjWYtbJ-QE | 249 | Jun 2025 |
+| YT040 | Reaching Palermo: Cheap Flights Airports and Everything in Between | https://www.youtube.com/watch?v=SYCk6R9qCS0 | 235 | Jan 2025 |
+| YT041 | How Much Money Do You Need for Palermo Sicily? | https://www.youtube.com/watch?v=1fwCHAYqhIw | 219 | Jun 2025 |
+| YT042 | Palermo's Must-See: Top Reasons to Visit the Four Corners | https://www.youtube.com/watch?v=IN-E6xTzJxI | 217 | Feb 2024 |
+| YT043 | Palermo's Must-See: Top 3 Reasons to Visit the Palatine Chapel | https://www.youtube.com/watch?v=a4dSs_mNWXY | 217 | Feb 2024 |
+| YT044 | Palermo's Must-See: Why the Cathedral's a Must | https://www.youtube.com/watch?v=j5_I_uQOgME | 208 | Mar 2024 |
+| YT045 | What to Wear When in Palermo | https://www.youtube.com/watch?v=ahCO0RqUciY | 210 | Jun 2021 |
+| YT046 | 10 Important UNESCO Sites in Palermo | https://www.youtube.com/watch?v=Vaga-5PAoGQ | 299 | May 2022 |
+| YT047 | 4 Crucial Things to Know Before Going Sightseeing in Palermo | https://www.youtube.com/watch?v=4PuYuCbgwrw | 299 | Jun 2021 |
+| YT048 | How Sicilians Really Eat (And What Tourists Get Wrong About It) | https://www.youtube.com/watch?v=fBADU3deSxw | 291 | Sep 2025 |
+| YT049 | Summer Nightlife in Palermo: Sicilians Top 2 Favorite Party Spots | https://www.youtube.com/watch?v=Y3g1JNFiOms | 279 | Jul 2023 |
+| YT050 | The Three Top Reasons You Can't Miss the Piana degli Albanesi Village | https://www.youtube.com/watch?v=RX7Ct4poVMM | 285 | Jul 2021 |
+| YT051 | Palermo's Must-See: Top Reasons to Visit the Catacombs | https://www.youtube.com/watch?v=AoTVTnxLbok | 316 | Mar 2024 |
+| YT052 | Is Palermo Really for You? The Honest Truth About Its Flaws | https://www.youtube.com/watch?v=81UVjU1vQ6M | 176 | Sep 2024 |
+| YT053 | 3 Reasons You Can't Miss the Capuchin Catacombs of Palermo | https://www.youtube.com/watch?v=enlMeZXHMuA | 192 | Jul 2021 |
+| YT054 | The Three Top Reasons to Stay in Mondello | https://www.youtube.com/watch?v=lbcQh2N6Ecg | 193 | Jun 2021 |
+| YT055 | Saint Rosalia: The Patron Saint Who Erases Sins? | https://www.youtube.com/watch?v=0cAjTfEpL2Y | 193 | May 2023 |
+| YT056 | Is Palermo Really Worth Your Trip? Let Me Show You! | https://www.youtube.com/watch?v=3XjUBKMAS5g | 197 | Mar 2023 |
+| YT057 | Experience the Real Cefalu: Top 3 Local Insider Reasons to Visit! | https://www.youtube.com/watch?v=GGl98zw6P0E | 197 | Jun 2023 |
+| YT058 | The Three Things You Need to Know about Cefalu Beach | https://www.youtube.com/watch?v=mIddmHk-rzo | 179 | Jul 2021 |
+| YT059 | Why Does Palermo Soccer Team Wear Pink? | https://www.youtube.com/watch?v=5FWQ3MRQXJk | 176 | May 2023 |
+| YT060 | Three things you can expect from Palermo | https://www.youtube.com/watch?v=-vMrxIC_EXk | 172 | Apr 2022 |
+| YT061 | Top 5 Monuments You Should See Over One Day in Catania | https://www.youtube.com/watch?v=Nzal1D38BMU | 156 | Feb 2019 |
+| YT062 | 3 Affordable Restaurants in Palermo | https://www.youtube.com/watch?v=64DKV1FQ9Hg | 142 | Dec 2019 |
+| YT063 | The 3 Biggest Palermo Myths Tourists Believe | https://www.youtube.com/watch?v=u6aZG4pobTw | 149 | Oct 2024 |
+| YT064 | Going to Sicily? Get insider tips from Nico Barcellona | https://www.youtube.com/watch?v=JlFWTqB8fSg | 143 | Dec 2022 |
+| YT065 | The Three Things You Need to Know about Mondello Beach | https://www.youtube.com/watch?v=TQt2j6kb_zM | 141 | Jul 2021 |
+| YT066 | 5 Things You Need to Know About Beaches Around Palermo | https://www.youtube.com/watch?v=StSXrb_0ic4 | 131 | Feb 2020 |
+| YT067 | How to Celebrate New Years Eve in Palermo | https://www.youtube.com/watch?v=Vk8EbhENzo8 | 135 | Dec 2022 |
+| YT068 | Family Trip to Palermo? Here Are the 2 Best Areas | https://www.youtube.com/watch?v=88tx1WwqSFA | 446 | Feb 2023 |
+| YT069 | Why Do Hosts in Italy Ask for YOUR Passport? | https://www.youtube.com/watch?v=HGiYlK5IgEQ | 123 | Oct 2023 |
+| YT070 | Welcome to Palermo! | https://www.youtube.com/watch?v=Aykjk0DbTaE | 121 | Jan 2018 |
+| YT071 | The Three Top Reasons You Should Visit Cefalu Village | https://www.youtube.com/watch?v=vwhAmpY9xXQ | 227 | Jul 2021 |
+| YT072 | 3 Different Types of Small Pizza you Can Eat Only in Palermo | https://www.youtube.com/watch?v=9I2QOpHqKTs | 167 | Jul 2021 |
+| YT073 | The Three Major Reasons You Should Visit Scopello | https://www.youtube.com/watch?v=LVpQMj9WP1s | 209 | Jun 2022 |
+| YT074 | San Vito Lo Capo: 3 Irresistible Attractions | https://www.youtube.com/watch?v=75q2kRyH0VE | 181 | Apr 2023 |
+| YT075 | The Top Three Reasons to Stay in the Historic Center | https://www.youtube.com/watch?v=9Vr8nED3j0Q | 201 | Jun 2021 |
+| YT076 | The Top Three Reasons to stay in Politeama Liberta district | https://www.youtube.com/watch?v=ZqHv6ZE15S0 | 168 | Jun 2021 |
+| YT077 | Three Major Reasons to Visit San Nicolo Tower | https://www.youtube.com/watch?v=bFJhiWqvXbA | 182 | Jul 2021 |
+| YT078 | The Three Major Points About the Art Gallery of Palazzo Abatellis | https://www.youtube.com/watch?v=WarcYNW3Qbg | 200 | Aug 2022 |
+| YT079 | Get Ready to Be Blown Away by San Vito Lo Capo | https://www.youtube.com/watch?v=IG-IjnIR60A | 238 | Mar 2023 |
+| YT080 | 3 Reasons for Not Missing the Historic Markets of Palermo | https://www.youtube.com/watch?v=_BUR9GCYq3s | 206 | May 2022 |
+| YT081 | The 3 best areas to stay in Palermo (Sicily) | https://www.youtube.com/watch?v=yfOBfKu0WF8 | 106 | Dec 2017 |
+| YT082 | Mondello Beach: The Crown Jewel of Palermo's Seaside | https://www.youtube.com/watch?v=S5BT2omO3GE | 127 | May 2023 |
+| YT083 | 5 Reasons to Visit the Aeolian Islands (Sicily) | https://www.youtube.com/watch?v=0uFn-AiqW3I | 145 | Sep 2022 |
+| YT084 | Three Things to Know Before Renting a Scooter in Palermo | https://www.youtube.com/watch?v=B1wKHzNQKGI | 142 | Mar 2022 |
+| YT085 | Palermo's Top 3 Must-Do Tours: Local Recommendations | https://www.youtube.com/watch?v=ITsHInZWsEs | 264 | Mar 2023 |
+| YT086 | Historic Palermo Street Markets | https://www.youtube.com/watch?v=KtUqPYF2WGE | 163 | Aug 2017 |
+| YT087 | The Sicilian Cassata | https://www.youtube.com/watch?v=-YK-oe1PHrg | 194 | Nov 2022 |
+| YT088 | 3 Irresistible Reasons to Explore Palermo's Street Markets | https://www.youtube.com/watch?v=L-Zl33VRcsE | 153 | Jul 2023 |
+| YT089 | Easter in Palermo: Top 3 Must-Do Activities | https://www.youtube.com/watch?v=YMN-XeE-tCU | 229 | Apr 2023 |
+| YT090 | 3 Exciting Things to Do in Palermo for Easter | https://www.youtube.com/watch?v=Vyq9-iJj0cs | 152 | Mar 2023 |
+| YT091 | Discover Ustica: Sicily's Secret Island | https://www.youtube.com/watch?v=sH92YPLGhpM | 61 | Jul 2023 |
+| YT092 | Addaura: Palermo's Beach Haven for Insiders | https://www.youtube.com/watch?v=5DAyxlJ_fG4 | 108 | Aug 2023 |
+| YT093 | A Quick Stroll Through Palermo Historic Center | https://www.youtube.com/watch?v=Qir_3o0Xl9Y | 45 | Feb 2023 |
+| YT094 | Palermo's Hidden Oasis: Walk Relax and Unwind at La Cala | https://www.youtube.com/watch?v=i4pmorb22ic | 47 | Jun 2023 |
+| YT095 | Secret Sicilian Escape | https://www.youtube.com/watch?v=gLyCA_kf-M8 | 39 | Apr 2023 |
+| YT096 | Car parking in Palermo | https://www.youtube.com/watch?v=FxAHO-dTto0 | 70 | Aug 2017 |
+| YT097 | The Strangler Tree and the macabre story behind it | https://www.youtube.com/watch?v=8W6A9zZOhO4 | 87 | Sep 2022 |
+| YT098 | 7 Words that have a different meaning in Sicily and in Italy | https://www.youtube.com/watch?v=o1zWf6BYgwM | 220 | Sep 2021 |
+| YT099 | Mastering the Art of Cannoli: 3 Tips to Identify an Authentic Delight | https://www.youtube.com/watch?v=taXB9s97Zl0 | 52 | Jul 2023 |
+| YT100 | The Three Top Reasons You Can't Miss the Piana degli Albanesi | https://www.youtube.com/watch?v=RX7Ct4poVMM | 285 | Jul 2021 |
+| YT101 | Palermo Street Markets - Experience the finest European street food | https://www.youtube.com/watch?v=WKJowq8KsHQ | 61 | Nov 2022 |
+| YT102 | Palermo's Must-See: Holy Inquisition's Prison - Graffiti History Torture | https://www.youtube.com/watch?v=GvuDiY7WfUA | 159 | Feb 2024 |
+| YT103 | Palermo Must-See: The graffiti of the condemned | https://www.youtube.com/watch?v=n7kwIz_b20Q | 61 | Feb 2024 |
+| YT104 | The scandalous story behind the birth of the Sicilian Cannoli | https://www.youtube.com/watch?v=83LsaMki-HM | 51 | Nov 2022 |
+| YT105 | Got Sicilian roots? These 3 words we use every single day | https://www.youtube.com/watch?v=ZynarGMHJmY | 60 | Oct 2023 |
+| YT106 | How Many Days Should You Spend in Palermo Sicily? | https://www.youtube.com/watch?v=lFuQS2DSzLM | 120 | Feb 2023 |
+| YT107 | Tipping Etiquette in Sicily | https://www.youtube.com/watch?v=szR-54EWvGc | 61 | Nov 2023 |
+| YT108 | Beware of Sicilian Screw-Jobs | https://www.youtube.com/watch?v=kpsjyMOySFA | 59 | Nov 2023 |
+| YT109 | Beware Sicily's Romeos: Solo Female Travel Tip! | https://www.youtube.com/watch?v=FtNF1jYHwF8 | 61 | Nov 2023 |
+| YT110 | Palermo at Night: Quick Safety Tip! | https://www.youtube.com/watch?v=rwJ7jabZNJU | 52 | Nov 2023 |
+| YT111 | Here's Why Italians Are So Obsessed With Fashion | https://www.youtube.com/watch?v=sJ0kDilbTUs | 93 | Jan 2023 |
+| YT112 | Discover the Italian Aperitivo: Sicily's Irresistible Flavors | https://www.youtube.com/watch?v=hTTQxlYygU0 | 59 | Jul 2023 |
+| YT113 | Sip into Palermo's Aperitivo Culture: The Delightful Aperol Spritz | https://www.youtube.com/watch?v=HZOqYBl8QSE | 51 | Jul 2023 |
+| YT114 | Faccia di Vecchia: Unveiling Sicily's Must-Try Pizza Delight! | https://www.youtube.com/watch?v=fNWx9-gzFAg | 60 | Jul 2023 |
+| YT115 | Sfincione: The Sicilian Pizza You MUST Try in Palermo! | https://www.youtube.com/watch?v=Ctg514sfDqo | 54 | Jul 2023 |
+| YT116 | Palermo's Culinary Delight: Discover the Irresistible Pani Cunzatu | https://www.youtube.com/watch?v=CNhsJvMiu5g | 61 | Jul 2023 |
+| YT117 | Palermo: A city where each stone tells a story | https://www.youtube.com/watch?v=jJG9R55dxy8 | 61 | Jan 2024 |
+| YT118 | Sicilian Carts: A Journey into Timeless Artistry | https://www.youtube.com/watch?v=xDlZ2_1Z6Rs | 61 | Jul 2023 |
+| YT119 | The Enigmatic Smile: Exploring Antonello da Messina's Masterpiece in Cefalu | https://www.youtube.com/watch?v=eqaaALfX3Mc | 59 | Jul 2023 |
+| YT120 | Top 5 Experiences to Enjoy in Palermo During Christmas Time | https://www.youtube.com/watch?v=B5Cd3NV57GA | 102 | Dec 2022 |
+| YT121 | From Sicily with Love and Seven Layers of Chocolate! | https://www.youtube.com/watch?v=u8HZihEVzmY | 55 | Nov 2022 |
+| YT122 | Road Roulette: The Palermo Edition | https://www.youtube.com/watch?v=8bJxZycEChc | 53 | Nov 2023 |
+| YT123 | Ice cream lovers rejoice! | https://www.youtube.com/watch?v=DKHHjH_DPCA | 46 | Nov 2022 |
+| YT124 | The Fountain of Shame - the attraction famous for pissing off Catholics | https://www.youtube.com/watch?v=uW6D8ykakbA | 60 | Nov 2022 |
+| YT125 | The Four Corners (Quattro Canti) | https://www.youtube.com/watch?v=Bi_YWh0KBpo | 52 | Sep 2017 |
+| YT126 | The Fountain of Shame in Palermo | https://www.youtube.com/watch?v=fQ67BJY7cCE | 89 | Sep 2017 |
+| YT127 | Palermo's July 14th Celebration: Don't Miss Out! | https://www.youtube.com/watch?v=AH66I4R3xKQ | 52 | Jul 2023 |
+| YT128 | The Secret Nights of Palermo book - Customer Review | https://www.youtube.com/watch?v=Su6tyyRKSdk | 55 | Nov 2018 |
+| YT129 | The Secret Nights of Palermo - Customer Review | https://www.youtube.com/watch?v=G86YUJH_o4Y | 17 | Nov 2018 |
+| YT130 | The Secret Nights of Palermo book reviewed | https://www.youtube.com/watch?v=WQUc8K11tZQ | 12 | Nov 2018 |
+| YT131 | Must-Watch Before Your Stay! Important Info Inside | https://www.youtube.com/watch?v=2mNu3uRcD9c | 112 | n/a |
+| YT132 | Safety and Comfort: Understanding the Neighborhood | https://www.youtube.com/watch?v=2fY6L37rTQ4 | 141 | n/a |
+| YT133 | Church of the Immaculate Conception | https://www.youtube.com/watch?v=4JsTzk4OUEQ | 77 | Aug 2017 |
+| YT134 | 5 Things you Need to Consider When Booking Accommodations in Palermo | https://www.youtube.com/watch?v=cuw--8HUXeE | 266 | Jun 2021 |
+| YT135 | 3 Reasons You Can't Miss the Capuchin Catacombs | https://www.youtube.com/watch?v=enlMeZXHMuA | 192 | Jul 2021 |
+| YT136 | The Sicilian Frutta Martorana (almond pastry fruits) | https://www.youtube.com/watch?v=PnEJhFnxr8o | 39 | Nov 2022 |
 
-Total channel views: 12,348. Total watch time: 643 hours. Estimated revenue: $58.52.
+Total channel views: 12,348. Total watch time: 643 hours. Estimated revenue to date: $58.52.
 
 ---
 
