@@ -36,3 +36,20 @@ Read this first in every session to understand what exists and where to find it.
 ---
 
 ## Repo Structure
+
+```
+wap-brain/
+├── brain/          — permanent reference docs (this folder)
+├── sops/           — standard operating procedures
+├── projects/       — active project folders
+└── archive/
+    └── projects/   — completed project folders (read-only reference)
+```
+
+---
+
+## Active Projects
+
+| Project | Status | Folder |
+|---|---|---|
+| WAP Content Machine | Active | projects/PROJECT_WAP_Content_Machine/ |
