@@ -60,7 +60,23 @@ Step 4 — Purchase: checkout on Podia. Delivery via Podia.
 
 ---
 
-## 4. Revenue Improvement Opportunities
+## 4. The Restaurant Guide — PDF
+
+**What it is:** A curated guide to the best restaurants in Palermo. Specific recommendations with Nico's honest takes.
+
+**Platform:** Podia. PDF delivery.
+
+**Pricing:**
+- Standard price: $17
+- Occasional discounts applied at Nico's discretion
+
+**Status:** Live and for sale as of April 2026. Sales page on Podia.
+
+**Important:** Restaurant and bar recommendations are EXCLUSIVELY for this paid product and The Sicilian Way Guide. They are never mentioned by name in any free content — blog posts, YouTube videos, or social media.
+
+---
+
+## 5. Revenue Improvement Opportunities
 
 - More content = more organic traffic = more affiliate clicks and funnel entries
 - Updating losing blog posts could recover lost Google rankings and traffic
