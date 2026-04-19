@@ -3,7 +3,7 @@
 ## Phase 1 — Brain Setup
 
 - [x] 1.1 Create WAP Brain GitHub repo and clone locally [Architect] [Est: 20 min | Actual: 24 min ]
-- [ ] 1.2 Define WAP Brain folder structure and create empty scaffold [PM] [Est: 20 min | Actual: __ ]
+- [x] 1.2 Define WAP Brain folder structure and create empty scaffold [PM] [Est: 20 min | Actual: 3 min ]
 - [ ] 1.3 Write WAP_00_INDEX.md — master directory of all Brain docs and SOPs [PM] [Est: 30 min | Actual: __ ]
 - [ ] 1.4 Write WAP_01_BUSINESS_OVERVIEW.md — what wearepalermo.com is, who Nico is, USP, audience, tone of voice summary, funnel overview [PM] [Est: 45 min | Actual: __ ]
 - [ ] 1.5 Write WAP_02_TOOLS_STACK.md — WordPress, ConvertKit, Podia, YouTube, Switchy, GA4, GTM, Claude, Gemini [PM] [Est: 30 min | Actual: __ ]
