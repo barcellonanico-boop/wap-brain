@@ -9,6 +9,11 @@
 | Apr 19, 2026 | Paid advertising project | Meta or Google ads to accelerate traffic. Needs separate planning session. Budget ~$100-200 to test. |
 | Apr 19, 2026 | Social media reactivation (Instagram, TikTok) | Dead for ~1 year. AI-assisted short-form content possible. Not the bottleneck right now. |
 | Apr 19, 2026 | YouTube video production workflow | Nico on camera + B-roll + voiceover format. AI can help with scripts and structure. Later. |
+| Apr 19, 2026 | Author page rebuild for Nico | Task 1.8 Rule 4.2. High E-E-A-T leverage. Needs: photo, bio (Palermo-born + resident), YouTube list, social profiles, press mentions. Own mini-project. |
+| Apr 19, 2026 | Site-wide schema audit | Verify every post has Article + FAQPage + Author schema. Unknown current state. Possibly an Architect one-shot task. |
+| Apr 19, 2026 | Core Web Vitals check on SiteGround hosting | Relevant for AI citation (ChatGPT bot HTML reading mode). Not urgent. |
+| Apr 19, 2026 | robots.txt check for AI crawlers | Verify GPTBot, Google-Extended, PerplexityBot not blocked. 5-minute Architect task. |
+| Apr 19, 2026 | WordPress schema plugin verification | Rule 3.5 requires it. Nico must confirm if RankMath or Yoast is installed. |
 
 ## Future Optimizations
 
@@ -24,3 +29,4 @@
 | Apr 19, 2026 | What keyword tool are you currently using for SEO research, if any? | Open |
 | Apr 19, 2026 | Where do your photos currently live? Google Drive, hard drive, something else? | Open — needed before asset project starts |
 | Apr 19, 2026 | Is the "free itinerary" lead magnet a PDF? Where does it live and what does it contain? | Open — needed before any funnel work |
+| Apr 19, 2026 | Which WordPress schema plugin is installed on wearepalermo.com? RankMath, Yoast, something else, or none? | Open — blocks proper implementation of Task 1.10 Rule 3.5 |

@@ -50,3 +50,5 @@ None yet — this project creates them.
 | Apr 19, 2026 | Story Bank needs a summary index at the top | AI reads the index first, jumps to matching entries by tag. Avoids reading the full doc every time. |
 | Apr 19, 2026 | Restaurant/bar list and experiences bank are separate Brain docs | WAP_09 and WAP_10. Same tag+index structure as Story Bank. |
 | Apr 19, 2026 | Asset management is a separate future project | Too complex for this scope. Parking Lot. |
+| Apr 19, 2026 | Google organic SEO and AI Overviews optimized the same way, one extractability layer on top | Task 1.8 research. Foundational decision for all content work. Same fundamentals (topical authority, first-hand experience, structure, E-E-A-T); AI Overviews add answer-first structure + citable chunks. |
+| Apr 19, 2026 | First-person observations are a ranking signal, not just a brand style choice | Lily Ray research cited in Task 1.8. Task 1.9 voice doc must frame first-hand experience as E-E-A-T, not just Nico's personality. |
