@@ -12,7 +12,7 @@
 - [x] 1.8 Research SEO + AIO best practices for 2026: Google organic + AI Overviews. Output: pre-digested rules saved to 05_SEO_AIO_Research.md. [Architect] [Est: 60 min | Actual: 11 min]
 - [ ] 1.9 Write WAP_05_VOICE_AND_PERSONA.md — Nico's persona, the Italian-American comedian style, DOs and DON'Ts, good vs. bad output examples [Copywriting] [Est: 60 min | Actual: __ ]
 - [x] 1.10 Write WAP_06_CONTENT_FORMAT.md — synthesize SEO/AIO rules from 05_SEO_AIO_Research.md with existing WAP format rules (no wall text, no dashes, text boxes) + WordPress publishing checklist [PM] [Est: 30 min | Actual: 55 min]
-- [ ] 1.11 Write WAP_08_STORY_BANK.md — tagged library of Nico's personal anecdotes with summary index at top. First entry: the roundabout/driving anecdote (northern Italy vs. Sicily, eye contact vs. road signs). Tags: driving, culture, Sicily, car rental, safety, locals. [PM] [Est: 40 min | Actual: __ ]
+- [x] 1.11 Write WAP_08_STORY_BANK.md — tagged library with Master Index, tag taxonomy, 5 full tagged story entries (Italian Romeos, dark alleys, American tipping, 6:30 PM tourist traps, Sicilian gelato origin), Gap List with high-priority stories to capture, voice preservation rules. [PM] [Est: 40 min | Actual: 30 min]
 - [ ] 1.12 Write WAP_09_PLACES_RESTAURANTS_BARS.md — indexed, tagged list of Palermo restaurants and bars Nico recommends. Structure: index table at top, full entries below with tags, notes, last updated date. [PM] [Est: 30 min | Actual: __ ]
 - [ ] 1.13 Write WAP_10_PLACES_EXPERIENCES.md — indexed, tagged list of Palermo experiences and things to do. Same structure as WAP_09. [PM] [Est: 30 min | Actual: __ ]
 - [ ] 1.14 Commit and push all Brain docs. Upload all to WAP project knowledge. [Architect] [Est: 15 min | Actual: __ ]
