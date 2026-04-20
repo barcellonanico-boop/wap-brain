@@ -251,10 +251,12 @@ It's great that gelato has expanded all around the world. But never, never forge
 - "In Sicily people in debt end up sleeping with the fishes"
 - "Never, never forget that it all started on the extraordinary island of Sicily first"
 
-**Historical facts to verify before publishing (Fireable Offense #2):**
-- [VERIFY: Francesco Procopio dei Coltelli, Café Procope founding date (1686)]
-- [VERIFY: Napoleon's bicorn is actually on display at Le Procope, Paris]
-- [VERIFY: Arab conquest of Sicily timeline as context]
+**Historical facts — VERIFIED by Nico (Apr 20, 2026):**
+- Francesco Procopio dei Coltelli founded Café Procope in Paris (1686) — confirmed
+- Napoleon's bicorn is on display at Le Procope — confirmed
+- Arab rule in Sicily (831-1091 AD) — historically accurate
+
+Story is safe to use as historical context.
 
 ---
 
