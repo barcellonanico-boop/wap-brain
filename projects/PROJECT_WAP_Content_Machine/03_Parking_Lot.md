@@ -14,6 +14,7 @@
 | Apr 19, 2026 | Core Web Vitals check on SiteGround hosting | Relevant for AI citation (ChatGPT bot HTML reading mode). Not urgent. |
 | Apr 19, 2026 | robots.txt check for AI crawlers | Verify GPTBot, Google-Extended, PerplexityBot not blocked. 5-minute Architect task. |
 | Apr 19, 2026 | WordPress schema plugin verification | Rule 3.5 requires it. Nico must confirm if RankMath or Yoast is installed. |
+| Apr 21, 2026 | Batch populate TripAdvisor URLs in WAP_09 | All Tier B entries (~32) and some Tier A flagged [VERIFY TA URL]. Needs ~30 min batched Architect session: web search each restaurant on TripAdvisor, paste URL, commit. Pre-requisite before WAP_09 can be used for paid products. |
 
 ## Future Optimizations
 
