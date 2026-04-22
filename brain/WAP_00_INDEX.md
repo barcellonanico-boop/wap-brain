@@ -22,6 +22,7 @@ Read this first in every session to understand what exists and where to find it.
 | WAP_08_STORY_BANK.md | Tagged library of Nico's personal anecdotes, jokes, and observations. Summary index at top for fast lookup by tag. Use before every content draft to check for matching stories. | Before every writing task. Search index by tag first. | Every time Nico adds a new story. Follow SOP_03. |
 | WAP_09_PLACES_RESTAURANTS_BARS.md | Indexed, tagged list of Palermo restaurants and bars Nico recommends. Includes notes, category tags, last updated date. | When writing content that references where to eat or drink. | When Nico visits somewhere new or a place closes/changes. |
 | WAP_10_PLACES_EXPERIENCES.md | Indexed, tagged list of Palermo experiences and things to do. Same structure as WAP_09. | When writing content about activities, tours, or what to do in Palermo. | When Nico discovers something new or an experience changes. |
+| WAP_11_AIRBNB_PROPERTIES.md | Master source of truth for Nico's Airbnb properties (Via Ambra 11, Via Divisi 101). All property facts, quirks, rules, procedures, and internal contacts. Guest-facing materials are derived from this doc. | Before replying to any guest message, before generating any guest-facing material (Guidebook, listing copy, pre-arrival message). | When any property fact changes — new wifi, new quirk, new cleaner, new maintenance event. |
 
 ---
 

@@ -2,19 +2,19 @@
 
 ## Phase 1 — Saturday Fire (Via Ambra 11, deadline Fri April 24 EOD)
 
-- [ ] 1.1 Write Via Ambra 11 Apartment Guidebook — adapt Via Divisi Guidebook to Via Ambra specifics (trash schedule, electrical quirks, wifi, check-out, local recs) [Copywriting] [Est: 60 min | Actual: __ ]
-- [ ] 1.2 Write Via Ambra 11 pre-arrival messages — adapt the 3 Via Divisi messages (post-booking, 3 days before, 2 days before) with Via Ambra specifics: keybox location, keybox code 2211, walking directions from bus stop, wifi name/password [Copywriting] [Est: 45 min | Actual: __ ]
+- [x] 1.1 Build WAP_11_AIRBNB_PROPERTIES.md master file with full Via Ambra 11 entry — address, specs, wifi, keybox, check-in/out, trash, appliances, heating/AC, water boiler, TV, linens change policy, electrical quirk, shower drain quirk, smoke detector, shutters, house rules, legal, parking, airport transport, groceries, paid services, emergency contacts, maintenance log [PM] [Est: 60 min | Actual: 90 min]
+- [ ] 1.2 Write Via Ambra 11 pre-arrival messages — adapt the 3 Via Divisi messages (post-booking, 3 days before, 2 days before) using WAP_11 as source of truth. Keybox code 2810, wifi, bus stop info, shared taxi option, ZTL parking warning [Copywriting] [Est: 45 min | Actual: __ ]
 - [ ] 1.3 Set up Airbnb native scheduled messages for Via Ambra 11 — paste the 3 messages into Airbnb scheduled messaging with correct triggers (booking confirmation, 3 days before, 2 days before) [PM] [Est: 20 min | Actual: __ ]
-- [ ] 1.4 Fix Via Ambra 11 Airbnb listing — title, description, amenities (add missing ones), host bio in Nico voice, photo captions, neighborhood USP [Copywriting] [Est: 75 min | Actual: __ ]
-- [ ] 1.5 Saturday prep checklist walkthrough — write the step-by-step list Nico runs Friday/Saturday morning: keybox install (dad), mirror install (dad), cleaning, linen check, amenities check, wifi test, lock test, lightbulb check, trash empty, guidebook printed and placed, itineraries printed and placed [PM] [Est: 30 min | Actual: __ ]
-- [ ] 1.6 Execute Saturday prep — physically do everything in 1.5 [Nico + Dad] [Est: 180 min | Actual: __ ]
+- [ ] 1.4 Generate guest-facing Apartment Guidebook (Markdown draft) — derived from WAP_11, structured for print/PDF. Uses Via Divisi Guidebook as structural template. Includes House Rules section at top, emergency contact section, all operational info, local recs placeholder. [Copywriting] [Est: 60 min | Actual: __ ]
+- [ ] 1.5 Fix Via Ambra 11 Airbnb listing — title, description, amenities (add missing ones), host bio in Nico voice, photo captions, neighborhood USP [Copywriting] [Est: 75 min | Actual: __ ]
+- [ ] 1.6 Saturday prep checklist walkthrough — write the step-by-step list Nico runs Friday/Saturday morning: keybox install (dad), mirror install (dad), cleaning, linen check, amenities check, wifi test, lock test, lightbulb check, trash empty, guidebook printed and placed, itineraries printed and placed [PM] [Est: 30 min | Actual: __ ]
+- [ ] 1.7 Execute Saturday prep — physically do everything in 1.6 [Nico + Dad] [Est: 180 min | Actual: __ ]
 
 ## Phase 2 — Permanent Airbnb Brain
 
-- [ ] 2.1 Write WAP_11_AIRBNB_PROPERTIES.md — schema design + Via Ambra 11 full entry (address, keybox location/code, wifi, bedrooms/beds/bathrooms, max guests, house rules, quirks, emergency contacts, maintenance log table) [PM] [Est: 60 min | Actual: __ ]
-- [ ] 2.2 Write WAP_12_AIRBNB_GUEST_OPS.md — message library (all Via Ambra messages), FAQ answers in Nico voice (check-in questions, wifi issues, trash, noise, local recs pointer to WAP_09/WAP_10), troubleshooting scripts, guest lifecycle workflow [PM] [Est: 75 min | Actual: __ ]
-- [ ] 2.3 Update WAP_00_INDEX.md — register WAP_11, WAP_12, SOP_06 in Document Map and SOP Map [PM] [Est: 10 min | Actual: __ ]
-- [ ] 2.4 Write SOP_06_Reply_To_Guest_Message.md — workflow for pasting guest message, PM checks WAP_11/WAP_12/WAP_09/WAP_10, PM drafts reply in Nico voice, Nico copy-pastes to Airbnb [PM] [Est: 30 min | Actual: __ ]
+- [ ] 2.1 Write WAP_12_AIRBNB_GUEST_OPS.md — message library (all Via Ambra messages), FAQ answers in Nico voice (check-in questions, wifi issues, trash, noise, local recs pointer to WAP_09/WAP_10), troubleshooting scripts, guest lifecycle workflow [PM] [Est: 75 min | Actual: __ ]
+- [ ] 2.2 Update WAP_00_INDEX.md — register WAP_12 and SOP_06 in Document Map and SOP Map [PM] [Est: 10 min | Actual: __ ]
+- [ ] 2.3 Write SOP_06_Reply_To_Guest_Message.md — workflow for pasting guest message, PM checks WAP_11/WAP_12/WAP_09/WAP_10, PM drafts reply in Nico voice, Nico copy-pastes to Airbnb [PM] [Est: 30 min | Actual: __ ]
 
 ## Phase 3 — Calendar Integration
 
