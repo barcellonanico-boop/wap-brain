@@ -6,7 +6,7 @@
 
 | Date | Idea | Notes |
 |---|---|---|
-| Apr 22, 2026 | Professional listing photo shoot for Via Umbra 11 | Current photos functional but amateur. Worth doing once the apartment is stabilized and first reviews are in. Estimated 200-400 EUR for a pro Palermo Airbnb photographer. |
+| Apr 22, 2026 | Professional listing photo shoot for Via Ambra 11 | Current photos functional but amateur. Worth doing once the apartment is stabilized and first reviews are in. Estimated 200-400 EUR for a pro Palermo Airbnb photographer. |
 | Apr 22, 2026 | Migrate apartments to wearepalermo.com direct booking | Too early. Airbnb bookings still compounding. Revisit after 6-12 months of steady occupancy and once content machine is producing consistent traffic. |
 | Apr 22, 2026 | Promote apartments on wearepalermo.com (blog mention, sidebar, dedicated page) | Only makes sense after direct booking infrastructure exists. Otherwise we send WAP traffic to Airbnb and give them a cut. |
 | Apr 22, 2026 | Third-party PMS (Hostaway, Hospitable, Smartbnb) | 30-100 EUR/month. Not justified at 2 properties. Revisit at 4+ properties or when Airbnb native messaging becomes a bottleneck. |
@@ -26,7 +26,7 @@
 | Apr 22, 2026 | Automated review-request message after checkout | Airbnb native or via a post-stay message. Boost review count which affects ranking. Simple scheduled message in Airbnb. |
 | Apr 22, 2026 | Post-stay ConvertKit sequence — nurture past guests into WAP email list | Ask guests at checkout if they want Palermo travel tips. Those who opt in go into ConvertKit. Long-term WAP list builder. |
 | Apr 22, 2026 | Build a "Host Nico" page on wearepalermo.com | Cross-promote WAP to Airbnb guests. Not direct booking, just trust building and email list growth. |
-| Apr 22, 2026 | Standardize a "welcome basket" for Via Umbra / Via Divisi (water, coffee, a note) | Costs ~5-10 EUR per guest, boosts review quality, gives Nico a branded touchpoint. |
+| Apr 22, 2026 | Standardize a "welcome basket" for Via Ambra / Via Divisi (water, coffee, a note) | Costs ~5-10 EUR per guest, boosts review quality, gives Nico a branded touchpoint. |
 
 ---
 
@@ -36,13 +36,13 @@ These come up in Phase 1 task execution. Answered during Task 1.1 (guidebook) an
 
 | Date | Question | Status |
 |---|---|---|
-| Apr 22, 2026 | Via Umbra 11 exact address (floor number, building details) | Open |
-| Apr 22, 2026 | Via Umbra 11 max guests, bedrooms, beds, bathrooms | Open |
-| Apr 22, 2026 | Via Umbra 11 WiFi name and password | Open |
-| Apr 22, 2026 | Via Umbra 11 keybox location on the building wall (exact spot, after dad installs it) | Open |
-| Apr 22, 2026 | Via Umbra 11 trash collection schedule (same as Via Divisi or different?) | Open |
-| Apr 22, 2026 | Via Umbra 11 apartment-specific quirks (electrical panel location, any gas cylinder issue, shower drain, smoke detector, power trip risk) | Open |
-| Apr 22, 2026 | Via Umbra 11 check-in time and check-out time (same as Via Divisi 3PM / 10AM?) | Open |
-| Apr 22, 2026 | Walking directions from nearest bus stop to Via Umbra 11 (Nico knows the neighborhood; needs the exact landmark-based route like Via Divisi has) | Open |
+| Apr 22, 2026 | Via Ambra 11 exact address (floor number, building details) | Open |
+| Apr 22, 2026 | Via Ambra 11 max guests, bedrooms, beds, bathrooms | Open |
+| Apr 22, 2026 | Via Ambra 11 WiFi name and password | Open |
+| Apr 22, 2026 | Via Ambra 11 keybox location on the building wall (exact spot, after dad installs it) | Open |
+| Apr 22, 2026 | Via Ambra 11 trash collection schedule (same as Via Divisi or different?) | Open |
+| Apr 22, 2026 | Via Ambra 11 apartment-specific quirks (electrical panel location, any gas cylinder issue, shower drain, smoke detector, power trip risk) | Open |
+| Apr 22, 2026 | Via Ambra 11 check-in time and check-out time (same as Via Divisi 3PM / 10AM?) | Open |
+| Apr 22, 2026 | Walking directions from nearest bus stop to Via Ambra 11 (Nico knows the neighborhood; needs the exact landmark-based route like Via Divisi has) | Open |
 | Apr 22, 2026 | House rules — any difference from Via Divisi? | Open |
-| Apr 22, 2026 | Does Via Umbra have a balcony? (relevant for smoking rule phrasing) | Open |
+| Apr 22, 2026 | Does Via Ambra have a balcony? (relevant for smoking rule phrasing) | Open |
