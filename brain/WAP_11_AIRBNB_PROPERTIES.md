@@ -1,6 +1,6 @@
 # WAP_11_AIRBNB_PROPERTIES.md — Airbnb Properties Master File
 
-Last updated: April 22, 2026
+Last updated: April 22, 2026 (evening update: door clarification, cable TV confirmed, linen change policy in nights, cleaning context internalized, mail/packages resolved)
 
 ---
 
@@ -40,6 +40,7 @@ When the PM agent replies to a guest message on Nico's behalf, the PM reads this
 - **Floor:** 3rd floor
 - **Elevator:** Yes. Guest takes the elevator, pushes button 3.
 - **After the elevator:** There is a small flight of 5 stairs up to the apartment door. Worth mentioning to guests with heavy luggage or mobility concerns.
+- **Which door:** At the top of the 5 stairs there is a small landing with a window on the left-hand wall. Two doors face the guest: a RIGHT door (neighbor's apartment) and a LEFT door (the apartment). **Guests take the LEFT door.** The RIGHT door belongs to Nico's daughter's place (neighbor). This is critical — guests must not knock on or attempt to enter the right door.
 - **4th floor terrace:** The building has a 4th floor terrace attached to this apartment, but it is NOT ready and NOT yet furnished. Do NOT mention to guests or include in the Airbnb listing until Nico explicitly unlocks it. Once ready, it becomes a major USP upgrade.
 
 ## Apartment Layout & Specs
@@ -106,7 +107,7 @@ When the PM agent replies to a guest message on Nico's behalf, the PM reads this
 - **TV:** Smart TV, connected to WiFi
 - **Streaming apps:** Preinstalled (Netflix, Prime Video, YouTube, etc.)
 - **Accounts:** Nico does NOT supply streaming accounts. Guests log in with their own credentials.
-- **Cable / satellite:** [NICO TO CONFIRM: is there Italian TV cable, or is it only smart TV apps?]
+- **Cable TV:** Yes, cable TV is connected. Italian channels + international channels available.
 
 ## Linens & Towels
 
@@ -115,9 +116,11 @@ When the PM agent replies to a guest message on Nico's behalf, the PM reads this
 
 ### Change Policy (IMPORTANT — guests ask about this)
 
-- **Bed sheets:** Changed only for stays LONGER THAN 10 DAYS. Shorter stays get one set for the duration.
-- **Towels:** Changed for stays of approximately a week or more. Not changed for shorter stays. [NICO TO CONFIRM: exact threshold — is it 7 days? 5 days? 6 days?]
-- **Mid-stay requests:** Guests CAN request an extra change during their stay. This is part of the paid extra cleaning service (€50, see Paid Services section).
+- **Bed sheets:** Changed only for stays of MORE THAN 7 NIGHTS.
+- **Towels:** Changed only for stays of MORE THAN 3 NIGHTS.
+- **Nico always frames this to guests in nights, not days.**
+- **Shorter stays:** One set of bed linens + one set of towels for the duration. No change.
+- **Mid-stay requests outside the policy:** Guests can request an extra change during their stay as part of the paid extra cleaning service (€50, see Paid Services section).
 
 ### What Guests Should Know
 
@@ -264,9 +267,19 @@ Filter by walkability from Via Ambra (Vucciria + historic center) and by vibe re
 
 ## Paid Services (guests pay extra)
 
-- **Extra cleaning during stay:** €50 flat. Long stays only (Nico's discretion on when to offer). Guest messages Nico, Nico books the cleaning company.
-- **Cleaning company:** [NICO TO CONFIRM: company name, contact phone/email]
+- **Extra cleaning during stay:** €50 flat. Long stays only (Nico's discretion on when to offer). Guest messages Nico, Nico arranges the cleaning.
 - **Mid-stay linen + towel change:** Part of the extra cleaning service above.
+
+### Who actually cleans (INTERNAL ONLY — never shared with guests)
+
+The "cleaning company" referred to in guest-facing communication is Nico's mom (primary) and Nico's grandma (supports). There is no third-party cleaning company.
+
+**Why Nico uses the "cleaning company" framing with guests:**
+- Enforces the no-luggage-storage policy credibly ("the cleaning company uses strong soaps and doesn't want luggage around")
+- Keeps a professional distance from guests on operational decisions
+- Gives Nico a neutral third party to reference when declining requests
+
+**Rule for PM:** When replying to guests on Nico's behalf, always maintain the "cleaning company" framing. Never reveal it is family. If a guest asks follow-up questions about the company (name, contact, schedule), deflect with generic phrasing ("our cleaning service handles it on a fixed schedule, I coordinate everything on their behalf").
 
 ## Apps to Recommend to Guests
 
@@ -297,12 +310,15 @@ Marika and Mary are NEVER shared with guests. They're internal fallbacks for whe
 |---|---|---|---|---|
 | — | — | — | — | First guest arrives Apr 26, 2026. No maintenance history yet. |
 
+## Mail & Packages
+
+- **Intercom label / surname on file:** Barcellona
+- **Mailbox:** None. The building has no mailbox for this apartment.
+- **Package delivery:** Couriers buzz the intercom at "Barcellona." If guest is home, they receive directly. If not, courier handling depends on the delivery service — no building-level mailbox to fall back on.
+- **What to tell guests expecting a package:** Use the surname "Barcellona" on any address / intercom instruction, and plan to be home for delivery.
+
 ## Items Flagged for Nico
 
-- [NICO TO CONFIRM] Cable / satellite TV — is there any beyond smart TV apps?
-- [NICO TO CONFIRM] Exact towel change threshold (stays of 5 / 6 / 7 days?)
-- [NICO TO CONFIRM] Cleaning company name and contact details
-- [NICO TO CONFIRM] Mail / packages delivery: where do they get left? Intercom? Building mailbox?
 - [NICO TO CONFIRM] Via Divisi 101 start date (for the Properties Index — back-filled in Phase 4)
 
 ---
