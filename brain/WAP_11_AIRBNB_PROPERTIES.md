@@ -1,6 +1,6 @@
 # WAP_11_AIRBNB_PROPERTIES.md — Airbnb Properties Master File
 
-Last updated: April 23, 2026 (Task 1.2 session: desk in bedroom, 4-seat dining table in living room, soundproof French windows, fiber-optic internet)
+Last updated: April 23, 2026 (Phase 1 session: contacts promoted to guest-facing, airport transport updated with Uber + shuttle frequency + Via Roma 268 + shared-taxi payment flow, train removed, Lime specified, plumbing warnings added, leave-apartment rule added, damages charging policy codified)
 
 ---
 
@@ -130,9 +130,9 @@ When the PM agent replies to a guest message on Nico's behalf, the PM reads this
 - If they want fresh ones during their stay, they can request the paid cleaning service
 - Extra sets are in the walk-in closet if they want to swap themselves
 
-## Electrical System — Critical Known Quirk
+## Electrical System — Known Quirk
 
-**The apartment trips the breaker if too many high-draw appliances run simultaneously.** This is the #1 preventable guest issue and needs to be communicated clearly upfront.
+Nico had the electric company upgrade the meter, so the apartment handles more appliances than a typical historic-building setup. That said, running too many heavy appliances simultaneously can still trip the breaker. This is the #1 preventable guest issue — the heads-up goes in both the apartment handbook and the Airbnb House manual, but framed as a practical tip, not a drama.
 
 ### Appliances that will blow the circuit if combined
 
@@ -162,6 +162,14 @@ Run ONE high-draw appliance at a time. Wait for it to finish before starting ano
 
 If a guest mentions they're planning to do laundry and cook a big meal, proactively remind them: one heavy appliance at a time.
 
+## Plumbing Warnings (guest-facing)
+
+**Sink and dishwasher:** no leftover food goes in the sink or the dishwasher. The pipes clog. Guests must scrape plates into the trash first.
+
+**Toilet:** only toilet paper. No food scraps, no wipes, no feminine products, no anything else. The plumbing in the building is historic and unforgiving.
+
+These warnings are in the apartment handbook with red-emphasis formatting.
+
 ## Shower Drain — Known Quirk
 
 - The shower has a gray metal drain cover on the floor (a small flat grate).
@@ -186,6 +194,15 @@ If a guest mentions they're planning to do laundry and cook a big meal, proactiv
 - **Why:** Palermo wind is serious, especially in autumn and winter. Open shutters in wind = slamming, noise, potential damage, neighbor complaints.
 - **Non-negotiable rule.** Include in both the Guidebook and the pre-arrival messages.
 
+## When Guest Leaves the Apartment (every time, not just check-out)
+
+This is a rule guests must follow every time they leave the apartment for the day, not only at check-out:
+- Close the shutters and windows
+- Turn off the AC
+- Turn off the lights
+
+Reasoning (for guest-facing framing): Palermo wind + sun cause real damage to an apartment left open. Energy costs also relevant but not the lead reason given to guests.
+
 ## Noise
 
 - **Bedroom:** Located in the inner part of the apartment. Silent. Zero street noise at night. Great for sleeping regardless of what's happening outside.
@@ -208,6 +225,16 @@ If a guest mentions they're planning to do laundry and cook a big meal, proactiv
 - **Decorations and decorative items:** Do NOT handle or move. They are not for guest use. If broken or missing, damage claim.
 - **Late check-out:** Not allowed unless pre-arranged and confirmed in writing by Nico.
 - **Damage reporting:** Any damage or breakage must be reported to Nico immediately via Airbnb message. Not optional. This protects the guest (accidents happen, transparency = no dispute) and protects Nico.
+
+### Damages / Loss / Extreme Dirt — Charging Policy (guest-facing)
+
+Nico will file an Airbnb claim and charge for:
+- Damage to the apartment, furniture, or appliances
+- Missing items (including books from the shelf)
+- Apartment left in extreme condition at checkout → extra cleaning fee
+- **Lost keys** → replacement cost is on the guest
+
+This policy is stated clearly in the apartment handbook. Framed direct but not aggressive.
 
 ## Legal / Registration (Italian law)
 
@@ -233,24 +260,31 @@ If a guest mentions they're planning to do laundry and cook a big meal, proactiv
 
 ## Airport Transport
 
-Options for airport-to-apartment (and reverse), ranked by Nico's recommendation:
+Airport arrivals area: all transport options are outside the arrivals exit, turn RIGHT, impossible to miss, signs everywhere.
+
+Options ranked by Nico's recommendation:
 
 1. **Prestia e Comandé shuttle bus:** €6.30
-   - Nearest stop: Vucciria stop on Via Roma (same stop as Via Divisi)
+   - Runs every 30 minutes
+   - Nearest stop for Via Ambra: "Vucciria" stop on Via Roma 268 (same stop as Via Divisi)
    - Walk from stop to apartment: ~2 minutes (use Google Maps)
    - Tickets: prestiaecomande.it/en or directly at the bus stop
 
 2. **Shared taxi:** €8
-   - Same stops as the shuttle but faster
-   - Guest tells the driver they want to get off at "San Domenico" or "Rinascente store" (both are the same area near the apartment)
+   - Lined up one after another at the airport, leave constantly, no booking
+   - Guest pays the driver at the end of the ride
+   - Guest tells the driver they want to get off at "San Domenico" or "Rinascente store"
+   - Faster than the shuttle
 
-3. **Train:** From Palermo airport to Palermo Centrale, then walk ~15-20 min or taxi
-   - Slower than bus or shared taxi
-   - Generally not recommended unless guest has a preference for trains
+3. **Regular private taxi:** ~€45-50
+   - Available at arrivals exit, no booking needed
+   - Reservations: +39 091 6878
+   - Fastest, most comfortable, most expensive
 
-4. **Regular private taxi:** +39 091 6878
-   - Cost: ~€45-50
-   - Fastest and most comfortable, most expensive
+4. **Uber:** ~€45-50 (similar to private taxi)
+   - Order from the Uber app once landed
+
+**Train option removed from guest-facing recommendations** (slower, less convenient than shuttle or shared taxi; only mention if guest specifically asks).
 
 ## Groceries / Pharmacy Nearby
 
@@ -284,26 +318,28 @@ The "cleaning company" referred to in guest-facing communication is Nico's mom (
 
 ## Apps to Recommend to Guests
 
-- **Moovit** — local bus routes
+- **Moovit** — local bus routes (better than Google Maps for Palermo public transport)
 - **Google Maps** — walking and driving navigation
-- **Lime or Bird** — e-scooter rides
+- **Lime** — e-scooter rides (Lime is the dominant/best one in Palermo; skip Bird)
 - **Glovo / Just Eat** — food delivery
 
 ## Tap Water
 
 Technically safe to drink. Most Palermitani buy bottled water out of habit and skepticism of the public system. Guests are fine to drink from the tap but won't be surprised to see locals buying bottled.
 
-## Emergency Contacts (INTERNAL ONLY — never shared with guests)
+## Contacts (guest-facing)
 
-- **Nico (host, guest-facing WhatsApp):** +39 328 66 83 801
-- **Marika (Nico's sister, internal backup when Nico is traveling for work):** +39 328 188 2839
-- **Mary (Nico's mother, internal backup):** +39 328 939 7393
+All three numbers appear in the apartment handbook. Names only, no relationship labels to guests.
 
-**Guest-facing escalation path:**
-1. Airbnb messaging (default)
-2. WhatsApp +39 328 66 83 801 for genuine emergencies only
+- **Nico:** +39 328 66 83 801
+- **Marika:** +39 328 188 2839
+- **Mary:** +39 328 939 7393
 
-Marika and Mary are NEVER shared with guests. They're internal fallbacks for when Nico is on a flight or otherwise unreachable.
+**Guest-facing escalation path in messaging:**
+1. Airbnb messaging (fastest, default)
+2. WhatsApp on any of the three numbers for emergencies
+
+**Internal note (do NOT share with guests):** Marika is Nico's sister, Mary is Nico's mother. Relationship labels are NEVER shared with guests — the handbook lists names and numbers only. This is by design: professional distance + backup coverage when Nico is traveling, without disclosing family structure.
 
 ## Maintenance Log
 
