@@ -1,6 +1,6 @@
 # WAP_11_AIRBNB_PROPERTIES.md — Airbnb Properties Master File
 
-Last updated: April 22, 2026 (evening update: door clarification, cable TV confirmed, linen change policy in nights, cleaning context internalized, mail/packages resolved)
+Last updated: April 23, 2026 (Task 1.2 session: desk in bedroom, 4-seat dining table in living room, soundproof French windows, fiber-optic internet)
 
 ---
 
@@ -47,7 +47,8 @@ When the PM agent replies to a guest message on Nico's behalf, the PM reads this
 
 - **Bedrooms:** 1 bedroom with a double bed
 - **Bathrooms:** 1 bathroom, which also contains the washing machine
-- **Living area:** Yes. Contains a sofa bed (not yet promoted — max 2 guests officially until terrace + sofa bed are rolled out as an upgrade)
+- **Living area:** Yes. Contains a sofa, a dining table that seats 4, and a sofa bed (not yet promoted — max 2 guests officially until terrace + sofa bed are rolled out as an upgrade). French windows open to the balcony — they are soundproof.
+- **Workspace:** There is a desk in the BEDROOM for laptop work (not in the living room).
 - **Balcony:** 1 balcony off the living room. Has a clothesline for drying laundry. Smoking is allowed here only.
 - **Walk-in closet (cabina armadio):** Accessed through a door inside the bedroom. Contains extra linens and towels (see Linens & Towels section).
 - **Max guests (officially promoted):** 2
@@ -58,6 +59,7 @@ When the PM agent replies to a guest message on Nico's behalf, the PM reads this
 
 - **Network name:** TIM-83331226
 - **Password:** f7yEtfsy3F7FH94ufeYCkc65
+- **Connection type:** Fiber-optic broadband.
 - Guest can connect any number of devices. No restrictions.
 - Coverage is strong throughout the apartment including the balcony.
 
@@ -186,9 +188,8 @@ If a guest mentions they're planning to do laundry and cook a big meal, proactiv
 
 ## Noise
 
-- **Bedroom:** Located in the inner part of the apartment. Silent. Zero street noise. Great for sleeping regardless of what's happening outside.
-- **Living room:** Windows face the street. If open during peak hours (evenings, weekends), some Vucciria nightlife noise is audible.
-- **Closing the French windows** handles it completely. Windows are well-built and soundproof enough.
+- **Bedroom:** Located in the inner part of the apartment. Silent. Zero street noise at night. Great for sleeping regardless of what's happening outside.
+- **Living room:** French windows face the street and are soundproof. Open = some Vucciria nightlife noise audible during peak hours. Closed = street noise cut out completely.
 - **Recommendation:** Not necessary to proactively warn guests. Only mention if a guest asks about noise.
 
 ## Laundry (guest-facing)
