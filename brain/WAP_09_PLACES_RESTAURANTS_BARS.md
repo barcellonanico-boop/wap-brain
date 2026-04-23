@@ -136,6 +136,7 @@ Follow SOP_04_Add_Restaurant_To_Bank.md (written in Phase 2). In summary:
 | R041 | Enoteca Picone | Wine Bar | Via Guglielmo Marconi | €€€ | Charcuterie board + wine | B | Apr 21, 2026 |
 | R042 | Farmacia Alcolica | Cocktail Bar | Via Alloro | €€ | Cocktails + charcuterie | B | Apr 21, 2026 |
 | R043 | Ai Bottai | Aperitivo / Live Music | Via Bottai | €€ | Aperitivo platter (7-8€ add) | B | Apr 21, 2026 |
+| R044 | Battiloro | Trattoria / Live Music | Near Via Maqueda, Historic Center | €€ | [VERIFY] | A | Apr 23, 2026 |
 
 ---
 
@@ -1085,6 +1086,37 @@ Cute and quirky spot right in the heart of the city's nightlife scene. Tasty coc
 **Nico's Take:**
 
 Overlooks the historic Vittorio Emanuele street. Lively vibe, often with live music. Unique energy — not your generic bar. Pay the €7-8 add-on to your first cocktail, they bring the generous platter. Pasta, bruschettas, all of it.
+
+---
+
+### R044 — Battiloro
+
+- **Category:** Trattoria / Live Music Venue
+- **Area:** Historic Center, approximately 100m from Via Maqueda
+- **Address:** [VERIFY — Nico to fill exact address]
+- **Google Maps:** https://www.google.com/maps/search/?api=1&query=Battiloro+Restaurant+Palermo
+- **TripAdvisor:** [VERIFY TA URL]
+- **Tags:** palermo-historic-center, sicilian-traditional, casual, family, live-music, weekend-entertainment, rule-following, safe-bet, dinner, lunch, aperitivo
+- **Price:** €€ [VERIFY]
+- **Must-try:** [VERIFY — Nico to fill specialties]
+- **Best for:** Weekend dinner with live music, aperitivo, diners who want a legit rule-following establishment with character
+- **Recommended by:** Nico personal (walkable from apartment, trusted neighborhood spot)
+- **Last visited:** [VERIFY — recent, Nico references it as still active]
+- **Status:** Active
+
+**Nico's Take:**
+
+One hundred meters from my apartment. Good people, rules followed to the minute. Live music on weekends. You know when they can start playing? Sunday, 4pm. Not 3:59. 4pm. One minute early, the cops teleport in.
+
+While unlicensed venues in the Vucciria blast music from breakfast until dawn with zero interference, Battiloro follows every regulation to the letter. That's the kind of place they run. Compliance is their thing.
+
+The irony: that compliance is exactly why Battiloro gets policed while Vucciria's rule-breakers don't. The cops go where the rules get followed, because that's where fines come easy.
+
+None of this is Battiloro's fault. They run a good place. Go eat there. Enjoy the music. Just be aware it starts at 4pm on Sunday, not one minute earlier.
+
+**Related Story:** Battiloro appears in S007 (A Pony Race at the Cathedral) as the rule-following contrast against the Vucciria unlicensed venues. Story file: brain/stories/S007_pony_race_cathedral.md
+
+**Flag for [VERIFY] fields:** Nico needs to fill exact address, must-try dishes, confirmed price tier, and last visited date. These were not captured in the initial entry because Battiloro was added as a cross-reference to S007, not from a standalone brain-dump session. Capture these details in a future brain-dump session.
 
 ---
 

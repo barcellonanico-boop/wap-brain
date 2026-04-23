@@ -242,6 +242,41 @@ One story per file scales. Individual edits don't conflict. The agent loads only
 
 ---
 
+### S007 — A Pony Race at the Cathedral
+
+- **File:** [stories/S007_pony_race_cathedral.md](stories/S007_pony_race_cathedral.md)
+- **Word count:** ~620
+- **Voice Mode:** Mode A
+- **Tags:** palermo-chaos, palermo-safety, police-and-government, daily-life, sicilian-mentality, rules-and-enforcement, historic-center, comic-anecdote, lawlessness-paradox, quattro-canti, vucciria, teatro-massimo, cattedrale-palermo, named-business, stats-to-verify, mode-a
+- **Themes:** Cops as ghosts/cowards, enforcement targets the compliant not the rule-breakers, Palermo is safe despite zero enforcement, humans without rules paradox, lawlessness-paradox thesis (sister to S006)
+- **Pairs with:** S006 (Fiat Panda) — sister story. S006 shows cops don't come. S007 shows what they do instead (hang out at bars, fine grandmas).
+- **Use when writing about:**
+  - Is Palermo safe despite visible chaos
+  - Why the historic center feels lawless but isn't dangerous
+  - Police presence and enforcement behavior
+  - Daily life in the center / cultural quirks
+  - "Palermo is safer than it looks" angle
+  - YouTube intro requiring a visual-punchy hook (pony at cathedral)
+  - Long-form anecdote format for Substack or YouTube
+  - "Is Palermo Safe?" post / pillar page section
+- **Pullable hooks:**
+  - "In Palermo, the question is never 'where are the police.' The question is, 'are there police?'"
+  - "Three police cars out front, four cops inside eating cornettos"
+  - "They fine the grandma who parked two inches over the line"
+  - "The Vucciria has people who argue. Battiloro has people who pay."
+  - "It's not the Sicilians. It's the guys standing in the circle."
+- **Core observations:**
+  - Palermo cops don't patrol, they cluster at bars or condo-meeting-style groups
+  - Enforcement targets the compliant (grandma, Battiloro) because they pay without arguing
+  - Cops avoid Vucciria because people there argue
+  - Italy has more cops per capita than Germany, USA, Finland
+  - Despite zero visible enforcement, Palermo remains safe
+  - The chaos narrative is a cop problem, not a Sicilian problem
+- **Named businesses:** Battiloro restaurant. See WAP_09 entry R044. If pulling into free content, swap for generic reference ("a restaurant near my apartment"). The Battiloro vs. Vucciria contrast is the engine of the bit — preserve the contrast logic even when genericizing the name.
+- **Stats to verify:** Italy 398/100k, EU avg 318, Germany 301, USA 240, Finland 136 (Eurostat/FBI 2018-2020 data). Numbers are 5+ years old. Re-verify before publishing.
+
+---
+
 ## Gap List — Stories to Capture
 
 Priority stories the Copywriting agent wishes existed:
