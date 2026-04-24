@@ -20,13 +20,19 @@
 
 ## Phase 2 — Content SOPs and Prompts
 
-- [ ] 2.1 Write SOP_01_Update_Existing_Post.md — step by step: pull post from WordPress, run AI rewrite prompt (embedded here), SEO/AIO check, Nico review, republish, update inventory [PM + Copywriting] [Est: 75 min | Actual: __ ]
+- [x] 2.1 SOP_01 Update Existing Post drafted (v1.1). 8-step workflow (Intake → Prep → Rewrite → Fact Check → Nico Review → Revision → Images → Publish). School C revision philosophy locked. Reference-by-pointer to WAP_05/06/08/10/12/13 instead of duplicating content. Named business rule enforced via WAP_08 flag system. Monitoring at 6-week mark. Phase 3 validation: test on /where-to-stay-palermo/. 6 follow-on tasks identified (2.7 Scout, 2.8 Image Agent, 2.9 Affiliate Verification SOP, WAP_12 build, WAP_13 build, WAP_10 expansion). [PM] [Est: 75 min | Actual: 115 min]
 - [ ] 2.2 Write SOP_02_Create_New_Post.md — step by step: keyword/topic input, run AI draft prompt (embedded here), Nico review, images, WordPress publish, update inventory [PM + Copywriting] [Est: 75 min | Actual: __ ]
 - [ ] 2.3 Write SOP_03_Add_Story_To_Bank.md — how Nico brain-dumps a story, how agent formats and tags it, how it gets added to WAP_08 [PM] [Est: 30 min | Actual: __ ]
 - [x] 2.0 Google Search Console audit: export performance data for all 77 posts, assign LOSING / RANKING / OUTDATED / EVERGREEN status, update WAP_04_CONTENT_INVENTORY.md [Architect] [Est: 60 min | Actual: 35 min] — DONE. Full GSC export analyzed: 109 pages classified. 12 P1 urgent (high decline + revenue-critical), 6 P2, 18 P3, 30 P4, 43 healthy. Site-wide: +16% QoQ (misleading) but -17% YoY (real trend). Key finding: 10 of 12 P1 posts still rank top 10 — decline is CTR collapse from AI Overview cannibalization, not ranking demotion. Results saved to 06_GSC_Audit_Results.md. SOP_01 test sequence recommended: where-to-stay → parking → taormina.
 - [ ] 2.4 Define the weekly content cadence — posts updated per week, new posts per week, what Nico must touch vs. what runs without him [PM + Nico] [Est: 30 min | Actual: __ ]
 - [ ] 2.5 Document cadence in WAP_07_CONTENT_CADENCE.md [PM] [Est: 20 min | Actual: __ ]
 - [ ] 2.6 Commit and push. Update project knowledge. [Architect] [Est: 10 min | Actual: __ ]
+- [ ] 2.7 Build WAP Scout agent — fact verification specialist (web search + web fetch tools, VERIFIED/DISPUTED/UNVERIFIABLE output format, source citations). Required before Phase 3 SOP_01 test run. [PM + Architect] [Est: 45 min | Actual: __ ]
+- [ ] 2.8 Build WAP Image Agent — image sourcing, AI generation, editing, alt text, library management. Until this exists, SOP_01 Step 6.5 is manual (Nico). [PM + Architect] [Est: 60 min | Actual: __ ]
+- [ ] 2.9 Write SOP_05_Verify_Affiliate_Links.md — monthly verification of all links in WAP_12. [PM] [Est: 30 min | Actual: __ ]
+- [ ] 2.10 Create WAP_12_AFFILIATE_LINKS.md — registry of canonical affiliate URLs (Booking.com hotels, GetYourGuide tours, Discover Cars pickup points, Parclick). Each entry: name, area, short description, affiliate link, last-verified date. Required before Phase 3. [PM + Nico] [Est: 45 min | Actual: __ ]
+- [ ] 2.11 Create WAP_13_GSC_AUDIT_LATEST.md — living Brain doc for latest GSC audit data. Migrate April 21 findings from projects/06_GSC_Audit_Results.md into evergreen Brain doc. Original project file stays as frozen snapshot. Required before Phase 3. [PM + Architect] [Est: 30 min | Actual: __ ]
+- [ ] 2.12 Expand WAP_10 scope to cover experiences, monuments, rituals, and combo moves. Add sections for: (Tier 1) affiliate-monetized experiences [current content], (Tier 2) monuments and places to see, (Tier 3) free cultural experiences and rituals, (Tier 4) Nico combo moves (e.g., Santa Caterina cannolo + cloister). Rename doc if scope change warrants. [PM + Nico] [Est: 45 min | Actual: __ ]
 
 ## Phase 3 — Test Run
 

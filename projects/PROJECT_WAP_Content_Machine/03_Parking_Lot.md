@@ -35,3 +35,5 @@
 ## Process Flags
 
 - **Apr 22, 2026 — SOP_03 gap exposed.** Copywriting agent produced a Story Bank prompt with 10 invented tags that don't exist in the WAP_08 taxonomy (e.g., palermo-chaos, via-maqueda, rules-and-enforcement, comic-anecdote). PM caught and corrected before Claude Code ran. This will keep happening on every new story intake until SOP_03_Add_Story_To_Bank.md is written (Task 2.3 in Phase 2). SOP must explicitly require the agent to reference the existing tag taxonomy in WAP_08 and only propose new tags via the Parking Lot, never invent them inline. Priority: elevate 2.3 when Phase 2 starts.
+
+| Apr 24, 2026 | Task 2.4 (cadence) sequence reversal | Originally planned BEFORE SOPs. Nico correctly argued cadence depends on SOP execution speed, which is unknown until SOP_01 runs. Task 2.4 now happens AFTER Phase 3 test run, not before. |
