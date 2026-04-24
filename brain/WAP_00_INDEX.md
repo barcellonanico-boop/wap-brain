@@ -33,7 +33,7 @@ Read this first in every session to understand what exists and where to find it.
 |---|---|---|
 | SOP_01_Update_Existing_Post.md | Full workflow for updating an existing blog post with AI: pull from WordPress, rewrite prompt, SEO/AIO check, Nico review, republish, update inventory. | Every time an existing post needs updating. |
 | SOP_02_Create_New_Post.md | Full workflow for creating a new blog post with AI: keyword/topic input, draft prompt, Nico review, images, publish, update inventory. | Every time a new post is created. |
-| SOP_03_Add_Story_To_Bank.md | How Nico brain-dumps a story, how the agent formats and tags it, how it gets added to WAP_08_STORY_BANK.md. | Every time Nico wants to add a story, anecdote, or observation to the bank. |
+| SOP_03_Add_Story_To_Bank.md | Two-stage workflow: Stage 1 the Story Agent crafts a raw dump into a 250-350 word bit in Nico's voice; Stage 2 same agent runs dedupe scan, strict-taxonomy tag assignment, named-business check, stats flag, bidirectional pairs-with check, voice mode confirmation. Drafts story file + index row, surfaces for Nico approval, Claude Code writes and pushes. | Every time Nico wants to add a story to the Bank. See SOP for when NOT to use (one-liners, near-duplicates, recommendation-only content). |
 
 ---
 

@@ -15,6 +15,9 @@
 | Apr 19, 2026 | robots.txt check for AI crawlers | Verify GPTBot, Google-Extended, PerplexityBot not blocked. 5-minute Architect task. |
 | Apr 19, 2026 | WordPress schema plugin verification | Rule 3.5 requires it. Nico must confirm if RankMath or Yoast is installed. |
 | Apr 21, 2026 | Batch populate TripAdvisor URLs in WAP_09 | All Tier B entries (~32) and some Tier A flagged [VERIFY TA URL]. Needs ~30 min batched Architect session: web search each restaurant on TripAdvisor, paste URL, commit. Pre-requisite before WAP_09 can be used for paid products. |
+| Apr 24, 2026 | Retroactive audit of S001-S007 against new SOP_03 story file template | Existing stories were created before SOP_03 existed. May have missing metadata fields (Goal, Source, Date captured, full tag categories, Pairs with). One-time sweep to bring into line. Low priority but worth doing before Story Bank scales beyond ~15 entries. |
+| Apr 24, 2026 | S006 Fiat Panda trim pass | Flagged as too long during Story Bank refactor. SOP_03 word-count discipline (250-350, 400 cap) doesn't apply retroactively, but S006 specifically deserves a trim pass to match the bank's new standard. |
+| Apr 24, 2026 | Multi-story voice memo handling | If Nico records a single memo containing 3 distinct stories, does each go through SOP_03 independently? Implied yes, not explicitly specced. Address in v1.1 after first test run if it comes up. |
 
 ## Future Optimizations
 
@@ -31,6 +34,7 @@
 | Apr 19, 2026 | Where do your photos currently live? Google Drive, hard drive, something else? | Open — needed before asset project starts |
 | Apr 19, 2026 | Is the "free itinerary" lead magnet a PDF? Where does it live and what does it contain? | Open — needed before any funnel work |
 | Apr 19, 2026 | Which WordPress schema plugin is installed on wearepalermo.com? RankMath, Yoast, something else, or none? | Open — blocks proper implementation of Task 1.10 Rule 3.5 |
+| Apr 24, 2026 | Where does the Story Agent live long-term? Claude chat (re-paste prompt each time), dedicated Claude project (persistent), or Claude Code setup? Doesn't block first test run but worth deciding before Story Bank scales. | Open |
 
 ## Process Flags
 
