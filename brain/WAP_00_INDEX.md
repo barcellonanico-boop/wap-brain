@@ -23,6 +23,7 @@ Read this first in every session to understand what exists and where to find it.
 | WAP_09_PLACES_RESTAURANTS_BARS.md | Indexed, tagged list of Palermo restaurants and bars Nico recommends. Includes notes, category tags, last updated date. | When writing content that references where to eat or drink. | When Nico visits somewhere new or a place closes/changes. |
 | WAP_10_PLACES_EXPERIENCES.md | Indexed, tagged list of Palermo experiences and things to do. Same structure as WAP_09. | When writing content about activities, tours, or what to do in Palermo. | When Nico discovers something new or an experience changes. |
 | WAP_11_AIRBNB_PROPERTIES.md | Master source of truth for Nico's Airbnb properties (Via Ambra 11, Via Divisi 101). All property facts, quirks, rules, procedures, and internal contacts. Guest-facing materials are derived from this doc. | Before replying to any guest message, before generating any guest-facing material (Guidebook, listing copy, pre-arrival message). | When any property fact changes — new wifi, new quirk, new cleaner, new maintenance event. |
+| WAP_12_AFFILIATE_LINKS.md | Canonical source for all affiliate URLs (Booking.com, GetYourGuide, Discover Cars, Parclick). Used by SOP_01/SOP_02/Copywriting when inserting monetization links. Also contains Direct Bookings section for Nico's own property. | When adding a new hotel/tour/rental partner, when verifying a link (monthly via SOP_05), when a link breaks. |
 
 ---
 
