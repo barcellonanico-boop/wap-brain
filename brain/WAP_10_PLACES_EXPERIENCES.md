@@ -75,11 +75,13 @@ Follow SOP_05_Add_Experience_To_Bank.md (written in Phase 2). In summary:
 
 **Time of Day:** `morning`, `afternoon`, `evening`, `night`, `weekends`, `daily`
 
-**Vibe:** `panoramic`, `gritty`, `chic`, `chaotic`, `peaceful`, `lively`, `locals-spot`, `tourist-heavy`, `dolce-vita`
+**Vibe:** `panoramic`, `gritty`, `chic`, `chaotic`, `peaceful`, `lively`, `locals-spot`, `tourist-heavy`, `dolce-vita`, `voice-mode-b`
 
 **Cost:** `free`, `low-cost`, `mid-range`, `expensive`
 
 **Avoid Reason:** `tourist-trap`, `overpriced`, `animal-welfare`, `ethical-concern`, `unregulated`
+
+**Heritage Theme:** `dark-history`, `anti-mafia`, `photogenic`
 
 ---
 
@@ -128,6 +130,29 @@ Follow SOP_05_Add_Experience_To_Bank.md (written in Phase 2). In summary:
 | E039 | Vucciria Nightlife | Cultural Ritual | Vucciria | 3 | Evening into night | No affiliate | Apr 26, 2026 |
 | E040 | Acchianata (Climb to Saint Rosalia Sanctuary) | Hiking / Religious Ritual | Monte Pellegrino | 3 | 2-3 hours round trip | No affiliate | Apr 26, 2026 |
 | E041 | Bar Breakfast Ritual (cornetto + caffè) | Cultural Ritual | Citywide | 3 | 15 min | No affiliate | Apr 26, 2026 |
+| E042 | Piazza Bellini (3-Church Square) | Monument / Walking | Historic Center | 2 | 30 min walk-by | No affiliate | Apr 26, 2026 |
+| E043 | San Cataldo (Three Red Domes) | Religious Site / Monument | Piazza Bellini | 2 | 20 min | No affiliate | Apr 26, 2026 |
+| E044 | Santa Caterina d'Alessandria + Monastery Roof | Religious Site / Panoramic | Piazza Bellini | 2 | 45-60 min | No affiliate | Apr 26, 2026 |
+| E045 | Palazzo Steri / Chiaramonte (Inquisition) | Monument / Dark History | Kalsa | 2 | 45 min guided tour | No affiliate | Apr 26, 2026 |
+| E046 | La Zisa Castle | Monument / Museum | Outside Historic Center | 2 | 1 hour | No affiliate | Apr 26, 2026 |
+| E047 | Duomo di Monreale | Religious Site / UNESCO | Monreale | 2 | Half-day | No affiliate | Apr 26, 2026 |
+| E048 | Capuchin Catacombs | Religious Site / Dark History | Outside Historic Center | 2 | 1 hour | No affiliate | Apr 26, 2026 |
+| E049 | Casa Professa (Chiesa del Gesù) | Religious Site / Baroque | Near Ballarò | 2 | 30-45 min | No affiliate | Apr 26, 2026 |
+| E050 | Oratorio di San Lorenzo | Religious Site / Baroque | Kalsa | 2 | 30-45 min | No affiliate | Apr 26, 2026 |
+| E051 | Church of the Immaculate Conception (al Capo) | Religious Site / Baroque | Capo Market Area | 2 | 20-30 min | No affiliate | Apr 26, 2026 |
+| E052 | San Giovanni degli Eremiti (Five Red Domes) | Religious Site / Photogenic | Near Palazzo dei Normanni | 2 | 30-45 min | No affiliate | Apr 26, 2026 |
+| E053 | Salinas Regional Archaeological Museum | Museum | Historic Center | 2 | 2 hours | No affiliate | Apr 26, 2026 |
+| E054 | Palazzo Abatellis (Regional Gallery of Sicily) | Museum / Art | Kalsa | 2 | 1-2 hours | No affiliate | Apr 26, 2026 |
+| E055 | Stanze al Genio (Majolica Tile Museum) | Museum / Private House | Historic Center | 2 | 1 hour guided tour | No affiliate | Apr 26, 2026 |
+| E056 | Orto Botanico (Botanical Garden) | Nature / Garden | South of Historic Center | 2 | 1-2 hours | No affiliate | Apr 26, 2026 |
+| E057 | Villa Giulia (Oldest Public Garden) | Nature / Garden | Next to Orto Botanico | 2 | 30-45 min | No affiliate | Apr 26, 2026 |
+| E058 | La Cala (Historic Harbor) | Waterfront | Historic Center | 2 | 30-45 min | No affiliate | Apr 26, 2026 |
+| E059 | Mura delle Cattive (Seafront Promenade) | Waterfront / Walking | Foro Italico to La Cala | 2 | 20-30 min | No affiliate | Apr 26, 2026 |
+| E060 | Mondello Beach | Beach | Mondello | 2 | Half-day to full-day | No affiliate (Discover Cars optional) | Apr 26, 2026 |
+| E061 | Qanats (Underground Arab Tunnels) | Monument / Adventure | Under the City | 2 | 1 hour guided tour | No affiliate | Apr 26, 2026 |
+| E062 | Falcone Tree (Albero Falcone) | Monument / Anti-Mafia | Via Notarbartolo | 2 | 15-20 min | No affiliate | Apr 26, 2026 |
+| E063 | Ponte dell'Ammiraglio (Admiral's Bridge) | Monument / UNESCO | Outside Historic Center (Oreto) | 2 | 15-20 min | No affiliate | Apr 26, 2026 |
+| E064 | Villino Florio all'Olivuzza (Art Nouveau) | Monument / Architecture | Olivuzza District | 2 | 30-45 min | No affiliate | Apr 26, 2026 |
 
 ---
 
@@ -1137,6 +1162,633 @@ If you want to breakfast like a true Palermitan, hit the local bar for a cornett
 Forget the Instagram fantasy of giant gelato at 8 AM. That's mostly Eastern Sicily, and even there it's granita with brioche, not gelato. Here in Palermo, your average local is starting their day at a bar with a cornetto and a strong espresso. That's the real traditional breakfast.
 
 Eat gelato whenever you damn well please — it's your vacation. But if you want to start your morning the real Palermitan way, this is it.
+
+---
+
+### E042 — Piazza Bellini (3-Church Square)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Monument / Walking
+- **Area:** Palermo Historic Center, next to Piazza Pretoria
+- **Duration:** 30 min walk-by, longer if entering churches
+- **Tags:** baroque, arab-norman, palermo-historic-center, year-round, free, easy, daily, history-buffs, photogenic
+- **Price:** Free to walk; church entries separate (see E029, E043, E044)
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** E029 La Martorana, E043 San Cataldo, E044 Santa Caterina d'Alessandria
+
+**Nico's Take:**
+
+Showcase of Palermo's layered past, packed into one square next to Piazza Pretoria. Three churches, three completely different styles, three different stories.
+
+La Martorana with its Byzantine gold mosaics. San Cataldo with its three red Arab-Norman domes. Santa Caterina d'Alessandria with its Sicilian Baroque marble explosion inside. All within thirty meters of each other.
+
+You can do this whole square in a focused half-day if you enter all three churches. Or a quick 20-minute walk-by if you just want the visuals.
+
+If you only have an hour to "feel" Palermo's mixed cultural heritage in one spot, this is the spot.
+
+---
+
+### E043 — San Cataldo (Three Red Domes)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Monument
+- **Area:** Piazza Bellini, Palermo Historic Center
+- **Duration:** 20 min
+- **Tags:** religious-site, arab-norman, unesco, palermo-historic-center, year-round, history-buffs, daily, low-cost, photogenic
+- **Price:** [VERIFY — small entry fee]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+Pure Arab-Norman style. You can't miss its look — those three distinctive red domes? They're on every Palermo postcard for a reason.
+
+Super simple inside compared to its neighbor La Martorana. But incredibly atmospheric visually. The simplicity is the point. Bare stone, Arab geometric influence, nothing fancy.
+
+Right next door to La Martorana (E029), so do them together. Five minutes to walk through, but the exterior is what most people remember.
+
+---
+
+### E044 — Santa Caterina d'Alessandria + Monastery Roof
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Panoramic
+- **Area:** Piazza Bellini, Palermo Historic Center
+- **Duration:** 45-60 min (church + monastery roof)
+- **Tags:** religious-site, baroque, palermo-historic-center, year-round, panoramic, daily, mid-range, history-buffs
+- **Price:** [VERIFY — combined ticket if available; roof access usually a separate small fee]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** E021 Cannolo at Monastero di Santa Caterina (different aspect of same complex — the cannolo experience is in the monastery garden / cloister)
+
+**Nico's Take:**
+
+Pure Sicilian Baroque visual madness inside. Marble everywhere, intricate stucco, paintings. Almost overwhelming to look at.
+
+The roof is the underrated win. You climb up, you get city views you don't get from anywhere else in this part of the historic center. Quattro Canti, Pretoria Fountain, the rooftops sprawling out — all from one terrace.
+
+This is the same monastery complex where the nuns make the cannoli (see E021). The church is the entry point into a much bigger complex. If you do the cannolo experience, also do the church and the roof while you're there. Combined ticket if available — saves a few euro and some hassle.
+
+---
+
+### E045 — Palazzo Steri / Chiaramonte (Inquisition Prisons)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Monument / Dark History
+- **Area:** Kalsa (Piazza Marina)
+- **Address:** Piazza Marina, 61, Palermo
+- **Duration:** 45 min guided tour
+- **Tags:** monument, palermo-historic-center, history-buffs, dark-history, daily, mid-range, voice-mode-b
+- **Price:** [VERIFY — guided tour ticket]
+- **Hours:** [VERIFY — tours run hourly typically]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Voice Mode:** B (heavy topic — Inquisition torture, cultural wound)
+
+**Nico's Take:**
+
+The powerful Chiaramonte family built Palazzo Steri in 1307 to show off, but forget them. The reason you gotta see this is from 1600 to 1782. That's when the Holy Inquisition set the palace as its official seat and chamber of horrors.
+
+Yeah, those fanatic nuts in the Christian church with government authority to grab anyone they considered sinners or heretics, without evidence, dump them in prison, and torture them to death.
+
+Imagine living then: you're buying artichokes, someone accuses you, BAM. You're grabbed, thrown in a cage, and whipped until you vomit your soul.
+
+The Palace became a prison, with cells like shitty little mouse cages. Compared to these, a pigpen was a Four Seasons hotel. But here's the incredible part. The prisoners refused to lose hope.
+
+Stuck between tortures, full of fear, anger, desperation, with no shrink to talk to, what did they do? They pulled off the Michelangelo inside them. You gotta see the striking graffiti covering the walls, created 400-500 years ago. Painted with biological materials. Yes, biological materials. Blood, body fluids, crap, and other mysterious elements only God knows about.
+
+Seeing this stuff really makes you understand just how cruel these Inquisition folks were, doing it all in the name of God. These lunatics were in power for centuries. History shows us the jerks have always been in charge, eh?
+
+I won't lie, it might leave you a little scarred seeing the cells and knowing the story. But seeing that graffiti? Seeing how people found hope and expressed themselves even in that hell? It's powerful. One of my favorites. Don't miss it.
+
+To see the graffiti and prisons, you must take the guided tour. Hourly, takes about 30-45 minutes. You can't tour this part by yourself. It's the only way.
+
+---
+
+### E046 — La Zisa Castle
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Monument / Museum
+- **Area:** Outside historic center (north Palermo)
+- **Duration:** 1 hour
+- **Tags:** monument, unesco, arab-norman, palermo-city, year-round, history-buffs, daily, mid-range, photogenic
+- **Price:** [VERIFY — entry fee]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** Combine with E048 Capuchin Catacombs (nearby)
+
+**Nico's Take:**
+
+A bit further out, but visually worth seeing.
+
+La Zisa was built in 1165 by the Norman King William I (called "The Bad," known for being a party boy). It's another gem of Arab-Norman architecture and a UNESCO site. The name "Zisa" comes from Arabic El-Aziz, meaning "magnificent." That was William's goal.
+
+Quite different from other palaces — geometric, elegant. Cooling fountains, clever ventilation, reflecting pools. Designed to look cool and functional. Different visual vocabulary than anything else in Palermo.
+
+Inside, there's a small museum of Islamic art. The main hall shows how the Norman court blended Arabic aesthetics with Norman power. There's also a legend about hidden treasure protected by painted devils on the walls.
+
+Combine a visit with the nearby Capuchin Catacombs (E048). Bring a guidebook or audio guide — info on site is limited, and context makes it much more interesting than just looking at stones.
+
+---
+
+### E047 — Duomo di Monreale
+
+- **Tier:** 2 (no direct affiliate; Tier 1 combined Monreale + Cefalù tour exists, see Master Index)
+- **Category:** Religious Site / UNESCO
+- **Area:** Monreale (hill town outside Palermo)
+- **Duration:** Half-day (including travel from Palermo, cathedral, cloister, lunch)
+- **Tags:** religious-site, unesco, arab-norman, monreale, year-round, first-timers, history-buffs, daily, mid-range, panoramic
+- **Price:** [VERIFY — cathedral entry, separate ticket for cloister]
+- **Hours:** [VERIFY — restricted during services]
+- **How to get there:** AST bus from Palermo Piazza Indipendenza, taxi, rental car, or combined day-trip tour
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Existing WAP article:** https://wearepalermo.com/news/visit-cathedral-of-monreale/
+- **Cross-reference:** Existing Tier 1 combined Monreale + Cefalù day tour available
+
+**Nico's Take:**
+
+Visually jaw-dropping. An anticipation of Paradise, as art historian Bernard Berenson (and my grandma) said.
+
+It's a UNESCO church built in 1174 by King William II after Madonna appeared in his dream.
+
+Why go? Mosaics. Acres of them. Over 6,400 shiny golden mosaic tiles covering almost every inch of the interior. Visual scenes from the Old and New Testaments, like pages from an adorned children's book. Culminating in a gigantic Christ Pantocrator in the apse that hugs visitors with open arms. Visually overwhelming.
+
+The cloister next door is also stunning visually. 228 twin columns, each uniquely decorated, surrounding a peaceful garden with a Moorish fountain.
+
+Yes, it's a short bus or taxi ride. Just go see it. No excuses. It's worth half a day easily. Get the audio guide there or bring your own info to understand the stories in the mosaics. The sheer scale and visual beauty are unforgettable.
+
+If you want to combine with Cefalù in one day, the existing combined tour is a popular and efficient option.
+
+---
+
+### E048 — Capuchin Catacombs
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Dark History
+- **Area:** Outside historic center (Capuchin monastery)
+- **Address:** Piazza Cappuccini, 1, Palermo
+- **Duration:** 1 hour
+- **Tags:** religious-site, palermo-city, year-round, dark-history, history-buffs, daily, low-cost
+- **Price:** [VERIFY — entry fee, photos forbidden]
+- **Hours:** [VERIFY]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Existing WAP article:** https://wearepalermo.com/news/capuchin-catacombs/
+- **Cross-reference:** Combine with E046 La Zisa (nearby)
+
+**Nico's Take:**
+
+Prepare yourself visually. This one's not for the squeamish. Maybe more like an amusement park for grown-ups who like to get scared.
+
+It's an underground cemetery beside the Capuchin monastery, and it's visually creepy. Very creepy. Nearly 8,000 mummified remains from the 17th to 19th century. Like something from a horror movie, you walk down narrow corridors with literal corpses hanging from the walls, dressed in decaying finery. Monks, famous people, wealthy citizens, even commoners.
+
+The star? Little Rosalia Lombardo. Died in 1920 aged two, nicknamed Sleeping Beauty for her almost perfect preservation for over a century, thanks to embalmer Alfredo Salafia's elixir of immortality. She'll give you the shivers.
+
+It's visually macabre. Seriously. Think carefully before bringing kids. Photos are strictly forbidden inside. Bring a book or audio guide for context, otherwise it might get boring after the initial shock.
+
+---
+
+### E049 — Casa Professa (Chiesa del Gesù)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Baroque
+- **Area:** Near Ballarò market, Palermo Historic Center
+- **Duration:** 30-45 min
+- **Tags:** religious-site, baroque, palermo-historic-center, year-round, history-buffs, daily, low-cost
+- **Price:** [VERIFY — small entry fee]
+- **Hours:** [VERIFY — restricted during services]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Existing WAP article:** https://wearepalermo.com/news/church-jesus-casa-professa/
+- **Cross-reference:** E035 Ballarò Market (literally walking distance)
+
+**Nico's Take:**
+
+If Monreale and the Palatine Chapel are about golden mosaics, Casa Professa is about Baroque visual explosion.
+
+One of the most beautiful churches in the city, built in 1590. Locals call it Casa Professa. Hidden away near Ballarò market.
+
+American historian Donald Garstang said it looked like something from a fantasy world because the marblework is so surreal and magnificent. From the outside, you might think I'm crazy. But step inside.
+
+Riot of multi-colored marble inlay (called marmi mischi), intricate stucco work, frescoes, sculptures. Every surface is covered. Opulent, theatrical, almost visually dizzying.
+
+It was built by Jesuits invited by Viceroy Juan de Vega partly as a political gesture. They wanted a church up to their standards, and they got one. Maybe not embodying Christian modesty.
+
+The visual definition of "extra." In a good way. Proof you should never judge a book (or church) by its cover. Get the info sheet inside or bring a guide to appreciate the details.
+
+---
+
+### E050 — Oratorio di San Lorenzo
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Baroque / Mafia History
+- **Area:** Kalsa, Palermo Historic Center
+- **Duration:** 30-45 min
+- **Tags:** religious-site, palermo-historic-center, baroque, mafia-history, history-buffs, daily, low-cost, voice-mode-b
+- **Price:** [VERIFY — small entry fee]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Voice Mode:** B (Mafia tragedy — stolen Caravaggio masterpiece, cultural wound)
+
+**Nico's Take:**
+
+This small oratory near the Kalsa district holds visual treasures and a tragic story.
+
+It's famous for the incredible stucco work by Giacomo Serpotta, a Palermo master sculptor from the late 17th and early 18th century. He made stucco look like flowing marble, creating incredibly dynamic visual scenes depicting the lives of St. Lawrence and St. Francis. The visual detail is insane.
+
+But the Oratory is also famous for the visual gap where something should be. Above the altar used to hang a masterpiece: Caravaggio's "Nativity with St. Francis and St. Lawrence." Used to.
+
+It was stolen in 1969, likely by the Mafia, and has never been recovered. Now, a high-quality replica hangs in its place, a visual reminder of the loss.
+
+Visiting offers a bittersweet visual experience. You marvel at Serpotta's genius while noting the empty space where the Caravaggio should be.
+
+---
+
+### E051 — Church of the Immaculate Conception (al Capo)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Baroque
+- **Area:** Near Capo market (Porta Carini), Palermo Historic Center
+- **Duration:** 20-30 min
+- **Tags:** religious-site, baroque, palermo-historic-center, year-round, daily, low-cost, locals-spot
+- **Price:** [VERIFY — small entry fee or donation]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Existing WAP article:** https://wearepalermo.com/news/church-immaculate-conception/
+- **Cross-reference:** E034 Capo Market (literally steps apart)
+
+**Nico's Take:**
+
+Tucked away near the Porta Carini entrance to the Capo market. A perfect example of Palermo hiding its visual treasures.
+
+The facade? Simple, almost plain, surrounded by fruit crates. You could walk right past it.
+
+Don't.
+
+Step inside, and it's another visual world, like passing through the gates of Heaven. Pure, unadulterated Sicilian Baroque glory. Built in 1604, it's covered floor-to-ceiling in marmi mischi (those intricate multi-colored marble inlays), frescoes, gold stucco, and sculptures.
+
+Incredibly rich and ornate visually. A complete surprise after the humble exterior. It's less overwhelming than Casa Professa, perhaps, but just as visually beautiful.
+
+A hidden gem that rewards those who venture off the main tourist track to see it. Combine this viewing with a visit to the Capo market area. They are literally steps apart.
+
+---
+
+### E052 — San Giovanni degli Eremiti (Five Red Domes)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Photogenic
+- **Area:** Near Palazzo dei Normanni, Palermo Historic Center
+- **Duration:** 30-45 min
+- **Tags:** religious-site, arab-norman, unesco, palermo-historic-center, year-round, photogenic, daily, low-cost, peaceful
+- **Price:** [VERIFY — small entry fee]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** E028 Palazzo dei Normanni (walking distance — combine in same visit)
+
+**Nico's Take:**
+
+One of Palermo's most iconic visual images. Those five bright red domes popping up against the blue Sicilian sky? That's San Giovanni degli Eremiti. You'll see it on postcards everywhere.
+
+Built in the 12th century by King Roger II, on the site of an older mosque. A prime example of the Arab-Norman style that makes Palermo's architecture so visually unique. The red domes are distinctly Islamic in influence.
+
+The church itself is quite small and simple inside. The real visual magic is the exterior and the adjacent cloister garden. Filled with citrus trees, palms, and flowers. A peaceful little visual oasis. Wandering through the ruined cloister arches with those red domes overhead feels like stepping back in time visually.
+
+Incredibly photogenic. Go for the picture, stay for the peaceful views in the cloister.
+
+---
+
+### E053 — Salinas Regional Archaeological Museum
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Museum
+- **Area:** Palermo Historic Center (former monastery)
+- **Address:** Piazza Olivella, 24, Palermo
+- **Duration:** 2 hours
+- **Tags:** museum, ancient-greek, palermo-historic-center, year-round, history-buffs, daily, mid-range
+- **Price:** [VERIFY — entry fee]
+- **Hours:** [VERIFY — check website for current exhibitions]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+If you want to visually understand Sicily's deep, deep history (Phoenicians, Greeks, Romans), this is the place.
+
+The Museo Archeologico Regionale Antonio Salinas houses one of Italy's richest archaeological collections of Punic and Ancient Greek art. Housed in a beautiful former monastery, it's packed with incredible visual finds from sites all across Sicily.
+
+See stunning Greek sculptures (especially the metopes from Selinunte, depicting beasts, fights, love stories like Zeus and Hera), intricate Roman mosaics, Phoenician sarcophagi, prehistoric tools.
+
+Also look for the Gorgon imagery (linked to the Trinacria symbol) and the Palermo Stone detailing ancient Egyptian rulers.
+
+It really brings Sicily's ancient past to life visually. You can spend hours here wandering through the displays.
+
+Check their website for current exhibitions and opening hours. While info panels are present, audio guides or a human guide can really unlock the complex history behind the artifacts.
+
+---
+
+### E054 — Palazzo Abatellis (Regional Gallery of Sicily)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Museum / Art
+- **Area:** Kalsa, Palermo Historic Center
+- **Address:** Via Alloro, 4, Palermo
+- **Duration:** 1-2 hours
+- **Tags:** museum, palermo-historic-center, year-round, history-buffs, daily, mid-range
+- **Price:** [VERIFY — entry fee]
+- **Hours:** [VERIFY]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+Art lovers, take note visually.
+
+Palazzo Abatellis holds the most important collection of art in Sicily, focusing on the period from the Middle Ages to the 18th century. The building itself is a visual masterpiece. A stunning 15th-century Catalan-Gothic palace.
+
+Inside, the layout, designed by the famous architect Carlo Scarpa, is brilliant visually. It really showcases the artworks beautifully.
+
+The absolute must-see? Antonello da Messina's haunting painting, "The Virgin Annunciate" (Annunciazione). It's captivating to look at. Just her face, the blue veil, the hand. Powerful visual stuff.
+
+There are also amazing medieval sculptures, including Francesco Laurana's bust of Eleanor of Aragon, and dramatic large paintings to observe.
+
+Even if you're not a massive art buff, go see the Virgin Annunciate. Its visual power is worth the price of admission alone.
+
+---
+
+### E055 — Stanze al Genio (Majolica Tile Museum)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Museum / Private House
+- **Area:** Palermo Historic Center (Palazzo Torre Pirajno)
+- **Duration:** 1 hour guided tour (mandatory)
+- **Tags:** museum, palermo-historic-center, year-round, history-buffs, daily, low-cost, locals-spot, photogenic
+- **Price:** [VERIFY — guided tour ticket]
+- **Hours:** By appointment / advance booking only
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Existing WAP article:** https://wearepalermo.com/news/stanze-al-genio/
+
+**Nico's Take:**
+
+Visually different, and totally charming.
+
+Stanze al Genio is a private house-museum in Palazzo Torre Pirajno (from the 1500s), visually bursting with colorful tiles. Seriously, a collection of about 5,000 antique Sicilian and Neapolitan majolica tiles (called maioliche) from the 1400s to early 1900s, covering the walls and floors.
+
+It's the passion project of a collector, and it shows visually. Eight rooms are arranged by era and region, creating this incredible, immersive visual experience.
+
+You walk through centuries of decorative art history, one vibrant tile pattern at a time. Some look almost futuristic with geometric graphics.
+
+It's quirky, visually stunning, and offers a unique insight into a traditional Sicilian decorative craft. Who lives there? It's a mystery.
+
+It's a private museum. You must take the guided tour (about 1 hour) to enter. Book your visit in advance.
+
+---
+
+### E056 — Orto Botanico (Botanical Garden)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Nature / Garden
+- **Area:** South of historic center, next to Villa Giulia
+- **Address:** Via Lincoln, 2, Palermo
+- **Duration:** 1-2 hours
+- **Tags:** nature, palermo-city, year-round, peaceful, daily, low-cost, photogenic
+- **Price:** [VERIFY — entry fee]
+- **Hours:** [VERIFY — varies by season]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Existing WAP article:** https://wearepalermo.com/news/botanical-gardens-villa-giulia/
+- **Cross-reference:** E057 Villa Giulia (next door)
+
+**Nico's Take:**
+
+Right next to Villa Giulia (E057), the Orto Botanico is one of Europe's oldest botanical gardens.
+
+Founded in the late 1700s, it's a living museum of plants from all over the world, offering diverse visual scenery. Huge and incredibly visually diverse. Wander through sections dedicated to succulents, cycads, aquatic plants, and medicinal herbs. The giant greenhouses (like the Serra Carolina) are visually impressive structures.
+
+The star visual attraction? The massive Ficus Macrophylla trees, with their incredible aerial roots forming curtain-like structures. They look like something out of a fantasy movie.
+
+A peaceful, shady visual escape from the city heat. Wear comfortable shoes — it's a big place to explore. Bring water, especially in summer.
+
+---
+
+### E057 — Villa Giulia (Oldest Public Garden)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Nature / Garden
+- **Area:** Next to Orto Botanico, south of historic center
+- **Duration:** 30-45 min
+- **Tags:** nature, palermo-city, year-round, peaceful, daily, free
+- **Price:** Free
+- **Hours:** [VERIFY — public hours]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** E056 Orto Botanico (next door, often visited together)
+
+**Nico's Take:**
+
+Next door to the Botanical Garden, Villa Giulia is Palermo's oldest public garden, opened in 1778.
+
+Designed in a formal, neoclassical style. Visually characterized by geometric pathways, fountains, sculptures, and symmetrical flowerbeds.
+
+It's smaller and more manicured visually than the Orto Botanico. Key visual features include the dodecahedron fountain, the sundial clock designed by Lorenzo Federici, and various busts and pavilions.
+
+A lovely spot for a quiet stroll or to sit on a bench and observe the surroundings. Offers a nice visual contrast to the wilder feel of the Botanical Garden next door. Often less crowded too.
+
+It's pretty, it's calm visually. Good place to recharge your batteries after too much sightseeing.
+
+---
+
+### E058 — La Cala (Historic Harbor)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Waterfront
+- **Area:** Palermo Historic Center waterfront
+- **Duration:** 30-45 min stroll
+- **Tags:** waterfront, palermo-historic-center, year-round, evening, peaceful, free, daily
+- **Price:** Free
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** E033 Marina Yachting / Molo Trapezoidale (modern adjacent area), E059 Mura delle Cattive (continuation of the seafront walk)
+
+**Nico's Take:**
+
+La Cala is Palermo's historic U-shaped harbor, the oldest part of the port.
+
+For centuries, this was the heart of the city's maritime life. Today, it's mostly filled with pleasure boats and yachts bobbing in the water. Picturesque sight.
+
+Great place for a walk along the waterfront, watching the boats and observing the relaxed visual atmosphere, especially in the evenings.
+
+It connects directly to the modern Marina Yachting (E033) via the Castello a Mare wall, offering a sharp visual contrast to the rough-around-the-edges vibe of places like Vucciria. Old harbor + new pier in the same evening stroll. That contrast is the whole point.
+
+---
+
+### E059 — Mura delle Cattive (Seafront Promenade)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Waterfront / Walking
+- **Area:** Foro Italico to La Cala, Palermo Historic Center
+- **Duration:** 20-30 min stroll
+- **Tags:** waterfront, palermo-historic-center, year-round, evening, peaceful, free, panoramic, daily
+- **Price:** Free
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+Running along the seafront above the old city walls (near Porta Felice and Foro Italico park), the Mura delle Cattive is a raised promenade offering lovely sea views.
+
+Its name is intriguing. "Wall of the Bad Women" or "Wall of the Captive Women." The story relates to its history (built for aristocratic widows). But today, it's just a pleasant place for anyone to stroll, enjoy the sea breeze, and look out over the Gulf of Palermo.
+
+Visually connects the Foro Italico park area with La Cala (E058).
+
+Perfect visual spot for an early evening passeggiata. Romantic views? Maybe. Definitely scenic.
+
+---
+
+### E060 — Mondello Beach
+
+- **Tier:** 2 (no affiliate; Discover Cars useful for solo driving)
+- **Category:** Beach
+- **Area:** Mondello, north of Palermo
+- **Duration:** Half-day to full-day
+- **Tags:** beach, mondello, summer-only, families, panoramic, free, daily, photogenic
+- **How to get there:** Bus 806 from Politeama (30-40 min), taxi, or rental car
+- **Price:** Public sections (spiaggia libera) free; sunbed rentals at lidos vary
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Existing WAP articles:** https://wearepalermo.com/news/mondello-guide/, https://wearepalermo.com/news/getting-palermo-mondello-beach/
+
+**Nico's Take:**
+
+Palermo's beach scenery. A beautiful crescent of fine white sand and turquoise water, nestled visually between Monte Pellegrino and Monte Gallo.
+
+In summer, it looks like a postcard.
+
+Easily reachable by bus from the city center (about 30-40 minutes). The beachfront is lined with elegant Art Nouveau villas (some turned into beach clubs) and the iconic Charleston pier/restaurant structure. Visually interesting architecture.
+
+The water is shallow and usually calm, visually appealing for families. You can rent sunbeds and umbrellas from the various lidos (beach clubs) or find a spot on the free public sections (spiaggia libera).
+
+In July and August, it gets visually packed. Like, wall-to-wall people. Go early to appreciate the scenery before the crowds, or visit in the shoulder seasons (May, June, September, October) for a more relaxed view.
+
+If you want to see the coast from the water, a Boat Tour with Snorkeling often cruises this beautiful bay for scenic views. Mondello in August is an anthropological study. Go for the chaos, the beauty, and the best tan of your life.
+
+---
+
+### E061 — Qanats (Underground Arab Tunnels)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Monument / Adventure
+- **Area:** Under the city of Palermo
+- **Duration:** 1 hour guided tour (mandatory)
+- **Tags:** monument, arab-norman, palermo-city, year-round, history-buffs, daily, low-cost, dark-history
+- **Price:** [VERIFY — guided tour ticket]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Existing WAP article:** https://wearepalermo.com/news/qanats-palermo/
+- **Required:** Guided tour, book in advance. Wear sturdy shoes.
+
+**Nico's Take:**
+
+Beneath the streets of Palermo lies a hidden network of tunnels.
+
+The Qanats. Invented by Arabs before BCE, these are ancient underground sloping channels transporting water via clever engineering. Palermo's qanats are an exceptional example of this hydraulic structure, built during Arab rule.
+
+Some sections of these tunnels are accessible via guided tours (booked in advance). You descend underground into these narrow, cool, damp channels for a unique visual experience.
+
+Fascinating visual glimpse into the engineering skills of Palermo's Arab rulers.
+
+Claustrophobic? Maybe skip viewing this. Adventurous? Definitely check it out visually. Wear sturdy shoes.
+
+---
+
+### E062 — Falcone Tree (Albero Falcone)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Monument / Anti-Mafia
+- **Area:** Via Notarbartolo, residential district north of historic center
+- **Duration:** 15-20 min
+- **Tags:** monument, mafia-history, anti-mafia, palermo-city, year-round, history-buffs, free, daily, voice-mode-b
+- **Price:** Free
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Voice Mode:** B (Mafia tragedy — assassination of national heroes 1992, cultural wound)
+- **Existing WAP articles:** https://wearepalermo.com/news/giovanni-falcone-judge-mafia/, https://wearepalermo.com/news/judge-paolo-borsellino/, https://wearepalermo.com/the-history-of-sicilian-mafia/
+- **Pair with:** Borsellino assassination obelisk (separate location)
+
+**Nico's Take:**
+
+Sometimes, visual landmarks aren't buildings.
+
+The Falcone Tree (Albero Falcone) is a huge Ficus Magnolia tree outside the former home of Judge Giovanni Falcone on Via Notarbartolo. Falcone and Paolo Borsellino became national heroes for fighting the Mafia and were assassinated in 1992.
+
+This tree became an impromptu visual shrine. People leave messages, photos, drawings pinned to its trunk. Visible symbols of resistance against the Mafia and remembrance.
+
+A living monument, deeply moving to see.
+
+Also visit the obelisk on the spot where Falcone was killed.
+
+While you're appreciating trees visually, seek out the giant Ficus Macrophylla in Giardino Garibaldi (Piazza Marina), sometimes called the Strangler Tree due to its location near Palazzo Steri (E045) where executions happened. Legend says it fed on blood. See also the similar huge trees in the Orto Botanico (E056).
+
+---
+
+### E063 — Ponte dell'Ammiraglio (Admiral's Bridge)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Monument / UNESCO
+- **Area:** Outside historic center, Oreto area
+- **Duration:** 15-20 min
+- **Tags:** monument, unesco, arab-norman, palermo-city, year-round, history-buffs, free, daily, photogenic
+- **Price:** Free
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+This beautiful 12th-century Norman bridge is a bit of a visual geographical oddity.
+
+It used to cross the Oreto River. Used to.
+
+The river was diverted centuries ago, so now the Admiral's Bridge stands rather unexpectedly in the middle of a sunken garden area, nowhere near flowing water. Curious sight.
+
+Built by George of Antioch, King Roger II's admiral, it's another piece of Palermo's UNESCO Arab-Norman heritage visually. Its pointed arches are distinctively medieval in appearance.
+
+Historically significant. Garibaldi's troops fought Bourbon soldiers here in 1860. Architecturally interesting to look at. Worth seeking out for its slightly surreal visual placement and elegant design.
+
+Visually cool to see a bridge stranded high and dry. Makes you think about how city landscapes change over time.
+
+---
+
+### E064 — Villino Florio all'Olivuzza (Art Nouveau)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Monument / Architecture
+- **Area:** Olivuzza district, Palermo
+- **Duration:** 30-45 min (exterior + gardens; interior only during special tours)
+- **Tags:** monument, palermo-city, year-round, history-buffs, photogenic, daily, low-cost
+- **Price:** [VERIFY — depends on whether interior is open]
+- **Hours:** [VERIFY — exterior usually viewable; interior special tours only]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+Fans of unique architecture, you absolutely need to hunt down Villino Florio visually.
+
+This villa isn't just a fancy house. It's one of the earliest and most important examples of Art Nouveau (what we call Stile Liberty) in Italy, visually speaking.
+
+It was designed by the genius Palermo architect Ernesto Basile for the legendary Florio family around 1900. Now, listen. The Florios weren't just rich. They were like the uncrowned kings of Sicily for decades.
+
+Titans of industry. Shipping, Marsala wine, tuna fisheries, you name it. They basically owned the Sicilian economy and defined Palermo's Belle Époque glamour. This Villino is a stunning visual symbol of their incredible wealth, power, and taste.
+
+Architecturally, it's a whimsical visual mix of styles. Turrets that look like they belong on a castle, sinuous curved lines, intricate carvings, gorgeous stained glass, complex wrought iron details.
+
+Visually, like something straight out of a fairytale. Completely different from the heavy Baroque or ancient Norman styles you see elsewhere.
+
+It suffered damage and neglect after the family's fortunes faded, but thankfully it has been restored. You can often view the stunning exterior and wander the gardens. Sometimes the interior is open for special tours or events (best to check locally).
+
+Want the real story behind the Florios' rise and fall, and their huge impact on Palermo and Sicily? Read 'The Florios of Sicily' (I Leoni di Sicilia) by Stefania Auci. It's a massive bestseller in Italy for a reason. Incredible saga giving context to the city you're seeing.
 
 ---
 
