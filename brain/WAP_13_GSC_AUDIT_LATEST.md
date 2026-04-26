@@ -236,7 +236,7 @@ Christmas, New Year's, autumn-guide posts all show as "losing" in April but that
 
 When SOP_01 runs Phase 3, test on these three P1 posts in this order:
 
-1. **`/where-to-stay-palermo/`** — Nico has a full rewrite drafted. Easiest win: publish the already-written content with WAP_06 formatting + first-540-words fix + proper affiliate disclosure. Potentially 2,000+ clicks/3mo recoverable.
+1. **`/where-to-stay-palermo/`** — Highest revenue page loss on the site (-2,012 clicks YoY, Booking.com commission impact). Position 9.9, top of page 2 territory. Full SOP_01 rewrite needed: WAP_06 formatting, first-540-words direct answer block, FAQ schema, structural redesign across 5+ neighborhoods, proper affiliate disclosure. Higher complexity than typical SOP_01 run because it requires structural decisions on multiple sub-topics (which neighborhoods to feature, which accommodation types to cover, what booking guidance to include). Recommend testing SOP_01 on simpler content (e.g. /news/vehicle-parking-palermo/) BEFORE attempting where-to-stay-palermo.
 
 2. **`/news/vehicle-parking-palermo/`** — Position 5.7 is very strong. Clicks bleeding but ranking intact. Perfect test case for "add TL;DR block + FAQ schema" AIO rescue playbook. Parclick commission upside.
 
