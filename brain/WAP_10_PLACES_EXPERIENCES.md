@@ -73,6 +73,14 @@ Follow SOP_05_Add_Experience_To_Bank.md (written in Phase 2). In summary:
 
 **Monetization:** `affiliate-getyourguide`, `affiliate-discovercars`, `affiliate-parclick`, `affiliate-bounce`, `no-affiliate`, `direct-booking`
 
+**Time of Day:** `morning`, `afternoon`, `evening`, `night`, `weekends`, `daily`
+
+**Vibe:** `panoramic`, `gritty`, `chic`, `chaotic`, `peaceful`, `lively`, `locals-spot`, `tourist-heavy`, `dolce-vita`
+
+**Cost:** `free`, `low-cost`, `mid-range`, `expensive`
+
+**Avoid Reason:** `tourist-trap`, `overpriced`, `animal-welfare`, `ethical-concern`, `unregulated`
+
 ---
 
 ## Master Index
@@ -105,6 +113,33 @@ Follow SOP_05_Add_Experience_To_Bank.md (written in Phase 2). In summary:
 | E024 | Il Festino di Santa Rosalia | Festival | Historic Center | 2 | July 14 | No affiliate | Apr 21, 2026 |
 | E025 | Cous Cous Fest San Vito Lo Capo | Festival / Food | San Vito Lo Capo | 2 | Late September | No affiliate | Apr 21, 2026 |
 | E026 | Capo Market Sunday Party Lunch | Market Experience | Capo Market | 2 | Sunday mornings | No affiliate | Apr 21, 2026 |
+| E027 | Palermo Cathedral | Religious Site / Monument | Historic Center | 2 | 1-2 hours | No affiliate | Apr 26, 2026 |
+| E028 | Palazzo dei Normanni + Palatine Chapel | Religious Site / Monument | Historic Center | 2 | 1-2 hours | No affiliate | Apr 26, 2026 |
+| E029 | La Martorana | Religious Site / Monument | Historic Center | 2 | 30-45 min | No affiliate | Apr 26, 2026 |
+| E030 | Quattro Canti | Monument / Walking | Historic Center | 2 | 15 min walk-by | No affiliate | Apr 26, 2026 |
+| E031 | Pretoria Fountain (Fountain of Shame) | Monument / Walking | Historic Center | 2 | 15 min walk-by | No affiliate | Apr 26, 2026 |
+| E032 | Mount Pellegrino + Sanctuary of Saint Rosalia | Religious Site / Nature | Monte Pellegrino | 2 | Half-day | No affiliate | Apr 26, 2026 |
+| E033 | Palermo Marina Yachting (Molo Trapezoidale) | Modern Waterfront | Palermo Waterfront | 2 | Evening stroll | No affiliate | Apr 26, 2026 |
+| E034 | Capo Market | Market Experience | Historic Center | 2 | 1-2 hours | No affiliate | Apr 26, 2026 |
+| E035 | Ballarò Market | Market Experience | Albergheria District | 2 | 1-2 hours | No affiliate | Apr 26, 2026 |
+| E036 | Vucciria Market (Daytime) | Market Experience | Historic Center | 2 | 30-45 min | No affiliate | Apr 26, 2026 |
+| E037 | Aperitivo Ritual | Cultural Ritual | Citywide | 3 | 1-2 hours | No affiliate | Apr 26, 2026 |
+| E038 | Standing-in-the-Piazza Drinking | Cultural Ritual | Citywide piazzas | 3 | Open-ended | No affiliate | Apr 26, 2026 |
+| E039 | Vucciria Nightlife | Cultural Ritual | Vucciria | 3 | Evening into night | No affiliate | Apr 26, 2026 |
+| E040 | Acchianata (Climb to Saint Rosalia Sanctuary) | Hiking / Religious Ritual | Monte Pellegrino | 3 | 2-3 hours round trip | No affiliate | Apr 26, 2026 |
+| E041 | Bar Breakfast Ritual (cornetto + caffè) | Cultural Ritual | Citywide | 3 | 15 min | No affiliate | Apr 26, 2026 |
+
+---
+
+## Avoid Index
+
+This is a separate index for things visitors should NOT do. Entries here use A### IDs (not E###). Copywriting agent: do NOT recommend these in any content. Reference them ONLY as warnings or "avoid" callouts.
+
+| ID | Name | Category | Area | Tier | Reason | Last Updated |
+|---|---|---|---|---|---|---|
+| A001 | Horse-drawn Carriage Tours | Avoid | Historic Center | 0 | Animal welfare | Apr 26, 2026 |
+| A002 | Ape Car Tours | Avoid | Historic Center | 0 | Tourist trap, overcharging | Apr 26, 2026 |
+| A003 | Aperitivo on Via Maqueda / Corso Vittorio Emanuele | Avoid | Main tourist drags | 0 | Tourist trap, overpriced | Apr 26, 2026 |
 
 ---
 
@@ -740,6 +775,438 @@ If you catch one of these, you've hit the Palermitan jackpot. Some Sundays, Capo
 It just happens. Ask around, or wander through Capo on a Sunday morning and see.
 
 Pure, unadulterated Palermitan fun. Salute!
+
+---
+
+### E027 — Palermo Cathedral
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Monument
+- **Area:** Palermo Historic Center
+- **Address:** Via Vittorio Emanuele, Palermo
+- **Duration:** 1-2 hours (with crypt and treasury)
+- **Tags:** religious-site, unesco, arab-norman, palermo-historic-center, year-round, first-timers, daily, mid-range, history-buffs
+- **Price:** [VERIFY — basic entry free; crypt/treasury/roof have separate tickets]
+- **Hours:** [VERIFY — typically open daily, restricted hours during services]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+A history book in stone, a mashup of styles that somehow just works. The cathedral is part of the Arab-Norman UNESCO route — you'll see Norman bones, Gothic upgrades, Baroque additions, and Arab-style flourishes all in one building. It shouldn't work as a coherent piece of architecture. It works.
+
+The crypt and the rooftop are worth the extra ticket if you've got the time. The view from the roof is one of the best in the historic center.
+
+This is one of those buildings where you stop talking to your travel companion for a minute, just because.
+
+---
+
+### E028 — Palazzo dei Normanni + Palatine Chapel
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Monument
+- **Area:** Palermo Historic Center
+- **Address:** Piazza del Parlamento, Palermo
+- **Duration:** 1-2 hours
+- **Tags:** religious-site, unesco, arab-norman, palermo-historic-center, year-round, first-timers, history-buffs, daily, mid-range
+- **Price:** [VERIFY — entry includes the Royal Apartments and Palatine Chapel]
+- **Hours:** [VERIFY — closures vary; the palace also functions as the Sicilian regional assembly]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+The palace is the building. The Palatine Chapel is the showstopper.
+
+Mosaics in there will make your eyes pop. Bling that's been around for centuries. Gold ceilings, Byzantine craftsmanship, Norman political ambition, all in one chapel the size of a generous living room. Photos do not capture it. You have to be there.
+
+If you only have time for one Norman-era interior in Palermo, this is the one. The Cathedral is more architecturally interesting from the outside; the Palatine Chapel is the interior that actually melts your face.
+
+---
+
+### E029 — La Martorana
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Religious Site / Monument
+- **Area:** Palermo Historic Center
+- **Address:** Piazza Bellini, 3, Palermo
+- **Duration:** 30-45 min
+- **Tags:** religious-site, unesco, arab-norman, palermo-historic-center, year-round, history-buffs, daily, low-cost
+- **Price:** [VERIFY — small entry fee]
+- **Hours:** [VERIFY — restricted during services]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+Another mosaic masterpiece. 12th-century Norman church right next to Piazza Pretoria, often skipped by tourists who only do the Cathedral and the Palatine Chapel.
+
+Don't skip it. The mosaics here have a different feel — older, rawer, more directly Byzantine. Smaller scale than the Palatine Chapel, which actually helps. You can stand close to them.
+
+If you're doing the Arab-Norman UNESCO route, La Martorana is a non-negotiable stop. Pair it with Quattro Canti and Pretoria Fountain — they're all walking distance.
+
+---
+
+### E030 — Quattro Canti
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Monument / Walking
+- **Area:** Palermo Historic Center (intersection of Via Maqueda and Corso Vittorio Emanuele)
+- **Duration:** 15 min walk-by
+- **Tags:** baroque, palermo-historic-center, year-round, first-timers, easy, daily, free, history-buffs
+- **Price:** Free
+- **Hours:** Always accessible (it's a public street intersection)
+- **Existing WAP article:** https://wearepalermo.com/news/quattro-canti-four-corners/
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+The city's baroque bellybutton. Stand there and just soak it in.
+
+Four facades, four seasons, four Spanish kings, four Palermo patron saints (Saint Rosalia is here, of course). 17th-century baroque urban planning at its most theatrical.
+
+You'll walk through Quattro Canti probably twenty times during your trip without realizing it. Every time, slow down for thirty seconds. Look up. Look at all four corners. The detail is insane.
+
+---
+
+### E031 — Pretoria Fountain (Fountain of Shame)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Monument / Walking
+- **Area:** Palermo Historic Center (Piazza Pretoria, next to Quattro Canti)
+- **Duration:** 15 min walk-by
+- **Tags:** baroque, palermo-historic-center, year-round, first-timers, easy, daily, free, history-buffs
+- **Price:** Free
+- **Hours:** Always accessible
+- **Existing WAP article:** https://wearepalermo.com/news/palermo-pretoria-fountain/
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+Fountain of Shame. That's what we call it locally. Fontana della Vergogna. Thanks to all those cheeky nude statues. Grandmas still clutch their pearls.
+
+Renaissance fountain originally built for a Florentine villa, then bought by the city of Palermo in the 16th century. The locals were not amused. Hence the nickname.
+
+It's right next to Quattro Canti. Walk one to the other. Both are free, both take ten minutes, both are on every walking route. Look at the statues. Read up on which mythological figure is which. The fountain is more interesting once you know what's going on.
+
+---
+
+### E032 — Mount Pellegrino + Sanctuary of Saint Rosalia
+
+- **Tier:** 2 (no affiliate — Tier 1 mountain bike tour available, see existing entry)
+- **Category:** Religious Site / Nature / Panoramic
+- **Area:** Monte Pellegrino, north of Palermo
+- **Duration:** Half-day
+- **Tags:** monte-pellegrino, religious-site, hiking, year-round, easy, panoramic, first-timers, daily, low-cost
+- **How to get there:** Bus 812 from Politeama, taxi, or rental car. Acchianata pilgrim path from below (see E040)
+- **Price:** Sanctuary entry [VERIFY — small donation customary]
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** E040 Acchianata (the climb up). Existing Tier 1 bike tour available — search Master Index for the bike tour entry.
+
+**Nico's Take:**
+
+Our spiritual backyard, our panoramic balcony. It's got soul.
+
+Mount Pellegrino looms over Palermo. For us Palermitans, this isn't just any mountain. It's special. Sacred, even. The Sanctuary of Saint Rosalia — our Santuzza — is built into a cave near the top. Water drips down the cave walls. Offerings everywhere. Whether you're religious or not, it's a powerful place.
+
+Three reasons to go: the views, the sanctuary, and the climb (acchianata, see E040). On a clear day, the Gulf of Palermo from up there is one of those views you remember for years.
+
+Light a candle for Rosalia (can't hurt, right?), take in the epic vista, and breathe.
+
+---
+
+### E033 — Palermo Marina Yachting (Molo Trapezoidale)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Modern Waterfront / Evening
+- **Area:** Palermo Waterfront (former cruise pier)
+- **Address:** Molo Trapezoidale, Palermo
+- **Duration:** Evening stroll, dinner option
+- **Tags:** palermo-city, year-round, easy, dolce-vita, evening, night, panoramic, free, mid-range
+- **Google Maps:** https://maps.app.goo.gl/jQDXFWob4zJ9PiLP8
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+Where modern Palermo flexes its muscles a bit. Cool contrast to the beautiful chaos of the older parts of town.
+
+This used to be a decaying old pier. Now it's a 30,000 sqm glamorous waterfront destination. Restaurants, boutiques, dancing fountains. The biggest dancing fountains in Italy, actually. Every hour from 8 PM, they put on a show. Lights, water, music. Pretty damn cool.
+
+Real magic happens at night. During the day it can feel a bit sterile — almost too clean for Palermo. But once the sun goes down and the fountains start dancing, it's a whole different vibe. Go for a spritz, watch the show, maybe have a fancy dinner.
+
+The view of the old city from the marina is still epic. That's the part that matters: even when Palermo modernizes, the ancient skyline is still there in the background, refusing to be forgotten.
+
+---
+
+### E034 — Capo Market
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Market Experience
+- **Area:** Palermo Historic Center (off Via Volturno, between Cathedral and Politeama)
+- **Duration:** 1-2 hours
+- **Tags:** market-experience, palermo-historic-center, foodies, street-food, year-round, easy, daily, morning, lively, locals-spot, free
+- **Price:** Free to walk through; pay only for what you eat or buy
+- **Hours:** Roughly Mon-Sat morning into early afternoon. Sundays unpredictable, sometimes there's a party lunch (see E026)
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** E026 Capo Sunday Party Lunch (when it happens), E041 Bar breakfast (often eaten just before market visit)
+
+**Nico's Take:**
+
+Living, breathing museums. Go with an open mind, an empty stomach, and a sense of adventure. You'll come out buzzing.
+
+Capo is one of the two big working markets, the other being Ballarò (E035). Forget quiet, orderly aisles. This is glorious chaos. Mountains of gleaming fish, some still twitching. Olives of every shape and size. Cheeses that'll make you cry with joy (or just from the smell — some are strong).
+
+Go early if you want to see them at their busiest and get the freshest stuff. Don't be afraid to try the street food cooked right there. It's usually incredible.
+
+---
+
+### E035 — Ballarò Market
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Market Experience
+- **Area:** Albergheria District, Palermo Historic Center
+- **Duration:** 1-2 hours
+- **Tags:** market-experience, palermo-historic-center, foodies, street-food, year-round, easy, daily, morning, lively, locals-spot, gritty, free
+- **Price:** Free to walk through
+- **Hours:** Mon-Sat, mornings and into afternoon
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+The most authentic, least touristy of the three. The largest and oldest of Palermo's working markets.
+
+Glorious chaos. Vendors yelling — the abbanniate — their voices echoing through the narrow streets, practically singing about their wares. Symphony of sales pitches.
+
+You'll see locals haggling, friends gossiping, scooters somehow weaving through the crowds. The sights, the sounds, the smells (oh, the smells — fresh bread, frying fish, spices, and a thousand other things). It's like stepping back in time. Intense, intoxicating.
+
+If you only have time for one market, do Ballarò.
+
+---
+
+### E036 — Vucciria Market (Daytime)
+
+- **Tier:** 2 (no affiliate)
+- **Category:** Market Experience
+- **Area:** La Loggia District, Palermo Historic Center
+- **Duration:** 30-45 min
+- **Tags:** market-experience, palermo-historic-center, year-round, easy, daily, morning, locals-spot, free
+- **Price:** Free to walk through
+- **Hours:** Mornings, but quieter than Capo or Ballarò these days
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Existing WAP article:** https://wearepalermo.com/news/palermos-famous-marketplace-vucciria-day-night/
+- **Cross-reference:** E039 Vucciria Nightlife (where the real action is now)
+
+**Nico's Take:**
+
+Once legendary. Now, much more subdued for actual shopping. The big shopping action moved to Capo and Ballarò over the years.
+
+But Vucciria has its moments — and they happen mostly at night (see E039). During the day, it's a quieter walk through the bones of what used to be Palermo's most famous market. Worth a quick walk-through if you're nearby, especially because the historic atmosphere lingers in the architecture and the street layout.
+
+If you can only do one Vucciria visit, make it the nightlife one.
+
+---
+
+### E037 — Aperitivo Ritual
+
+- **Tier:** 3 (no affiliate — but tied to Tier 0 warning A003 about Via Maqueda)
+- **Category:** Cultural Ritual
+- **Area:** Citywide (avoid Via Maqueda and Corso Vittorio Emanuele tourist drags — see A003)
+- **Duration:** 1-2 hours, typically 7-9 PM
+- **Tags:** dolce-vita, palermo-city, year-round, evening, couples, foodies, locals-spot, lively, low-cost
+- **Price:** Drink + stuzzichini typically €8-15 per person
+- **Best drinks:** Spritz, Grillo, Nero d'Avola, craft beer
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** A003 Aperitivo trap on Via Maqueda
+
+**Nico's Take:**
+
+This ain't just happy hour with a few sad nuts. Aperitivo in Italy, and especially in Sicily, is a ritual.
+
+It's that sacred time, usually between 7 and 9 PM, before dinner. You grab a drink. With it comes stuzzichini — little snacks. Sometimes it's a few olives and chips. Sometimes it's a glorious buffet that could almost replace dinner.
+
+It's about winding down, catching up with friends, watching the world go by. Pure social lubrication.
+
+Embrace the aperitivo. Don't rush it. Order another drink. People-watch. It's the Sicilian way to start an evening. And a great way to soak up the local vibe before you even think about dinner.
+
+Where to go is the secret. The big tourist drags are tourist traps (see A003). Ask a local. Or check the Sicilian Way premium guide for vetted local spots.
+
+---
+
+### E038 — Standing-in-the-Piazza Drinking
+
+- **Tier:** 3 (no affiliate)
+- **Category:** Cultural Ritual
+- **Area:** Piazza Magione (Kalsa), Piazza Marina, Piazza Sant'Anna, Piazza Rivoluzione
+- **Duration:** Open-ended
+- **Tags:** dolce-vita, palermo-city, year-round, evening, night, free, locals-spot, lively, vibe
+- **Price:** A beer or glass of wine from a small bar — €2-5
+- **Best piazzas:** Magione (in Kalsa, big grassy square, gets packed with people enjoying the evening air), Marina, Sant'Anna, Rivoluzione
+- **When:** Whenever the weather's good, especially weekend evenings
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+A super common thing to do, especially when the weather's good, is just grabbing a beer or a glass of wine from a small bar or shop and "drinking standing in the street."
+
+You'll see crowds of people, young and old, chatting, laughing, just hanging out in the piazzas. Informal, communal, very Palermo.
+
+Don't be afraid to join in. Grab a Peroni, find a spot on some steps in a piazza, and just soak it all in. This is where you feel the city's pulse.
+
+Piazza Magione in the Kalsa district is the queen of this scene — big grassy square, packed with people enjoying the evening air and cheap drinks.
+
+---
+
+### E039 — Vucciria Nightlife
+
+- **Tier:** 3 (no affiliate)
+- **Category:** Cultural Ritual / Nightlife
+- **Area:** Vucciria, Palermo Historic Center
+- **Duration:** Evening into night
+- **Tags:** vucciria, palermo-historic-center, evening, night, weekends, vibe, gritty, lively, low-cost
+- **Best nights:** Friday, Saturday, especially in summer
+- **Existing WAP article:** https://wearepalermo.com/palermos-nightlife/
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+By night, especially on weekends, parts of Vucciria transform.
+
+Gritty, buzzing, open-air party. Street food sizzling on makeshift grills, cheap drinks flowing from pop-up bars, music blaring from speakers, and a whole lotta characters. Chaotic, loud, can be a bit sketchy in a charming way. It's an experience.
+
+Vucciria at night? Go with an open mind, maybe not your best shoes, and be ready for anything. It's a wild ride.
+
+Not for everyone. If you want polished cocktail bars with leather menus, this isn't the place. If you want raw, real Palermo street energy after dark, you go here.
+
+---
+
+### E040 — Acchianata (Climb to Saint Rosalia Sanctuary)
+
+- **Tier:** 3 (no affiliate)
+- **Category:** Hiking / Religious Ritual
+- **Area:** Monte Pellegrino, north of Palermo
+- **Duration:** 2-3 hours round trip (4 km uphill, then descent)
+- **Tags:** monte-pellegrino, hiking, religious-site, year-round, free, locals-spot, morning, panoramic
+- **Difficulty:** Active — proper workout
+- **Price:** Free
+- **Best time:** Early morning or late afternoon to avoid heat
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+- **Cross-reference:** E032 Mount Pellegrino + Sanctuary
+
+**Nico's Take:**
+
+The acchianata is the climb. An old pilgrim's path, about 4km, that winds its way up the mountain to the sanctuary.
+
+Locals do it for devotion, for exercise, for the tradition. It's a proper workout, but rewarding. You'll see Palermitans doing all sorts up here — jogging, cycling, families having picnics, kids playing. It's a lung for the city, a place to escape the beautiful chaos below.
+
+If you want the spiritual angle, the acchianata is how Palermitans have approached Rosalia for centuries. If you just want the views and a good leg workout, that works too.
+
+If hiking isn't your thing, take the bus or a taxi to the top — see E032 for the sanctuary entry. The view is the same. The acchianata is about the journey, not just the destination.
+
+---
+
+### E041 — Bar Breakfast Ritual (cornetto + caffè)
+
+- **Tier:** 3 (no affiliate)
+- **Category:** Cultural Ritual / Food
+- **Area:** Citywide — any local bar/café
+- **Duration:** 15 min
+- **Tags:** palermo-city, foodies, year-round, morning, locals-spot, low-cost
+- **Price:** Cornetto + espresso typically €2-3.50 standing at the counter
+- **What to order:** Cornetto (Sicilian croissant, often filled with cream, chocolate, or marmalade) + espresso or cappuccino
+- **What NOT to order for breakfast:** Brioche con gelato — that's an Eastern Sicily thing (Messina, Catania), not Palermo. See A001 for the ice-cream-for-breakfast tourist trap.
+- **Last vetted by Nico:** [VERIFY]
+- **Status:** Active
+
+**Nico's Take:**
+
+Stand at the counter like the locals do. Smile. Try a "Buongiorno." You'd be surprised how a little effort goes a long way.
+
+If you want to breakfast like a true Palermitan, hit the local bar for a cornetto and caffè. Simple, classic, delicious.
+
+Forget the Instagram fantasy of giant gelato at 8 AM. That's mostly Eastern Sicily, and even there it's granita with brioche, not gelato. Here in Palermo, your average local is starting their day at a bar with a cornetto and a strong espresso. That's the real traditional breakfast.
+
+Eat gelato whenever you damn well please — it's your vacation. But if you want to start your morning the real Palermitan way, this is it.
+
+---
+
+### A001 — Horse-drawn Carriage Tours
+
+- **Tier:** 0 (Avoid)
+- **Category:** Avoid
+- **Area:** Historic Center (typically around Quattro Canti, Cathedral, Teatro Massimo)
+- **Tags:** avoid, ethical-concern, animal-welfare
+- **Reason to avoid:** Animal welfare. Horses work long hours in the heat, on hard pavement, surrounded by traffic and noise. Multiple animal welfare groups have raised concerns about treatment and living conditions.
+- **Better alternatives:** Walking (Palermo's historic center is very walkable), Lime electric scooters, licensed taxis
+
+**Nico's Take:**
+
+Makes my Sicilian heart sad to see it.
+
+It might look charming in photos. But think about those horses. They're often working long hours, in the heat, on hard pavement, surrounded by traffic and noise. Many animal welfare groups have serious concerns about their treatment and living conditions.
+
+Palermo is a very walkable city, especially the historic parts. There are better, more ethical ways to see it.
+
+Please, think twice before hopping on a horse-drawn carriage. There are so many other wonderful ways to explore Palermo that don't involve potentially suffering animals.
+
+---
+
+### A002 — Ape Car Tours
+
+- **Tier:** 0 (Avoid)
+- **Category:** Avoid
+- **Area:** Historic Center
+- **Tags:** avoid, tourist-trap, overpriced, unregulated
+- **Reason to avoid:** Many operators are unregulated. Stories of outrageous overcharging are common. Driving in the historic center alleys can be erratic.
+- **If you must use one:** Agree on a price AND the exact route BEFORE getting in. Do not pay anything until the agreed route is completed.
+- **Better alternatives:** Walking, public transport, licensed taxis
+
+**Nico's Take:**
+
+The Ape Car tours — those little three-wheeled Piaggio vehicles?
+
+While some might be legitimate, many operate in a kind of grey area. Stories of outrageous overcharging of tourists are common. Plus, the driving can be a bit creativo, let's say.
+
+You might end up paying a fortune for a short, bumpy ride and a lot of hot air.
+
+If you're tempted, agree on a price AND the exact route before you get in. Better yet, walk, or use public transport or a licensed taxi if needed. Your conscience (and your wallet) will thank you.
+
+---
+
+### A003 — Aperitivo on Via Maqueda / Corso Vittorio Emanuele
+
+- **Tier:** 0 (Avoid)
+- **Category:** Avoid
+- **Area:** Main tourist drags through the historic center
+- **Tags:** avoid, tourist-trap, overpriced
+- **Reason to avoid:** These places aggressively recruit tourists off the street with big "APERITIVO!" signs. Drinks watery, food mediocre, prices inflated.
+- **Rule of thumb:** If they have to practically lasso you off the sidewalk, it's probably crap. Authentic places don't need to beg.
+- **Better alternative:** Walk a block or two off the main drag. Look for places busy with Italians. Or check WAP's vetted aperitivo recommendations in The Sicilian Way premium guide.
+- **Cross-reference:** E037 Aperitivo Ritual
+
+**Nico's Take:**
+
+Those main tourist streets, like Via Maqueda or parts of Corso Vittorio Emanuele? You'll see slick-looking places with big signs for "APERITIVO!" and staff practically trying to lasso you off the sidewalk.
+
+Nine times out of ten, these are tourist traps.
+
+The drinks might be watery, the food mediocre and sad-looking, and the bill? Mamma mia, the bill will make your eyes water more than the onions at Capo market.
+
+Serious, good places that locals actually go to don't need to hustle you. Their reputation speaks for itself.
+
+If someone is aggressively trying to get you into their establishment, be skeptical. Very skeptical. Walk a block or two off the main drag. Look for places that are busy with Italians. That's usually a good sign.
+
+Your aperitivo should be a pleasure, not a rip-off.
 
 ---
 
