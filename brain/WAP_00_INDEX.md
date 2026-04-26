@@ -61,6 +61,12 @@ wap-brain/
 
 ## Agents
 
+See `agents/AGENT_INDEX.md` for the full registry including installation instructions, update protocol, and versioning convention.
+
 | Agent | What It Does | When to Update |
 |---|---|---|
+| WAP PM | Project orchestrator. Tracks projects, decides task sequencing, writes handoff prompts, updates docs after every task. | When changing orchestration rules, adding new specialist agents, or changing the Claude Code update protocol. |
+| WAP Architect | Technical infrastructure: SEO, GA4, GTM, WordPress, ConvertKit, Stripe, Lovable, Make.com, GitHub, scripting. | When adding platform access, changing tool configs, or updating technical workflows. |
+| WAP Copywriting | All writing: blog posts, rewrites, email sequences, opt-in pages, ad copy, microcopy. Voice lock to Nico's Italian-American comedian style. | When voice rules change (WAP_05), content format changes (WAP_06), or new content types are added. |
 | SCOUT | Fact verification specialist. Receives content drafts, extracts factual claims, verifies via web_search + web_fetch, returns markdown table report with VERIFIED/DISPUTED/UNVERIFIABLE per claim. Handles surgical extraction (skips personal observations, comedic embellishment, invented dialogue). Tier-ranked sources. Used in SOP_01 Step 4 and SOP_02 Step 4. | When updating Scout's rules, when adding a tier source, when extending tool integration. |
+| WAP Story Agent | Story Bank intake. Two-stage workflow: Stage 1 crafts raw dump into 250-350 word Maniscalco-style bit. Stage 2 runs dedupe, taxonomy tags, named-business check, stats flag, pairs-with, voice mode confirmation. Used in SOP_03. | When Story Bank format changes, when taxonomy rules change, when word count discipline changes. |
