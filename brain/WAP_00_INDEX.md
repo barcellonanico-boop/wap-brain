@@ -56,3 +56,11 @@ wap-brain/
 |---|---|---|
 | WAP Content Machine | Active | projects/PROJECT_WAP_Content_Machine/ |
 | Airbnb System | Active | projects/PROJECT_Airbnb_System/ |
+
+---
+
+## Agents
+
+| Agent | What It Does | When to Update |
+|---|---|---|
+| SCOUT | Fact verification specialist. Receives content drafts, extracts factual claims, verifies via web_search + web_fetch, returns markdown table report with VERIFIED/DISPUTED/UNVERIFIABLE per claim. Handles surgical extraction (skips personal observations, comedic embellishment, invented dialogue). Tier-ranked sources. Used in SOP_01 Step 4 and SOP_02 Step 4. | When updating Scout's rules, when adding a tier source, when extending tool integration. |

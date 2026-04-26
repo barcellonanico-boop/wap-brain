@@ -27,7 +27,7 @@
 - [ ] 2.4 Define the weekly content cadence — posts updated per week, new posts per week, what Nico must touch vs. what runs without him [PM + Nico] [Est: 30 min | Actual: __ ]
 - [ ] 2.5 Document cadence in WAP_07_CONTENT_CADENCE.md [PM] [Est: 20 min | Actual: __ ]
 - [ ] 2.6 Commit and push. Update project knowledge. [Architect] [Est: 10 min | Actual: __ ]
-- [ ] 2.7 Build WAP Scout agent — fact verification specialist (web search + web fetch tools, VERIFIED/DISPUTED/UNVERIFIABLE output format, source citations). Required before Phase 3 SOP_01 test run. [PM + Architect] [Est: 45 min | Actual: __ ]
+- [x] 2.7 WAP Scout agent v1.0 system prompt drafted. Surgical extraction (skips personal observations, comedic embellishment, invented dialogue, anachronistic asides, hyperbolic comparisons). Tier-ranked sources (T1-T4). Markdown table output. Tools: Claude built-in web_search and web_fetch. Future upgrades parked as Tasks 3.1 (Perplexity Sonar API) and 3.2 (Firecrawl). System prompt at agents/SCOUT_SYSTEM_PROMPT.md. Untested — Phase 3 SOP_01 test on /where-to-stay-palermo/ validates. [PM] [Est: 45 min | Actual: 60 min]
 - [ ] 2.8 Build WAP Image Agent — image sourcing, AI generation, editing, alt text, library management. Until this exists, SOP_01 Step 6.5 is manual (Nico). [PM + Architect] [Est: 60 min | Actual: __ ]
 - [ ] 2.9 Write SOP_05_Verify_Affiliate_Links.md — monthly verification of all links in WAP_12. [PM] [Est: 30 min | Actual: __ ]
 - [x] 2.10 WAP_12 Affiliate Links Registry created (v1.0). 16 Booking.com hotels across 3 areas (Politeama 5, Centro Storico 5, Mondello 5, plus Nico's Via Divisi property as Direct Booking). All 15 Booking URLs manually verified by Nico. Structure for GetYourGuide, Discover Cars, Parclick created as placeholders for future brain-dumps. Verification log established. [PM + Nico] [Est: 45 min | Actual: 55 min]
@@ -35,6 +35,8 @@
 - [ ] 2.12 Expand WAP_10 scope to cover experiences, monuments, rituals, and combo moves. Add sections for: (Tier 1) affiliate-monetized experiences [current content], (Tier 2) monuments and places to see, (Tier 3) free cultural experiences and rituals, (Tier 4) Nico combo moves (e.g., Santa Caterina cannolo + cloister). Rename doc if scope change warrants. [PM + Nico] [Est: 45 min | Actual: __ ]
 
 - [ ] 2.13 First real test run of SOP_03 against a fresh story dump. Validates Story Agent system prompt, dedupe scan, tag assignment flow, flag surfacing, Claude Code execution. Adjustments expected to v1.1 after run. [Nico + Story Agent] [Est: 45 min | Actual: __ ]
+- [ ] 3.1 Upgrade WAP Scout to use Perplexity Sonar API for synthesis-style fact-checks. Replaces or augments built-in web_search. Estimated cost ~$5-15/month at WAP volume. Implement only if Scout v1 UNVERIFIABLE rate exceeds 30% in Phase 3 testing. [Architect] [Est: 90 min | Actual: __ ]
+- [ ] 3.2 Add Firecrawl tool to WAP Scout for full page content extraction when needed. Use when Scout needs to verify a claim against a specific URL's full content. Estimated cost ~$16/month Hobby plan. Implement only if Scout v1 needs page-reading capability that built-in web_fetch can't provide. [Architect] [Est: 60 min | Actual: __ ]
 
 ## Phase 3 — Test Run
 

@@ -25,6 +25,7 @@
 |---|---|---|
 | Apr 19, 2026 | Story Bank auto-search during content drafts | Build a smarter lookup: agent searches Story Bank by tag before every draft and flags matches automatically. Needs the bank to have enough entries first. |
 | Apr 19, 2026 | ConvertKit integration for WAP | Currently using CK but no documented automation system for WAP. Could mirror the Sheila approach eventually. |
+| Apr 26, 2026 | Scout tool stack research | Comparison done across Tavily, Firecrawl, Perplexity Sonar API, Apify, Serper, News API, Perigon. Decision: ship Scout v1 with built-in Claude tools, defer paid APIs until Phase 3 measures actual UNVERIFIABLE rate. Perplexity Sonar identified as strongest single upgrade (search + synthesis + citations). Firecrawl identified as backup for JS-heavy sites. Skip Apify/Serper/News API — wrong shape for Scout's job. |
 
 ## Questions for Nico
 
