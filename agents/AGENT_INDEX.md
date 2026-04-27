@@ -18,7 +18,7 @@ Every agent in the WAP system has a system prompt stored in `agents/`. This inde
 |---|---|---|---|---|---|
 | WAP PM | [PM_SYSTEM_PROMPT.md](PM_SYSTEM_PROMPT.md) | Project orchestrator. Tracks projects, decides task sequencing, writes handoff prompts, updates docs after every task. | All sessions, every task | project_knowledge_search | v1.0 active |
 | WAP Architect | [ARCHITECT_SYSTEM_PROMPT.md](ARCHITECT_SYSTEM_PROMPT.md) | Technical infrastructure: SEO, GA4, GTM, WordPress, ConvertKit, Stripe, Lovable, Make.com, GitHub, scripting. | SOP_01 Step 2, Step 7. SOP_02 Step 2, Step 7. All technical tasks. | project_knowledge_search, web_search, web_fetch (varies by task) | v1.0 active |
-| WAP Copywriter | [COPYWRITER_SYSTEM_PROMPT.md](COPYWRITER_SYSTEM_PROMPT.md) | Generic SOP-driven copywriter. All writing: blog posts, newsletters, YouTube descriptions, social posts, premium guide copy, sales pages, ads. Reads SOPS_INDEX to find workflow, reads WAP_05 every session for voice, reads task-specific Brain docs per SOP instructions. No task-specific knowledge baked in — all workflow logic lives in SOPs, all rules in Brain docs. | SOP_01 Pass 1/2/3. SOP_02 Step 3. All content tasks. | project_knowledge_search, web_search (optional) | v2.0 active (replaces v1.x COPYWRITING_SYSTEM_PROMPT.md) |
+| WAP Copywriter | [COPYWRITER_SYSTEM_PROMPT.md](COPYWRITER_SYSTEM_PROMPT.md) | Generic SOP-driven copywriter. All writing: blog posts, newsletters, YouTube descriptions, social posts, premium guide copy, sales pages, ads. Reads SOPS_INDEX to find workflow, reads WAP_05 every session for voice, reads task-specific Brain docs per SOP instructions. No task-specific knowledge baked in — all workflow logic lives in SOPs, all rules in Brain docs. | SOP_01 Pass 1/2/3. SOP_02 Step 3. All content tasks. | project_knowledge_search, web_search (optional) | v2.0 active |
 | WAP Scout | [SCOUT_SYSTEM_PROMPT.md](SCOUT_SYSTEM_PROMPT.md) | Fact verification specialist. Extracts factual claims from drafts, verifies via web sources, returns markdown table with VERIFIED / DISPUTED / UNVERIFIABLE per claim. Surgical extraction (skips personal observations, comedic embellishment, invented dialogue). Tier-ranked sources. | SOP_01 Step 4. SOP_02 Step 4. | web_search, web_fetch | v1.0 untested (Phase 3 validates) |
 | WAP Story Agent | [STORY_AGENT_SYSTEM_PROMPT.md](STORY_AGENT_SYSTEM_PROMPT.md) | Story Bank intake. Two-stage workflow: Stage 1 crafts raw dump into 250-350 word Maniscalco-style bit. Stage 2 runs dedupe, taxonomy tags, named-business check, stats flag, pairs-with, voice mode confirmation. | SOP_03 (the entire workflow). | project_knowledge_search | v1.0 untested (Task 2.13 validates) |
 
@@ -81,6 +81,14 @@ These were identified as needed but not yet built:
 - **WAP Image Agent (Task 2.8):** Image sourcing, AI generation, editing, alt text, library management. Until built, SOP_01 Step 6.5 is manual (Nico).
 - **Scout v2 with Perplexity Sonar API (Task 3.1):** Upgrade Scout's fact-checking with synthesis-style API. Implement only if Scout v1 UNVERIFIABLE rate exceeds 30% in Phase 3 testing.
 - **Scout v2 with Firecrawl (Task 3.2):** Add full-page extraction capability when web_fetch isn't enough. Implement only if Scout v1 needs page-reading capability that built-in tools can't provide.
+
+---
+
+## Archived Agents
+
+| Agent | Archived File | Replaced By | Date |
+|---|---|---|---|
+| WAP Copywriting v1.0 | _archived/COPYWRITING_SYSTEM_PROMPT_v1.0.md | COPYWRITER_SYSTEM_PROMPT.md (v2.0) | April 27, 2026 |
 
 ---
 

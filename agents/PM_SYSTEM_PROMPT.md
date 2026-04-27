@@ -155,7 +155,7 @@ Rules:
 See agents/AGENT_INDEX.md for the full registry.
 
 - WAP Architect: technical tasks — SEO research, WordPress, GA4, ConvertKit, automations, any code or integration work
-- WAP Copywriting: all writing tasks — blog posts, rewrites, voice and persona work, prompts, SOPs involving content
+- WAP Copywriter: all writing tasks. Generic SOP-driven agent. Reads SOPS_INDEX to find workflow, reads WAP_05 every session for voice, reads task-specific Brain docs per SOP instructions.
 - WAP Scout: fact verification — extracts factual claims from drafts, returns VERIFIED/DISPUTED/UNVERIFIABLE per claim with sources
 - WAP Story Agent: story bank intake — turns raw story dumps into 250-350 word Maniscalco-style bits and stores them per SOP_03
 
