@@ -1,30 +1,10 @@
 # 07 — Test Run Findings
 
-**Purpose:** Living log of every issue, gap, mistake, missing rule, and improvement opportunity discovered during the SOP_01 Phase 3 test run on /where-to-stay-palermo/. Findings are captured as they emerge during the test. At end of test, distilled lessons get promoted to Brain doc updates and SOP_01 v2.0 patches.
+**Purpose:** Living log of every issue, gap, mistake, missing rule, and improvement opportunity discovered during the SOP_01 Phase 3 test run on /where-to-stay-palermo/. Findings captured as they emerged. At end of test, distilled lessons get promoted to Brain doc updates and SOP_01 v2.0 patches.
 
 **Started:** April 27, 2026
 **Test target:** /where-to-stay-palermo/ (P1 Tier A, -2,012 clicks YoY)
-**Status:** In progress (Step 5/6 active)
-
----
-
-## How To Use This Doc
-
-**During the test run:**
-- PM logs every issue discovered as a new row in the Findings Log below
-- Severity: High (breaks workflow or output quality), Medium (nice-to-have improvement), Low (minor polish)
-- Each finding has a Fix Path describing where the lesson eventually gets codified
-
-**At end of test run:**
-- Review entire Findings Log
-- Group findings by Fix Path (Brain doc updates, SOP patches, agent prompt updates)
-- Generate batch of Claude Code prompts that apply each fix
-- Move this doc to "completed test" status, archive findings into permanent Brain doc updates
-
-**For future SOP test runs:**
-- Use this doc as a template
-- Each test run gets its own findings log
-- Pattern: project-local raw findings → distilled rules promoted to Brain after test
+**Status:** Test STOPPED at Step 6 v2 review (Apr 27, 15:12). Output quality unacceptable. Decision: stop test, redesign SOP_01 from the ground up.
 
 ---
 
@@ -32,67 +12,56 @@
 
 | # | When Found | Step | Severity | Finding | Fix Path |
 |---|---|---|---|---|---|
-| 1 | Apr 26 | Pre-Step-1 | High | SOP_01 v1.1 has no formal Structural Audit step. Some posts need restructuring (new sections added, sections cut, complete redesign) before voice rewriting. v1.1 implicitly assumes existing structure is fine. | Patch SOP_01 to v1.2 with formal Step 2.5 Structural Audit between Prep (Step 2) and Rewrite (Step 3). PM + Architect produce structural decision before Copywriting writes. |
-| 2 | Apr 27, Step 2 | Step 2 (Prep) | Medium | Architect prep packet flagged 4 free walking tour internal link candidates. These were rejected by Nico because they conflict with Sicilian Way premium guide monetization (free walking tour articles undermine paid product). | Add "Free vs Paid Content Conflict" rule to WAP_03 (Monetization) or WAP_06 (Content Format): "Posts that funnel toward Sicilian Way premium guide must NOT link to free walking-tour or itinerary articles. Itineraries are paid product." Update Architect agent system prompt with the rule. |
-| 3 | Apr 27, Step 2 | Step 2 (Prep) | Medium | WAP_04_CONTENT_INVENTORY.md row 019 lists /where-to-stay-palermo/ as Status RANKING. WAP_13_GSC_AUDIT_LATEST.md lists same URL as P1 ROTTING -77% YoY. Two docs have conflicting status fields. | Decide which doc is canonical for status. Either remove status from WAP_04 (defer to WAP_13) or have WAP_04 reference WAP_13 as source of truth. Same conflict will exist for every P1/P2/P3 row in WAP_04. |
-| 4 | Apr 27, Step 2 | Step 2 (Prep) | Medium | Live post has SEO title vs H1 mismatch: SEO title is "The 3 Top Areas and Accommodations for Your Palermo Stay 2025" (numbered, year-stamped). H1 is "Where to Stay in Palermo to Get the Most of Your Trip" (un-numbered). Should be unified. The "2025" year stamp also hurts freshness signals in 2026. | Add to WAP_06: rule that SEO title and H1 should match (or have intentional documented differentiation). Audit existing posts for similar mismatches. |
-| 5 | Apr 27, Step 2 | Step 2 (Prep) | Medium | Architect could not verify schema markup via web_fetch (markdown extraction strips JSON-LD) or bash curl (wearepalermo.com not allowlisted). Schema audit blocked. | Add tool capability: either allowlist wearepalermo.com for bash curl, or add a dedicated schema-checking method that pulls raw HTML. Alternatively, build a Step 2 sub-task: "PM runs Google Rich Results Test on URL before Step 3" so schema state is known. |
-| 6 | Apr 27, Step 2.5 | Step 2.5 (Structural Audit) | Low | "Centro Storico = unified single area" framing is Nico's local truth (locals don't think of Kalsa/Vucciria/Capo/Albergheria as separate stay options). Tourist guides treat them as separate areas. This is a competitive differentiator and SEO opportunity. | Add to WAP_05 (Voice and Persona) as a permanent local-truth rule. Future posts about Palermo accommodation should reflect this framing. |
-| 7 | Apr 27, Step 2.5 | Step 2.5 | Low | Vucciria fact lock established: NOT a working morning fish market. It is currently a restaurant/nightlife area, touristy. Capo and Ballarò are the working morning markets. PM had hallucinated the Vucciria-as-fish-market claim earlier in session. | Add Vucciria fact to WAP_10 entry. Add to WAP_05 as a Palermo fact lock that all agents should respect. PM and other agents should never claim Vucciria is a working morning market. |
-| 8 | Apr 27, Step 3 | Step 3 (Rewrite) | High | Copywriting produced markdown output, but post needs WordPress-ready HTML for direct paste. Step 3 prompt didn't specify output format clearly. | Update SOP_01 Step 3 prompt template to specify HTML output mandatory for SOP_01 (rewrites of existing posts that go to WordPress). Markdown OK for SOP_02 if reviewed before HTML conversion. |
-| 9 | Apr 27, Step 5 | Step 5 (Nico Review) | High | Copywriting v1 used generic Pro Tip boxes (custom HTML) instead of WAP_06 Local's Take (Variant 1, orange), Local's Pick (Variant 2, green), or Local's Warning (Variant 3, red) templates. Each WAP_06 template requires a specific Nico photo URL and specific color. v1 had only 2 generic boxes total in 3,470 words. WAP_06 mandates "one box per H2 section, one per ~300 words." | Patch Copywriting agent system prompt: enforce WAP_06 text box compliance. Variants 1/2/3 only. No generic Pro Tip blocks. Mix variants across post. Frequency rule baked in. |
-| 10 | Apr 27, Step 5 | Step 5 | High | Copywriting v1 jumped from affiliate disclosure straight to TL;DR with no Nico intro. Cold readers (US tourist who never heard of WAP) don't know who's talking before being asked to trust recommendations. The "I'm Sicilian, born here" credibility hook was at section 3, buried. | Update WAP_06 post structure rule: Nico self-introduction MUST precede the TL;DR / direct-answer block. Order: Italic lead → Featured image → Nico intro (~80 words) → Affiliate disclosure → TL;DR. Update SOP_01 Step 3 prompt template with explicit ordering. |
-| 11 | Apr 27, Step 5 | Step 5 | High | Single-pass writing (Copywriting handles information + structure + voice + format + HTML in one go) produces flat tone of voice. Voice attention gets split across too many concerns. v1 reads as competent reformat of Nico's YouTube script, NOT as a fresh Sebastian-Maniscalco rhythm pass. | Patch SOP_01 to v2.0 with 3-pass writing model. Step 3a (Information & Structure, markdown OK), Step 3b (Trimming & Voice, markdown), Step 3c (Format & HTML). Each pass = separate Copywriting handoff. Each pass = different attention focus. PM gates each pass. |
-| 12 | Apr 27, Step 5 | Step 5 | Medium | v1 missing several reader-need answers per area: walking size of area, cleanliness reality, airport connection, supermarket availability, restaurant/food coverage in Politeama and Mondello. Cold readers want to know "is this my area, can I live here, what's nearby." | Add to WAP_06 (Content Format) as "Cold Reader Reality Check" — list of standard reader-need items every "where to stay" or area-comparison post must cover. Update SOP_01 Step 2.5 Structural Audit to include this checklist. |
-| 13 | Apr 27, Step 5 | Step 5 | Medium | v1 had several wall-of-text paragraphs exceeding WAP_06 max (2 sentences or 45 words per paragraph for mobile). Pass 3 should always include a paragraph-length scrub. | Reinforce in WAP_06 that paragraph-length rule is mandatory, not aspirational. Add explicit instruction to Step 3c (Format) to break long paragraphs as final cleanup. |
-| 14 | Apr 27, Step 4 | Step 4 (Scout) | Medium | Scout caught 4 disputed facts: ZTL fine €164 (not €160), Unico Boutique 4-star (not 5), B&B Mondello Design star rating conflict (drop stars), Villa Gabriella 300 sqm (unverified). All actionable in Step 6. | No SOP patch needed — Scout did its job correctly. But add to WAP_05 / Copywriting prompt: when stating star ratings, verify against hotel's own official site, not aggregator sites. |
-| 15 | Apr 27, Step 5 | Step 5 | Medium | Star rating convention inconsistent in v1: official Giata/government tourism stars (Hotel Wagner 5★) mixed with editorial stars on properties not officially classified (apartments, vacation rentals). Misleading to readers — implies authority that doesn't exist. | Add to WAP_06: rule on star rating conventions. Use ★ stars only on officially classified hotels. For apartments, B&Bs without official rating, vacation rentals: drop stars and use descriptive tagline only ("My top pick for Mondello" without stars). |
-| 16 | Apr 27, Step 5 | Step 5 | Low | "Continue Your Palermo Planning" block (gray box with 3 internal links to related post + premium guide + YouTube) is required by WAP_06 at end of every post. v1 had social CTAs (Instagram + YouTube + Facebook group) instead. | Reinforce in Copywriting agent prompt and SOP_01 Step 3c (Format): Continue Your Palermo Planning block is mandatory. Social CTAs are separate and optional. |
-| 17 | Apr 27, Step 5 | Step 5 | Low | v1 affiliate disclosure was generic. WAP_06 requires Nico-voiced disclosure (e.g., "Heads up: some links are affiliate links. I get a small cut so I can keep the circus running, pay the people who help me, and avoid having to go beg my cousin for a real job."). | Reinforce Nico-voiced affiliate disclosure rule in Copywriting agent prompt. Provide canonical example. |
-| 18 | Apr 27, Step 5 | Step 5 | Low | FAQPage schema must be added at publish (Step 8). Easy to forget — not in v1. | Add explicit reminder to SOP_01 Step 8 (Architect Publish): FAQPage schema generated from FAQ section, added as Custom HTML block in WordPress directly below visible FAQ. Architect agent prompt should enforce. |
-| 19 | Apr 27, Step 5 | Step 5 | Low | Existing live post had internal copy error: "I've handpicked 5 of the best places to stay" but only 3 hotels listed in main Politeama section (other 2 in separate "Luxury Options" sub-section). Math error inherited if v1 doesn't fix. | Not a SOP issue — fix in Step 6 of this run. But adds to: when Architect inventories the live post in Step 2, flag any internal numerical inconsistencies for Step 3 to correct. |
-| 20 | Apr 27, Step 5 | Step 5 | Low | Existing live post used em-dashes despite WAP_06 ban. Voice signatures ("park your butt on silk sheets") survived from old voice but em-dashes did too. Copywriting must purge in Pass 3 (Format). | Reinforce in Copywriting agent prompt: em-dash purge is mandatory final step. No exceptions. |
-| 21 | Apr 27, Step 5 | Step 5 | Medium | Nico's YouTube scripts are valuable content assets that get repurposed across formats (video → blog → newsletter). Currently no folder structure for them. | Create `brain/youtube-scripts/` folder. Add `INDEX.md` listing all scripts (topic, date, URL, primary-source-for-which-blogs). Save where-to-stay-palermo YouTube script as first entry. Add row to WAP_00_INDEX. |
-
----
-
-## Patches Pending (Generated At End Of Test)
-
-This section will be populated at end of test run with the actual Claude Code prompts that apply each fix.
-
-**Brain doc updates needed:**
-- WAP_03 (Monetization): Free vs Paid Content Conflict rule (Finding #2)
-- WAP_04 ↔ WAP_13 status reconciliation (Finding #3)
-- WAP_05 (Voice and Persona): Centro Storico unified-area local truth (Finding #6), Vucciria fact lock (Finding #7)
-- WAP_06 (Content Format): Multiple updates — SEO title/H1 sync rule (Finding #4), post structure ordering (Finding #10), Cold Reader Reality Check checklist (Finding #12), star rating conventions (Finding #15)
-- WAP_10 (Places/Experiences): Vucciria entry fact correction (Finding #7)
-- WAP_00_INDEX: New `brain/youtube-scripts/` folder row (Finding #21)
-- New folder + index: `brain/youtube-scripts/` (Finding #21)
-
-**SOP updates needed:**
-- SOP_01 v2.0: Add formal Step 2.5 Structural Audit (Finding #1), split Step 3 into 3a/3b/3c (Finding #11), add HTML-output rule to Step 3c (Finding #8), add Step 8 FAQPage schema reminder (Finding #18)
-
-**Agent prompt updates needed:**
-- Copywriting agent: WAP_06 text box enforcement (Finding #9), Nico intro before TL;DR (Finding #10), star rating sourcing (Finding #14), em-dash purge mandatory (Finding #20), Continue Planning block mandatory (Finding #16), Nico-voiced affiliate disclosure (Finding #17)
-- Architect agent: Free vs Paid linking rule (Finding #2), copy-error flagging in prep (Finding #19), FAQPage schema enforcement (Finding #18)
-- Scout agent: No changes needed — performed correctly (Finding #14)
-
-**Tool/capability updates needed:**
-- Schema audit method that bypasses web_fetch markdown stripping (Finding #5)
+| 1 | Apr 26 | Pre-Step-1 | High | SOP_01 v1.1 has no formal Structural Audit step. Some posts need restructuring before voice rewriting. | Patch SOP_01 with formal Step 2.5 Structural Audit between Prep and Rewrite. |
+| 2 | Apr 27, Step 2 | Step 2 | Medium | Free walking tour internal links rejected by Nico (conflict with Sicilian Way premium guide). | Add "Free vs Paid Content Conflict" rule to WAP_03 or WAP_06. Update Architect agent prompt. |
+| 3 | Apr 27, Step 2 | Step 2 | Medium | WAP_04 says /where-to-stay-palermo/ status RANKING; WAP_13 says ROTTING. Two docs conflict. | Reconcile: WAP_04 references WAP_13 as canonical for status. |
+| 4 | Apr 27, Step 2 | Step 2 | Medium | Live post SEO title vs H1 mismatch ("3 Top Areas... 2025" vs "Where to Stay... Trip"). Year-stamped title hurts freshness in 2026. | Add SEO/H1 sync rule to WAP_06. |
+| 5 | Apr 27, Step 2 | Step 2 | Medium | Architect couldn't verify schema via web_fetch (strips JSON-LD) or bash curl (domain not allowlisted). | Allowlist wearepalermo.com for bash, OR add Step 2 sub-task: PM runs Google Rich Results Test before Step 3. |
+| 6 | Apr 27, Step 2.5 | Step 2.5 | Low | Centro Storico = unified single area is Nico's local truth, not 4 sub-neighborhoods. | Add to WAP_05 as permanent local-truth rule. |
+| 7 | Apr 27, Step 2.5 | Step 2.5 | Low | Vucciria fact lock: NOT a working morning fish market. It's restaurant/nightlife. Capo and Ballarò are working markets. | Add Vucciria fact to WAP_10 entry. Add to WAP_05 as fact lock. |
+| 8 | Apr 27, Step 3 | Step 3 | High | Copywriting produced markdown, post needs HTML for WordPress. Output format unspecified. | Update SOP_01 Step 3 prompt template: HTML mandatory for SOP_01 (existing post rewrites). |
+| 9 | Apr 27, Step 5 | Step 5 | High | v1 used generic Pro Tip blocks instead of WAP_06 Local's Take/Pick/Warning templates. Required min 1 box per H2 / 1 per ~300 words. v1 had 2 in 3,470 words. | Patch Copywriting agent system prompt: enforce WAP_06 text box compliance (Variants 1/2/3 only, frequency rule, mix variants). |
+| 10 | Apr 27, Step 5 | Step 5 | High | v1 jumped from affiliate disclosure to TL;DR with no Nico intro. Cold readers don't know who's writing. | Update WAP_06 post structure rule: Nico intro MUST precede TL;DR. Order: Italic lead → Featured image → Nico intro (~80 words) → Affiliate disclosure → TL;DR. |
+| 11 | Apr 27, Step 5 | Step 5 | High | Single-pass writing (info + structure + voice + format + HTML in one go) produces flat tone of voice. Voice attention split. | Patch SOP_01 to v2.0 with 3-pass writing model: Step 3a (Info & Structure, markdown), Step 3b (Trimming & Voice, markdown), Step 3c (Format & HTML). Each pass = separate Copywriting handoff. PM gates each pass. |
+| 12 | Apr 27, Step 5 | Step 5 | Medium | v1 missed reader-need answers per area: walking size, cleanliness, airport connection, supermarket availability, restaurant coverage. | Add to WAP_06 "Cold Reader Reality Check" checklist for area/where-to-stay posts. Update SOP_01 Step 2.5 to include checklist. |
+| 13 | Apr 27, Step 5 | Step 5 | Medium | Wall-of-text paragraphs survived. WAP_06 max is 2 sentences or 45 words. | Reinforce in WAP_06: rule mandatory not aspirational. Step 3c (Format) explicitly breaks long paragraphs as final cleanup. |
+| 14 | Apr 27, Step 4 | Step 4 | Medium | Scout caught 4 disputed facts: ZTL fine €164 not €160, Unico Boutique 4-star not 5, B&B Mondello stars conflict, Villa Gabriella 300 sqm unverified. | No Scout patch needed. Add to Copywriting prompt: when stating star ratings, verify against hotel's own official site, not aggregators. |
+| 15 | Apr 27, Step 5 | Step 5 | Medium | Star rating convention inconsistent: government Giata stars mixed with editorial stars on apartments/vacation rentals. | Add to WAP_06: stars only on officially classified hotels. Apartments/B&Bs/rentals: descriptive tagline only, no stars. |
+| 16 | Apr 27, Step 5 | Step 5 | Low | "Continue Your Palermo Planning" block required by WAP_06 at end. v1 had social CTAs instead. | Reinforce in Copywriting agent prompt and SOP_01 Step 3c. Continue Planning block mandatory. Social CTAs separate. |
+| 17 | Apr 27, Step 5 | Step 5 | Low | v1 affiliate disclosure was generic. WAP_06 requires Nico-voiced version. | Reinforce Nico-voiced affiliate disclosure rule. Provide canonical example in agent prompt. |
+| 18 | Apr 27, Step 5 | Step 5 | Low | FAQPage schema must be added at publish (Step 8). Easy to forget. | Add explicit reminder to SOP_01 Step 8. Architect agent prompt enforces. |
+| 19 | Apr 27, Step 5 | Step 5 | Low | Live post had internal copy error: "5 best places" but only 3 listed in main + 2 in luxury sub-section. | Architect Step 2 should flag internal numerical inconsistencies. |
+| 20 | Apr 27, Step 5 | Step 5 | Low | Live post used em-dashes despite WAP_06 ban. | Reinforce in Copywriting agent prompt: em-dash purge mandatory final step. |
+| 21 | Apr 27, Step 5 | Step 5 | Medium | Nico's YouTube scripts are content assets needing folder structure. | Create `brain/youtube-scripts/` folder + INDEX.md + this script as first entry. Add row to WAP_00_INDEX. |
+| 22 | Apr 27, Step 6 v2 | Step 6 | Medium | Affiliate disclosure in v2 is full font size and bold. Should be smaller font, light green color, less visually prominent. | Add to WAP_06 affiliate disclosure spec: small font, light green box, low visual weight. Specify CSS. |
+| 23 | Apr 27, Step 6 v2 | Step 6 | High | TL;DR / "Quick answer, no fluff" block design fails. Doesn't connect to article opening. Feels disconnected. Reads like robot summary. | Redesign TL;DR as proper HTML callout box with light color, "in a rush?" framing that invites scroll. Add design spec to WAP_06. |
+| 24 | Apr 27, Step 6 v2 | Step 6 | High | "And why should you listen to me?" as H2 is structurally wrong. Author intro is not a major content section. | Add to WAP_06: author intro is flowing prose, NEVER an H2. H2s reserved for major content sections only. |
+| 25 | Apr 27, Step 6 v2 | Step 6 | High | Author intro doesn't say "I'm Nico Barcellona." Reader doesn't learn the name. | Add to Copywriting agent prompt: author intro MUST include name "Nico Barcellona" within first sentence. |
+| 26 | Apr 27, Step 6 v2 | Step 6 | High | Author intro fails its real job: convincing the reader to KEEP READING. Currently just credentials. No sales hook. | Add to WAP_06 author intro spec: must contain (1) name, (2) credibility hook, (3) reason to keep reading (sales hook / promise of value). Three jobs in one paragraph. Update agent prompt. |
+| 27 | Apr 27, Step 6 v2 | Step 6 | High | Bold logic broken: bolding entire sentences. Should bold 2-3 word phrases that carry meaning. | Add to WAP_06 emphasis rules: bold = 2-4 word phrases only. Never bold full sentences. Bold for emphasis, not visual weight. Update Copywriting agent prompt. |
+| 28 | Apr 27, Step 6 v2 | Step 6 | High | "SEO" / "search engine optimization" appeared in reader-facing body copy. Industry-insider talk breaks fourth wall. | Add to WAP_05 banned-words list: "SEO", "search engine optimization", "AIO", "AI Overview", "ranking", "keywords" (in body copy context). These are meta-talk, not reader content. |
+| 29 | Apr 27, Step 6 v2 | Step 6 | Medium | Wall-of-text paragraphs survived again despite being in revision prompt. | Step 3c (Format) MUST break paragraphs as final cleanup. Enforce in agent prompt with explicit max-2-sentence rule. |
+| 30 | Apr 27, Step 6 v2 | Step 6 | Medium | Copywriting agent itself was vulgar in commentary, not just in Nico-voice. Distinction needed. | Add to Copywriting agent prompt: agent prose (commentary, structure, deliverable headers) is NEVER vulgar. Only Nico-voice content can curse. |
+| 31 | Apr 27, Step 6 v2 | Step 6 | High | Overall design quality is poor. Generic. No visual hierarchy. No design DNA matching the live blog. | Add to WAP_06: visual design specs for every callout, hotel card, table, header, list. Provide canonical CSS templates. Copywriting must use exact templates, not invent variants. |
 
 ---
 
 ## Severity Summary
 
-- **High severity (8 findings):** 1, 8, 9, 10, 11
-- **Medium severity (8 findings):** 2, 3, 4, 5, 12, 13, 14, 15, 21
+- **High severity (12 findings):** 1, 8, 9, 10, 11, 23, 24, 25, 26, 27, 28, 31
+- **Medium severity (11 findings):** 2, 3, 4, 5, 12, 13, 14, 15, 21, 22, 29, 30
 - **Low severity (8 findings):** 6, 7, 16, 17, 18, 19, 20
 
 ---
 
-## Next Steps
+## Decision: Test STOPPED Apr 27, 15:12
 
-1. Continue test run from current point (Step 6 Revision pending PM decision on 3-pass restructure)
-2. Append new findings to log as they emerge
-3. At end of test, generate batch of Claude Code prompts to apply patches
-4. Archive this findings log alongside test completion artifacts
+After v2 review showed unacceptable output quality across multiple dimensions (broken H2 hierarchy, missing author name, bad bold logic, walls of text, poor design, banned-word usage), Nico decided: stop the test. Redesign SOP_01 from the ground up using all 31 findings as input.
+
+Next phase: SOP_01 v2.0 redesign session starting Apr 27, 15:12.
+
+---
+
+## Patches Pending (Generated In SOP_01 v2.0 Redesign)
+
+This section will be populated as the redesign produces concrete patches.
