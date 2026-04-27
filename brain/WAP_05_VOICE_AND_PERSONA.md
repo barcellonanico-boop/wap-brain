@@ -47,50 +47,6 @@ Copywriting agent's final pass before output: search the draft for any banned wo
 
 ---
 
-## Palermo Local Truth Locks
-
-These are Nico's locked positions on Palermo geography, neighborhoods, and culture. They differ from how tourist guides typically frame these things. They are non-negotiable for any post about Palermo.
-
-If a draft contradicts a fact lock, reject and rewrite.
-
-### Lock 1: Centro Storico is ONE area, not 4 sub-neighborhoods
-
-Locals call the entire historic center "Centro Storico." Tourist guides break it into Kalsa, Capo, Albergheria, Vucciria. Locals don't.
-
-For accommodation purposes, treat Centro Storico as one unified area. Mention the four sub-neighborhood names for SEO capture, but DON'T treat them as separate stay options.
-
-**Voice framing example:**
-
-"Tourist guides break it into four neighborhoods. We don't. Locals call it all Centro Storico. Pick a hotel anywhere inside it, you're fine."
-
-This is a competitive differentiator and authenticity signal. Tourist guides treating them as separate is a real industry blind spot Nico exploits.
-
-### Lock 2: Vucciria is currently a restaurant/nightlife area
-
-NOT a working morning fish market. The "PATATE PATATE at 6 AM" story applies to **Capo** and **Ballarò**, NOT Vucciria.
-
-Vucciria is touristy now. Restaurants, bars, nightlife. Loud at night but not a market that opens at dawn.
-
-If a draft frames Vucciria as a working morning market that smells like fish, reject and rewrite.
-
-### Lock 3: Capo and Ballarò are the chaotic working markets
-
-These are the markets where vendors shout from dawn ("PATATE! PATATE!"), where pickpocket risk peaks during the day, and where you do NOT book a hotel unless you want a 7 AM alarm clock.
-
-If a post warns against booking inside a market, the markets to name are Capo and Ballarò. Not Vucciria.
-
-### How agents use this
-
-When writing about Palermo accommodation, neighborhoods, or markets:
-
-1. Check if the topic touches any of these three locks
-2. If yes, the lock's framing must be respected
-3. If a previous draft (Nico's old content, a YouTube script, etc.) violates a lock, rewrite to align
-
-These locks may evolve as Palermo changes. Updates to this section come from Nico's direct observation, not from external tourist sources.
-
----
-
 ## Why This Doc Exists
 
 Voice does two jobs for wearepalermo.com.
