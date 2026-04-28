@@ -1,6 +1,6 @@
 # WAP_06_CONTENT_FORMAT.md — Content Format and Publishing Rules
 
-Last updated: April 20, 2026
+Last updated: April 28, 2026 (P0 patches: D1 skeleton reorder, D2 bottom disclosure removed, D3 hotel card template, D4 TL;DR table template, D5 callout wpautop rule, D6 canonical photo URL)
 
 This doc defines HOW a WAP blog post is structured: intro, sections, paragraphs, text boxes, images, affiliate handling, schema, publishing checklist. Voice rules live in WAP_05_VOICE_AND_PERSONA.md. This doc covers everything else.
 
@@ -99,7 +99,7 @@ If a paragraph runs 4+ lines on iPhone, break it. Period. Mobile readers abandon
 
 Every blog post follows this structure. No exceptions.
 
-### 1. Italic Lead (TL;DR Block)
+### 1. Italic Lead
 
 One italic sentence, max 25 words, directly above the main image. Contains the primary keyword or a close variation. States the USP of the article.
 
@@ -107,40 +107,40 @@ Example: *"This article is your absolute bible for renting a car in Palermo with
 
 Not: *"In this article, we'll explore everything you need to know about car rentals in Palermo."* (Generic, dead, Fireable Offense #1 territory.)
 
-### 2. Main Image
+### 2. Featured Image
 
-Full-width featured image. 800x530 pixels minimum. Descriptive alt text with primary keyword. Not keyword-stuffed.
+Plain `<img>` element. No `[caption]` shortcode. 800x530 pixels minimum. Descriptive alt text with primary keyword. Not keyword-stuffed.
 
-### 3. Nico Self-Introduction
+### 3. Author Intro
 
-Two or three short paragraphs. Opens with "Ciao! It's your friend Nico here" or a direct variant. Immediately establishes: Sicilian, born here, not a travel vlogger from England.
-
-Example: *"Ciao! It's your friend Nico here. Ready to give you the insider scoop on renting a car during your vacation in Palermo. As a born-and-raised Sicilian, I know my hometown like the back of my hand."*
+~80-150 words, NEVER an H2. Hits 3 jobs: name + credibility + sales hook. Opens with "Ciao! It's your friend Nico here" or a direct variant. Immediately establishes: Sicilian, born here, not a travel vlogger from England.
 
 This block serves three jobs at once:
 - Voice (entity consistency for E-E-A-T)
 - SEO (primary keyword appears naturally)
 - Trust (reader knows who's talking)
 
-### 4. Benefit Promise
+Most posts should include a bulleted list of what's covered in the article — Google likes this, readers like this.
 
-Two or three paragraphs explaining WHY the reader should stay. What they'll learn, what trap they'll avoid, what they'll save. Keep it in Nico voice. Use at least one signature move (see WAP_05).
+### 4. TL;DR Callout
 
-This is where most posts should include a bulleted list of what's covered in the article — Google likes this, readers like this.
+HTML `<table>` with rows — see TL;DR Template below. NOT a `<p>` in a colored div.
 
-### 5. First "Local's Take" Text Box + Affiliate Disclosure
+### 5. Affiliate Disclosure (AFTER TL;DR — Apr 28 canonical)
 
-First text box goes here, before the first H2. Usually a "Local's Take" that sets the stakes or makes a promise.
+**UPDATED Apr 28:** Affiliate disclosure position is AFTER TL;DR, not before. ONE affiliate disclosure per post. The previously-spec'd bottom disclosure is removed entirely.
 
-Directly below the text box, in italics, the affiliate disclosure in Nico voice. Short. Honest. Funny. Does not generic-blog it.
+New canonical order: Italic lead → Featured image → Author intro → TL;DR → **Affiliate disclosure** → H2 1.
 
-Example placement: text box first, then:
+Reasoning per Nico Apr 28 publish session: "the text box with the warning for links where there's an affiliation is in the new position. I did it on purpose, you have to leave it there. And you can absolutely put it as a rule." Top-only is non-redundant; reader hits the disclosure at the moment they're about to consume affiliate-loaded content (TL;DR has affiliate links in the "Where to stay" row).
 
-*Heads up: some links here are affiliate links. Price stays the same for you. I get a small cut so I can keep the circus running, pay the people who help me, and avoid having to go beg my cousin for a real job.*
+In italics, in Nico voice. Short. Honest. Funny. Does not generic-blog it.
 
-The exact wording gets tuned in Nico voice. Never use generic "this post may contain affiliate links." Always Maniscalco-flavored.
+Example:
 
-**Second line of disclosure at the VERY BOTTOM of the post as backup** — belt-and-suspenders compliance.
+*Heads up: some links here are affiliate links. Price stays the same for you. I get a small cut so I can keep the lights on and avoid begging my cousin for a real job.*
+
+Never use generic "this post may contain affiliate links." Always Maniscalco-flavored.
 
 ### 6. Main Content — H2 Sections
 
@@ -172,11 +172,7 @@ Gray-background HTML block with 3 internal links:
 
 Template below.
 
-### 10. Bottom Affiliate Disclosure (Italic Backup)
-
-One line of italic at the very bottom. Compliance backup.
-
-### 11. Signature
+### 10. Signature
 
 *A hug is always,*
 *Nico Barcellona*
@@ -365,6 +361,36 @@ Use for: scam warnings, traps, things to avoid, risks.
 </div>
 ```
 
+### Callout HTML Pattern (Canonical — Apr 28, wpautop rule)
+
+All 3 callout variants (Local's Take orange, Local's Pick green, Local's Warning red) MUST include **blank lines inside the inner `<div>`** for WordPress's wpautop filter. Without blank lines (before `<cite>` and after the last `<p>`), wpautop eats the closing `</div>` and the callout text leaks below the box.
+
+**Canonical pattern (Local's Take orange variant):**
+
+```html
+<div class="locals-take">
+<div>
+
+<img src="https://wearepalermo.com/wp-content/uploads/2025/09/nico-barcellona-portrait-scaled.jpg" alt="Nico Barcellona" />
+
+<cite>Local's Take</cite>
+
+<p>[Callout body content here.]</p>
+
+</div>
+</div>
+```
+
+**Critical:** the blank line BEFORE `<cite>` and AFTER the last `<p>` are not optional. They are required for wpautop to render correctly.
+
+Same pattern applies to Local's Pick (green class) and Local's Warning (red class). Reference implementation: see `09_Pass4_Nico_Final.md`.
+
+### Local's Take Photo URL (Canonical — Apr 28)
+
+`https://wearepalermo.com/wp-content/uploads/2025/09/nico-barcellona-portrait-scaled.jpg`
+
+This is the canonical URL used in the Tourist Info article (the gold-standard reference). The OLD `Nico-Take.png` URL from pre-2025 live posts is OUTDATED. Do not use the old URL even if it appears in legacy snapshots — those snapshots are from posts being replaced.
+
 ### Rules for Using Text Boxes
 
 - **Frequency:** at least one per H2 section, or roughly one every 300 words of body text.
@@ -372,6 +398,72 @@ Use for: scam warnings, traps, things to avoid, risks.
 - **Placement:** ideally at the end of a section to reinforce the point. Middle of section also works for breaking up dense content.
 - **Mixing:** use all three variants across a post. If every box is a Warning, the post feels negative. If every box is a Pick, the post feels like a pitch. Balance.
 - **Voice:** inside text boxes, same Nico voice rules apply (WAP_05). No generic bullet-point summaries.
+
+---
+
+## TL;DR Template (Canonical HTML — Apr 28)
+
+The TL;DR is a `<table>` with rows. NOT a `<p>` block in a colored div. Reasoning: mobile skim requires structure; prose-in-a-box reads as a robot summary.
+
+**Default 4-row pattern:**
+
+```html
+<table class="tldr-box">
+<tbody>
+<tr><td><strong>What it is</strong></td><td>[1-line definition with primary keyword]</td></tr>
+<tr><td><strong>How to get there</strong></td><td>[1-line transit answer with affiliate link if natural]</td></tr>
+<tr><td><strong>How long</strong></td><td>[1-line duration verdict]</td></tr>
+<tr><td><strong>When to go</strong></td><td>[1-line season verdict]</td></tr>
+</tbody>
+</table>
+```
+
+**Optional 5th row — "Where to stay" (use when post has hotel cards):**
+
+The 5th row provides 3 stay options inline with affiliate links, formatted on separate physical lines (NO `<br />` tags — WordPress's wpautop handles line breaks).
+
+```html
+<tr><td><strong>Where to stay</strong></td><td>
+<strong>Couples:</strong> <a href="[booking-aid-918822-url]" target="_blank" rel="nofollow noopener">[Hotel Name]</a>
+
+<strong>Families:</strong> <a href="[booking-aid-918822-url]" target="_blank" rel="nofollow noopener">[Hotel Name]</a>
+
+<strong>Budget:</strong> <a href="[booking-aid-918822-url]" target="_blank" rel="nofollow noopener">[Hotel Name]</a>
+</td></tr>
+```
+
+Reference implementation: see `09_Pass4_Nico_Final.md` (Favignana, Apr 28, 2026).
+
+---
+
+## Hotel Card Template (Canonical HTML — Apr 28)
+
+```html
+<div class="hotel-card">
+<a href="https://www.booking.com/hotel/it/[slug].en.html?aid=918822&no_rooms=1&group_adults=2" target="_blank" rel="nofollow noopener"><img src="https://wearepalermo.com/wp-content/uploads/[year]/[month]/[hotel-image-slug].jpg" alt="[Hotel Name]" class="alignnone size-large" /></a>
+
+<h3>[Hotel Name] — ([Type Label])[ ★★★/★★★★ if Giata-classified]</h3>
+
+<p><strong>[Tagline]</strong></p>
+
+<p>[Description, 30-60 words]</p>
+
+<p><a href="https://www.booking.com/hotel/it/[slug].en.html?aid=918822&no_rooms=1&group_adults=2" target="_blank" rel="nofollow noopener" class="check-it-out-button">Check it out →</a></p>
+
+</div>
+```
+
+**Critical attributes (every hotel card):**
+- Booking URL with `aid=918822` query param (preserved through both image link and CTA button)
+- `target="_blank"` on every `<a>` (opens new tab)
+- `rel="nofollow noopener"` on every affiliate `<a>` (SEO + security)
+- Image inside the link (clickable image as well as button)
+- Star rating ONLY if hotel is Giata-classified per WAP_06b (no stars on apartments, B&Bs, R.T.A. residences)
+- Type label in parens after hotel name: (Apartments) / (B&B) / (Resort) / (Residence (R.T.A.)) — match hotel's own self-classification
+
+**Image URL inference is BANNED.** If you don't have the verified image URL, use `[NICO: paste image URL]` placeholder and let Nico fill in Pass 4. Inferring from naming conventions produces broken images (real examples Apr 28: `b-amp-b-il-tufo.jpg` was actually `il-tufo.jpg`; `i-pretti-favignana.jpg` was actually `i-pretty.jpg` — typo preserved across years).
+
+Reference implementation: see `09_Pass4_Nico_Final.md` (6-hotel section).
 
 ---
 
@@ -422,9 +514,9 @@ Before hitting publish on any new or updated post, verify every item.
 - [ ] Main image present, 800x530 min, descriptive alt text
 - [ ] Nico self-introduction ("Ciao, it's Nico") in first paragraphs
 - [ ] Benefit promise paragraphs present
-- [ ] First Local's Take text box before first H2
-- [ ] Affiliate disclosure (italic, Nico voice) directly after first text box
-- [ ] Bottom affiliate disclosure line present
+- [ ] TL;DR callout as `<table>` with rows (not `<p>` in a colored div)
+- [ ] Affiliate disclosure (italic, Nico voice) AFTER TL;DR, BEFORE H2 1
+- [ ] NO bottom affiliate disclosure (removed Apr 28 — top-only is canonical)
 - [ ] Main answer complete in first 540 words
 - [ ] FAQ section at bottom, 4-6 questions
 - [ ] Continue Planning block at end
@@ -473,8 +565,8 @@ Before hitting publish on any new or updated post, verify every item.
 
 ### Affiliate Links
 - [ ] All affiliate links open in new tab (target="_blank" rel="noopener noreferrer")
-- [ ] Disclosure box present at top (in Nico voice)
-- [ ] Disclosure italic line present at bottom
+- [ ] ONE disclosure present AFTER TL;DR, BEFORE H2 1 (in Nico voice)
+- [ ] NO bottom disclosure (removed Apr 28)
 
 ### Categories and Tags
 - [ ] Assigned to correct WordPress category

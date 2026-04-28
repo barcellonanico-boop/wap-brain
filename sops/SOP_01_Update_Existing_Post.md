@@ -4,7 +4,7 @@
 **Category:** Content — Rescue Track
 **Owner:** WAP PM
 **Last updated:** April 24, 2026
-**Status:** v1.1 (untested — Phase 3 will validate)
+**Status:** v2.0 (P0 patches Apr 28: D12 mechanical self-check, D13 Pass 3 scope, D14 image placeholders)
 
 ---
 
@@ -349,6 +349,67 @@ Templates are parameterized — PM fills target URL, priority, audit data per ru
 
 ---
 
+---
+
+## Pass 2 Self-Check (MECHANICAL, NOT ESTIMATE) — D12 Apr 28
+
+Pass 2 self-check is a MECHANICAL scan, not a human estimate. Lesson from Apr 28 Favignana run: Pass 2 v3 self-claimed paragraph-length compliance via human estimate; mechanical scan in Pass 3 found 19 wall-of-text violations. Human estimates are unreliable on length compliance.
+
+**Required scans (every Pass 2 submission must include):**
+
+1. **Paragraph length scan:** Every `<p>` block, count words. Flag any >45 words. Flag any >180 chars. Report count of violations.
+2. **Em-dash regex:** Find all `—` (em-dash unicode). MUST be zero. Report exact count.
+3. **Banned-words regex:** Find all instances of "SEO", "AI Overview", "ranking", "keywords", "schema markup" in body. MUST be zero. Report exact count.
+4. **[VERIFY:] tag scan:** Find all `[VERIFY:`. MUST be zero. Report count.
+5. **Word count grep:** Total word count of body (excluding agent notes). Report number.
+6. **Bold full-sentence scan:** Find any `<strong>` content with 50+ chars or 8+ words. Report count.
+7. **"Piazza Madrice" scan:** Find any "Matrice" (typo). MUST be zero in body. Report count.
+
+**Pass 2 deliverable must include a self-check table with exact counts for all 7 scans, not "compliant ✅" estimates.** If any count is non-zero where it should be zero, fix before submitting.
+
+---
+
+## Pass 3 Scope Clarification — D13 Apr 28
+
+**Scope rules (Apr 28 clarification):**
+
+Pass 3 IS:
+- Mechanical format application (HTML conversion, template wrapping, callout boxes, hotel cards, TL;DR table, Continue Planning block, FAQPage schema)
+- Image placement and URL filling (or `[NICO: paste URL]` placeholder if URL not verifiable)
+- **Mechanical paragraph splits at sentence boundaries** if Pass 2 missed wall-of-text violations. This is allowed and expected. NOT a voice rewrite.
+- Final mechanical scans (em-dash purge, banned-words, paragraph length, bold logic)
+
+Pass 3 IS NOT:
+- Voice rewrite (locked in Pass 2)
+- Structural changes (locked in Structural Audit + Pass 1)
+- Fact corrections (locked in Pass 2 with Scout corrections)
+- New content additions
+
+**The mechanical paragraph split rule:** if Pass 2 ships with paragraphs >45 words or >180 chars, Pass 3 splits them at the nearest sentence boundary without changing wording. This is MANDATORY mechanical work, not optional. Architect should challenge upstream (escalate to PM) if Pass 2 ships with >5 paragraph-length violations — that signals a Pass 2 self-check failure.
+
+**Canonical reference article rule (PM decision Apr 28):** When in doubt about callout/FAQ/intro patterns, the most recent published WAP article is canonical, not the spec. Currently: Tourist Info article (April 2026). The spec will always lag actual practice in a one-person operation. "Diff against most recent published article" is a Step 9 input.
+
+---
+
+## Image URL Verification — D14 Apr 28 (Placeholder Default)
+
+Architect cannot HTTP-test image URLs without browser access. Therefore the canonical rule is: **all images in Pass 3 ship as `[NICO: paste URL]` placeholders unless the URL has been verified by Nico in this session OR is in the canonical Tourist Info reference article.**
+
+DO NOT infer image URLs from naming conventions. Apr 28 examples that broke this rule:
+- Inferred `b-amp-b-il-tufo.jpg`, actual was `il-tufo.jpg`
+- Inferred `i-pretti-favignana.jpg`, actual was `i-pretty.jpg` (English variant)
+- Inferred `residence-scirocco-favignana.jpg`, actual was `scirocco-e-tramontana-faviganana.jpg` (typo "faviganana" preserved across years)
+
+**Architect workflow:**
+1. If Pass 2 includes verified image URLs → use as-is
+2. If `00_Live_HTML.md` snapshot has image URLs → DO NOT TRUST without verification (snapshots may be stale)
+3. If Tourist Info article uses an image (e.g. Nico portrait) → use that URL as canonical
+4. If neither → ship as `[NICO: paste URL]` placeholder for Pass 4
+
+**Result:** placeholders are not failures. They are the correct conservative default. Pass 4 (Nico manual edits) is the URL-fill step.
+
+---
+
 ## Changelog
 
 - v1.0 — April 24, 2026 — Initial draft.
@@ -362,3 +423,7 @@ Templates are parameterized — PM fills target URL, priority, audit data per ru
   - New Step 6.5 — Images (Nico manual until Image Agent exists)
   - Task 2.7 (Scout), 2.8 (Image Agent), 2.9 (Affiliate Verification SOP) logged as follow-ups
   - Total time budget updated to 100/190 min with images step added
+- v2.0 — April 28, 2026 — P0 patches from Favignana Pass 3+4 session:
+  - D12: Pass 2 self-check requires mechanical scans with exact counts (not human estimates). 7 mandatory scans.
+  - D13: Pass 3 scope explicitly allows mechanical paragraph splits at sentence boundaries. Canonical reference article rule codified.
+  - D14: Image URL inference banned. Placeholder default `[NICO: paste URL]` for all unverified URLs.

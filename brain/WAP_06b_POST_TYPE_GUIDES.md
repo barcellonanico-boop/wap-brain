@@ -231,6 +231,50 @@ Note: Specific restaurants are NEVER named in free content (paid-only rule, see 
 
 ---
 
+## FAQ Canonical Format (Apr 28)
+
+### HTML Pattern
+
+```html
+<h2>❓ Frequently Asked Questions (The Stuff You're Still Worried About)</h2>
+
+<div class="faq-brutto-ma-funziona">
+
+<details>
+<summary><strong>[Question]</strong></summary>
+
+[Answer paragraph, 40-75 words, self-contained.]
+
+</details>
+
+<details>
+<summary><strong>[Question]</strong></summary>
+
+[Answer paragraph.]
+
+</details>
+
+</div>
+```
+
+**Critical rules:**
+- H2 wording is exact: `❓ Frequently Asked Questions (The Stuff You're Still Worried About)` (emoji + main heading + parenthetical)
+- All FAQs wrapped in single outer `<div class="faq-brutto-ma-funziona">`
+- Each Q&A is `<details>/<summary>` (not `<h3>` + paragraphs)
+- Question wrapped in `<summary><strong>`
+- Answer 40-75 words each, self-contained (each FAQ readable on its own)
+- 6-8 FAQs total per post
+
+Reference implementation: see `09_Pass4_Nico_Final.md` (Favignana, Apr 28, 2026) and the Palermo Tourist Information article.
+
+### FAQPage JSON-LD Schema (PM Decision Apr 28: KEEP)
+
+Every post with an FAQ section ships with FAQPage JSON-LD schema. Schema appears as a `<script type="application/ld+json">` block immediately after the FAQ section closing div.
+
+Reasoning: invisible to readers, real SEO upside (Rich Results eligibility). The Tourist Info article doesn't have it currently — that's a separate Architect retrofit task, not a precedent.
+
+---
+
 ## Working Document Note
 
 This doc grows as we encounter new post types. When a SOP_01 or SOP_02 run discovers a new post-type-specific rule, the rule gets added to the relevant section here.
