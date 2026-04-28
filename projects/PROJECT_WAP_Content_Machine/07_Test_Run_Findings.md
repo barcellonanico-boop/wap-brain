@@ -50,6 +50,15 @@
 | 36 | Apr 27, Pass 1 | Step 6 | Low | 3 new Nico stories captured during Pass 1 review (dinghy gas scam, bike-closed-for-lunch, Nordic friend lobster). Used in draft. Need formal SOP_03 intake to Story Bank post-publish. | Schedule SOP_03 batch run post-Favignana publish. Candidates S008, S009, S010. |
 | 37 | Apr 27, Pass 1 | Step 6 | Low | WAP_10 prices stale (bike rental, scooter rental, hotel peak season pricing). Nico provided 2026 numbers Apr 27 but WAP_10 not updated. | Schedule WAP_10 price update batch post-Favignana publish. Include: Favignana bike €10/day, scooter €50-80/day, peak hotels €150-180/night. |
 | 38 | Apr 28 | Step 6 | Low | Process flag: structural divergences from 04_Structural_Audit during Pass 1 (10→11 H2s, sections moved). Nico approved via direct feedback Apr 27 evening. Process valid this run, but flag: 04_Structural_Audit needs to be the controlling doc; mid-pass changes should update it OR be logged as authorized deviations. | Patch SOP_01 Step 5: Structural Audit doc updates require an explicit "amended Apr DD" entry when changes happen mid-pass. Don't ship divergence silently. |
+| 29 | Apr 28, Pass 2 | Step 8 | High | Pass 2 voice work failed twice (v1 read like a memo, v2 was italics on top of v1 prose) before landing on v3. Total session burn: ~5+ hours over 3 rounds. Diagnosis from Copywriter agent: WAP_05 has rules but no annotated examples to teach the feel. Rules alone don't compose into voice. | Create WAP_05b "Voice in Action" — annotated Palermo Tourist Information article showing how voice moves combine into rhythm. THIS WEEK action. Highest-leverage post-publish fix. |
+| 30 | Apr 28, Pass 2 | Step 8 | Medium | Copywriter agent invented "11-move Maniscalco voice formula" structural lock. Useful substance but not agent's place to lock new SOP rules unprompted. | Park until post-publish. Evaluate whether to ratify the 11 moves into WAP_05 v2.1 after Favignana ships. |
+| 31 | Apr 28, Pass 2 | Step 8 | Medium | Copywriter proposed content-type-specific word-count bands (quick-answer / destination-guide / pillar) replacing single 3,000-3,500 target in SOP_01 Step 8. Substance valid: voice install adds words to destination guides, doesn't tighten them. Pass 2 v3 landed at 3,755 (+8.7% over v1) with proper voice density. | Park until post-publish. Evaluate SOP_01 Step 8 patch with new bands. |
+| 32 | Apr 28, Pass 2 | Step 8 | Low | Copywriter proposed pinning gold-standard Pass 2 sample inside SOP_01 Step 8 as reference paragraph. | Park until post-publish. Evaluate after WAP_05b done. |
+| 33 | Apr 28, Pass 2 | Step 8 | Medium | Copywriter proposed "Credibility rule" — credibility lives in author intro, not re-introduced in every H2. Sharp observation valid. | Park until post-publish. Evaluate WAP_06 or SOP_01 Step 8 patch. |
+| 34 | Apr 28, Pass 2 | Step 8 | Medium | Copywriter proposed "Tourist-secret reframing" cliche-killer pattern: when killing "hidden gem" / "off the beaten path" cliches, reframe as insider-vs-outsider, not as overcrowded. Hidden-gem-fix in Favignana article followed this pattern. | Park until post-publish. Evaluate WAP_05 cliche-killer patch. |
+| 35 | Apr 28, Pass 2 | Step 8 | Low | Copywriter re-proposed WAP_14_TARGET_AUDIENCE.md (already flagged Apr 27 as finding-set escalation). Valid gap: WAP doesn't have permanent audience definition doc, produced "vs Ustica" cold-reader mistake in Pass 1 v1. | Park until post-publish. Evaluate creating WAP_14 separately. |
+| 36 | Apr 28, Pass 2 | Step 8 | Medium | 5 new Story Bank candidates surfaced this run: S008 (dinghy gas scam), S009 (bike-closed-for-lunch), S010 (Nordic friend lobster), S011 (grandmother swimming Cala Azzurra 1962), S012 (alternate phrasing "half in mother's belly"). S011 and S012 are interchangeable for credibility job. | Schedule SOP_03 batch run post-Favignana publish. PM picks S011 vs S012. |
+| 37 | Apr 28, Pass 2 | Step 8 | Low | Process repeat: Copywriter agent gave PM procedural instructions ("paste this into Claude Code", "tell PM to do X") — same pattern as finding #25. Agent overstep on workflow direction. | Reinforce in Copywriter agent prompt v2.2: agents file work + observations only, do NOT prescribe PM workflow. Patch agent prompt post-Favignana. |
 
 ---
 
@@ -82,3 +91,25 @@ The following items came up during Pass 1 v2.1 review. Decision: park, do not ac
 - Finding #37: WAP_10 price update batch.
 - Finding #38: SOP_01 Step 5 amendment-protocol patch.
 - 6 Brain doc escalations from Copywriter: parking ALL 6 per PM decision Apr 28. Re-evaluate post-publish.
+
+### Apr 28 Post-Pass-2 Park Decisions
+
+PM consolidated decision Apr 28 16:45: park ALL escalations from Pass 2 session except Escalation 1 (WAP_05b creation). Reasoning: scope discipline. Favignana ship is the goal. All structural patches evaluated post-publish.
+
+THIS WEEK action (one item):
+- Create WAP_05b "Voice in Action" with annotated Palermo Tourist Information article. Highest-leverage fix to prevent next post burning 5+ hours on voice failure.
+
+POST-PUBLISH evaluation batch (Findings #22-37, 16 items):
+- 2 invented WAP_06 rules (5-job intro, TL;DR-mentions-monetization) from Pass 1
+- 11-move Maniscalco voice formula from Pass 2
+- Content-type-specific word count bands
+- Gold-standard sample pinned in SOP_01
+- Credibility rule (no H2 self-introductions)
+- Tourist-secret reframing cliche-killer
+- WAP_14 Target Audience doc creation
+- 04_Structural_Audit amendment-protocol patch
+- SOP_03 batch run for S008, S009, S010, S011/S012
+- WAP_10 price update
+- WAP_12 Favignana population
+- WAP_06b Things-to-Do subsection promotion
+- Copywriter agent prompt v2.2 (workflow boundary patch)
