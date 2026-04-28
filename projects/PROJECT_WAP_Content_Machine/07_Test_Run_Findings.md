@@ -59,6 +59,13 @@
 | 35 | Apr 28, Pass 2 | Step 8 | Low | Copywriter re-proposed WAP_14_TARGET_AUDIENCE.md (already flagged Apr 27 as finding-set escalation). Valid gap: WAP doesn't have permanent audience definition doc, produced "vs Ustica" cold-reader mistake in Pass 1 v1. | Park until post-publish. Evaluate creating WAP_14 separately. |
 | 36 | Apr 28, Pass 2 | Step 8 | Medium | 5 new Story Bank candidates surfaced this run: S008 (dinghy gas scam), S009 (bike-closed-for-lunch), S010 (Nordic friend lobster), S011 (grandmother swimming Cala Azzurra 1962), S012 (alternate phrasing "half in mother's belly"). S011 and S012 are interchangeable for credibility job. | Schedule SOP_03 batch run post-Favignana publish. PM picks S011 vs S012. |
 | 37 | Apr 28, Pass 2 | Step 8 | Low | Process repeat: Copywriter agent gave PM procedural instructions ("paste this into Claude Code", "tell PM to do X") — same pattern as finding #25. Agent overstep on workflow direction. | Reinforce in Copywriter agent prompt v2.2: agents file work + observations only, do NOT prescribe PM workflow. Patch agent prompt post-Favignana. |
+| 38 | Apr 28, Pass 3 | Step 9 | High | Pass 3 took 5 versions and ~155 min vs 45-60 min budget. Root cause: WAP_06 v2 spec was incomplete (hotel card HTML, callout HTML, TL;DR layout, FAQ format) + 00_Live_HTML.md snapshot was stale (image URLs wrong) + no formal canonical-reference-article rule + Architect cannot HTTP-test URLs. Spec gaps not Architect execution. | P0 patches D1-D6, D10, D12-D14 applied Apr 28. |
+| 39 | Apr 28, Pass 3 | Step 9 | High | Pass 2 v3 self-claimed paragraph-length compliance and was wrong: 19 wall-of-text violations carried into Pass 3. Pass 2 self-check was human estimate, not mechanical scan. | D12 patch applied: Pass 2 self-check requires mechanical scans with exact counts, not estimates. |
+| 40 | Apr 28, Pass 3 | Step 9 | Medium | Pass 3 scope was ambiguous on whether Architect could mechanically split wall-of-text paragraphs at sentence boundaries. v1 Architect assumed not allowed, shipped wall-of-text. | D13 patch applied: Pass 3 explicitly CAN and MUST mechanically split paragraphs at sentence boundaries when Pass 2 ships violations. |
+| 41 | Apr 28, Pass 3 | Step 9 | High | Architect inferred image URLs from naming conventions (e.g., `b-amp-b-il-tufo.jpg` actual was `il-tufo.jpg`). Produced 2 rejection cycles. | D14 patch applied: Architect ships `[NICO: paste URL]` placeholders unless URL verified. |
+| 42 | Apr 28, Pass 4 | (NEW Step 10) | Medium | Pass 4 (Nico manual edits) is real and material but not codified in SOP_01. Currently informal between Pass 3 and Publish. | P1: codify Pass 4 as explicit step in SOP_01. Park to this-week patches batch. |
+| 43 | Apr 28, Pass 3 | Snapshot tooling | Medium | 00_Live_HTML.md snapshot has stale image URLs. Architect trusted as authoritative; produced broken images. | P1: define snapshot generation process, refresh cadence, and trust rules. Currently NO trust for image URLs. Park to this-week patches batch. |
+| 44 | Apr 28, Pass 3 | Architect process | Medium | Architect self-criticism (handoff doc section G): (1) should not infer image URLs, (2) should mechanically split wall-of-text in v1 not flag-and-ship, (3) should diff against canonical reference article before assuming spec is right, (4) should mechanically scan Pass 2 input before Pass 3, (5) architect notes section too long (250 lines vs <80 target). | P0 items addressed by D14, D13, D17 (codify Tourist Info as canonical reference). Items 4 + 5 are agent-prompt patches: park to Architect agent prompt v2.1 batch. |
 
 ---
 
@@ -113,3 +120,24 @@ POST-PUBLISH evaluation batch (Findings #22-37, 16 items):
 - WAP_12 Favignana population
 - WAP_06b Things-to-Do subsection promotion
 - Copywriter agent prompt v2.2 (workflow boundary patch)
+
+### Apr 28 Post-Pass-3+4 Park Decisions
+
+PM consolidated decision Apr 28 evening: Favignana shipped. P0 patches applied (D1-D6, D10, D12-D14).
+
+P1 batch parked to this-week-patches session:
+- D7 (Bold logic explicit rule — "every long paragraph must have at least one bolded skim-keyword")
+- D8 (Featured image pattern — plain `<img>`, no [caption] shortcode)
+- D15 (Pass 4 step formalization in SOP_01 — codify what Nico already does)
+- D16 (Snapshot tooling redesign — generation, refresh, trust rules)
+
+P2 backlog parked:
+- D9 (Image attributes — PM decision Apr 28: Nico's minimal canonical wins; spec follows practice.)
+- D17 (Tourist Info as canonical reference — PM decision Apr 28: codified in SOP_01 Step 9 scope clarification as part of D13 patch.)
+
+PM judgment calls (Apr 28):
+- D9 → Nico's minimal canonical (his preference governs, his rankings prove it)
+- D11 → KEEP FAQPage schema (invisible, SEO upside, retroactive Tourist Info fix is separate task) — applied in P0 batch as part of D10
+- D17 → Codified in SOP_01 D13 patch (spec lags practice in one-person operation; Step 9 input is cheaper)
+
+POST-PUBLISH evaluation batch now 23 items (Findings #22-44).
