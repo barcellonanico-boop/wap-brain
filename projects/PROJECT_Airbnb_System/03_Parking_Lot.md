@@ -14,6 +14,7 @@
 | Apr 22, 2026 | Smoke and CO alarm install + reporting | Nico explicitly deferred. Flagged as a compliance/insurance risk until resolved. Should be picked up as a standalone task after Phase 1. |
 | Apr 22, 2026 | Cleaning service SOP | Only needed when Nico hires a cleaner or when volume requires it. Currently Nico cleans personally. |
 | Apr 22, 2026 | Maintenance ticketing system | Log inside WAP_11 is enough for 2 properties. Revisit at 4+ properties. |
+| Apr 28, 2026 | WAP_12 must include "Frequently Asked Guest Questions" FAQ section with canned reply templates | Trigger: real guest asked "does the shuttle run 24h?" — reply drafted ad-hoc by PM. WAP_12 Task 2.1 should include a structured FAQ library: each entry = guest question + Nico-voice canned answer + source link/source-of-truth doc reference (e.g., WAP_11 airport transport section) + last verified date. FAQ #1 should be: "Does the shuttle run 24/7?" referencing the new shuttle hours block in WAP_11. Pattern is reusable for every repeat question (wifi, check-in time, parking, late check-out, etc.). |
 
 ---
 

@@ -1,6 +1,6 @@
 # WAP_11_AIRBNB_PROPERTIES.md — Airbnb Properties Master File
 
-Last updated: April 23, 2026 (Phase 1 session: contacts promoted to guest-facing, airport transport updated with Uber + shuttle frequency + Via Roma 268 + shared-taxi payment flow, train removed, Lime specified, plumbing warnings added, leave-apartment rule added, damages charging policy codified)
+Last updated: April 28, 2026 (shuttle operating hours added, late-night shared taxi caveat added, 1:05 AM driver-wait insider note added, late-night fallback codified to taxi/Uber only)
 
 ---
 
@@ -266,15 +266,21 @@ Options ranked by Nico's recommendation:
 
 1. **Prestia e Comandé shuttle bus:** €6.30
    - Runs every 30 minutes
+   - **Operating hours:** First run ~5:05 AM, last run ~1:05 AM. NOT 24/7.
+   - **Late-night insider note:** At the 1:05 AM run, if a flight is landing right around that time, drivers sometimes wait a bit for arrivals. Not guaranteed. Don't promise this to guests, mention it only as a possibility.
    - Nearest stop for Via Ambra: "Vucciria" stop on Via Roma 268 (same stop as Via Divisi)
    - Walk from stop to apartment: ~2 minutes (use Google Maps)
    - Tickets: prestiaecomande.it/en or directly at the bus stop
+   - Schedule + ticket purchase: https://www.prestiaecomande.it/orari-e-linee/
 
 2. **Shared taxi:** €8
-   - Lined up one after another at the airport, leave constantly, no booking
+   - Lined up one after another at the airport during normal hours, leave constantly, no booking
+   - **Late-night caveat:** Outside roughly 6 AM to 11 PM, shared taxis often disappear. Drivers do whatever they want. Don't tell guests "they're always there" if their flight lands late.
    - Guest pays the driver at the end of the ride
    - Guest tells the driver they want to get off at "San Domenico" or "Rinascente store"
-   - Faster than the shuttle
+   - Faster than the shuttle when available
+
+   **Late-night arrivals fallback:** If guest lands outside shuttle hours and shared taxis aren't running, the only options are regular private taxi (~€45-50) or Uber (~€45-50). Always available.
 
 3. **Regular private taxi:** ~€45-50
    - Available at arrivals exit, no booking needed
