@@ -1,63 +1,35 @@
-# 05 — Pass 1 Information Draft (v2)
+# 05 — Pass 1 Information Draft (v2.1)
 
 **SOP:** SOP_01 v2.0, Step 6 (Pass 1 — Information Draft)
 **Author:** Copywriting agent
-**Date:** April 27, 2026
+**Date:** April 27, 2026 (drafted) — Apr 28 committed
 **Pass:** 1 of 3 (information + structure; voice rough OK; HTML in Pass 3)
-**Version:** v2 (replaces v1 after Nico structural feedback Apr 27 evening)
-
----
-
-## v2 changes from v1:
-
-- Author intro restructured to hit 5 jobs (name + credibility + problem + overview/bullets + USP). New rule, flagged for WAP_06 update.
-- TL;DR rewritten to mention hotels (monetization signal). New rule, flagged for WAP_06 update.
-- Comparisons (Levanzo/Marettimo, Ustica, Aeolian) moved from H2 1 to new H2 9 at the end. With audience-aware one-line explanations of each island first.
-- Price reality block moved from H2 1 to H2 3 (Where to Stay), where it's topical.
-- "Near the port" framing corrected to "near Piazza Matrice (main square)." 6 places.
-- Bike/scooter prices updated to current 2026: bikes €10/day, scooters €50-80/day.
-- 3 new stories installed: dinghy gas scam (H2 2 H3 Rent a Boat), bike-closed-for-lunch (H2 5 Moving Around), Nordic friend lobster (H2 5, doubles as the first-person specific observation).
-- Island-pace-service note added to H2 2 H3 Local Foods.
-- Reader Interrogation installed (Variant A in H2 4).
-- H2 count: 10 → 11.
-
-## v2.1 changes from v2 (Apr 27 evening, second Nico review):
-
-- Author intro rewritten again. v2 was selling-AGAINST the island by leading with negatives (NY prices, bike-closed-for-lunch, gas scam) in the intro. v2.1 leads with WHY THE ISLAND IS GOOD (turquoise water, sea caves, red tuna, slow-island days that reset your brain), establishes credibility, hints at hard truths without listing them, then the bullet overview. Negatives land in their respective sections, not in the intro.
-- Bullet overview tightened from 6 items to 5.
-- "Grandma's spare room" → "grandma's house" in H2 3 and FAQ #2 (Nico note: "spare room" reads as a single bedroom in someone's house; the rentals are actually tiny standalone places).
-- Walls-of-text spot-check deferred to Pass 2 per Nico's call ("we'll do it in the next phase, honestly I don't think it's bad").
+**Version:** v2.1 (3 rounds: v1 → v2 structural → v2.1 lead-positive)
 
 ---
 
 ## Suggested Meta
 
-**H1 (suggested):** What You Should Know About Favignana: A Sicilian's Guide
-(56 chars)
-
-**Meta title (suggested):** What You Should Know About Favignana (Local's Guide)
-(53 chars)
-
-**Meta description (suggested):** Favignana from a Sicilian who's been going since childhood. What to do, where to stay, how to get there, what to skip. Real talk, no tourist BS.
-(145 chars)
-
-**URL slug:** what-you-should-know-about-favignana (keep)
+- **H1:** What You Should Know About Favignana: A Sicilian's Guide (56 chars)
+- **Meta title:** What You Should Know About Favignana (Local's Guide) (53 chars)
+- **Meta description:** Favignana from a Sicilian who's been going since childhood. What to do, where to stay, how to get there, what to skip. Real talk, no tourist BS. (145 chars)
+- **URL slug:** what-you-should-know-about-favignana (keep)
 
 ---
 
 # What You Should Know About Favignana: A Sicilian's Guide
 
-Favignana from a Palermitan who's been going every summer since he was a kid. What to do, what to skip, what it really costs.
+*Favignana from a Palermitan who's been going every summer since he was a kid. What to do, what to skip, what it really costs.*
 
 [FEATURED IMAGE PLACEHOLDER: existing Cala Rossa image. Pass 3 inserts.]
 
-[AUTHOR INTRO BLOCK — flowing prose + concise bullet overview, ~125 words, hits 5 jobs per new WAP_06 rule: name, credibility, problem, overview, USP. NEVER an H2. Opens with WHY THE ISLAND IS GOOD, not with negatives. Negatives land in their respective sections.]
+[AUTHOR INTRO BLOCK — flowing prose + concise bullet overview, ~125 words. NEVER an H2. Opens with WHY THE ISLAND IS GOOD, not negatives.]
 
 Ciao, it's your friend Nico Barcellona. Born and raised in Palermo, and I've been going to Favignana every summer since I was a kid.
 
 Turquoise water, sea caves, red tuna, and the kind of slow-island days that reset your brain. It's the closest real escape Palermitani have, and probably the easiest island to fit into a Sicily trip. Most articles call it a "hidden gem." It's not hidden, it's just well-protected by the people who know it. I'll tell you what those articles skip. What's worth your money, what to skip, and the local quirks that will save you a headache.
 
-**In this article:**
+In this article:
 
 - Whether Favignana is worth your trip
 - What to do, what to eat, what to skip
@@ -74,8 +46,6 @@ Turquoise water, sea caves, red tuna, and the kind of slow-island days that rese
 ---
 
 ## H2 1: Why Visit Favignana?
-
-**Word target: ~400 words. Answers "is it worth it" + "what do you do." NO comparisons here, NO price here.**
 
 What Ibiza is for Barcelona, Favignana is for Palermo. The closest, easiest island getaway. Except instead of a flight you take a bus and a ferry, and instead of nightlife you get sea, food, biking, and aperitivo. The Ibiza comparison breaks at sundown, by the way. There's no clubbing here. None. Don't show up expecting it.
 
@@ -105,8 +75,6 @@ One last thing that affects whether it's worth it RIGHT NOW: the crowds. Two ray
 
 ## H2 2: Best Things to Do in Favignana
 
-**Word target: ~950 words**
-
 You don't come to Favignana for museums and guided tours with headsets. This is not Florence. The island's whole charm is no fixed schedule, no megaphone-wielding guide, just you, the sea, and a cold beer in the afternoon. Here's what's actually worth your time.
 
 ### H3: Rent a Boat and Circumnavigate the Island
@@ -121,7 +89,7 @@ In July and August, boats disappear faster than gelato in a heatwave. Book early
 
 Sea Taxi Favignana is one of the better rental shops on the island. Friendly staff, fair prices, and they don't act like you're bothering them just for asking a question.
 
-If you don't want to drive yourself, get a captained boat with lunch included from the Egadi specialists: Egadi Boat Tour with Lunch.
+If you don't want to drive yourself, get a captained boat with lunch included from the Egadi specialists: [Egadi Boat Tour with Lunch](https://gyg.me/uEnbDRCq).
 
 [CALLOUT: Local's Take — If you've ever played Mario Kart, you can steer one of these things. The bigger boats with captains are only worth it if you really hate driving or you want lunch on board.]
 
@@ -163,7 +131,7 @@ Bring water. Wear sneakers, not flip-flops. Skip the climb at noon unless you en
 
 Yeah, I know, "factory tour" doesn't sound like a vacation activity. But the Florio Tuna Factory was once the largest tuna processing center in the Mediterranean, and the museum is industrial archaeology with a soul.
 
-You'll walk through ancient tools, mattanza history, and walls packed with stories about the Florio family, who basically built the island. The best part: the tours are run by former factory workers. Real people, real stories, no scripted nonsense. They'll walk you through the rituals, the rise and fall, and how overfishing ruined it. They are still pissed about it.
+You'll walk through ancient tools, mattanza history, and walls packed with stories about the [Florio family](https://en.wikipedia.org/wiki/Florio_family), who basically built the island. The best part: the tours are run by former factory workers. Real people, real stories, no scripted nonsense. They'll walk you through the rituals, the rise and fall, and how overfishing ruined it. They are still pissed about it.
 
 Tours run in Italian and English. [VERIFY: current opening hours, entry fee, and whether English tours still run year-round, on the official Comune di Favignana / Regione Siciliana museum site]. Book ahead, especially in summer. Plan about an hour for the visit.
 
@@ -178,8 +146,6 @@ The best ones are scattered around Cala Rossa, Bue Marino, Lido Burrone, and Pun
 ---
 
 ## H2 3: Where to Stay in Favignana
-
-**Word target: ~520 words. Includes price reality block (moved from H2 1).**
 
 Short version: stay near Piazza Matrice, the main square in town. Long version: same answer, just louder.
 
@@ -199,57 +165,55 @@ There's something for every budget below, from cozy B&Bs to chic resorts. All we
 
 ### Hotel cards (Pass 3 to apply WAP_06 v2 hotel card template)
 
-**1. Residence Scirocco e Tramontana (Apartments)**
+**1. Residence Scirocco e Tramontana — (Apartments)**
 
-No stars displayed [STAR DECISION: Architect flagged AMBIGUOUS classification. Defaulting to STRIP STARS pending Nico's first-hand Giata confirmation per WAP_06b conservative reading.]
+No stars (apartments, not Giata-classified per WAP_06b)
 
 Mini apartments with kitchenettes. Everything you need, nothing you don't. Clean, well-located, ideal if you want to keep things simple.
 
-Booking link
+[Booking link: https://www.booking.com/hotel/it/residence-scirocco-e-tramontana.en.html?aid=918822&no_rooms=1&group_adults=2]
 
-**2. B&B Il Tufo (B&B) ★★★**
+**2. B&B Il Tufo — (B&B) ★★★**
 
 Central and convenient. Clean rooms, friendly hosts, killer location. Nothing fancy, but if you just want a place to crash after swimming all day, this is it.
 
-Booking link
+[Booking link: https://www.booking.com/hotel/it/b-amp-b-il-tufo.en.html?aid=918822&no_rooms=1&group_adults=2]
 
-**3. I Pretti Resort (Resort) ★★★★**
+**3. I Pretti Resort — (Resort) ★★★★**
 
 Harbor views and elegance, near Piazza Matrice and a short walk to the port. Stylish studios with outdoor space and a chilled, upscale vibe. Fancy without breaking the bank.
 
-Booking link
+[Booking link: https://www.booking.com/hotel/it/i-pretti-resort.en.html?aid=918822&no_rooms=1&group_adults=2]
 
-**4. Egusa73 Favignana (Apartments)**
+**4. Egusa73 Favignana — (Apartments)**
 
-No stars displayed (apartments / not Giata-classified per WAP_06b)
+No stars (apartments, not Giata-classified per WAP_06b)
 
 Big rooms, clean design, mix of regular rooms and apartments. Super central but peaceful. Kids and grandparents will both be happy here.
 
-Booking link
+[Booking link: https://www.booking.com/hotel/it/egusa73-favignana.en.html?aid=918822&no_rooms=1&group_adults=2]
 
-**5. Setteminne (B&B)**
+**5. Setteminne — (B&B)**
 
-No stars displayed (type-label correction from "Resort Design" to "B&B" per Architect; not Giata-classified)
+No stars (type-label corrected from "Resort Design" to "B&B" per Architect; not Giata-classified)
 
 Modern rooms, sunny terraces, quiet surroundings. A solid pick if you want some peace while still walking to Piazza Matrice in 10 minutes.
 
-Booking link
+[Booking link: https://www.booking.com/hotel/it/setteminne-resort-design.en.html?aid=918822&no_rooms=1&group_adults=2]
 
-**6. Stabilimento Lido Burrone (B&B)**
+**6. Stabilimento Lido Burrone — (B&B)**
 
-No stars displayed (type-label correction from "Hotel" to "B&B" per Architect; not Giata-classified)
+No stars (type-label corrected from "Hotel" to "B&B" per Architect; not Giata-classified)
 
 Big, bright rooms with a modern feel. Five minutes from the beach. Great for beach bums who want to roll out of bed and into the sea.
 
-Booking link
+[Booking link: https://www.booking.com/hotel/it/stabilimento-lido-burrone.en.html?aid=918822&no_rooms=1&group_adults=2]
 
 [CALLOUT: Local's Pick — If I had to pick one for a couple's weekend, I Pretti for the harbor views. For families, Egusa73 for the apartment setup. For solo or budget, Il Tufo: simple, central, done.]
 
 ---
 
 ## H2 4: How Long Should You Stay?
-
-**Word target: ~220 words. Reader Interrogation installed here (Variant A).**
 
 Depends. You want to take a selfie on the beach and peace out? One day. You want to actually feel the island, swim in three coves, eat tuna twice, and slow down? You need more.
 
@@ -266,8 +230,6 @@ But honestly, this island deserves better than a one-night stand.
 ---
 
 ## H2 5: Moving Around the Island
-
-**Word target: ~430 words. Updated prices (Nico-confirmed Apr 27 2026). Bike-closed-for-lunch story installed. Nordic-friend-lobster story installed (doubles as first-person specific observation per WAP_05 / E-E-A-T).**
 
 Favignana is small. Bike-it-in-a-day small. That's also exactly how you should explore it: on two wheels. No traffic, no parking drama, no gas-station nonsense.
 
@@ -293,37 +255,26 @@ I once brought a Nordic friend over to Favignana. Pale, blonde, blue eyes, the w
 
 ## H2 6: Favignana's Best Beaches
 
-**Word target: ~310 words**
-
 Let's be real, this island is all about the sea. If you're not spending half your day in the water or staring at it like it's your soulmate, you're doing it wrong.
 
 Most beaches here are rocky, not sandy. Bring water shoes or your feet will hate you. The water clarity, though, is insane. Like swimming in liquid glass. Snorkeling is unreal.
 
 ### Beaches you can reach by land
 
-**Cala Rossa.** Dramatic cliffs, stunning water, no sand. The Instagram favorite.
-
-**Cala Azzurra.** Easier access, dreamy turquoise water, great for a quick dip.
-
-**Bue Marino.** Wild, untouched, cinematic. Bring water shoes.
-
-**Calamoni.** Small coves, relaxed vibe, less crowded.
-
-**Lido Burrone.** The only sandy beach. Family-friendly, sunbeds and kiosks.
-
-**Cala Rotonda.** Fewer people, more peace.
+- **Cala Rossa.** Dramatic cliffs, stunning water, no sand. The Instagram favorite.
+- **Cala Azzurra.** Easier access, dreamy turquoise water, great for a quick dip.
+- **Bue Marino.** Wild, untouched, cinematic. Bring water shoes.
+- **Calamoni.** Small coves, relaxed vibe, less crowded.
+- **Lido Burrone.** The only sandy beach. Family-friendly, sunbeds and kiosks.
+- **Cala Rotonda.** Fewer people, more peace.
 
 ### Beaches you can only reach by boat
 
-**Faraglioni.** Huge rocks, dramatic setting.
-
-**Relitto allo Scoglio.** Shipwreck nearby, spooky in the best way.
-
-**Isolotto del Preveto.** Crystal-clear and calm.
-
-**Scoglio Corrente.** Choppy water, but worth it.
-
-**Secca del Toro.** Divers love it. Snorkelers too.
+- **Faraglioni.** Huge rocks, dramatic setting.
+- **Relitto allo Scoglio.** Shipwreck nearby, spooky in the best way.
+- **Isolotto del Preveto.** Crystal-clear and calm.
+- **Scoglio Corrente.** Choppy water, but worth it.
+- **Secca del Toro.** Divers love it. Snorkelers too.
 
 [CALLOUT: Local's Pick — Each beach has its own vibe. If you've got time, see them all. If I had to pick one? Cala Rossa by boat. Hands down. The view from the water is on a different planet from the view from the cliff.]
 
@@ -332,8 +283,6 @@ If you want to hit the boat-only beaches without renting your own dinghy, see th
 ---
 
 ## H2 7: Nightlife Reality Check
-
-**Word target: ~220 words**
 
 If you're looking for Ibiza vibes, book a Ryanair flight to Ibiza. Favignana doesn't do that.
 
@@ -349,43 +298,39 @@ If you're dying to dance, your best bet is one of the open-air bars just outside
 
 ## H2 8: Getting to Favignana
 
-**Word target: ~480 words**
-
 There's no airport on Favignana. You're getting here by ferry, and you have two real launching points: Palermo or Trapani.
 
 ### H3: From Palermo
 
 Easiest way is the Segesta Autolinee bus from Palermo city center direct to Trapani port, then the hydrofoil to Favignana. The bus runs almost hourly during peak season [VERIFY: Segesta Autolinee 2026 frequency; also note AST and Tarantola serve the same route]. Ride is just under 2 hours. Cheap, decent, and saves you cursing at Google Maps in a rental car.
 
-If you want flexibility, rent a car instead. Leave when you want, stop for snacks, blast Italian bangers. Use Discover Cars to find a decent rental at a fair price. Want more on car rentals? Here's my full guide. And if you're flying in, my airport transfers article covers how to get from PMO to wherever you sleep.
+If you want flexibility, rent a car instead. Leave when you want, stop for snacks, blast Italian bangers. Use [Discover Cars](https://www.discovercars.com/?a_aid=nico0141) to find a decent rental at a fair price. Want more on car rentals? Here's my [full guide](https://wearepalermo.com/news/renting-car-palermo/). And if you're flying in, my [airport transfers article](https://wearepalermo.com/news/airport-transfers/) covers how to get from PMO to wherever you sleep.
 
-If you're driving, you need parking near Trapani port. Don't show up hoping. Use Parclick Trapani Port to book a spot in advance.
+If you're driving, you need parking near Trapani port. Don't show up hoping. Use [Parclick Trapani Port](https://parclick.it/parcheggio/porto-trapani?affiliate=670d25b9) to book a spot in advance.
 
 Once at the port, you take the hydrofoil. Around 30 minutes to Favignana [VERIFY: Trapani→Favignana hydrofoil duration, likely correct].
 
 ### H3: From Trapani
 
-If you're already in Trapani, even better. Walk to the port and take the hydrofoil. Tickets through Ferryhopper. Ferryhopper sells both Liberty Lines and Siremar tickets, so you're covered either way. [VERIFY: 2026 RT price].
+If you're already in Trapani, even better. Walk to the port and take the hydrofoil. Tickets through [Ferryhopper](https://go.wearepalermo.com/ferry). Ferryhopper sells both Liberty Lines and Siremar tickets, so you're covered either way. [VERIFY: 2026 RT price].
 
 Want something more memorable than a 30-minute hydrofoil? Three captained options out of Trapani that'll turn the transfer into the experience:
 
-- **Premium yacht tour with lunch.** From Trapani: Favignana and Levanzo Yacht Tour with Lunch. 8 hours, 4.6 stars, run by EGADI LINES SNC. The polished captained option if you want it done right.
-- **Private group boat.** Private Tour Egadi Islands with Lunch. Best if you have 4 to 8 people and want it to feel like your own yacht for the day.
-- **Shared group day cruise.** Day Cruise Favignana and Levanzo. Cheaper, social, hits both islands in one day.
+- **Premium yacht tour with lunch.** [From Trapani: Favignana and Levanzo Yacht Tour with Lunch](https://gyg.me/38B9HCJk). 8 hours, 4.6 stars, run by EGADI LINES SNC. The polished captained option if you want it done right.
+- **Private group boat.** [Private Tour Egadi Islands with Lunch](https://gyg.me/XRmlMFob). Best if you have 4 to 8 people and want it to feel like your own yacht for the day.
+- **Shared group day cruise.** [Day Cruise Favignana and Levanzo](https://gyg.me/ztGu5hgx). Cheaper, social, hits both islands in one day.
 
 In July and August, book any of these online ahead of time. Don't show up at the port with 400 panicked tourists trying to pile onto the same hydrofoil.
 
 ### H3: Hopping to Levanzo or Marettimo
 
-Already on Favignana and want a side trip? Use Ferryhopper to bounce between the islands. Levanzo is about 10 minutes, Marettimo about 30 to 45 minutes [VERIFY: 2026 ferry durations and RT prices, live post quotes Levanzo €8 RT and Marettimo €12 RT].
+Already on Favignana and want a side trip? Use [Ferryhopper](https://go.wearepalermo.com/ferry) to bounce between the islands. Levanzo is about 10 minutes, Marettimo about 30 to 45 minutes [VERIFY: 2026 ferry durations and RT prices, live post quotes Levanzo €8 RT and Marettimo €12 RT].
 
 [CALLOUT: Local's Take — Levanzo feels like a dream from the 1950s. Marettimo is pure wild beauty. If you've got more than two nights on Favignana, go island-hopping. You'll thank me later.]
 
 ---
 
-## H2 9 (NEW): Favignana vs the Other Sicilian Islands
-
-**Word target: ~450 words. NEW H2 added per Nico structural feedback. Comparisons moved here from H2 1. Audience-aware framing — explain each island in one line first since most American readers don't know what Levanzo, Marettimo, Ustica, or the Aeolians are.**
+## H2 9: Favignana vs the Other Sicilian Islands
 
 If you're trip-planning Sicily and you're not sure which island to pick, here's the honest comparison. Most American readers haven't heard of these names, so I'll tell you what each one IS in a sentence before I rank it.
 
@@ -401,7 +346,7 @@ Ustica is a small volcanic island about 90 minutes by hydrofoil NORTH of Palermo
 
 The catch? You shoot yourself in the balls with anything else, because there are like two bars, two restaurants, you do a couple climb-and-descents and you're done. If you want only diving, Ustica. For everything else, Favignana wins on food, hotels, and not running out of things to do on day two.
 
-(Read my Ustica article for the full take.)
+(Read my [Ustica article](https://wearepalermo.com/news/things-to-do-ustica/) for the full take.)
 
 ### Favignana vs the Aeolian Islands
 
@@ -411,15 +356,13 @@ They demand 3+ days minimum. The ferry from Palermo is around 5 hours, or you ca
 
 If you have a full week of Sicily and you're obsessed with volcanoes and island-hopping, do the Aeolians. If you have 2 to 3 days and you want sea, sleep, and tuna without a 5-hour boat ride, do Favignana.
 
-(Aeolian article here. [LINK PENDING: confirm canonical Aeolian hub URL — WAP_04 lists vulcano-island, salina-island, and panarea-island posts. PM to confirm which is the hub.])
+(Aeolian deep-dive: my [Panarea article](https://wearepalermo.com/news/panarea-island/).)
 
 [CALLOUT: Local's Take — Quick rule of thumb: Favignana for sea + ease, Aeolian for volcanoes + drama, Ustica for diving + nothing else. If your Sicily trip is short, pick Favignana. If it's a full week and you want big-trip-energy, the Aeolians.]
 
 ---
 
 ## H2 10: FAQs
-
-**Word target: ~480 words. 7 questions. Each answer 40-75 words, self-contained. FAQPage schema in Pass 3.**
 
 ### Can you visit Favignana as a day trip from Palermo?
 
@@ -457,8 +400,6 @@ Renting a car (use a bike or scooter), eating at any place with a giant photo me
 
 ## H2 11: Bottom Line
 
-**Word target: ~160 words. Nico verdict closer.**
-
 Choose Favignana if you want sea, food, and a 2 to 3 day reset where you can bike to a beach, eat tuna in front of the sea, and fall asleep early. It's the closest real island getaway from Palermo, and the easiest way to add a "private island" feel to a Sicily trip without booking a private island.
 
 Skip Favignana if you need nightlife, you only have one day with no flexibility, or you're going in August unprepared. Go to Mykonos. Go to Cefalù. Spare yourself.
@@ -467,185 +408,51 @@ Book the ferry, book the hotel, book the boat. Pack water shoes. Bring real suns
 
 The island delivers when you treat it right. Treat it wrong and it'll humble you.
 
-[BOTTOM AFFILIATE DISCLOSURE PLACEHOLDER — italic backup line, Pass 3 styles. Sample wording: Some links above are affiliate. I get a small commission, you pay the same price. Helps keep the lights on.]
+---
+
+[BOTTOM AFFILIATE DISCLOSURE PLACEHOLDER — italic backup line, Pass 3 styles. Sample: "Some links above are affiliate. I get a small commission, you pay the same price. Helps keep the lights on."]
 
 [CONTINUE PLANNING BLOCK PLACEHOLDER — Pass 3 styles per WAP_06 v2 grey-background block, 3 internal links]
 
 **Continue Planning Your Sicily Trip:**
 
-- **Next read:** Things to Do in Ustica. The other day-trip island, closer to Palermo, where you should and shouldn't go.
-- **The Palermo half of your Sicily trip:** The Sicilian Way Guide. My paid PDF for the city portion of your trip. Restaurants, neighborhoods, hidden corners. Pairs with Favignana for the full west-Sicily experience.
-- **YouTube:** WAP YouTube channel. See the places before you book the trip.
+- **Next read:** [Things to Do in Ustica](https://wearepalermo.com/news/things-to-do-ustica/). The other day-trip island, closer to Palermo, where you should and shouldn't go.
+- **The Palermo half of your Sicily trip:** [The Sicilian Way Guide](https://wearepalermo.podia.com/the-sicilian-way). My paid PDF for the city portion of your trip. Restaurants, neighborhoods, hidden corners. Pairs with Favignana for the full west-Sicily experience.
+- **YouTube:** [WAP YouTube channel](https://www.youtube.com/@WeArePalermo). See the places before you book the trip.
 
 [SIGNATURE PLACEHOLDER]
 
-A hug is always,
-Nico Barcellona
+*A hug is always,*
+*Nico Barcellona*
 
 ---
----
 
-# COPYWRITING AGENT NOTES (NOT FOR PUBLICATION)
+## Pass 1 Agent Notes (NOT FOR PUBLICATION)
 
-## Cold Reader Reality Check coverage (13 items)
+### Word count
+~4,875 words. ~52% over target (2,800-3,200). PM noted; Pass 2 will execute aggressive trim with explicit per-H2 cut targets.
 
-| # | Item | Where covered |
-|---|------|---------------|
-| 1 | Why this island vs others | H2 9 (NEW location, audience-aware) |
-| 2 | When to visit | TL;DR + FAQ #3 + FAQ #4 |
-| 3 | How to get there | H2 8 (3 H3s) |
-| 4 | Where to stay | H2 3 (6 hotel cards + Local's Pick) |
-| 5 | How long | H2 4 + FAQ #1 |
-| 6 | What to do | H2 2 (6 H3s) |
-| 7 | How to get around | H2 5 |
-| 8 | What to eat | H2 2 H3 (Local Foods) |
-| 9 | Nightlife expectations | H2 7 |
-| 10 | Price reality | H2 3 (price reality block, moved from H2 1) + FAQ #2 |
-| 11 | Crowds nuance | H2 1 (crowds reality, kept as part of "is it worth it") |
-| 12 | What to avoid | FAQ #8 + scattered (no car H2 5, August warning H2 1, day-trip warning H2 4) |
-| 13 | Audience fit | H2 1 (explicit "who it's for / not for") + H2 11 Bottom Line |
+### [VERIFY] flags for Scout (Step 7)
+1. Boat rental ~€150/day — likely stale, verify 2026
+2. Bike rental €10/day — Nico-confirmed Apr 27, Scout spot-check
+3. Scooter rental €50-80/day — Nico-confirmed Apr 27, Scout spot-check
+4. Peak hotel pricing €150-180/night — Nico-confirmed Apr 27, Scout spot-check Booking listings
+5. Ferry RT prices: Levanzo €8, Marettimo €12 — verify Ferryhopper current
+6. Trapani→Favignana hydrofoil duration ~30 min — verify
+7. Florio Tuna Factory hours, entry fee, English tours — verify museum site
+8. Segesta Autolinee Palermo→Trapani frequency — verify; AST and Tarantola also serve route
+9. New GYG yacht tour metadata: 4.6 stars / 338 reviews / 8h / EGADI LINES SNC — verify
+10. All 6 hotel star ratings against each hotel's OWN official site (per WAP_06b)
+11. Sea Taxi Favignana, Egadi Scuba Diving — confirm still operating
 
-All 13 covered.
+### Brain-dump fragments installed (9 total)
+6 from prior Nico capture + 3 new stories from Apr 27 evening (dinghy gas scam, bike-closed-for-lunch, Nordic friend lobster).
 
-## Brain-dump fragments (live post + Nico Apr 27 brain dump) installed
+### Voice lines preserved
+Mario Kart, Mykonos, microwave-to-a-picnic, wine-tasting-cork, sandals-blow-off, "still pissed" (Florio), "Levanzo dream / Marettimo wild."
 
-- ✅ "Two rays of sun, people boom, they rush over there" → H2 1 crowds reality
-- ✅ "Grandmas renting basically holes, little dens, paying like they're worth their weight in gold" → H2 3 price reality (moved from H2 1)
-- ✅ "Ustica is closer but you shoot yourself in the balls, two bars, two restaurants" → H2 9 (moved from H2 1)
-- ✅ "Already really a mess with the locals" → H2 1 crowds reality
-- ✅ "What Ibiza is for Barcelona, Favignana is for Palermo" → H2 1 opening
-- ✅ "Sea, fun, biking, boat, restaurants, aperitivo spots, really a fucking chaos" → H2 1 vibe
+### Reader Interrogation
+Variant A in H2 4 ("you're here because you want sea, food, and a real island day, right?")
 
-## NEW Nico stories (Apr 27 evening, post-Pass-1-v1 review)
-
-- ✅ Dinghy gas scam ("Favignanese rental guys would scam their own father") → H2 2 H3 Rent a Boat, Local's Warning callout. Flag for Story Bank intake (SOP_03) post-publish: S008.
-- ✅ Bike-closed-for-lunch (returning bike at 2 PM, shop closed 1-4) → H2 5 Moving Around, Local's Warning callout. Flag for Story Bank intake (SOP_03) post-publish: S009.
-- ✅ Nordic friend lobster ("turned red with blue eyes, like a tiny patriotic crustacean") → H2 5 Moving Around, body paragraph. Flag for Story Bank intake (SOP_03) post-publish: S010. Also doubles as the WAP_05-required first-person specific observation (E-E-A-T).
-
-## Voice lines from live post preserved verbatim
-
-- ✅ Mario Kart line → H2 2 H3 Rent a Boat callout
-- ✅ Mykonos line → H2 1 closing callout + H2 7
-- ✅ "Microwave to a picnic" → H2 5 callout
-- ✅ "Like going to a wine tasting and only smelling the cork" → H2 4
-- ✅ "Sandals will blow off" → H2 2 H3 Santa Caterina
-- ✅ "Still pissed about it" (Florio Cyclones mood) → H2 2 H3 Florio
-- ✅ "Levanzo dream / Marettimo wild" → H2 8 H3 Hopping callout
-
-## First-person specific observations (E-E-A-T)
-
-- ✅ Author intro: "every summer since I was a kid"
-- ✅ Nordic friend lobster (specific, time-anchored, physical)
-- ✅ Bike-closed-for-lunch (specific, time-anchored, physical)
-- ✅ Dinghy gas scam (specific, repeatable observation)
-
-WAP_05 floor exceeded.
-
-## Reader Interrogation (WAP_05 Move #21)
-
-✅ Variant A in H2 4: "You're here because you want sea, food, and a real island day, right?"
-
-## Affiliate links placed (all from 02_Prep, no inventions)
-
-- Booking.com (6): all H2 3
-- GetYourGuide (4): boat-with-lunch in H2 2, premium yacht + private + day cruise in H2 8
-- Discover Cars + Parclick: H2 8 H3 From Palermo
-- Ferryhopper: H2 8 H3 From Trapani + H2 8 H3 Hopping (anchor swap from "Liberty Lines" complete; clarifying sentence about Liberty Lines + Siremar tickets included)
-
-## Internal links placed: 3 confirmed + 1 pending
-
-- ✅ /news/things-to-do-ustica/ (H2 9 + Continue Planning)
-- ✅ /news/renting-car-palermo/ (H2 8)
-- ✅ /news/airport-transfers/ (H2 8)
-- ⚠️ Aeolian article (H2 9) [LINK PENDING — PM to pick canonical hub: vulcano-island / salina-island / panarea-island]
-
-## [VERIFY] flags for Scout (Step 7)
-
-- Boat rental ~€150/day — likely stale, verify 2026
-- Bike rental €10/day — Nico-confirmed Apr 27, but Scout spot-check current shops
-- Scooter rental €50-80/day — Nico-confirmed Apr 27, but Scout spot-check
-- Peak hotel pricing €150-180/night — Nico-confirmed Apr 27, but Scout spot-check current Booking listings
-- Ferry RT prices: Levanzo €8, Marettimo €12 — verify Ferryhopper current
-- Trapani→Favignana hydrofoil duration ~30 min — verify
-- Florio Tuna Factory hours, entry fee, English tours — verify on official museum site
-- Segesta Autolinee Palermo→Trapani frequency — verify; also confirm AST and Tarantola serve route
-- New GYG yacht tour metadata: 4.6 stars / 338 reviews / 8h / EGADI LINES SNC — verify
-- All 6 hotel star ratings against each hotel's OWN official site (per WAP_06b)
-- Sea Taxi Favignana, Egadi Scuba Diving — confirm still operating
-
-## NO-GO list compliance
-
-- ✅ NO Sicilian Way mention in body. Only in Continue Planning block, framed as "the Palermo half."
-- ✅ NO Restaurant Guide mention anywhere.
-- ✅ NO link to /free-itinerary/ or /free-self-guided-walking-tours/.
-- ✅ NO em-dashes in body (Pass 2 final purge as catch-all).
-- ✅ NO Lampedusa mention except FAQ #6 clarify-and-deflect.
-
-## Word count (rough estimate)
-
-- Author intro: ~135 (over old 80-target, hits new 5-jobs rule)
-- TL;DR: ~100
-- H2 1: ~410
-- H2 2: ~960
-- H2 3: ~530 (now includes price reality block moved from H2 1)
-- H2 4: ~225 (includes Reader Interrogation)
-- H2 5: ~440 (now includes Nordic friend + bike-closed-for-lunch + sun warning)
-- H2 6: ~290
-- H2 7: ~210
-- H2 8: ~480
-- H2 9 NEW: ~450
-- H2 10 FAQs: ~485
-- H2 11 Bottom Line: ~160
-
-**Body subtotal: ~4,875**
-
-⚠️ Significantly over target. Original target 2,800-3,200; v2 lands ~4,875. Adds came from: 3 new stories (~330 words), audience-aware island intros in H2 9 (~80 words extra), expanded author intro (~50 words), expanded price reality (~30 words), explicit "who it's for" block (~70 words).
-
-Pass 2 will need to cut ~1,500-1,700 words. Suggested heavy-trim zones:
-
-- H2 2 H3 sections (each can compress 20-30%)
-- H2 9 (the 4 comparison subsections can each lose 30-50 words)
-- FAQs (2-3 answers can tighten by 10-15 words each)
-- Voice install via short-sentence rhythm and one-word paragraphs naturally tightens
-
-This is a flag for PM/Pass 2, not a Pass 1 v2 failure. Pass 1 prioritizes information completeness; Pass 2 trims.
-
-## Structural divergences from original 04_Structural_Audit
-
-04_Structural_Audit needs revising. Divergences from the locked outline:
-
-- H2 count went from 10 → 11 (NEW H2 9: Favignana vs Other Sicilian Islands).
-- Comparisons (Levanzo/Marettimo, Ustica, Aeolian) MOVED from H2 1 to new H2 9.
-- Price reality MOVED from H2 1 to H2 3.
-- "Stay near the port" framing CORRECTED to "stay near Piazza Matrice."
-- Bike/scooter prices UPDATED to current 2026 (was: €5-10 / €30-70; now: €10 / €50-80).
-- New first-person specific observation source: Nordic friend lobster (no longer flagged for Pass 2 to-do).
-- New stories installed (S008, S009, S010 candidates).
-
-All divergences are RESPONSES TO NICO STRUCTURAL FEEDBACK Apr 27 evening. PM should update 04_Structural_Audit before publish, OR archive it and note that Pass 1 v2 is the new structural truth for this run.
-
-## SOP / Brain doc escalations for PM
-
-- **NEW WAP_06 RULE:** Author intro structure (5 jobs). Name + credibility + problem + bullet overview + USP. ~120-150 words. Bullet list mandatory. Probably merges old "Author Intro" + "Benefit Promise" sections.
-- **NEW WAP_06 RULE:** TL;DR mentions monetization signals. When a post has hotels/tours/rentals, the TL;DR mentions them.
-- **NEW BRAIN DOC NEEDED:** Target audience persona. Suggest WAP_14_TARGET_AUDIENCE.md. Defines who WAP's audience IS, what they KNOW, and what they DON'T KNOW. Copywriter consults every session.
-- **NEW SOP_01 STEP / strengthen 04_Structural_Audit:** Reader-Intent rigor. At intake, articulate priority order ("what does the reader want first, second, third?") and the don't-know-list ("what do they NOT know that we have to explain in plain English?").
-- 3 stories for SOP_03 intake post-publish: S008 dinghy gas scam, S009 bike-closed-for-lunch, S010 Nordic lobster friend.
-- WAP_10/WAP_12 price update: bikes €10/day, scooters €50-80/day, peak hotels €150-180/night.
-
-## STATUS
-
-✅ Pass 1 v2 complete. Markdown information draft delivered with full restructure per Nico's Apr 27 evening feedback.
-
-- 11 H2s present (was 10).
-- 9 brain-dump fragments installed (6 from live post + Architect prep + 3 new stories from Nico Apr 27 evening).
-- All preserved voice lines retained.
-- All affiliate links from 02_Prep placed correctly.
-- 11 [VERIFY] flags for Scout.
-- 1 [LINK PENDING] for PM (Aeolian canonical URL).
-- 1 [STAR DECISION] for Nico (Residence Scirocco e Tramontana).
-- Reader Interrogation installed.
-- E-E-A-T first-person observation requirement exceeded (4 instances).
-- Word count over target by ~50% — flagged for Pass 2 aggressive trim.
-
-→ Next: PM gates Pass 1 v2 → consider whether to update 04_Structural_Audit before Step 7 → Step 7 (Scout fact check) → Step 8 (Pass 2 voice + trim by Copywriting).
+### Status
+✅ Pass 1 v2.1 complete. Three rounds: v1 → v2 (structural) → v2.1 (lead-positive intro). Aeolian link resolved to Panarea per Nico decision Apr 28. All 6 hotels with no-stars-or-correct-stars per WAP_06b. Open: Pass 2 must trim ~1,500-1,700 words.

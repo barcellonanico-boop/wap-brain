@@ -157,6 +157,19 @@ Word target: ~150 words
 
 **Total target: 2,800-3,200 words** (Architect's recommendation, Nico Q7 confirm).
 
+**REVISION NOTE Apr 28, 2026 — actual shipped Pass 1 v2.1 diverged from this outline. Updated reality:**
+- 11 H2s instead of 10 (added H2 9: Favignana vs the Other Sicilian Islands)
+- Comparisons (Levanzo/Marettimo, Ustica, Aeolian/Panarea) MOVED from H2 1 to dedicated H2 9 with audience-aware framing (each island explained in one sentence before comparison)
+- Price reality block MOVED from H2 1 to H2 3 (where it's topical with hotel cards)
+- "Stay near the port" framing CORRECTED to "stay near Piazza Matrice" (the actual main square)
+- Bike/scooter prices UPDATED to current 2026 (€10/day bikes, €50-80/day scooters)
+- 3 NEW Nico stories installed: dinghy gas scam (H2 2), bike-closed-for-lunch (H2 5), Nordic friend lobster (H2 5 — also doubles as first-person specific observation per WAP_05 E-E-A-T)
+- Aeolian link resolved to Panarea (Nico Apr 28 decision)
+- Residence Scirocco e Tramontana → no stars (Nico Apr 28 decision)
+- Pass 1 word count landed at ~4,875 — Pass 2 will trim aggressively to hit 2,800-3,200 target
+
+All divergences responded to Nico structural feedback Apr 27 evening. Pass 1 v2.1 is the current truth for downstream passes.
+
 ---
 
 ## Voice + Tone Notes for Pass 2

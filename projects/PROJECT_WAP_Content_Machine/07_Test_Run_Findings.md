@@ -43,6 +43,13 @@
 | 29 | Apr 27, Step 6 v2 | Step 6 | Medium | Wall-of-text paragraphs survived again despite being in revision prompt. | Step 3c (Format) MUST break paragraphs as final cleanup. Enforce in agent prompt with explicit max-2-sentence rule. |
 | 30 | Apr 27, Step 6 v2 | Step 6 | Medium | Copywriting agent itself was vulgar in commentary, not just in Nico-voice. Distinction needed. | Add to Copywriting agent prompt: agent prose (commentary, structure, deliverable headers) is NEVER vulgar. Only Nico-voice content can curse. |
 | 31 | Apr 27, Step 6 v2 | Step 6 | High | Overall design quality is poor. Generic. No visual hierarchy. No design DNA matching the live blog. | Add to WAP_06: visual design specs for every callout, hotel card, table, header, list. Provide canonical CSS templates. Copywriting must use exact templates, not invent variants. |
+| 32 | Apr 27, Pass 1 | Step 6 | Medium | Copywriting agent invented "5-job author intro" rule (current WAP_06 v2 specifies 3 jobs: name + credibility + sales hook). Agent added "problem" and "bullet overview" without authorization. | Park decision until post-Favignana. Evaluate after publish whether to ratify as WAP_06 v2.1 or revert to 3-job rule. |
+| 33 | Apr 27, Pass 1 | Step 6 | Medium | Copywriting agent invented "TL;DR mentions monetization signals" rule. No current WAP_06 rule for this. | Park decision until post-Favignana. Evaluate after publish. |
+| 34 | Apr 27, Pass 1 | Step 6 | Medium | Pass 1 v2.1 word count 4,875 vs target 2,800-3,200. ~52% over target. Pass 2 expected to "trim" but Pass 2 is voice work, not bloat-rescue. | Patch SOP_01: add explicit Pass 1 word-count gate. If Pass 1 exceeds target by >25%, mandatory revision before Scout. |
+| 35 | Apr 27, Pass 1 | Step 6 | Low | Copywriting agent gave PM procedural instructions ("tell PM to do X, here's how to manage scope"). Agents deliver work, PM manages workflow. | Reinforce in Copywriter agent prompt v2.1: agents do not direct PM workflow. Flag observations, do not prescribe procedure. |
+| 36 | Apr 27, Pass 1 | Step 6 | Low | 3 new Nico stories captured during Pass 1 review (dinghy gas scam, bike-closed-for-lunch, Nordic friend lobster). Used in draft. Need formal SOP_03 intake to Story Bank post-publish. | Schedule SOP_03 batch run post-Favignana publish. Candidates S008, S009, S010. |
+| 37 | Apr 27, Pass 1 | Step 6 | Low | WAP_10 prices stale (bike rental, scooter rental, hotel peak season pricing). Nico provided 2026 numbers Apr 27 but WAP_10 not updated. | Schedule WAP_10 price update batch post-Favignana publish. Include: Favignana bike €10/day, scooter €50-80/day, peak hotels €150-180/night. |
+| 38 | Apr 28 | Step 6 | Low | Process flag: structural divergences from 04_Structural_Audit during Pass 1 (10→11 H2s, sections moved). Nico approved via direct feedback Apr 27 evening. Process valid this run, but flag: 04_Structural_Audit needs to be the controlling doc; mid-pass changes should update it OR be logged as authorized deviations. | Patch SOP_01 Step 5: Structural Audit doc updates require an explicit "amended Apr DD" entry when changes happen mid-pass. Don't ship divergence silently. |
 
 ---
 
@@ -65,3 +72,13 @@ Next phase: SOP_01 v2.0 redesign session starting Apr 27, 15:12.
 ## Patches Pending (Generated In SOP_01 v2.0 Redesign)
 
 This section will be populated as the redesign produces concrete patches.
+
+### Park-Until-Post-Publish Decisions (April 28, 2026)
+
+The following items came up during Pass 1 v2.1 review. Decision: park, do not action mid-run. Address as batch post-Favignana publish.
+
+- Findings #32 + #33: Two invented WAP_06 rules (5-job intro, TL;DR-mentions-monetization). Decide whether to ratify as v2.1 or revert.
+- Finding #36: SOP_03 batch run for S008, S009, S010 stories.
+- Finding #37: WAP_10 price update batch.
+- Finding #38: SOP_01 Step 5 amendment-protocol patch.
+- 6 Brain doc escalations from Copywriter: parking ALL 6 per PM decision Apr 28. Re-evaluate post-publish.
