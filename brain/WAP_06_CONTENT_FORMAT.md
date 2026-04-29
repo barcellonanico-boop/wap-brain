@@ -1,6 +1,6 @@
 # WAP_06_CONTENT_FORMAT.md — Content Format and Publishing Rules
 
-Last updated: April 29, 2026 (Apr 29: author intro 8-step architecture, section architecture, foundation rules, conclusion 4-job architecture, brand rename Sicilian Way → We Are Palermo Premium Guide. Apr 28: P0 patches D1-D6.)
+Last updated: April 29, 2026 (Apr 29 v2.2: cleanup pass — killed duplicate paragraph-length rule, renumbered author intro 1-8 to match WAP_05b. Apr 29 v2.1: author intro 8-step, section architecture, foundation rules, conclusion 4-job, brand rename Sicilian Way → We Are Palermo Premium Guide. Apr 28: P0 patches D1-D6.)
 
 This doc defines HOW a WAP blog post is structured: intro, sections, paragraphs, text boxes, images, affiliate handling, schema, publishing checklist. Voice rules live in WAP_05_VOICE_AND_PERSONA.md. This doc covers everything else.
 
@@ -103,23 +103,19 @@ Test: if you deleted everything after word 540, would the post still answer the 
 
 ---
 
-## Paragraph Length Rule
+## Paragraph Length — See Foundation Rules
 
-Based on mobile reading (iPhone, default Safari):
+Paragraph-length rules live in the Foundation Rules section at the top of this doc (text block max 180 characters, section max 300-400 words, alternation rhythm). Single source of truth.
 
-- **Single sentence: max 30 words / ~140 characters / 3 lines on iPhone.** Hard stop.
-- **Paragraph: max 2 sentences OR max 45 words total.** Hit either limit, break the paragraph.
-- **One-sentence paragraphs are gold.** Use constantly for rhythm and emphasis.
+Mobile reading examples (from Nico's rental article) showing correct text block rhythm:
 
-Example of correct paragraph length (from Nico's rental article):
+> "Ready to give you the insider scoop on renting a car during your vacation in Palermo." ✅
 
-> "Ready to give you the insider scoop on renting a car during your vacation in Palermo." (15 words, 2 mobile lines) ✅
+> "If you put the legends aside and follow the tips I am about to give you, having your own set of wheels opens up a world of possibilities." ✅ (at 173 chars, near the 180 ceiling)
 
-> "If you put the legends aside and follow the tips I am about to give you, having your own set of wheels opens up a world of possibilities." (29 words, 3 mobile lines) ✅ (at the ceiling)
+> "Don't. Be. That. Guy." ✅ (one-sentence text block for rhythm — see Alternation Rhythm)
 
-> "Don't. Be. That. Guy." (one-sentence paragraph for emphasis) ✅
-
-If a paragraph runs 4+ lines on iPhone, break it. Period. Mobile readers abandon walls of text instantly.
+The Apr 29 v2.1 cleanup deleted the older "30 words / 140 chars / 45 words" rule because it conflicted with the 180-char text block standard. If you find any reference to "45 words" or "30 words" as a paragraph limit elsewhere, it's stale — flag it.
 
 ---
 
@@ -139,18 +135,29 @@ Not: *"In this article, we'll explore everything you need to know about car rent
 
 Plain `<img>` element. No `[caption]` shortcode. 800x530 pixels minimum. Descriptive alt text with primary keyword. Not keyword-stuffed.
 
-### 3-8. Author Intro Architecture (8 Steps — Apr 29 canonical)
+### Author Intro Architecture (8 Steps — canonical Apr 29)
 
-The author intro is NOT 3 jobs in one paragraph. It's an 8-step opening sequence. Hard order. No skipping.
+The author intro is NOT 3 jobs in one paragraph. It's an 8-step opening sequence. Hard order. No skipping. Same numbering as WAP_05b Pattern A.
 
-1. *(Step 1 = Italic Lead above)*
-2. *(Step 2 = Featured Image above)*
+1. **Italic lead** — promise/USP in <25 words. SPECIFIC and STRONG. Generic framing ("the only guide you need") is too weak. The lead names the unique value.
+
+2. **Featured image** — plain `<img>`, no `[caption]` shortcode. See Featured Image Pattern below.
+
 3. **Disarming opener block** — "I know, I know" or equivalent. Acknowledges reader skepticism BEFORE they voice it. Reader feels understood. Mocking imagined dialogue often lives here.
+
 4. **Name + credibility + sales hook** — one paragraph, ~80-100 words. Concrete sensory specifics ("born and raised on pasta, pizza, and seawater"). Bold on identity, italic on emphasis word.
-5. **Three bullet points: "what you'll learn"** — concrete and specific. Not generic. The bullets prove the article delivers on the USP. NEW Apr 29.
-6. **One sentence: time-vs-benefit framing** — "this saves you from doing the painful thing yourself." Short. Frames why reading beats the alternative. NEW Apr 29.
+
+5. **Three bullet points: "what you'll learn"** — concrete and specific. Not generic. The bullets prove the article delivers on the USP.
+
+6. **One sentence: time-vs-benefit framing** — "this saves you from doing the painful thing yourself." Short. Frames why reading beats the alternative.
+
 7. **TL;DR table** — structured `<table>` with rows. See TL;DR Template below. NOT a callout. NOT a `<p>` block.
+
 8. **Affiliate disclosure box** — small grey neutral, Nico-voiced. Position: AFTER the TL;DR (per D1).
+
+Reference: WAP_05b Pattern A (annotated example with Tourist Info opening).
+
+Note: steps 1 and 2 (italic lead, featured image) may also appear in the "Post Structure" section above as separate items 1-2 of the post skeleton. They appear once in the rendered post but are listed in both places for clarity (skeleton order + author intro architecture). Same elements, different framings.
 
 Reference: WAP_05b Pattern A (annotated example with Tourist Info opening).
 
