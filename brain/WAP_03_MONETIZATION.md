@@ -11,7 +11,7 @@ Total revenue: approximately $20,000/year as of April 2026. All organic. Zero pa
 Primary revenue driver: Booking.com affiliate links.
 Secondary: Discover Cars affiliate links.
 Minor: GetYourGuide affiliate links.
-Product: The Sicilian Way premium guide.
+Product: We Are Palermo Premium Guide (formerly "The Sicilian Way").
 
 ---
 
@@ -34,7 +34,7 @@ Experiences and tours affiliate program. Minor revenue. Links embedded in things
 
 ---
 
-## 3. The Sicilian Way — Premium Guide
+## 3. We Are Palermo Premium Guide (formerly "The Sicilian Way")
 
 **What it is:** A premium travel guide to Sicily. Exclusive itineraries, top restaurant picks, practical insider advice not available for free on the blog.
 
@@ -50,7 +50,7 @@ Step 1 — Optin: visitor lands on the free itinerary page on WordPress. Enters 
 
 Step 2 — Soap Opera Sequence: ConvertKit email sequence. Tips and storytelling in Nico's voice. Builds trust and relationship before the pitch.
 
-Step 3 — Pitch: after the sequence, subscriber is offered The Sicilian Way at $31 (downsell from $47).
+Step 3 — Pitch: after the sequence, subscriber is offered the We Are Palermo Premium Guide at $31 (downsell from $47).
 
 Step 4 — Purchase: checkout on Podia. Delivery via Podia.
 
@@ -72,7 +72,7 @@ Step 4 — Purchase: checkout on Podia. Delivery via Podia.
 
 **Status:** Live and for sale as of April 2026. Sales page on Podia.
 
-**Important:** Restaurant and bar recommendations are EXCLUSIVELY for this paid product and The Sicilian Way Guide. They are never mentioned by name in any free content — blog posts, YouTube videos, or social media.
+**Important:** Restaurant and bar recommendations are EXCLUSIVELY for this paid product and the We Are Palermo Premium Guide. They are never mentioned by name in any free content — blog posts, YouTube videos, or social media.
 
 ---
 
@@ -81,5 +81,5 @@ Step 4 — Purchase: checkout on Podia. Delivery via Podia.
 - More content = more organic traffic = more affiliate clicks and funnel entries
 - Updating losing blog posts could recover lost Google rankings and traffic
 - Paid advertising could accelerate funnel entries (separate project)
-- Migrating The Sicilian Way to Lovable removes Podia fees and adds flexibility
+- Migrating the We Are Palermo Premium Guide to Lovable removes Podia fees and adds flexibility
 - Social media reactivation could drive additional traffic (future project)

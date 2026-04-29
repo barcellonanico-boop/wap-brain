@@ -146,7 +146,7 @@ Don't book a hotel INSIDE Capo or Ballarò unless you want a 7 AM alarm clock of
 - /free-self-guided-walking-tours/ and any sub-paths
 - /free-itinerary/
 
-These free assets cannibalize The Sicilian Way premium guide. See WAP_03 for canonical rule.
+These free assets cannibalize the We Are Palermo Premium Guide. See WAP_03 for canonical rule.
 
 ### Word Count Tier
 

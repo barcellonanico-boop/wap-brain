@@ -1,6 +1,6 @@
 # WAP_06_CONTENT_FORMAT.md — Content Format and Publishing Rules
 
-Last updated: April 28, 2026 (P0 patches: D1 skeleton reorder, D2 bottom disclosure removed, D3 hotel card template, D4 TL;DR table template, D5 callout wpautop rule, D6 canonical photo URL)
+Last updated: April 29, 2026 (Apr 29: author intro 8-step architecture, section architecture, foundation rules, conclusion 4-job architecture, brand rename Sicilian Way → We Are Palermo Premium Guide. Apr 28: P0 patches D1-D6.)
 
 This doc defines HOW a WAP blog post is structured: intro, sections, paragraphs, text boxes, images, affiliate handling, schema, publishing checklist. Voice rules live in WAP_05_VOICE_AND_PERSONA.md. This doc covers everything else.
 
@@ -20,13 +20,41 @@ Structure is not decoration. It's how WAP ranks.
 
 ---
 
+## Foundation Rules (Apr 29 — Hard Rules)
+
+Two units, two rules. Different jobs. Don't confuse them.
+
+**Section** = everything inside one H2 (or H3). Full block of content under a heading.
+
+**Text Block** = one chunk of prose between two blank lines. What the reader's eye sees as one unit on mobile.
+
+| Unit | Max | Why |
+|---|---|---|
+| Text Block (prose only, not bullets/tables) | **180 characters** | Mobile readability. No walls of text. |
+| Section | **300-400 words** | Mobile readability. Break with H3 or inline image if longer. |
+
+If a text block exceeds 180 chars, split at sentence boundary.
+If a section exceeds 400 words, break with H3 or inline image (or both).
+
+### Alternation Rhythm (Hard Rule)
+
+Vary text block length within a section. Long → short → long → very short.
+
+Don't string 4 long blocks in a row. Don't string 4 short blocks either. Mix them.
+
+Use one-word sentences ("But.") and three-word slams ("Let's be smart.") as rhythm breaks.
+
+Reference: WAP_05b Foundation Rules (annotated example with Section 1 of Tourist Info article).
+
+---
+
 ## The Content Rule That Overrides Everything
 
 **Specific restaurants, bars, and experience providers are NEVER mentioned by name in free content.**
 
 This rule applies to: blog posts, YouTube videos, social media, newsletters.
 
-Specific recommendations are EXCLUSIVELY for paid products: The Sicilian Way Guide and The Restaurant Guide.
+Specific recommendations are EXCLUSIVELY for paid products: the We Are Palermo Premium Guide and The Restaurant Guide.
 
 You can reference food categories ("arancini at the markets"), general areas ("seafood in the historic center"), and dish names ("the best pani ca meusa is in the old markets"). You cannot name the specific trattoria, bar, or tour operator.
 
@@ -111,22 +139,22 @@ Not: *"In this article, we'll explore everything you need to know about car rent
 
 Plain `<img>` element. No `[caption]` shortcode. 800x530 pixels minimum. Descriptive alt text with primary keyword. Not keyword-stuffed.
 
-### 3. Author Intro
+### 3-8. Author Intro Architecture (8 Steps — Apr 29 canonical)
 
-~80-150 words, NEVER an H2. Hits 3 jobs: name + credibility + sales hook. Opens with "Ciao! It's your friend Nico here" or a direct variant. Immediately establishes: Sicilian, born here, not a travel vlogger from England.
+The author intro is NOT 3 jobs in one paragraph. It's an 8-step opening sequence. Hard order. No skipping.
 
-This block serves three jobs at once:
-- Voice (entity consistency for E-E-A-T)
-- SEO (primary keyword appears naturally)
-- Trust (reader knows who's talking)
+1. *(Step 1 = Italic Lead above)*
+2. *(Step 2 = Featured Image above)*
+3. **Disarming opener block** — "I know, I know" or equivalent. Acknowledges reader skepticism BEFORE they voice it. Reader feels understood. Mocking imagined dialogue often lives here.
+4. **Name + credibility + sales hook** — one paragraph, ~80-100 words. Concrete sensory specifics ("born and raised on pasta, pizza, and seawater"). Bold on identity, italic on emphasis word.
+5. **Three bullet points: "what you'll learn"** — concrete and specific. Not generic. The bullets prove the article delivers on the USP. NEW Apr 29.
+6. **One sentence: time-vs-benefit framing** — "this saves you from doing the painful thing yourself." Short. Frames why reading beats the alternative. NEW Apr 29.
+7. **TL;DR table** — structured `<table>` with rows. See TL;DR Template below. NOT a callout. NOT a `<p>` block.
+8. **Affiliate disclosure box** — small grey neutral, Nico-voiced. Position: AFTER the TL;DR (per D1).
 
-Most posts should include a bulleted list of what's covered in the article — Google likes this, readers like this.
+Reference: WAP_05b Pattern A (annotated example with Tourist Info opening).
 
-### 4. TL;DR Callout
-
-HTML `<table>` with rows — see TL;DR Template below. NOT a `<p>` in a colored div.
-
-### 5. Affiliate Disclosure (AFTER TL;DR — Apr 28 canonical)
+### 8 (expanded). Affiliate Disclosure (AFTER TL;DR — Apr 28 canonical)
 
 **UPDATED Apr 28:** Affiliate disclosure position is AFTER TL;DR, not before. ONE affiliate disclosure per post. The previously-spec'd bottom disclosure is removed entirely.
 
@@ -141,6 +169,21 @@ Example:
 *Heads up: some links here are affiliate links. Price stays the same for you. I get a small cut so I can keep the lights on and avoid begging my cousin for a real job.*
 
 Never use generic "this post may contain affiliate links." Always Maniscalco-flavored.
+
+### Section Architecture (Hard Rules — Apr 29)
+
+Every H2 section follows this structure. Hard rules.
+
+1. H2 heading
+2. **Image immediately after H2** — mandatory, every section
+3. Body prose in text blocks (each ≤180 characters per Foundation Rule 1)
+4. If section approaches 300-400 words, break with H3 sub-section (Foundation Rule 2)
+5. If a paragraph block is dense, break with an inline image
+6. **Closing callout(s)** — Local's Take / Pick / Warning. Mandatory. Multiple callouts allowed if topic warrants
+
+**Exceptions:** Conclusion section and FAQ section don't follow this — they have their own patterns (see WAP_05b Patterns H and I).
+
+Reference: WAP_05b Pattern B.
 
 ### 6. Main Content — H2 Sections
 
@@ -159,15 +202,39 @@ Mandatory at the bottom of every post. 4-6 questions. Each answer 40-75 words. E
 
 Uses FAQPage schema (template below). Questions phrased EXACTLY as a searcher would type them.
 
-### 8. Conclusion
+### 8. Conclusion Architecture (4 Jobs — Apr 29)
 
-Short. 2-4 paragraphs max. Ends with a Nico closer: a verdict, a threat, a Maniscalco line. Never "Have an amazing trip!"
+Length: 100-180 words total.
+
+**Job 1 — Disarming opener with reward framing.** Reward the reader for finishing. Make them feel they're better than the tourists who didn't.
+- "I know, I know. That was a lot. But look how much you know now compared to those shitty tourists out there."
+- Callback to intro's "I know, I know" — frames closure.
+
+**Job 2 — 3-5 numbered takeaways.** NOT a recap of the article. The 3-5 things the reader will REGRET not knowing.
+- Each bullet bolded skim-keyword
+- Most bullets hyperlink to related WAP content
+- One short sentence per point
+
+**Job 3 — Ironic channel menu CTA.** Each channel framed in voice with self-deprecating irony.
+
+| Channel | Voice frame | URL |
+|---|---|---|
+| Instagram | "for people with attention problems who can't focus more than 10 seconds" | https://www.instagram.com/wearepalermo_sicily/ |
+| TikTok | (same goldfish-attention frame) | https://www.tiktok.com/@wearepalermo |
+| YouTube | "Palermo Netflix — binge these long-ass videos and literally turn into a Sicilian" | https://www.youtube.com/@WeArePalermo |
+| We Are Palermo Premium Guide | "everything you're desperately looking for and that I'll never tell you for free because I've gotta pay for this whole circus" | https://wearepalermo.podia.com/the-sicilian-way |
+
+**TripAdvisor joke** (use when relevant, not always): "TripAdvisor is fantastic because Sicilians don't use it, so it's tourists recommending stuff to other tourists. Amazing!"
+
+**Job 4 — Signature.** Every post: "A hug is always, *Nico*"
+
+Reference: WAP_05b Pattern I.
 
 ### 9. Continue Your Palermo Planning Block
 
 Gray-background HTML block with 3 internal links:
 - Next recommended post
-- The Sicilian Way premium guide
+- We Are Palermo Premium Guide
 - WAP YouTube channel
 
 Template below.
@@ -476,13 +543,13 @@ Gray box with 3 internal links. Template:
 <h3 style="margin-top: 0; text-align: center;">Continue Your Palermo Planning</h3>
 <ul style="list-style-type: none; padding-left: 0; text-align: center;">
      <li style="margin-bottom: 10px;"><strong>[RELATED POST NAME]:</strong> <a href="[URL]" target="_blank" rel="noopener noreferrer">[CALL TO ACTION TEXT]</a></li>
-     <li style="margin-bottom: 10px;"><strong>Premium Guide:</strong> <a href="https://wearepalermo.podia.com/the-sicilian-way" target="_blank" rel="noopener noreferrer">Get "The Sicilian Way" (Step-by-Step Blueprint)</a></li>
+     <li style="margin-bottom: 10px;"><strong>Premium Guide:</strong> <a href="https://wearepalermo.podia.com/the-sicilian-way" target="_blank" rel="noopener noreferrer">Get the We Are Palermo Premium Guide</a></li>
      <li style="margin-bottom: 10px;"><strong>Watch the Chaos:</strong> <a href="https://www.youtube.com/@WeArePalermo" target="_blank" rel="noopener noreferrer">Check our YouTube Channel</a></li>
 </ul>
 </div>
 ```
 
-Always include: one related WAP blog post, The Sicilian Way link, YouTube channel link.
+Always include: one related WAP blog post, We Are Palermo Premium Guide link, YouTube channel link.
 
 ---
 
