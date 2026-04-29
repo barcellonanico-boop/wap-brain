@@ -226,7 +226,7 @@ Length: 100-180 words total.
 
 **TripAdvisor joke** (use when relevant, not always): "TripAdvisor is fantastic because Sicilians don't use it, so it's tourists recommending stuff to other tourists. Amazing!"
 
-**Job 4 — Signature.** Every post: "A hug is always, *Nico*"
+**Job 4 — Signature.** Every post: "Un grande abbraccio, *Nico Barcellona*" (Italian canonical Apr 29 — English version deprecated as nonsensical literal translation)
 
 Reference: WAP_05b Pattern I.
 
@@ -241,7 +241,7 @@ Template below.
 
 ### 10. Signature
 
-*A hug is always,*
+*Un grande abbraccio,*
 *Nico Barcellona*
 
 ---
@@ -587,7 +587,7 @@ Before hitting publish on any new or updated post, verify every item.
 - [ ] Main answer complete in first 540 words
 - [ ] FAQ section at bottom, 4-6 questions
 - [ ] Continue Planning block at end
-- [ ] Signature ("A hug is always, Nico Barcellona")
+- [ ] Signature ("Un grande abbraccio, *Nico Barcellona*" — Italian canonical, deprecated English version)
 
 ### Voice (Pulled From WAP_05 Self-Check)
 - [ ] Opening does NOT sound like a travel-blog intro

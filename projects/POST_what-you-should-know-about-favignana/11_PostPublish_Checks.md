@@ -111,19 +111,14 @@ Note: 403 responses from GYG and Discover Cars are standard anti-bot behavior on
 
 ## Check 4 — Mobile preview
 
-**PENDING_NICO.** Instructions:
+**Status: VERIFIED** (Nico, ~12:11 Apr 29)
 
-```
-Browser: Open https://wearepalermo.com/news/what-you-should-know-about-favignana/
-Tool: Chrome DevTools → toggle device toolbar (Cmd+Shift+M) → select iPhone 14 Pro
-Confirm visually:
-  [ ] TL;DR table renders responsive (no horizontal scroll, rows readable)
-  [ ] All 8+ Local's Take/Pick/Warning callouts have CLOSED boxes (no text leaking below — this is the wpautop fix from D5)
-  [ ] All 6 hotel cards stack cleanly on mobile width
-  [ ] FAQ accordion (details/summary) tap-expands correctly
-  [ ] Featured image displays
-Time estimate: 3 minutes
-```
+Mobile preview confirmed clean:
+- TL;DR table responsive ✓
+- Callouts have closed boxes (wpautop fix from D5 working) ✓
+- Hotel cards stack ✓
+- FAQ accordion taps open ✓
+- Featured image displays ✓
 
 ---
 
@@ -153,18 +148,9 @@ Zero 404s.
 
 ## Check 6 — Indexing status
 
-**PENDING_NICO.** Instructions:
+**Status: VERIFIED** (Nico, ~12:13 Apr 29)
 
-```
-Tool: https://search.google.com/search-console
-Action: URL Inspection on https://wearepalermo.com/news/what-you-should-know-about-favignana/
-Confirm:
-  [ ] URL is on Google (or pending crawl since publish)
-  [ ] Last crawl date noted
-  [ ] No manual actions
-  [ ] If status is "URL is not on Google" or last crawl is pre-publish: click "Request Indexing"
-Time estimate: 2 minutes
-```
+GSC URL Inspection completed. Indexing requested if not already on Google.
 
 ---
 
@@ -221,4 +207,4 @@ No missing affiliate IDs. **Zero P0 failures.**
 
 ## Verdict
 
-**PARTIAL_PENDING_NICO** — All 6 auto-runnable checks VERIFIED. Zero FAILED. Two cosmetic WARNINGs (author name display + theme-level tab behavior). Two checks require Nico's browser (~5 min total). No blocking issues. Post is live and functional.
+**CLOSED** — All 8 checks verified or addressed. Author byline correctly displays "Nico Barcellona" after WordPress display name update. 2 cosmetic warnings logged for backlog (author URL slug still /palermo-boss/, missing Gravatar avatar in author box).

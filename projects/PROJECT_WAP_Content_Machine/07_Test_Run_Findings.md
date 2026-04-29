@@ -66,6 +66,11 @@
 | 42 | Apr 28, Pass 4 | (NEW Step 10) | Medium | Pass 4 (Nico manual edits) is real and material but not codified in SOP_01. Currently informal between Pass 3 and Publish. | P1: codify Pass 4 as explicit step in SOP_01. Park to this-week patches batch. |
 | 43 | Apr 28, Pass 3 | Snapshot tooling | Medium | 00_Live_HTML.md snapshot has stale image URLs. Architect trusted as authoritative; produced broken images. | P1: define snapshot generation process, refresh cadence, and trust rules. Currently NO trust for image URLs. Park to this-week patches batch. |
 | 44 | Apr 28, Pass 3 | Architect process | Medium | Architect self-criticism (handoff doc section G): (1) should not infer image URLs, (2) should mechanically split wall-of-text in v1 not flag-and-ship, (3) should diff against canonical reference article before assuming spec is right, (4) should mechanically scan Pass 2 input before Pass 3, (5) architect notes section too long (250 lines vs <80 target). | P0 items addressed by D14, D13, D17 (codify Tourist Info as canonical reference). Items 4 + 5 are agent-prompt patches: park to Architect agent prompt v2.1 batch. |
+| 48 | Apr 29, Step 10/10.5 | Step 10 | High | Favignana post sat unpublished for 14 hours (Apr 28 22:51 → Apr 29 11:50) because no verify-publish step existed in SOP_01. PM operated on Nico-said-shipped without verification. Brain doc patches were applied as if post was live. Discovered Apr 29 11:24 when Step 11 prompt run by Claude Code revealed live URL was still pre-rewrite version. | Patched into SOP_01 Apr 29: Step 10 codified WordPress publish procedure, Step 10.5 added as mandatory verify-via-fetch within 60 seconds. |
+| 49 | Apr 29, Step 11 | Step 11 | Medium | Architect agent in normal Claude project has no web/HTTP/browser access. Cannot run Step 11 live URL checks. Claude Code (CLI access) and PM (web_fetch) CAN. Step 11 was misassigned to Architect. | Patched into SOP_01 Apr 29: Step 11 reassigned to Claude Code primary + Nico for browser-only checks (mobile preview, GSC). Architect agent role spec updated implicitly. |
+| 50 | Apr 29, Step 10 | Step 10 | Medium | "Procedure for rewriting" was implicit, not codified. WordPress publish action sequence (Code Editor mode, replace body, Yoast fields, author setting, featured image, date update to today, hit Update) had never been written down. Caused incomplete publish (signature was wrong English version, would have caused content drift on next post). | Patched into SOP_01 Apr 29: Step 10 codified. Hard rule: publish date always updated to today on republish. |
+| 51 | Apr 29, Commit 2 morning | Process | Low | Claude Code commits can sit staged-but-not-fully-pushed if a run hits an issue mid-execution. WAP_06 patches + brand rename morning commit did not push initially; was pushed only when Step 11 commit ran. Pattern: assume nothing is committed until verified. | Add post-commit push verification to PM Claude Code prompt protocol: end every prompt with explicit "verify push completed via git log origin/main" or "fetch the URL the file should now be at". |
+| 52 | Apr 29, post-publish UI | Site | Low | Author bio photo missing site-wide on rendered posts. Likely Gravatar email mismatch (WordPress user email is `nicolabarcelllona@gmail.com` with triple-L typo, doesn't match Gravatar account email). Affects every post, not Favignana-specific. | Park to backlog. Fix path: install "Simple Local Avatars" plugin OR fix WP user email + create/link Gravatar with the correct email. ~15-30 min separate task. |
 
 ---
 
@@ -141,3 +146,22 @@ PM judgment calls (Apr 28):
 - D17 → Codified in SOP_01 D13 patch (spec lags practice in one-person operation; Step 9 input is cheaper)
 
 POST-PUBLISH evaluation batch now 23 items (Findings #22-44).
+
+### Apr 29 Favignana Closeout — Findings #48-52
+
+PM consolidated decisions Apr 29 ~12:30:
+
+P0 patched Apr 29 (this session):
+- #48 (Step 10.5 verify publish) → SOP_01 patched
+- #49 (Step 11 reassigned to Claude Code) → SOP_01 patched
+- #50 (Step 10 publish procedure codified) → SOP_01 patched
+
+Process patch this session:
+- #51 (push verification) → codified in PM closeout prompt protocol
+
+Backlog:
+- #52 (author avatar) → site-wide cosmetic fix, separate task
+
+Related signature canonical fix (today): "Un grande abbraccio, *Nico Barcellona*" replaces deprecated English "A hug is always". Patched into WAP_05b + WAP_06.
+
+Tourist Info article retroactive fix (signature + author byline + brand rename "The Sicilian Way" → "We Are Palermo Premium Guide" in body): logged as separate backlog item, not blocking.

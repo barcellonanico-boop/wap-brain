@@ -296,12 +296,12 @@ When the article touches restaurants, recommendations, or "where do I go" topics
 
 The joke earns its place when it lands in context. Don't force it on a transport-only or logistics-only post.
 
-**Job 4 — Signature**
+**Job 4 — Signature.** Every post ends with:
 
-Every post ends with:
+> Un grande abbraccio,
+> *Nico Barcellona*
 
-> A hug is always,
-> *Nico*
+Italian, untranslated. The English literal "A hug is always" doesn't make sense in English and was deprecated April 29, 2026. Pairs with the bilingual identity (Italian-American comedian persona). Same logic as keeping "*capito?*" or "*scimunito*" untranslated mid-article.
 
 Brand consistency. Every post.
 

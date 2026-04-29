@@ -410,6 +410,63 @@ DO NOT infer image URLs from naming conventions. Apr 28 examples that broke this
 
 ---
 
+## Step 10 — Publish (REVISED Apr 29)
+
+WordPress publish procedure (codified):
+
+1. **Open WordPress admin** for the target post URL
+2. **Switch editor to Code Editor / Text mode** (NOT Visual mode — Visual mode mangles HTML, callout structure, and JSON-LD schema)
+3. **Replace post body**: delete current content, paste Pass 4 HTML from `09_Pass4_Nico_Final.md`
+4. **Update post title (H1)** to match Pass 4 spec
+5. **Update Yoast SEO panel:**
+   - Focus keyphrase (typically primary keyword)
+   - SEO title (50-60 chars, includes keyphrase)
+   - Slug — DO NOT CHANGE (URL preservation for SEO juice)
+   - Meta description (140-155 chars, includes keyphrase, in voice)
+6. **Set author** to "Nico Barcellona" (NOT "palermo-boss" or any legacy handle). If display name shows wrong: Users → Profile → Display name publicly as → "Nico Barcellona" → Update.
+7. **Set featured image** per Pass 4 spec (alt text per Pass 4)
+8. **Update publish date to today** (HARD RULE — always today's date on republish, never keep original)
+9. **Set/preserve categories and tags**
+10. **Hit Update**
+
+---
+
+## Step 10.5 — Verify Publish (NEW Apr 29)
+
+MANDATORY. Cannot skip. Within 60 seconds of hitting Update:
+
+1. **Open the live URL in incognito** (or use curl/web_fetch from CLI)
+2. **Verify presence** of these markers from Pass 4:
+   - New post title in `<title>` and `<h1>`
+   - New H2 #1 wording
+   - TL;DR table visible (search HTML for `tldr-box` class or first row content)
+   - Featured image is the new one (search for new image filename)
+   - Author byline is "Nico Barcellona"
+3. **Verify absence** of old markers:
+   - Old title
+   - Old H2 wording
+   - Old callout photo filename (if changed)
+4. **If any marker is wrong**: publish failed (silent save, draft saved instead, cache issue, or wrong post edited). DO NOT proceed to Step 11. Return to WordPress and re-publish. Verify again.
+
+Lesson from Apr 28-29 Favignana run: the post sat unpublished for 14 hours because no verify-publish step existed. SOP operated on assumption "publish happened" without proof. This step is non-negotiable.
+
+---
+
+## Step 11 — Post-Publish Technical Checks (REVISED Apr 29)
+
+**Reassigned**: Step 11 is now executed by **Claude Code** (CLI access via curl/web_fetch), NOT by the Architect agent (which has no browser/HTTP access in normal Claude project sessions).
+
+**Hybrid execution**:
+- Claude Code runs 6 of 8 checks mechanically (schema HTML presence, author attribution, broken-link spot-check, image render check, internal link tab behavior, affiliate ID verification)
+- Nico runs 2 browser-only checks (mobile preview in Chrome DevTools or phone, GSC URL Inspection in Search Console)
+- Claude Code outputs `11_PostPublish_Checks.md` with PENDING_NICO sections for the browser checks
+- Nico fills the PENDING_NICO sections after running checks
+- Final commit closes the post
+
+The Architect agent is no longer the right specialist for Step 11. Architect handles upstream technical work (schema design, prep, structural audit), not live URL verification.
+
+---
+
 ## Changelog
 
 - v1.0 — April 24, 2026 — Initial draft.
@@ -427,3 +484,7 @@ DO NOT infer image URLs from naming conventions. Apr 28 examples that broke this
   - D12: Pass 2 self-check requires mechanical scans with exact counts (not human estimates). 7 mandatory scans.
   - D13: Pass 3 scope explicitly allows mechanical paragraph splits at sentence boundaries. Canonical reference article rule codified.
   - D14: Image URL inference banned. Placeholder default `[NICO: paste URL]` for all unverified URLs.
+- v2.1 — April 29, 2026 — Favignana closeout patches:
+  - Step 10 codified: WordPress publish procedure (Code Editor mode, Yoast fields, author setting, featured image, hard rule publish date always today)
+  - Step 10.5 added: mandatory verify-publish via fetch within 60 seconds (triggered by 14-hour unpublished gap on Favignana)
+  - Step 11 reassigned: from Architect agent to Claude Code (CLI) primary + Nico browser checks. Architect has no HTTP access in normal sessions.
