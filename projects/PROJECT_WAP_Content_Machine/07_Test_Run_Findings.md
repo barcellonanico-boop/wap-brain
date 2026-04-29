@@ -71,6 +71,9 @@
 | 50 | Apr 29, Step 10 | Step 10 | Medium | "Procedure for rewriting" was implicit, not codified. WordPress publish action sequence (Code Editor mode, replace body, Yoast fields, author setting, featured image, date update to today, hit Update) had never been written down. Caused incomplete publish (signature was wrong English version, would have caused content drift on next post). | Patched into SOP_01 Apr 29: Step 10 codified. Hard rule: publish date always updated to today on republish. |
 | 51 | Apr 29, Commit 2 morning | Process | Low | Claude Code commits can sit staged-but-not-fully-pushed if a run hits an issue mid-execution. WAP_06 patches + brand rename morning commit did not push initially; was pushed only when Step 11 commit ran. Pattern: assume nothing is committed until verified. | Add post-commit push verification to PM Claude Code prompt protocol: end every prompt with explicit "verify push completed via git log origin/main" or "fetch the URL the file should now be at". |
 | 52 | Apr 29, post-publish UI | Site | Low | Author bio photo missing site-wide on rendered posts. Likely Gravatar email mismatch (WordPress user email is `nicolabarcelllona@gmail.com` with triple-L typo, doesn't match Gravatar account email). Affects every post, not Favignana-specific. | Park to backlog. Fix path: install "Simple Local Avatars" plugin OR fix WP user email + create/link Gravatar with the correct email. ~15-30 min separate task. |
+| 53 | Apr 29, audit | Process | Medium | PM Claude Code prompts that embed full file content >5,000 words inline can truncate across chat clients. Apr 29 SOP_01 v2.1 rewrite prompt truncated at "## Project Folder File Naming Convention" header, requiring continuation message. Wasted ~5 min recovering. | PM Claude Code prompt protocol updated Apr 29: when writing files >5,000 words, split into multiple Write calls in same prompt OR pre-warn truncation risk OR use semantic instructions instead of literal content. Logged as standard. |
+| 54 | Apr 29, audit | Process | High | Brain docs accumulated entropy faster than they were pruned. Multiple times Apr 27-29: rules added by appending to bottom of doc instead of rewriting body to reflect current state. SOP_01 had v1.1 8-step pipeline in body coexisting with v2.0+ patches at bottom. WAP_06 had three competing paragraph-length rules. Author intro numbered differently in WAP_06 vs WAP_05b. Brand rename incomplete. Architect's responsibility list outdated. | Patched Apr 29: when a doc has a major version change, REWRITE the body, don't just append. Use "Changelog" section to log what changed but body must reflect current single source of truth. Added to PM protocol below. |
+| 55 | Apr 29, audit | Process | Low | Audit revealed a class of "silent drift" failures: the system told us things were done when they weren't (post not actually published, brand rename incomplete, agent prompts stale, two pipelines coexisting). Pattern: assume nothing is in canonical state until verified by independent fetch/grep. Findings #48 (post not published despite "shipped" claim), #51 (commit not pushed despite commit message), #54 (docs not consistent despite "patches applied"). | Patched Apr 29: PM verification protocol — after every commit, web_fetch or grep the canonical state. Don't trust the operation report. Trust the artifact. |
 
 ---
 
@@ -165,3 +168,21 @@ Backlog:
 Related signature canonical fix (today): "Un grande abbraccio, *Nico Barcellona*" replaces deprecated English "A hug is always". Patched into WAP_05b + WAP_06.
 
 Tourist Info article retroactive fix (signature + author byline + brand rename "The Sicilian Way" → "We Are Palermo Premium Guide" in body): logged as separate backlog item, not blocking.
+
+### Apr 29 Audit + Cleanup Session — Findings #53-55 + Major Doc Cleanup
+
+PM consolidated decision Apr 29 ~12:30: full audit of brain repo health before next post run. Found 6 contradictions/gaps across SOP_01, WAP_06, WAP_05b, WAP_01, WAP_02, AGENT_INDEX, ARCHITECT_SYSTEM_PROMPT.
+
+Cleanup pass executed Apr 29 12:50-13:30 across 4 commits:
+
+**Commit 1:** SOP_01 v2.1 — full body rewrite. 12 steps across 3 phases. Old v1.1 8-step pipeline removed from body. All Apr 27-29 patches integrated. Findings A1, A6 resolved.
+
+**Commit 2:** WAP_06 v2.2 — killed duplicate paragraph-length rule (Foundation Rules is single source of truth, 180 char text block). Renumbered author intro 1-8 to match WAP_05b. Findings A2, A3 resolved.
+
+**Commit 3:** Brand rename completion (WAP_01, WAP_02 — was missed in Apr 29 morning rename) + AGENT_INDEX step numbering update (Architect Steps 2/3/4/8, Copywriter Steps 5/7, Scout Step 6) + Architect system prompt v2.1 alignment (removed publish-to-WordPress responsibility, removed live-check responsibility, updated step numbering). Findings A4, A5, A6 resolved.
+
+**Commit 4 (this commit):** Findings #53-55 logged + meta-process patches + WAP_00_INDEX timestamp + SOPS_INDEX v2.1 update + final repo health check.
+
+The lesson: **patch by rewriting, not appending.** Major version changes (v1→v2, v2.0→v2.1) require body rewrites. Minor patches can append. The system was growing entropy faster than it was being pruned.
+
+After this commit, repo is in clean state for next post run.

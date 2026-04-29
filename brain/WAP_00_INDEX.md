@@ -1,6 +1,6 @@
 # WAP_00_INDEX.md — WAP Brain Master Index
 
-Last updated: April 19, 2026
+Last updated: April 29, 2026 (v2.1 cleanup pass — SOP_01 v2.1, WAP_06 v2.2, brand rename completion, agent docs alignment, Findings #53-55 logged)
 
 This is the master directory of all Brain docs and SOPs in the WAP Brain.
 Read this first in every session to understand what exists and where to find it.
@@ -35,7 +35,7 @@ Read this first in every session to understand what exists and where to find it.
 | File | What It Does | When to Use |
 |---|---|---|
 | SOPS_INDEX.md | Master directory for all SOPs. Used by agents to find the right workflow for a given task. Mirrored in this WAP_00_INDEX SOP Map section. | When an agent needs to find which SOP matches a task. When adding/removing SOPs. |
-| SOP_01_Update_Existing_Post.md | Rewrite an existing blog post losing traffic. v2.0: 11 steps across 3 phases (Setup / Write / Verify+Publish). 3-pass writing model: Pass 1 information, Pass 2 voice, Pass 3 HTML. Project folder pattern. Scout after Pass 1. Max 2 revision rounds. | When a post is rotting per WAP_13 (lost clicks YoY), or has structural issues, or needs full freshness pass. NOT for minor edits. |
+| SOP_01_Update_Existing_Post.md | Rewrite an existing blog post losing traffic. v2.1: 12 steps across 3 phases (Setup / Write / Verify+Publish). 3-pass writing model + Pass 4 Nico final. Project folder pattern. Scout after Pass 1. Step 11 (Verify Publish) is mandatory gate. Step 12 (Post-Publish) is Claude Code + Nico, not Architect. | When a post is rotting per WAP_13 (lost clicks YoY), or has structural issues, or needs full freshness pass. NOT for minor edits. |
 | SOP_02_Create_New_Post.md | Full workflow for creating a new blog post with AI: keyword/topic input, draft prompt, Nico review, images, publish, update inventory. | Every time a new post is created. |
 | SOP_03_Add_Story_To_Bank.md | Two-stage workflow: Stage 1 the Story Agent crafts a raw dump into a 250-350 word bit in Nico's voice; Stage 2 same agent runs dedupe scan, strict-taxonomy tag assignment, named-business check, stats flag, bidirectional pairs-with check, voice mode confirmation. Drafts story file + index row, surfaces for Nico approval, Claude Code writes and pushes. | Every time Nico wants to add a story to the Bank. See SOP for when NOT to use (one-liners, near-duplicates, recommendation-only content). |
 
