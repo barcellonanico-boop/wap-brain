@@ -23,10 +23,10 @@ Dormant. Inactive for ~1 year.
 ## 2. Product & Email
 
 **Podia**
-Hosts The Sicilian Way premium guide. Handles checkout and delivery. Price: $47 with $31 downsell. Planned migration to Lovable in a future project.
+Hosts the We Are Palermo Premium Guide (formerly "The Sicilian Way"). Handles checkout and delivery. Price: $47 with $31 downsell. Planned migration to Lovable in a future project.
 
 **ConvertKit**
-Email marketing platform. Connected to The Sicilian Way funnel. Manages the soap opera sequence and subscriber list. No documented automation system yet for WAP — this is a future project.
+Email marketing platform. Connected to the We Are Palermo Premium Guide funnel. Manages the soap opera sequence and subscriber list. No documented automation system yet for WAP — this is a future project.
 
 ---
 
@@ -77,6 +77,6 @@ All WAP Brain docs, SOPs, and project docs live here. Cloned locally to ~/wap-br
 ## 7. Tool Connections Map
 
 WordPress → GA4 (via GTM) → tracks traffic and behavior
-ConvertKit → The Sicilian Way funnel → Podia checkout
+ConvertKit → We Are Palermo Premium Guide funnel → Podia checkout
 Switchy → wraps affiliate links → GA4 tracks clicks
 Claude → reads wap-brain repo → executes content SOPs

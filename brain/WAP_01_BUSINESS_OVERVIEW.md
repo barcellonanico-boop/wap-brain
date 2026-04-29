@@ -67,7 +67,7 @@ Summary:
 - Booking.com affiliate links (primary)
 - Discover Cars affiliate links (secondary)
 - GetYourGuide affiliate links (minor)
-- The Sicilian Way — premium guide sold via Podia (~$47, with $31 downsell)
+- We Are Palermo Premium Guide (formerly "The Sicilian Way") — premium guide sold via Podia (~$47, with $31 downsell)
 
 ---
 
@@ -84,7 +84,7 @@ Summary: Italian-American stand-up comedian. Sarcastic, animated, personal, hone
 - Primary: wearepalermo.com blog (WordPress)
 - Secondary: YouTube (talking head + B-roll + voiceover format)
 - Dormant: Instagram, TikTok (inactive for ~1 year)
-- Email: ConvertKit list (connected to The Sicilian Way funnel)
+- Email: ConvertKit list (connected to the We Are Palermo Premium Guide funnel)
 
 ---
 
@@ -93,7 +93,7 @@ Summary: Italian-American stand-up comedian. Sarcastic, animated, personal, hone
 The immediate priority is building the WAP Content Machine: an AI-assisted system for updating existing blog posts and creating new ones, running at ~80% autopilot with Nico's approval on every final output.
 
 Longer term:
-- Migrate The Sicilian Way from Podia to Lovable
+- Migrate the We Are Palermo Premium Guide from Podia to Lovable
 - Reactivate social media with AI-assisted short-form content
 - Launch paid advertising to accelerate traffic growth
 - Build YouTube content workflow with AI scripting support

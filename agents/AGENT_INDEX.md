@@ -1,6 +1,6 @@
 # WAP Agent Index
 
-**Last updated:** April 26, 2026
+**Last updated:** April 29, 2026 (v2.1 step numbering update + brand rename)
 
 The master directory of every specialist agent in the WAP system. Use this to find which agent handles which task and where each agent's system prompt lives.
 
@@ -17,9 +17,9 @@ Every agent in the WAP system has a system prompt stored in `agents/`. This inde
 | Agent | File | Role | Used In | Tools | Status |
 |---|---|---|---|---|---|
 | WAP PM | [PM_SYSTEM_PROMPT.md](PM_SYSTEM_PROMPT.md) | Project orchestrator. Tracks projects, decides task sequencing, writes handoff prompts, updates docs after every task. | All sessions, every task | project_knowledge_search | v1.0 active |
-| WAP Architect | [ARCHITECT_SYSTEM_PROMPT.md](ARCHITECT_SYSTEM_PROMPT.md) | Technical infrastructure: SEO, GA4, GTM, WordPress, ConvertKit, Stripe, Lovable, Make.com, GitHub, scripting. | SOP_01 Step 2, Step 7. SOP_02 Step 2, Step 7. All technical tasks. | project_knowledge_search, web_search, web_fetch (varies by task) | v1.0 active |
-| WAP Copywriter | [COPYWRITER_SYSTEM_PROMPT.md](COPYWRITER_SYSTEM_PROMPT.md) | Generic SOP-driven copywriter. All writing: blog posts, newsletters, YouTube descriptions, social posts, premium guide copy, sales pages, ads. Reads SOPS_INDEX to find workflow, reads WAP_05 every session for voice, reads task-specific Brain docs per SOP instructions. No task-specific knowledge baked in — all workflow logic lives in SOPs, all rules in Brain docs. | SOP_01 Pass 1/2/3. SOP_02 Step 3. All content tasks. | project_knowledge_search, web_search (optional) | v2.0 active |
-| WAP Scout | [SCOUT_SYSTEM_PROMPT.md](SCOUT_SYSTEM_PROMPT.md) | Fact verification specialist. Extracts factual claims from drafts, verifies via web sources, returns markdown table with VERIFIED / DISPUTED / UNVERIFIABLE per claim. Surgical extraction (skips personal observations, comedic embellishment, invented dialogue). Tier-ranked sources. | SOP_01 Step 4. SOP_02 Step 4. | web_search, web_fetch | v1.0 untested (Phase 3 validates) |
+| WAP Architect | [ARCHITECT_SYSTEM_PROMPT.md](ARCHITECT_SYSTEM_PROMPT.md) | Technical infrastructure: SEO, GA4, GTM, WordPress, ConvertKit, Stripe, Lovable, Make.com, GitHub, scripting. | SOP_01 v2.1 Steps 2, 3, 4, 8 (Live HTML snapshot, Prep, Structural Audit, Pass 3 HTML). SOP_02 (when v2.0 lands). All technical tasks. **NOT used in SOP_01 Step 10 (publish — Nico's job) or Step 12 (post-publish checks — Claude Code's job).** | project_knowledge_search, web_search, web_fetch (varies by task) | v1.0 active |
+| WAP Copywriter | [COPYWRITER_SYSTEM_PROMPT.md](COPYWRITER_SYSTEM_PROMPT.md) | Generic SOP-driven copywriter. All writing: blog posts, newsletters, YouTube descriptions, social posts, premium guide copy, sales pages, ads. Reads SOPS_INDEX to find workflow, reads WAP_05 + WAP_05b every session for voice, reads task-specific Brain docs per SOP instructions. No task-specific knowledge baked in — all workflow logic lives in SOPs, all rules in Brain docs. | SOP_01 v2.1 Steps 5, 7 (Pass 1 Information, Pass 2 Voice). SOP_02 Step 3. All content tasks. **Pass 3 (HTML conversion) is Architect's job, not Copywriter's.** | project_knowledge_search, web_search (optional) | v2.0 active |
+| WAP Scout | [SCOUT_SYSTEM_PROMPT.md](SCOUT_SYSTEM_PROMPT.md) | Fact verification specialist. Extracts factual claims from drafts, verifies via web sources, returns markdown table with VERIFIED / DISPUTED / UNVERIFIABLE per claim. Surgical extraction (skips personal observations, comedic embellishment, invented dialogue). Tier-ranked sources. | SOP_01 v2.1 Step 6 (Fact Check). SOP_02 Step 4. | web_search, web_fetch | v1.0 active (validated in Favignana run Apr 28) |
 | WAP Story Agent | [STORY_AGENT_SYSTEM_PROMPT.md](STORY_AGENT_SYSTEM_PROMPT.md) | Story Bank intake. Two-stage workflow: Stage 1 crafts raw dump into 250-350 word Maniscalco-style bit. Stage 2 runs dedupe, taxonomy tags, named-business check, stats flag, pairs-with, voice mode confirmation. | SOP_03 (the entire workflow). | project_knowledge_search | v1.0 untested (Task 2.13 validates) |
 
 ---
