@@ -1,6 +1,6 @@
 # WAP_08 Story Bank — Index
 
-Last updated: April 23, 2026
+Last updated: April 26, 2026
 
 ---
 
@@ -34,7 +34,7 @@ One story per file scales. Individual edits don't conflict. The agent loads only
 
 **Location:** `palermo-historic-center`, `kalsa`, `vucciria`, `capo-market`, `ballaro-market`, `politeama-liberta`, `mondello`, `via-maqueda`, `cattedrale-palermo`, `teatro-massimo`, `quattro-canti`, `paris`
 
-**Topic:** `food`, `street-food`, `gelato`, `restaurants`, `markets`, `tipping`, `coffee`
+**Topic:** `food`, `street-food`, `gelato`, `restaurants`, `markets`, `tipping`, `coffee`, `gossip`, `airbnb-hosting`, `hygiene`
 
 **Practical:** `driving`, `car-rental`, `parking`, `transport`
 
@@ -211,7 +211,7 @@ One story per file scales. Individual edits don't conflict. The agent loads only
 - **Voice Mode:** Mode A
 - **Tags:** palermo-historic-center, safety, police-and-government, parking, driving, sicilian-mentality, rules-and-enforcement, outrage, funny, annoying, palermo-chaos, lawlessness-paradox, via-maqueda, mode-a
 - **Themes:** Enforcement vacuum is the cause of chaos (not the people), the Sicilian "two minutes" excuse universal, cops are ghosts, rules-on-paper vs rules-in-practice gap, humans without rules thesis
-- **Pairs with:** S007 (Pony Race) — sister story, same theme. S006 shows the cops don't come. S007 shows what they do instead.
+- **Pairs with:** S007 (Pony Race) — sister story, same theme. S006 shows the cops don't come. S007 shows what they do instead. S009 (Dirty Outside, Dirty Inside) — soft pair on the enforcement-vacuum thesis applied to hygiene.
 - **Use when writing about:**
   - Is Palermo safe (real answer)
   - Parking in Palermo / ZTL / pedestrian streets
@@ -249,7 +249,7 @@ One story per file scales. Individual edits don't conflict. The agent loads only
 - **Voice Mode:** Mode A
 - **Tags:** palermo-chaos, palermo-safety, police-and-government, daily-life, sicilian-mentality, rules-and-enforcement, historic-center, comic-anecdote, lawlessness-paradox, quattro-canti, vucciria, teatro-massimo, cattedrale-palermo, named-business, stats-to-verify, mode-a
 - **Themes:** Cops as ghosts/cowards, enforcement targets the compliant not the rule-breakers, Palermo is safe despite zero enforcement, humans without rules paradox, lawlessness-paradox thesis (sister to S006)
-- **Pairs with:** S006 (Fiat Panda) — sister story. S006 shows cops don't come. S007 shows what they do instead (hang out at bars, fine grandmas).
+- **Pairs with:** S006 (Fiat Panda) — sister story. S006 shows cops don't come. S007 shows what they do instead (hang out at bars, fine grandmas). S009 (Dirty Outside, Dirty Inside) — primary pair on the lawlessness-paradox thesis. S007 = no enforcement causes street chaos. S009 = no enforcement causes private filth.
 - **Use when writing about:**
   - Is Palermo safe despite visible chaos
   - Why the historic center feels lawless but isn't dangerous
@@ -274,6 +274,61 @@ One story per file scales. Individual edits don't conflict. The agent loads only
   - The chaos narrative is a cop problem, not a Sicilian problem
 - **Named businesses:** Battiloro restaurant. See WAP_09 entry R044. If pulling into free content, swap for generic reference ("a restaurant near my apartment"). The Battiloro vs. Vucciria contrast is the engine of the bit — preserve the contrast logic even when genericizing the name.
 - **Stats to verify:** Italy 398/100k, EU avg 318, Germany 301, USA 240, Finland 136 (Eurostat/FBI 2018-2020 data). Numbers are 5+ years old. Re-verify before publishing.
+
+---
+
+---
+
+### S009 — Dirty Outside, Dirty Inside
+
+- **File:** [stories/S009_dirty_outside_dirty_inside.md](stories/S009_dirty_outside_dirty_inside.md)
+- **Word count:** ~399
+- **Voice Mode:** Mode A
+- **Tags:** palermo-historic-center, airbnb-hosting, hygiene, sicilian-mentality, daily-life, lawlessness-paradox, palermo-chaos, tourists, locals, funny, outrage, comic-anecdote, mode-a
+- **Themes:** Hygiene as function of enforcement not culture, foreigner hypocrisy on cleanliness, Airbnb hosting horror reveals, the babysitter theory of human behavior, sister thesis to S007 lawlessness-paradox
+- **Pairs with:** S007 (Pony Race) — primary pair on lawlessness-paradox thesis. S006 (Fiat Panda) — soft pair on enforcement-vacuum theme. S008 (Sicilian Warmth) — soft pair on foreigner-hypocrisy reframe.
+- **Use when writing about:**
+  - Is Palermo dirty / first impressions of cleanliness
+  - Defending Palermo against the dirty-city stereotype without denying trash
+  - Airbnb hosting horror stories / what hosts actually see
+  - The enforcement-vacuum thesis applied to non-safety domains
+  - Cultural humor on tourist hypocrisy
+  - Hygiene differences between cultures
+  - Bali or Asia tourism observations
+  - Newsletter or YouTube intros needing comic Sicilian self-defense
+  - Pillar pieces on what foreigners get wrong about Palermo
+  - Counter-content to dirty-city complaints on Reddit or TripAdvisor
+- **Pullable hooks:**
+  - "There's a bag of garbage on the corner that's been there so long it's getting mail."
+  - "I'm not hiding behind my finger."
+  - "What kills me is the civilized traveler."
+  - "Nose in the air like they're smelling a wet dog."
+  - "You're in the cradle of civilization and you're doing a forensic audit of the sidewalk?"
+  - "I don't need a mop. I need a priest."
+  - "Looks like a Metallica mosh pit happened in the living room."
+  - "What are they drinking in here? Industrial adhesive? Is their saliva made of honey?"
+  - "A salad that's seen three Popes. A fish that died of old age weeks ago."
+  - "Sir. Ma'am. You are in Italy. You are eating McDonald's."
+  - "The clown grew up inside the fridge."
+  - "We don't wash these. We cremate them."
+  - "Are they wrestling bears in there?"
+  - "There is shit on the wall. I don't ask anymore. I just need the physics."
+  - "You complained about a wrapper on the street and you decorated my guest room with that?"
+  - "It's not a country problem. It's a babysitter problem."
+  - "In your country, the babysitter is awake. In Palermo, the babysitter is taking a nap. Same humans. Different supervision."
+  - "Clean outside. Dirty inside."
+  - "'Too much trash on the street,' they say. While smearing a Big Mac into the sofa."
+- **Core observations:**
+  - Palermo's visible street trash is real and shouldn't be denied
+  - Tourists from civil countries critique Palermo while leaving Airbnbs in worse shape than they found them
+  - Common Airbnb damages: sticky surfaces, expired food, contaminated bedsheets, walls with bodily fluids
+  - Hygiene is not cultural, it's a function of enforcement (cameras, fines, social control)
+  - Civilized tourists drop hygiene standards the moment they're outside enforcement range
+  - Palermo's enforcement vacuum produces street-visible chaos; civil countries' enforcement produces hidden private chaos
+  - The dirt complaint is an exposure of the complainer's own hygiene baseline
+  - Sister thesis to S007 lawlessness-paradox: humans default to disgusting, supervision is the variable
+- **Named businesses:** None
+- **Stats to verify:** None
 
 ---
 
