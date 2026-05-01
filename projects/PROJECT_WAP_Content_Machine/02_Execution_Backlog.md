@@ -41,7 +41,10 @@
 
 ## Phase 3 — Test Run
 
-- [ ] 3.1 Test SOP_01: pick 3 posts actively losing rankings, run full update workflow [Nico + Copywriting] [Est: 90 min | Actual: __ ]
+- [x] 3.1a SOP_01 v2.1 Run 1: /where-to-stay-palermo/ (P1 Tier A, -2,012 clicks YoY). Step 1 Intake complete May 1. Project folder: POST_where-to-stay-palermo/. [PM + Nico] [Est: 5 min | Actual: ~105 min brain dump + intake doc]
+- [ ] 3.1b SOP_01 v2.1 Run 1 continued: Steps 2-12 (Live HTML → Post-Publish Checks). [All agents] [Est: ~4 hrs | Actual: __ ]
+- [ ] 3.1c SOP_01 v2.1 Run 2: pick next P1 post from WAP_13 after Run 1 publishes. [PM + Nico] [Est: TBD]
+- [ ] 3.1d SOP_01 v2.1 Run 3: pick next P1 post. [PM + Nico] [Est: TBD]
 - [ ] 3.2 Test SOP_02: pick 1 keyword, run full new post workflow, publish [Nico + Copywriting] [Est: 90 min | Actual: __ ]
 - [ ] 3.3 Post-run debrief: what broke, what was slow, what needs fixing [PM + Nico] [Est: 30 min | Actual: __ ]
 - [ ] 3.4 Update SOPs based on debrief [PM] [Est: 30 min | Actual: __ ]
