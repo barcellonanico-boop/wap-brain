@@ -118,7 +118,7 @@ After Mondello section, brief Cefalù section.
 - More tourist-packed but nicer for less-adventurous travelers, families
 - Strategy: stay Cefalù, day-trip Palermo (train back-and-forth easy)
 
-**Internal link:** existing /where-to-stay-cefalu/ post (P2 priority, Tier A — also a rotting page that needs SOP_01 later).
+**Internal link:** existing /news/where-to-stay-cefalu/ post (P2 priority, Tier A — also a rotting page that needs SOP_01 later). URL corrected May 1: original Intake said /where-to-stay-cefalu/ which returns 404.
 
 ### Villas in Palermo: honest reality (NEW)
 
@@ -248,7 +248,7 @@ These are pure Nico voice from the YouTube script + dump. Must survive Pass 1, P
 | 3 | Centro Storico — The Real, Raw Heart | YouTube script section, full PROS/CONS/SAFETY/WHERE TO STAY/WHERE NOT TO STAY/BOTTOM LINE pattern |
 | 4 | Politeama/Libertà — The Fancy-Pants Zone | Same pattern |
 | 5 | Mondello — Seaside Escape (with conditions) | Same pattern |
-| 6 | Cefalù as an alternative | Short section — train-from-Centrale, what kind of traveler this fits, link to /where-to-stay-cefalu/ |
+| 6 | Cefalù as an alternative | Short section — train-from-Centrale, what kind of traveler this fits, link to /news/where-to-stay-cefalu/ |
 | 7 | Apartment vs Hotel — the Airbnb Truth | Bonus section — economics rant in Nico voice |
 | 8 | Villas in Palermo — the Honest Reality | Short section |
 | 9 | Best months to book | Short section — including La Via dei Tesori October note |
@@ -269,7 +269,7 @@ These are pure Nico voice from the YouTube script + dump. Must survive Pass 1, P
 
 **Step 2 (Live HTML Snapshot):** Standard. Note that current live post is the v1.1 era version, not anything from Apr 27 attempt (Apr 27 never published).
 
-**Step 3 (Prep):** Pull current GSC data (refresh from Apr 27 baseline — 7 weeks have passed). Cross-check WAP_12 — all 15 hotels listed there should still be canonical. Pull internal link candidates including /where-to-stay-cefalu/ (mandatory for Cefalù section).
+**Step 3 (Prep):** Pull current GSC data (refresh from Apr 27 baseline — 7 weeks have passed). Cross-check WAP_12 — all 15 hotels listed there should still be canonical. Pull internal link candidates including /news/where-to-stay-cefalu/ (mandatory for Cefalù section).
 
 **Step 4 (Structural Audit):** Reference Apr 27 audit decisions but VALIDATE against current live state and the new scope (Cefalù, Villas, Pricing, Airbnb economics, Booking timing — all NEW H2s not in Apr 27). Update outline to match the 9 H2s + intro + FAQ + conclusion structure locked above.
 
@@ -313,6 +313,6 @@ Image slots will be `[NICO: paste URL]` placeholders. Per WAP_06 D14 — Archite
 
 - Long-term apartment rental section (separate SOP_02 post — different search intent)
 - Paid traffic to blog content investigation (theeuropetravelblog ranking #1 sponsored on this keyword US Google, Nico has $400 Google credit — strategic question, not SOP_01 input)
-- /where-to-stay-cefalu/ rewrite (P2 priority, separate run later)
+- /news/where-to-stay-cefalu/ rewrite (P2 priority, separate run later)
 - WAP_10 price update (codify the 2026 pricing reality as a permanent reference doc post-publish)
 - WAP_12 review for villas (currently no villa entries — investigate after this post)

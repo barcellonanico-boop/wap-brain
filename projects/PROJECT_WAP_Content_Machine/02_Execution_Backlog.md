@@ -42,7 +42,9 @@
 ## Phase 3 — Test Run
 
 - [x] 3.1a SOP_01 v2.1 Run 1: /where-to-stay-palermo/ (P1 Tier A, -2,012 clicks YoY). Step 1 Intake complete May 1. Project folder: POST_where-to-stay-palermo/. [PM + Nico] [Est: 5 min | Actual: ~105 min brain dump + intake doc]
-- [ ] 3.1b SOP_01 v2.1 Run 1 continued: Steps 2-12 (Live HTML → Post-Publish Checks). [All agents] [Est: ~4 hrs | Actual: __ ]
+- [x] 3.1b Step 2 Live HTML Snapshot [Architect] [Est: 5 min | Actual: 10 min — issues report depth justified overrun]
+- [x] 3.1c Step 3 Prep [Claude Code partial + Architect supplement] [Est: 15 min | Actual: 32 min total — Claude Code 20 min autonomous pre-execution, Architect 12 min review + supplement, PM 5 min GSC pre-processing not counted in Architect time]
+- [ ] 3.1d SOP_01 v2.1 Run 1 continued: Steps 4-12 (Structural Audit → Post-Publish Checks). [All agents] [Est: ~3.5 hrs | Actual: __ ]
 - [ ] 3.1c SOP_01 v2.1 Run 2: pick next P1 post from WAP_13 after Run 1 publishes. [PM + Nico] [Est: TBD]
 - [ ] 3.1d SOP_01 v2.1 Run 3: pick next P1 post. [PM + Nico] [Est: TBD]
 - [ ] 3.2 Test SOP_02: pick 1 keyword, run full new post workflow, publish [Nico + Copywriting] [Est: 90 min | Actual: __ ]
