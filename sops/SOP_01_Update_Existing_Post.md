@@ -1,12 +1,12 @@
 # SOP_01_Update_Existing_Post.md — Update Existing Post
 
-Last updated: April 29, 2026 (v2.1 — full body rewrite. Integrates all Apr 27-29 patches into a single 12-step pipeline. Replaces old v1.1 single-pass workflow.)
+Last updated: May 2, 2026 (v2.2 — brain-dump-first Pass 2 redesign. 12 steps consolidated to 8. Hard stop on Pass 2 cycles. Voice memos drive voice; agent assembles. Replaces v2.1.)
 
 ---
 
 ## What This SOP Does
 
-Rewrite an existing wearepalermo.com blog post that's losing traffic per WAP_13. 12 steps across 3 phases. 3-pass writing model + Nico final + post-publish verification.
+Rewrite an existing wearepalermo.com blog post that's losing traffic per WAP_13. 8 steps. Pass 2 is built around Nico's brain dump per section, not around an agent generating voice from rules.
 
 This SOP is for **rewriting**, not creating. For new posts, see SOP_02.
 
@@ -21,6 +21,14 @@ This SOP is for **rewriting**, not creating. For new posts, see SOP_02.
 
 ---
 
+## The Core Principle
+
+**Nico's brain dump is the voice source. The Copywriter assembles around it. The Copywriter does NOT generate voice from rules.**
+
+This was learned the hard way across Favignana (Apr 28, 3 cycles) and where-to-stay-palermo (May 1-2, 4 cycles + PM-direct rebuild). Both runs proved that even with WAP_05 + WAP_05b in place, the agent transcribes voice memos rather than restructuring them, and produces memo-shaped prose when asked to "install voice" on a Pass 1 information draft. SOP_01 v2.2 stops fighting this.
+
+---
+
 ## Inputs Required
 
 - Target URL (single post)
@@ -28,6 +36,7 @@ This SOP is for **rewriting**, not creating. For new posts, see SOP_02.
 - Target status (P1 / P2 / P3 from WAP_13)
 - Revenue tier (A / B / C from WAP_13)
 - Known quality issues (audit notes + Nico's observations)
+- **Nico's availability for a 30-60 min Brain Dump session** (Step 5)
 
 ---
 
@@ -36,7 +45,7 @@ This SOP is for **rewriting**, not creating. For new posts, see SOP_02.
 Every SOP_01 run produces:
 
 1. Republished post live on wearepalermo.com (verified via fetch within 60 seconds of publish)
-2. Project folder `projects/POST_[slug]/` with all 10 deliverable files
+2. Project folder `projects/POST_[slug]/` with deliverable files (8 files in v2.2)
 3. Revision log entry in `projects/PROJECT_WAP_Content_Machine/04_Change_Log.md`
 4. Baseline metrics snapshot for 6-week comparison
 5. Any new stories captured → SOP_03
@@ -46,419 +55,307 @@ Every SOP_01 run produces:
 
 ---
 
-## Agents & Responsibilities (v2.1 — REVISED Apr 29)
+## Agents & Responsibilities (v2.2)
 
-| Agent | Role in SOP_01 v2.1 |
+| Agent | Role in SOP_01 v2.2 |
 |---|---|
-| **WAP PM** | Orchestrates workflow. Writes handoff prompts. Tracks time. Updates docs after every step. Schedules 6-week monitoring. Runs Step 11 (Verify Publish) via web_fetch. |
-| **WAP Architect** | Steps 2, 3, 4, 8. Live HTML snapshot. GSC data + prep packet. Structural audit. Pass 3 HTML conversion + schema. **Architect does NOT publish to WordPress.** Architect does NOT run post-publish live checks (no browser/HTTP access in normal Claude project sessions). |
-| **WAP Copywriter** | Steps 5, 7. Pass 1 Information Draft (markdown, structure first, voice rough). Pass 2 Voice + Trim + Corrections (markdown, voice locked, mechanical self-check mandatory). |
-| **WAP Scout** | Step 6. Fact verification. Returns VERIFIED / DISPUTED / UNVERIFIABLE per claim with sources. |
-| **Nico** | Step 9 (Pass 4 manual edits). Step 10 (publish via WordPress UI). 2 browser-only checks in Step 12 (mobile preview, GSC URL Inspection). Reviews and approves at every PM gate. |
-| **Claude Code** | Step 11 (Verify Publish via web_fetch). Step 12 (6 of 8 post-publish mechanical checks via curl). Final commit verification. |
+| **WAP PM** | Orchestrates workflow. Writes handoff prompts. Runs Brain Dump session with Nico (Step 5). Transcribes voice memos verbatim. Hard-stops Pass 2 after 2 Copywriter cycles. Updates docs after every step. |
+| **WAP Architect** | Step 2 (snapshot + prep + audit consolidated). Step 7 (Pass 3 HTML + schema). Architect does NOT publish to WordPress. Architect does NOT run post-publish live checks. |
+| **WAP Copywriter** | Step 3 (Pass 1 SKELETON, structure only, no prose flow). Step 6 (Pass 2 ASSEMBLY from brain dump verbatim, hard stop at 2 cycles). |
+| **WAP Scout** | Step 4 (fact verification, runs in parallel with Pass 1). |
+| **Nico** | Step 5 (Brain Dump session with PM). Step 8 (Pass 4 manual edits). Publishes via WordPress UI. Reviews and approves at every PM gate. |
+| **Claude Code** | Verify Publish via web_fetch. Post-publish mechanical checks via curl. Final commit verification. |
 
 ---
 
-## The 12-Step Workflow
+## The 8-Step Workflow
 
 ### Phase A — SETUP
 
-#### Step 1 — Intake (PM, ~5 min)
+#### Step 1 — Intake (PM, ~15 min)
 
 1. Open WAP_13 (latest GSC audit)
 2. Select highest-priority post not yet updated
 3. Confirm post still matches its audit classification
 4. Create project folder: `projects/POST_[slug]/`
-5. Create Execution Backlog entry in PROJECT_WAP_Content_Machine
-6. Announce to Nico: "Starting SOP_01 on [URL]. Expected total: ~3-5 hours of focused work."
+5. Verify all linked URLs in the post return 200 (per Finding #57)
+6. Capture Nico's brain dump on the post (free-form, before any structural work)
+7. Create Execution Backlog entry in PROJECT_WAP_Content_Machine
+8. Announce to Nico: "Starting SOP_01 v2.2 on [URL]. Expected total: ~3-5 hours of focused work, including ~30-60 min Brain Dump session at Step 5."
 
 **Deliverable:** `projects/POST_[slug]/01_Intake.md` containing target URL, audit data, Nico's brain dump on the post.
 
 ---
 
-#### Step 2 — Live HTML Snapshot (Architect, ~5 min)
+#### Step 2 — Architect Prep (Architect, ~30 min — consolidated)
 
-Architect captures the current live state of the post BEFORE any work begins. Critical for diff and rollback.
+Architect produces ONE consolidated deliverable covering snapshot + prep + audit. Sub-sections:
 
-1. Fetch the live URL via web_fetch
-2. Save the rendered HTML to `00_Live_HTML.md`
-3. Note: image URLs in this snapshot are NOT trustworthy as canonical (per D14). They reflect what's currently live but may be stale or wrong.
+**A. Live HTML snapshot:**
+- Fetch the live URL via web_fetch
+- Save the rendered HTML
+- Note: image URLs in this snapshot are NOT trustworthy as canonical (per D14)
 
-**Deliverable:** `00_Live_HTML.md` with full HTML, header noting "snapshot only, image URLs not canonical."
+**B. Prep packet:**
+- Pull GSC performance snapshot (6 months: top 10 queries, position, clicks, CTR — Architect pulls, NOT PM, per Finding #56)
+- Inventory all outbound links from live HTML (affiliate / internal / external)
+- Cross-check each affiliate link against WAP_12; flag broken or missing
+- Pull 5+ internal link candidates from current WAP post inventory
+- Check current schema markup (FAQPage? Article? Missing?)
+- Note technical issues
+- Identify SERP competitors via Ubersuggest if relevant
 
----
+**C. Structural audit:**
+- Apply Cold Reader Reality Check (relevant items per post type)
+- Identify structural gaps
+- Decide: FULL REWRITE or SURGICAL EDIT
+- If FULL REWRITE: produce new H2 outline with target word counts per section
+- **Reader-flow validation (per Finding #68):** map "what would a real reader ask FIRST? SECOND? THIRD?" Does the outline answer questions in the order a human asks them? PM cannot approve Step 2 without independently walking through the reader-flow test.
+- Lock voice notes for downstream agents (signature moves expected, mode A/B, story slots)
+- Lock special instructions for Pass 1 SKELETON, Pass 2 ASSEMBLY, Pass 3 HTML
 
-#### Step 3 — Prep (Architect, ~15 min)
+**Amendment protocol:** If later steps produce structural divergences from the audit, the divergence MUST update `02_Architect_Prep.md` with an explicit "Amended [date]" entry. Don't ship divergence silently.
 
-1. Pull GSC performance snapshot (6 months: top 10 queries, position, clicks, CTR)
-2. Inventory all outbound links from the live HTML (affiliate / internal / external)
-3. Cross-check each affiliate link against WAP_12; flag broken or missing
-4. Pull 5+ internal link candidates from current WAP post inventory
-5. Check current schema markup (FAQPage? Article? Missing?)
-6. Note technical issues (broken images, broken links, mobile breaks)
-7. Identify SERP competitors via Ubersuggest if relevant
-8. Build prep packet
-
-**Deliverable:** `02_Prep.md` containing prep packet: GSC data, affiliate audit, internal link candidates, outbound link inventory, schema state, technical issues, SERP competitor analysis.
-
----
-
-#### Step 4 — Structural Audit (Architect, ~20 min)
-
-Architect reviews the live post + prep packet and decides: full rewrite or surgical edit.
-
-1. Apply Cold Reader Reality Check (relevant items per post type)
-2. Identify structural gaps (missing H2s, broken hierarchy, missing FAQ, no TL;DR)
-3. Decide: FULL REWRITE or SURGICAL EDIT
-4. If FULL REWRITE: produce new H2 outline with target word counts per section
-5. Lock voice notes for downstream agents (signature moves expected, mode A/B, story slots)
-6. Lock special instructions for Pass 1, Pass 2, Pass 3 (post-type rules, NO-GO list, etc.)
-
-**Amendment protocol:** If Pass 1 (Step 5) produces structural divergences from the audit (extra H2, sections moved), Pass 1 MUST update `04_Structural_Audit.md` with an explicit "Amended Apr DD" entry. Don't ship divergence silently.
-
-**Deliverable:** `04_Structural_Audit.md` with verdict, outline, voice notes, special instructions.
+**Deliverable:** `projects/POST_[slug]/02_Architect_Prep.md` containing all three sub-sections.
 
 ---
 
-### Phase B — WRITE (3 passes + Nico final)
+### Phase B — WRITE (3 passes + Brain Dump + Nico final)
 
-Each pass is a separate Copywriter or Architect handoff. PM gates between passes. No blending.
+#### Step 3 — Pass 1 SKELETON (Copywriter, ~30-45 min)
 
-#### Step 5 — Pass 1: Information Draft (Copywriter, ~45-60 min)
+**This is NOT a full prose draft. This is structure only.**
 
 PM writes handoff to Copywriter with:
-- `04_Structural_Audit.md` outline (every H2 in the outline MUST be in the draft)
-- Prep packet from Step 3
-- Reference: WAP_05 (voice rules), WAP_05b (voice in action), WAP_06 (format), WAP_06b (post-type), WAP_08 (story bank), WAP_10 (places), WAP_12 (affiliate links)
-- Target word count per WAP_06 length tiers
+- `02_Architect_Prep.md` outline (every H2 in the outline MUST be in the skeleton)
+- Reference: WAP_06 (format), WAP_06b (post-type), WAP_12 (affiliate links)
+- **Voice docs (WAP_05, WAP_05b) are NOT input for Pass 1.** Voice comes in at Step 6.
 - Specific instructions for this post (NO-GO list, post-type rules)
 
-Copywriter produces draft markdown:
-- Full post body in markdown
-- Every H2 from the outline present
-- Voice ROUGH is OK at this stage; Pass 2 polishes
-- Brain-dump fragments installed (rough wording fine — Pass 2 polishes cadence)
-- ENFORCE 180-character text block limit FROM THE START (Foundation Rule 1, WAP_06)
-- ENFORCE 300-400 word section limit FROM THE START (Foundation Rule 2, WAP_06)
-- All factual claims wrapped in [VERIFY: X] flags for Scout
-- FAQ section drafted (6-8 questions)
-- Suggested meta title (50-60 chars), meta description (140-155 chars), URL slug (DO NOT change unless explicit)
+Copywriter produces SKELETON markdown:
+
+**WHAT IS IN A SKELETON:**
+- All H2 and H3 headings exactly per outline
+- TL;DR table structure (5 rows, empty cells with bracketed labels for what each cell will contain)
+- Hotel cards: name + type + stars + Booking URL VERBATIM from WAP_12 + 1-line factual descriptor (NOT prose)
+- FAQ section: 6-8 question headings + bracketed labels for what each answer will cover
+- Callout placement markers: `[CALLOUT — Local's Take/Pick/Warning: TOPIC]` with 1-line bracketed description of what it covers
+- Image slot placeholders (11 typical for destination guides)
 - Internal link suggestions (3-5)
-- Image placement suggestions
+- Suggested meta title, meta description, URL slug
+- All factual claims wrapped in [VERIFY: X] flags for Scout
 
-**Self-check before submitting (mechanical):**
-- Every text block ≤180 chars? Report count of violations.
-- Every section ≤400 words? Report any over.
+**WHAT IS NOT IN A SKELETON:**
+- No prose paragraphs
+- No voice install
+- No "rough" drafting of paragraph content
+- No invented anecdotes, callouts, or rhythm
+- No transitions between sections (those go in Step 6)
+
+**Self-check before submitting (mechanical, bash output PASTED, per Finding #67):**
+- All H2s from outline present? (bash count vs outline count)
+- Every hotel URL VERBATIM from WAP_12? (cross-check table, every URL — per Finding #70)
 - All [VERIFY:] flags listed and counted
-- Word count total
-- Em-dash count (must be 0 — em-dashes are a Fireable Offense per WAP_05)
+- 0 prose paragraphs (this is a skeleton, not a draft)
+- 0 em-dashes
+- Word count total (skeleton word count target: ~30-40% of finished article)
 
-**Deliverable:** `05_Pass1_Info.md` with Pass 1 markdown draft + self-check table.
-
----
-
-#### Step 6 — Scout Fact Check (Scout, ~15-20 min)
-
-PM writes handoff to Scout. Input: `05_Pass1_Info.md`.
-
-Scout extracts every [VERIFY:] flag and every other factual claim and returns per-claim:
-- VERIFIED + source URL
-- DISPUTED + explanation + source URL + recommended correction
-- UNVERIFIABLE (personal anecdote, opinion, taste call)
-
-**Scope Scout checks:**
-- Statistics, numbers, prices, hours, dates
-- Historical facts
-- Place names and addresses
-- Names of people (historical, chefs, authors)
-- Hotel star ratings (against hotel's OWN site, not aggregators — per WAP_06b)
-- Claims phrased as fact ("oldest", "only", "biggest")
-
-**Scope Scout does NOT check:**
-- Nico's first-hand observations
-- Opinions, comedic framing, voice choices
-- Invented dialogue, mocking quotes
-
-PM reviews Scout's report. Nico decides on DISPUTED claims (correct, hedge, or remove). Decisions logged for Pass 2.
-
-**Deliverable:** `06_FactCheck.md` with verdict + source per claim + Nico decisions on DISPUTED.
+**Deliverable:** `projects/POST_[slug]/03_Pass1_Skeleton.md`
 
 ---
 
-#### Step 7 — Pass 2: Voice + Trim + Corrections (Copywriter, ~30-45 min)
+#### Step 4 — Scout Fact Check (Scout, ~20-30 min, runs in parallel with Pass 1)
+
+PM dispatches Scout in parallel with Step 3. Scout works on the live post + Architect Prep, not the skeleton. Scout's job: verify all factual claims, prices, hours, distances, URLs — return VERIFIED / UPDATE / REMOVE / PARK per claim.
+
+**Deliverable:** `projects/POST_[slug]/04_Scout_Verification.md`
+
+PM applies Scout corrections to the skeleton in Step 5 prep.
+
+---
+
+#### Step 5 — Brain Dump session (PM + Nico, ~30-60 min) ⭐ NEW IN v2.2
+
+This is the highest-leverage step in the SOP. It replaces "Copywriter installs voice on Pass 1 prose" with "Nico generates voice in real time, PM transcribes verbatim."
+
+**Procedure:**
+
+1. PM and Nico open the Pass 1 SKELETON together.
+2. PM walks Nico through the skeleton H2 by H2.
+3. For each H2, Nico voice-memos for 5-8 minutes covering:
+   - The opening hook for that section
+   - The pros (in his own words, his own examples, his own slap lines)
+   - The cons (same)
+   - Any callouts marked in the skeleton (Local's Take/Pick/Warning)
+   - The transition into the next section
+4. PM transcribes Nico's voice memos VERBATIM. No editing. No "cleaning up." No "improving rhythm." If Nico says "you know, like" three times in a sentence, that's in the transcript. The Copywriter strips filler in Step 6, not PM in Step 5.
+5. Each H2 gets its own subsection in the brain dump file, clearly labeled with the H2 title and any callout markers.
+
+**Why verbatim:** the rhythm IS in Nico's spoken delivery. Setup-pause-payoff. Mocking dialogue. Hyperbolic specifics. Slap closers. Light editing destroys it. The Copywriter's job in Step 6 is to clean filler and add transitions, NOT to "improve" Nico's voice.
+
+**Special callout types Nico voices in this step:**
+- 7 Mistakes / Dos & Don'ts callouts (per post type)
+- ZTL / La Via dei Tesori / WiFi / area-specific explainers (anything readers don't know what is)
+- Stories from Story Bank (S001-S00X) where they fit
+- "Where NOT to stay" subsection per area
+- Local's Pick callouts (Nico's specific top recommendation)
+
+**Self-check before submitting:**
+- Every H2 in the skeleton has a brain dump subsection? (count match)
+- Every callout marker in the skeleton has been voiced? (count match)
+- No PM editing introduced into Nico's transcribed prose?
+
+**Deliverable:** `projects/POST_[slug]/05_Brain_Dump.md`
+
+---
+
+#### Step 6 — Pass 2 ASSEMBLY (Copywriter, ~60-90 min, HARD STOP at 2 cycles)
 
 PM writes handoff to Copywriter with:
-- `05_Pass1_Info.md`
-- `06_FactCheck.md` corrections
-- Reference: WAP_05 + WAP_05b (voice teaching doc)
-- Word-count target per content type (destination guides ±10% of Pass 1, quick-answer tighten 10-15%, pillars +15-20%)
+- `03_Pass1_Skeleton.md` (the structural frame)
+- `05_Brain_Dump.md` (the voice source — VERBATIM Nico)
+- `04_Scout_Verification.md` (factual corrections to apply)
+- WAP_05 (voice rules — for tightening filler ONLY)
+- WAP_05b (voice in action — for reference, NOT generation)
+- WAP_06 (format)
+- WAP_06b (post-type rules)
 
-Copywriter rewrites paragraph-by-paragraph:
-- Install Maniscalco voice (every text block has at least one signature move)
-- Apply alternation rhythm (long → short → long → very short, no 4-in-a-row stretches per WAP_06 Foundation Rule 3)
-- Apply Scout corrections exactly
-- Keep all approved brain-dump fragments
-- Em-dash purge (must end at 0)
-- Banned-words purge ("SEO", "AI Overview", "ranking", "keywords", "schema markup", etc.)
-- 180-character text block limit ENFORCED
-- Bold logic: 2-4 word skim-keywords, never full sentences
-- First-person stories (long narrative + habitual practice both valid per WAP_05b Pattern D)
+**Copywriter's job in Step 6 = ASSEMBLY:**
 
-**MANDATORY MECHANICAL SELF-CHECK before submitting (D12 patch — NOT a human estimate):**
+1. For each H2 in the skeleton, paste the corresponding brain dump VERBATIM into the prose slots.
+2. Strip Nico's spoken filler ("you know," "like," "I don't know," "basically," um/uh, repetitions).
+3. Apply WAP_06 Foundation Rules: split text blocks at 180 chars, split sections at 400 words.
+4. Apply WAP_05 mechanical fixes: 0 em-dashes (replace with three-dot pause or period), 0 banned words (SEO/AIO/ranking/keywords/schema markup).
+5. Add transitions BETWEEN sections (not within). Transitions are 1-2 sentences max. Connect what just happened to what's coming. Don't invent voice.
+6. Apply Scout corrections (URL fixes, factual updates, B&B star strips, etc.).
+7. Run mechanical self-check (bash output PASTED, per Finding #67).
 
-Pass 2 deliverable MUST include a self-check table with EXACT COUNTS, not "compliant ✅" estimates. Required scans:
+**Copywriter's job in Step 6 IS NOT:**
 
-1. **Text block length scan:** every prose block, count chars. Flag any >180. Report exact count of violations.
-2. **Em-dash regex:** count of `—` (em-dash unicode). MUST be 0. Report exact count.
-3. **Banned-words regex:** count of "SEO", "AI Overview", "ranking", "keywords", "schema markup". MUST be 0 in body. Report exact count per term.
-4. **[VERIFY:] tag scan:** count of `[VERIFY:`. MUST be 0. Report count.
-5. **Word count grep:** total body word count. Report number.
-6. **Bold full-sentence scan:** count of `<strong>` content with 50+ chars or 8+ words. Report count.
-7. **Post-specific scans:** any post-specific typos to enforce (e.g., "Piazza Madrice" not "Matrice"). Report count of violations.
+- Rewriting Nico's prose to "improve rhythm" — the rhythm is the rhythm
+- Generating new callouts from voice memos — that's transcription-by-rewriting, the Favignana + where-to-stay failure mode
+- Replacing Nico's specific images with "better" ones
+- Inventing new sections, jokes, or content not in the skeleton or brain dump
+- Treating voice memos as "raw material" to be reworked — they ARE the voice
 
-Lesson from Apr 28 Favignana: Pass 2 v3 self-claimed paragraph-length compliance via human estimate; mechanical scan in Pass 3 found 19 wall-of-text violations. Human estimates are unreliable on length compliance. Mechanical only.
+**THE ASSEMBLER PRINCIPLE (locked):** If the Copywriter finds itself paraphrasing a brain-dump block to "make it flow better," STOP. The flow is in the source. Paraphrasing IS transcription-by-rewriting. Re-paste the brain dump verbatim. Strip filler only.
 
-**Deliverable:** `07_Pass2_Voice.md` with Pass 2 markdown + self-check table with exact counts.
+**Mandatory self-check (bash output PASTED, per Findings #67 + #70):**
 
----
+```
+=== Pass 2 ASSEMBLY mechanical scan ===
 
-#### Step 8 — Pass 3: Format & HTML (Architect, ~45-60 min)
+wc -w of body: [paste]
+grep -c "—" (em-dashes): [paste, must be 0]
+grep -cE "(SEO|AI Overview|ranking|keywords|schema markup)": [paste, must be 0]
+grep -cE "(Castellamare|Albergaria|Villa Igea|Piazza Matrice|Familia|Daita'|Ruggero VII)": [paste, must be 0]
+grep -c "\[VERIFY:" (must be 0 — all resolved by Scout in Step 4): [paste]
 
-PM writes handoff to Architect with:
-- `07_Pass2_Voice.md`
-- WAP_06 templates (TL;DR, callout, hotel card, FAQ — all canonical HTML in WAP_06)
-- WAP_06b post-type rules
-- Tourist Info article URL (canonical reference per D17)
+=== Brain dump preservation audit ===
 
-Architect converts markdown to publish-ready HTML.
+For each H2 in skeleton, confirm brain dump prose appears in Pass 2 substantially verbatim (>80% word overlap):
+H2 1: [overlap %]
+H2 2: [overlap %]
+... (one row per H2)
 
-**Pass 3 IS:**
-- Mechanical format application (HTML conversion, callout boxes per D5 wpautop pattern, hotel cards per D3, TL;DR table per D4, Continue Planning block, FAQPage JSON-LD schema per D11)
-- Image placement (use `[NICO: paste URL]` placeholder for any unverified URL — D14)
-- Mechanical paragraph splits at sentence boundaries if Pass 2 missed any wall-of-text violations (D13). NOT a voice rewrite.
-- Final mechanical scans: em-dash purge, banned-words, text-block length, bold logic
-- 8-step author intro architecture per WAP_06 (italic lead → featured image → disarming opener → name+credibility+hook → 3 bullets → time-vs-benefit sentence → TL;DR table → affiliate disclosure)
-- Section architecture per WAP_06 (image after H2, body prose, closing callout(s) — all sections except Conclusion + FAQ)
+Any H2 below 80% overlap is a paraphrasing failure. Rebuild from brain dump.
 
-**Pass 3 IS NOT:**
-- Voice rewrite (locked in Pass 2)
-- Structural changes (locked in Step 4 + Step 5)
-- Fact corrections (locked in Step 7 with Scout corrections)
-- New content additions
+=== Affiliate URL audit (per Finding #70) ===
 
-**Image URL rules (D14 — placeholder default):**
+Every hotel URL cross-checked against WAP_12 verbatim:
+| Hotel | URL in draft | URL in WAP_12 | Match Y/N |
+| ... |
 
-Architect cannot HTTP-test image URLs. Therefore:
-1. If Pass 2 includes verified image URLs → use as-is
-2. If `00_Live_HTML.md` snapshot has URLs → DO NOT TRUST without verification
-3. If Tourist Info article uses an image (e.g., Nico portrait) → use that URL as canonical
-4. Otherwise → ship as `[NICO: paste URL]` placeholder for Nico to fill in Pass 4
+Any N is a Pass 2 fail. Fix before submit.
+```
 
-DO NOT infer URLs from naming conventions. Examples that broke this Apr 28: inferred `b-amp-b-il-tufo.jpg`, actual was `il-tufo.jpg`. Inferred `i-pretti-favignana.jpg`, actual was `i-pretty.jpg`. Always placeholder when unverified.
+**HARD STOP RULE (per Finding #73):**
 
-**Canonical reference rule (D17 — PM decision Apr 28):** When in doubt about callout / FAQ / intro patterns, the most recent published WAP article (currently: Tourist Info, https://wearepalermo.com/palermo-tourist-information/) is canonical, NOT the spec. The spec lags actual practice in a one-person operation. Architect should diff against Tourist Info before assuming spec is right.
+If Pass 2 v2 fails Nico's review, PM does NOT dispatch v3 to Copywriter. PM has 2 options:
 
-**Architect notes constraint:** Pass 3 deliverable architect notes section MUST be ≤80 lines. Deeper analysis goes into a separate handoff doc, not buried in the Pass 3 file (Finding #44 lesson).
+(a) **PM-direct rebuild from brain dump.** PM takes `05_Brain_Dump.md` and assembles Pass 2 directly in chat or by writing the file. ~30-45 min.
 
-**Deliverable:** `08_Pass3_HTML.md` with publish-ready HTML body + concise architect notes (<80 lines) + list of `[NICO: paste URL]` placeholders for Pass 4.
+(b) **Nico writes Pass 2 himself.** Copywriter is bypassed entirely for Pass 2. Copywriter resumes at Step 7 (Pass 3 HTML) only.
+
+Either path is acceptable. Burning 4+ Copywriter cycles is not.
+
+**Deliverable:** `projects/POST_[slug]/06_Pass2_Voice.md` (committed to repo BEFORE proceeding to Step 7 — per Finding #75, no chat-only artifacts).
 
 ---
 
-#### Step 9 — Pass 4: Nico Manual Edits (Nico, ~15-30 min)
+### Phase C — FINISH
 
-Nico opens `08_Pass3_HTML.md` and produces the actually-shipped version.
+#### Step 7 — Pass 3 HTML conversion (Architect, ~60-90 min)
+
+Architect converts the locked Pass 2 markdown to canonical WAP HTML per WAP_06 v2.2:
+- Callout div wpautop pattern (D5)
+- Hotel card template (D3)
+- TL;DR table (D4)
+- FAQ details/summary inside faq-brutto-ma-funziona div (D10)
+- 8-step author intro architecture (D2)
+- Article schema JSON-LD with author=Nico Barcellona (D8)
+- FAQPage schema JSON-LD MANDATORY (D8)
+- 11 image slots with [NICO: paste URL] tokens preserving old article images where instructed
+
+NO content changes. NO voice rewrites. NO new sections. Pure structural conversion + schema injection.
+
+**Deliverable:** `projects/POST_[slug]/07_Pass3_HTML.md`
+
+---
+
+#### Step 8 — Pass 4 + Publish + Verify (Nico + Claude Code, ~45 min)
 
 Nico:
-1. Fills every `[NICO: paste URL]` placeholder with actual image URL (from media library or new upload)
-2. Uploads any new images needed to `/uploads/YYYY/MM/`
-3. Applies any final voice or format tweaks Pass 3 didn't catch
-4. Confirms canonical patterns from latest published article (vs. older live posts)
-5. Saves as `09_Pass4_Nico_Final.md`
+1. Fills image URLs from WordPress media library
+2. Final read-through edits
+3. Publishes via WordPress UI
+4. Mobile preview check
+5. GSC URL Inspection check
 
-**Critical:** the Pass 4 file is THE SHIPPED VERSION. If Nico makes structural changes here that diverge from Pass 3 (e.g., adds new image slots, moves sections, removes elements), those changes get logged as deltas in a reconciliation doc for brain doc patching post-publish.
+Claude Code:
+1. web_fetch the live URL within 60 seconds of publish
+2. Confirm canonical HTML matches Pass 3 output
+3. Run 6 post-publish mechanical checks (schema validates, affiliate URLs return 200, internal links resolve, etc.)
+4. Commit baseline metrics snapshot for 6-week comparison
 
-**Deliverable:** `09_Pass4_Nico_Final.md` with the actually-shipped HTML.
-
----
-
-### Phase C — PUBLISH & VERIFY
-
-#### Step 10 — Publish (Nico, ~10-15 min)
-
-WordPress publish procedure (codified Apr 29):
-
-1. Open WordPress admin for the target post URL
-2. **Switch editor to Code Editor / Text mode** (NOT Visual mode — Visual mangles HTML, callout structure, JSON-LD schema)
-3. **Replace post body**: delete current content, paste full HTML from `09_Pass4_Nico_Final.md`
-4. **Update post title (H1)** to match Pass 4 spec
-5. **Update Yoast SEO panel:**
-   - Focus keyphrase (typically primary keyword)
-   - SEO title (50-60 chars, includes keyphrase)
-   - **Slug — DO NOT CHANGE** (URL preservation for SEO juice. Changing slug = losing all GSC ranking history.)
-   - Meta description (140-155 chars, includes keyphrase, in Nico voice)
-6. **Set author** to "Nico Barcellona" (NOT "palermo-boss" or any legacy handle). If display name shows wrong: Users → Profile → Display name publicly as → Nico Barcellona → Update.
-7. **Set featured image** per Pass 4 spec (alt text per Pass 4)
-8. **Update publish date to TODAY** — HARD RULE. Always today's date on republish. Never keep the original publish date.
-9. **Set/preserve categories and tags**
-10. **Hit Update**
-
-**Deliverable:** post live at the existing URL.
+**Deliverable:** Live post + `projects/POST_[slug]/08_Post_Publish_Verification.md`
 
 ---
 
-#### Step 11 — Verify Publish (Claude Code or PM web_fetch, ~2 min)
+## Project File Structure (v2.2 — 8 deliverables)
 
-MANDATORY. Cannot skip. Within 60 seconds of Step 10 hitting Update.
+```
+projects/POST_[slug]/
+├── 01_Intake.md              (Step 1)
+├── 02_Architect_Prep.md      (Step 2 — snapshot+prep+audit consolidated)
+├── 03_Pass1_Skeleton.md      (Step 3)
+├── 04_Scout_Verification.md  (Step 4, parallel)
+├── 05_Brain_Dump.md          (Step 5 — NEW, Nico voice memos verbatim)
+├── 06_Pass2_Voice.md         (Step 6 — assembly from brain dump)
+├── 07_Pass3_HTML.md          (Step 7)
+└── 08_Post_Publish_Verification.md (Step 8)
+```
 
-1. **Fetch the live URL** via web_fetch (PM) or curl (Claude Code)
-2. **Verify presence** of Pass 4 markers:
-   - New post title in `<title>` and `<h1>`
-   - New H2 #1 wording
-   - TL;DR table visible (search HTML for `tldr-box` class or first row content)
-   - Featured image is the new one (search for new image filename)
-   - Author byline is "Nico Barcellona"
-   - FAQPage JSON-LD schema present
-3. **Verify absence** of old markers:
-   - Old title
-   - Old H2 wording
-   - Old callout photo filename (if it changed)
-4. **If any marker is wrong:** publish failed. Possible causes: silent save, draft saved instead of update, cache issue, wrong post edited. DO NOT proceed to Step 12. Return to Step 10 and re-publish. Verify again.
-
-**Lesson from Apr 28-29 Favignana run:** the post sat unpublished for 14 hours (Apr 28 22:51 → Apr 29 11:50) because no verify-publish step existed. SOP operated on assumption "publish happened" without proof. This step is non-negotiable.
-
-**Deliverable:** confirmation in chat / change log entry that publish verified.
+Replaces v2.1's 12-step / 10-deliverable structure.
 
 ---
 
-#### Step 12 — Post-Publish Technical Checks (Claude Code + Nico, ~30-45 min)
+## What Changed From v2.1 → v2.2 (May 2, 2026)
 
-Reassigned April 29: Step 12 is executed by **Claude Code** (CLI access via curl/web_fetch) plus **Nico** (browser-only checks). NOT the Architect agent (no browser/HTTP access in normal Claude project sessions).
-
-**Hybrid execution:**
-
-Claude Code runs 6 of 8 checks mechanically:
-1. Schema validation (JSON-LD HTML presence: Article + FAQPage)
-2. Author attribution (Article schema author = Nico Barcellona, not legacy handle)
-3. Broken-link spot-check (curl -I every link, status codes)
-4. Image render check (HEAD requests on every image URL)
-5. Internal link tab behavior (target="_blank" audit per WAP_06 — internal NO target="_blank", external + affiliate YES)
-6. Affiliate ID final verification (parse query strings, confirm aid=918822, gyg.me shortlinks, a_aid=nico0141, affiliate=670d25b9, go.wearepalermo.com/ferry)
-
-Nico runs 2 browser-only checks:
-7. Mobile preview (Chrome DevTools or phone — confirm callouts have closed boxes per D5 wpautop, TL;DR responsive, hotel cards stack, FAQ accordion works)
-8. GSC URL Inspection (URL is on Google or Request Indexing, no manual actions)
-
-**Deliverable:** `11_PostPublish_Checks.md` with all 8 checks resolved (VERIFIED / FAILED / WARNING / PENDING_NICO → updated to VERIFIED after Nico runs browser checks).
-
-When all 8 are VERIFIED or addressed, mark post CLOSED in change log. Schedule 6-week monitoring trigger.
-
----
-
-## Project Folder File Naming Convention
-
-| File | Step | Content |
+| Old (v2.1) | New (v2.2) | Why |
 |---|---|---|
-| `00_Live_HTML.md` | Step 2 | Pre-rewrite live HTML snapshot |
-| `01_Intake.md` | Step 1 | Target URL, audit data, Nico brain dump |
-| `02_Prep.md` | Step 3 | Prep packet (GSC, links, schema, competitors) |
-| `04_Structural_Audit.md` | Step 4 | Outline, voice notes, special instructions |
-| `05_Pass1_Info.md` | Step 5 | Pass 1 markdown draft + self-check |
-| `06_FactCheck.md` | Step 6 | Scout report + Nico decisions on DISPUTED |
-| `07_Pass2_Voice.md` | Step 7 | Pass 2 markdown draft + mechanical self-check |
-| `08_Pass3_HTML.md` | Step 8 | Publish-ready HTML + architect notes |
-| `09_Pass4_Nico_Final.md` | Step 9 | Actually-shipped HTML (Nico's version) |
-| `11_PostPublish_Checks.md` | Step 12 | 8-check report |
-| `12_Monitoring_6week.md` | Post-publish | 6-week click recovery data |
-| `PM_VOICE_ESCALATION.md` | Ad hoc | Voice failure analysis (if needed) |
-| `10_PM_Handoff_*.md` | Ad hoc | Reconciliation docs for brain doc patching |
-
-Note: `03_*.md` and `10_*.md` slots are unused by convention. File numbers don't perfectly align with step numbers (legacy from earlier SOP versions). Naming kept for backward compatibility with existing project folders.
-
----
-
-## Step Time Budget (v2.1)
-
-| Step | Phase | Agent | Target | Notes |
-|---|---|---|---|---|
-| 1 Intake | A | PM | 5 min | |
-| 2 Live HTML Snapshot | A | Architect | 5 min | |
-| 3 Prep | A | Architect | 15 min | |
-| 4 Structural Audit | A | Architect | 20 min | |
-| 5 Pass 1 Information | B | Copywriter | 45-60 min | Word count varies by post type |
-| 6 Scout Fact Check | B | Scout | 15-20 min | |
-| 7 Pass 2 Voice | B | Copywriter | 30-45 min | Mechanical self-check mandatory |
-| 8 Pass 3 HTML | B | Architect | 45-60 min | Notes ≤80 lines |
-| 9 Pass 4 Nico Edits | B | Nico | 15-30 min | |
-| 10 Publish | C | Nico | 10-15 min | WordPress UI work |
-| 11 Verify Publish | C | Claude Code / PM | 2 min | Mandatory gate before Step 12 |
-| 12 Post-Publish Checks | C | Claude Code + Nico | 30-45 min | 6 mechanical + 2 browser |
-| **TOTAL** | | | **~4 hours focused work** | Excluding revision rounds |
-
-If post requires multiple revision rounds (e.g., Pass 2 v1 → v2 → v3), add 30-45 min per extra round. Favignana (Apr 27-28) ran ~12 hours total with multiple revision rounds across Pass 1 + Pass 2 + Pass 3 (5 versions).
-
----
-
-## Failure Modes & Recovery
-
-| Problem | Fix |
-|---|---|
-| Copywriter produces AI-sounding output (voice violation) | Send back with specific WAP_05 + WAP_05b rule citation. If 2 rounds fail, prompt needs fixing — log as Finding. |
-| Scout returns multiple DISPUTED claims | Pause. Nico decides per claim: correct, hedge, or remove. |
-| Affiliate link in WAP_12 is broken | Architect flags. Triggers SOP_05 (Affiliate Link Verification — to be built as Task 2.9). Temporarily use next-best link. |
-| Pass 1 produces structural divergences from Step 4 outline | Update `04_Structural_Audit.md` with "Amended Apr DD" entry. Don't ship divergence silently. |
-| Pass 2 self-check claims compliant but Pass 3 mechanical scan finds violations | Pass 2 self-check failed. Send back to Copywriter to fix mechanically. Reinforce: scans are mandatory, estimates are unreliable. |
-| Pass 3 cannot verify image URL | Use `[NICO: paste URL]` placeholder. Do not infer from naming conventions. |
-| Pass 3 architect notes exceed 80 lines | Move deeper analysis to separate handoff doc. Keep Pass 3 file lean. |
-| Step 11 verify finds wrong content | Publish failed. Return to Step 10. Common causes: WordPress saved as draft, cache, wrong post edited. |
-| Step 12 finds missing affiliate ID | P0 — fix immediately. Lost revenue every day. |
-| Image missing or broken at publish | Nico re-uploads to `/uploads/YYYY/MM/` and updates HTML. Re-run Step 11. |
-| 6-week monitoring shows NO improvement | Trigger SOP_01b (revision revision) — to be defined. Park for now. |
-| 6-week monitoring shows WORSE performance | Rollback via WordPress revision history. Investigate. Log in audit. |
-
----
-
-## Post-Publish Monitoring
-
-At the 6-week mark after republish:
-- Clicks (last 14 days pre-republish vs last 14 days post + 4 weeks)
-- Position for primary keyword
-- CTR
-- AI Overview citation presence (manual Google check)
-
-Log to `projects/POST_[slug]/12_Monitoring_6week.md`:
-- Pre-rewrite baseline
-- 6-week post-rewrite snapshot
-- Delta (absolute + %)
-- Verdict: RECOVERED / PARTIAL / FAILED
-- Notes
-
-3 RECOVERED in a row = SOP_01 production-ready.
-3 FAILED in a row = SOP_01 has a flaw. Revise.
-
----
-
-## Handoff Prompt Templates
-
-Templates live in a separate file: `sops/SOP_01_Handoff_Prompts.md` (to be created — Task 2.10).
-
-Required templates:
-- Template 1: Architect Live HTML Snapshot (Step 2)
-- Template 2: Architect Prep Packet (Step 3)
-- Template 3: Architect Structural Audit (Step 4)
-- Template 4: Copywriter Pass 1 (Step 5)
-- Template 5: Scout Fact Check (Step 6)
-- Template 6: Copywriter Pass 2 (Step 7)
-- Template 7: Architect Pass 3 (Step 8)
-- Template 8: Claude Code Step 11 Verify Publish
-- Template 9: Claude Code + Nico Step 12 Post-Publish Checks
-
-Templates are parameterized — PM fills target URL, priority, audit data per run.
+| 12 steps | 8 steps | Reduce handoff failures (15 dropped dependencies in one v2.1 run) |
+| Architect Steps 2, 3, 4 separate | Consolidated to Step 2 (one deliverable) | Same coverage, fewer gates |
+| Step 5 Pass 1 = full prose draft | Step 3 Pass 1 = SKELETON only | Voice generation moved out of Pass 1 |
+| Step 7 Pass 2 = Copywriter installs voice on prose | Step 6 Pass 2 = Copywriter assembles brain dump verbatim | Stop asking agent to do what it can't |
+| No explicit brain dump step | Step 5 Brain Dump session, Nico voice memos verbatim | Voice source moved upstream of Copywriter |
+| Pass 2 loops indefinitely | Hard stop at 2 cycles | Prevent 9-hour disaster (where-to-stay May 1-2) |
+| WAP_05/WAP_05b loaded in Pass 1 | WAP_05/WAP_05b loaded only in Pass 2 (for cleanup, not generation) | Match doc usage to actual job |
 
 ---
 
 ## Changelog
 
-- **v1.0** — April 24, 2026 — Initial draft (8-step single-pass workflow)
-- **v1.1** — April 24, 2026 — Nico review feedback: install voice (not preserve), reference Brain docs by pointer, Step 6.5 images, Task 2.7/2.8/2.9 logged
-- **v2.0** — April 27-28, 2026 — Full pipeline redesign after `/where-to-stay-palermo/` test failure (31 findings). Single-pass writing replaced with 3-pass model (Information → Voice → HTML). Project folder pattern. Scout after Pass 1. Structural Audit added as Step 5. Plus P0 patches D1-D14 from Favignana Pass 3+4 (Apr 28).
-- **v2.1** — April 29, 2026 — Full body rewrite to integrate all Apr 27-29 patches into a single coherent 12-step pipeline. Replaces old v1.1 8-step body description. Pass 4 (Nico Manual Edits) formalized as Step 9. Step 10 publish procedure codified (was implicit). Step 11 (Verify Publish) added as mandatory gate. Step 12 (Post-Publish Checks) reassigned from Architect to Claude Code + Nico (Architect has no browser/HTTP access). Findings #48-50 resolved. Brand reference updated: "We Are Palermo Premium Guide" (formerly "The Sicilian Way").
+- **v2.2** — May 2, 2026 — Brain-dump-first redesign after where-to-stay-palermo Pass 2 disaster (4 Copywriter cycles + PM-direct rebuild, ~9 hours burned). 12 steps → 8. New Step 5 Brain Dump session. Pass 1 redefined as SKELETON. Pass 2 redefined as ASSEMBLY. Hard 2-cycle stop on Pass 2.
+- **v2.1** — April 29, 2026 — Full body rewrite. 12 steps across 3 phases. Pass 4 + Step 11 + Step 12 in canonical pipeline.
+- **v2.0** — April 27, 2026 — Original 3-pass model.

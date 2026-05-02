@@ -17,6 +17,60 @@ If a pattern in this doc conflicts with WAP_05, the published work wins. WAP_05 
 
 ---
 
+## Voice Memo Rework Discipline (locked May 2, 2026)
+
+**The single highest-leverage voice rule in WAP, learned the hard way.**
+
+When Nico provides a voice memo (transcribed in `05_Brain_Dump.md` or pasted in chat), the memo is NOT raw material to be reworked. It is the voice source. Treat it as canonical.
+
+**Spoken rhythm IS written Maniscalco rhythm when it comes from Nico.**
+
+The agent's job is to:
+1. Strip filler (um, uh, "you know," "like," repetitions, false starts)
+2. Split text blocks at 180 chars per WAP_06 Foundation Rule 1
+3. Apply italic vocal stress where Nico's tone obviously emphasizes (sparingly)
+4. Apply 0 em-dashes per WAP_05
+
+The agent's job is NOT to:
+- "Improve rhythm" — the rhythm is the source
+- "Tighten prose" — Nico's prose IS the voice
+- Replace specific images with generic alternatives
+- Paraphrase to fit a word count target
+
+### The transcription failure mode
+
+Across 7 Pass 2 voice cycles (Favignana 3, where-to-stay 4), every failure was the same pattern. Agent received voice memo. Agent paraphrased to "make it flow better." Output read as memo-shaped prose with extra italics. Nico rejected.
+
+The instinct to "improve" voice memo prose IS the failure. Resist it.
+
+### Worked example: catcalling callout
+
+**Voice memo source (Nico, raw):**
+
+> "the thing that makes me laugh the most and pisses off the female tourists I see the most is the catcalling — typically not exactly people known for extreme elegance. They're carriage guys, the ones with the carriages; they can be taxi drivers or just neighborhood punks, and the only book they've opened in their whole life is the stickers book, the soccer sticker album. These people here, unfortunately, barely maybe know how to read, let alone talk. It's not clear why, but when they see the shape of a foreign girl they start howling weird shit out of their mouths — 'hey beautiful,' stuff like that."
+
+**Wrong (transcription with cosmetic edits):** keep as 90-word paragraph, italicize "Ciao bella!", call it done. This was v3, v4, v5 of where-to-stay — all rejected.
+
+**Right (assembly from verbatim, filler stripped, blocks split):**
+
+> *Quick word for the women.*
+>
+> The thing that pisses off female tourists more than anything? The catcalling.
+>
+> Who? The carriage drivers. The taxi guys at the stand. Neighborhood punks who haven't opened a book since the soccer-sticker-album.
+>
+> They see the shape of a foreign woman and start howling out the window. *"Ciao bella!"* That kind of stuff.
+
+The "right" version preserves Nico's specific images (carriage drivers, taxi guys at the stand, soccer-sticker-album, howling). It strips spoken filler ("typically not exactly people known for," "unfortunately barely maybe," "weird shit out of their mouths"). It splits at 180-char text blocks. It italicizes one vocal stress. **It does NOT invent new prose.** Every distinctive phrase traces back to Nico's voice memo verbatim.
+
+That is assembly. Anything more is paraphrasing, which is the failure mode.
+
+### Verbatim audit (mandatory in Pass 2 self-check, per Copywriter v2.1)
+
+For each H2 in Pass 2, compute word-overlap with the source brain-dump block. Below 80% overlap = paraphrasing failure = rebuild required.
+
+---
+
 ## Foundation Vocabulary (Locked April 29, 2026)
 
 Two units, two rules. Different jobs. Don't confuse them.

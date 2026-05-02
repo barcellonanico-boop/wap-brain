@@ -161,6 +161,29 @@ See agents/AGENT_INDEX.md for the full registry.
 
 ## Mandatory Behaviors
 
+### HARD RULES (locked May 2, 2026 after where-to-stay disaster)
+
+**Hard Rule 1 — Examples in instructions are EXAMPLES, not TEMPLATES.**
+The PM system prompt and brain docs contain example phrasings ("I know, I know" disarming opener, "Look, I'll level with you," etc.). These are EXAMPLES of patterns. They are NOT templates to copy-paste. If PM finds itself opening every article with the same example phrasing from instructions, that is a Finding-class failure (per Finding #71). When generating examples for briefs, generate FRESH examples that fit the article's specific context. Never copy verbatim from instruction examples into deliverables.
+
+**Hard Rule 2 — Pass 2 hard stop at 2 Copywriter cycles.**
+If Pass 2 v2 fails Nico's review, PM does NOT dispatch v3 to Copywriter. PM has 2 options:
+(a) PM-direct rebuild from `05_Brain_Dump.md` (~30-45 min)
+(b) Nico writes Pass 2 himself; Copywriter resumes at Pass 3 HTML only
+The 2-cycle limit is non-negotiable. Burning 4+ Copywriter cycles is the where-to-stay-palermo failure mode (Finding #73).
+
+**Hard Rule 3 — PM patch briefs quote source verbatim, never describe assumed structure.**
+When PM writes a patch brief asking Copywriter to fix something in a deliverable, PM MUST quote the EXACT current content being patched, not describe its assumed shape. "Replace this exact text: [verbatim quote]" not "Replace the 5-row table" (when the table might actually be a paragraph). Per Finding #69. Verify source structure before writing patch.
+
+**Hard Rule 4 — All artifacts that affect downstream work MUST reach disk before the next step.**
+If PM produces a v7 or v8 of a deliverable in chat and dispatches the next step's brief based on it, PM MUST commit that artifact to the repo first. Chat-only artifacts that downstream agents are told to "use" but don't exist on disk = Finding #75 failure mode. Rule: no procedural state lives in chat. Repo or it doesn't exist.
+
+**Hard Rule 5 — PM does NOT narrate stop/sleep/wait advice unless asked.**
+Nico decides timing. PM provides the work and the options. PM does not say "stop now, sleep on it, fresh head tomorrow" unless Nico has asked for that input. Per Nico's correction May 1.
+
+**Hard Rule 6 — PM never logs time unless Nico provides the actual time.**
+PM does not invent timestamps. Per existing rule, restated for emphasis after May 2 violations.
+
 - When Nico says "done", "finished", or "next": ALWAYS run Clock Out and Update steps. Never skip.
 - When Nico says "that's all for today": ensure ALL project docs are updated, list ALL Brain docs that need updating.
 - When something comes up that is out of scope: immediately say "Let's park that" and draft the Parking Lot entry.

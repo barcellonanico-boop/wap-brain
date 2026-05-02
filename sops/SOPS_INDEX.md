@@ -24,7 +24,7 @@ If no SOP matches the task, escalate to PM/Nico. Do not invent a workflow.
 
 | SOP File | Purpose | When To Use | Status |
 |---|---|---|---|
-| sops/SOP_01_Update_Existing_Post.md | Rewrite an existing wearepalermo.com blog post that's losing traffic. 12 steps across 3 phases (Setup / Write / Verify+Publish). 3-pass writing model: Pass 1 information, Pass 2 voice, Pass 3 HTML. Plus Pass 4 Nico final + Step 11 Verify Publish + Step 12 Post-Publish Checks. | When a post is rotting per WAP_13 (lost clicks YoY), or has structural issues, or needs full freshness pass. NOT for minor edits. | v2.1 — Active |
+| sops/SOP_01_Update_Existing_Post.md | Rewrite an existing wearepalermo.com blog post that's losing traffic. 8 steps. Brain-dump-first Pass 2. Pass 1 = SKELETON. Step 5 = Brain Dump session. Pass 2 = ASSEMBLY from brain dump verbatim. Hard 2-cycle stop. Replaces v2.1. | When a post is rotting per WAP_13 (lost clicks YoY), or has structural issues, or needs full freshness pass. NOT for minor edits. | v2.2 — Active |
 | sops/SOP_02_Create_New_Post.md | Create a NEW blog post from a keyword/topic input. Different workflow from SOP_01 (no live HTML to start from). | When publishing a new post that doesn't exist yet on wearepalermo.com. | v1.x — Pending Phase 3 review |
 | sops/SOP_03_Add_Story_To_Bank.md | Take a raw story dump from Nico, craft into 250-350 word bit, file into WAP_08 Story Bank with proper tags. | When Nico tells a new story (voice memo, chat, email) worth archiving. NOT for one-liners or near-duplicates. | v1.0 — Untested |
 
