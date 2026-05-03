@@ -1,0 +1,44 @@
+============================================
+WAP Article Auditor v0.1 — Category A
+File: tools/test_articles/where-to-stay-palermo.html (  257392 bytes)
+============================================
+
+[PASS] A1 File integrity (  257392 bytes)
+[PASS] A2 HTML valid (no tidy errors)
+[FAIL] A3 0 em-dashes
+       Reason: 1 em-dashes found
+[FAIL] A4 0 banned words
+       Reason: 1 matches found
+       1:<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /><meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ --><title>Where to Stay in Palermo: A Local&#039;s Honest 2026 Guide</title><link rel="stylesheet" id="siteground-optimizer-combined-css-53513b75ed06cc6954d55367637c4a77" href="https://wearepalermo.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-53513b75ed06cc6954d55367637c4a77.css" media="all" /><link rel="preload" href="https://wearepalermo.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-53513b75ed06cc6954d55367637c4a77.css" as="style"><meta name="description" content="Where to actually sleep in Palermo from a Sicilian local. The 3 real areas, hotel picks for every budget, and the Airbnb rip-offs to avoid" /><link rel="canonical" href="https://wearepalermo.com/where-to-stay-palermo/" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta property="og:title" content="Where to Stay in Palermo: A Local&#039;s Honest 2026 Guide" /><meta property="og:description" content="Where to actually sleep in Palermo from a Sicilian local. The 3 real areas, hotel picks for every budget, and the Airbnb rip-offs to avoid" /><meta property="og:url" content="https://wearepalermo.com/where-to-stay-palermo/" /><meta property="og:site_name" content="We are Palermo" /><meta property="article:publisher" content="https://www.facebook.com/wearepalermo/" /><meta property="article:modified_time" content="2026-05-02T18:03:23+00:00" /><meta property="og:image" content="https://wearepalermo.com/wp-content/uploads/2020/12/Where-to-stay-in-Palermo-Italy.jpg" /><meta property="og:image:width" content="800" /><meta property="og:image:height" content="500" /><meta property="og:image:type" content="image/jpeg" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:label1" content="Est. reading time" /><meta name="twitter:data1" content="40 minutes" /> <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/wearepalermo.com\/where-to-stay-palermo\/","url":"https:\/\/wearepalermo.com\/where-to-stay-palermo\/","name":"Where to Stay in Palermo: A Local's Honest 2026 Guide","isPartOf":{"@id":"https:\/\/wearepalermo.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/wearepalermo.com\/where-to-stay-palermo\/#primaryimage"},"image":{"@id":"https:\/\/wearepalermo.com\/where-to-stay-palermo\/#primaryimage"},"thumbnailUrl":"https:\/\/wearepalermo.com\/wp-content\/uploads\/2020\/12\/Where-to-stay-in-Palermo-Italy.jpg","datePublished":"2026-05-02T01:10:21+00:00","dateModified":"2026-05-02T18:03:23+00:00","description":"Where to actually sleep in Palermo from a Sicilian local. The 3 real areas, hotel picks for every budget, and the Airbnb rip-offs to avoid","breadcrumb":{"@id":"https:\/\/wearepalermo.com\/where-to-stay-palermo\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/wearepalermo.com\/where-to-stay-palermo\/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/wearepalermo.com\/where-to-stay-palermo\/#primaryimage","url":"https:\/\/wearepalermo.com\/wp-content\/uploads\/2020\/12\/Where-to-stay-in-Palermo-Italy.jpg","contentUrl":"https:\/\/wearepalermo.com\/wp-content\/uploads\/2020\/12\/Where-to-stay-in-Palermo-Italy.jpg","width":800,"height":500,"caption":"Where to stay in Palermo (Italy)"},{"@type":"BreadcrumbList","@id":"https:\/\/wearepalermo.com\/where-to-stay-palermo\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/wearepalermo.com\/"},{"@type":"ListItem","position":2,"name":"Where to Stay in Palermo (3 Real Areas + My Hotel Picks)"}]},{"@type":"WebSite","@id":"https:\/\/wearepalermo.com\/#website","url":"https:\/\/wearepalermo.com\/","name":"We are Palermo","description":"The Unconventional Travel Guide to Palermo","publisher":{"@id":"https:\/\/wearepalermo.com\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/wearepalermo.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/wearepalermo.com\/#organization","name":"We are Palermo","url":"https:\/\/wearepalermo.com\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/wearepalermo.com\/#\/schema\/logo\/image\/","url":"https:\/\/wearepalermo.com\/wp-content\/uploads\/2021\/04\/WeArePalermo-Logo.png","contentUrl":"https:\/\/wearepalermo.com\/wp-content\/uploads\/2021\/04\/WeArePalermo-Logo.png","width":350,"height":75,"caption":"We are Palermo"},"image":{"@id":"https:\/\/wearepalermo.com\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/wearepalermo\/"]}]}</script> <!-- / Yoast SEO plugin. --> <!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+[PASS] A5 0 Italian-name violations
+[PASS] A6 0 placeholders left
+[PASS] A7 Title tag (58 chars)
+[FAIL] A8 Meta description length
+       Reason: 138 chars (need 140-160)
+[WARN] A9 URL slug check (validated at publish time)
+
+Checking images (A10)...
+       [000000] https://wearepalermo.com/wp-content/uploads/2023/10/PALAZZO-SANTAMARINA-Luxury-S
+[FAIL] A10 Images
+       Reason: 1 of 57 failed
+
+Checking internal links (A11)...
+       [000000] https://wearepalermo.com/xmlrpc.php?rsd
+[FAIL] A11 Internal links
+       Reason: 1 of 36 failed
+
+Checking affiliate links (A12)...
+       [000000] //www.booking.com?aid=918822
+       [202] https://www.booking.com/hotel/it/b-amp-b-mondello-design.en.html?aid=918822&amp;
+       [202] https://www.booking.com/hotel/it/cefalu-sea-palace.en.html?aid=918822&amp;no_roo
+[FAIL] A12 Affiliate links
+       Reason: 18 of 18 unreachable
+[PASS] A13 All 65 Booking links have aid=918822
+[WARN] A14 Article schema not in HTML (WordPress/Yoast adds at publish)
+[FAIL] A15 FAQPage schema
+       Reason: FAQ section present but no FAQPage JSON-LD found
+
+============================================
+Summary: 6 PASS, 7 FAIL, 2 WARN
+============================================
+Result: 7 CHECK(S) FAILED
