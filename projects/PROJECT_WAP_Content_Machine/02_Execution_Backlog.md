@@ -4,7 +4,8 @@
 
 ## Phase 1 — Build v2.3 MVP (current focus)
 
-- [ ] 1.1 Build mechanical audit checklist working backwards from PASS criteria. 4 categories: A Mechanical (HTML/em-dash/banned words), B Structural (H2 count, callout block count, hotel cards, Pros/Cons, FAQ, Continue Planning), C Affiliate+facts (URL match WAP_12, link 200 OK, schema validates), D Reader-flow (first H2 matches persona first question, technical concepts have callout, section ordering). Output: `tools/audit_post.sh` (or .py). [Architect + PM] [Est: 3-4 hr | Actual: __]
+- [x] 1.1a Conceptual audit checklist v0.1 written (43 mechanical checks across A/B/C/D categories). Saved to tools/audit_checklist_v0.1.md. [PM + Nico] [Est: 60 min | Actual: 60 min — May 3 evening session]
+- [ ] 1.1b Implement Section 1 of audit checklist as `tools/audit_post.sh`. Test against /where-to-stay-palermo/ published HTML. Iterate until script gives correct PASS for that known-good article. [Architect + PM] [Est: 3-4 hr | Actual: __]
 - [ ] 1.2 Build 2-3 reader personas (general WAP, not per-article). Sources: GA4 demographics, Facebook group, Nico sensations, common reader questions. Personas: First-Timer Foreigner (US/UK/Northern Europe), Returning-Visitor (been to Italy, knows basics), Italo-American Roots-Search. Each with: age, origin, what they know, what they don't, question order, fears, wants. Output: brain/WAP_15_PERSONAS.md. [Nico + PM] [Est: 2-3 hr | Actual: __]
 - [ ] 1.3 Build canonical HTML snippets library. Extract verbatim from /where-to-stay-palermo/ live HTML (just published). Snippets: TL;DR blue-box, callout 3 variants (Take/Pick/Warning), hotel card, Pros/Cons/Advice block (D15), FAQ details/summary, Continue Planning grey-box, affiliate disclosure. Output: brain/WAP_06c_CANONICAL_SNIPPETS.md. [PM] [Est: 1-2 hr | Actual: __]
 

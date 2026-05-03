@@ -46,15 +46,27 @@ Use one-word sentences ("But.") and three-word slams ("Let's be smart.") as rhyt
 
 Reference: WAP_05b Foundation Rules (annotated example with Section 1 of Tourist Info article).
 
-### Foundation Rule 1.5 — Callout content limit (LOCKED May 3, 2026)
+### Foundation Rule 1.5 — Callout content limit (LOCKED May 3, 2026, tightened evening)
 
 The 180-character text-block limit (Foundation Rule 1) applies inside callouts.
 
-- Each `<p>` inside a callout div: ≤180 chars
-- Total text blocks per callout: max 3-4 (excluding the cite header)
-- If callout content exceeds 4 blocks: content moves to body prose H3 section, callout becomes punchy summary
+**Specifically:**
+- Each `<p>` inside a callout div: ≤180 characters
+- Total callout text content (sum of all `<p>` inside the callout div, excluding cite header): ≤250 characters
+- Total text blocks per callout: max 4 (excluding the cite header)
+- If callout content exceeds these limits: content moves to body prose H3 section, callout becomes punchy summary
 
-Callouts are visual emphasis, not overflow holding pens. A 9-paragraph callout reads worse than 9 paragraphs in body prose. Per Finding #79.
+Use line breaks to keep visual rhythm. Don't pile sentences into a single block. Don't write paragraphs inside a callout.
+
+**Why:** Callouts are visual emphasis, not overflow holding pens. A 9-paragraph callout reads worse than 9 paragraphs in body prose. Per Finding #79.
+
+**Wrong (May 2 Pass 3 v3 Hotel WiFi callout):** 9 paragraphs of detail in colored box.
+
+**Right:** 3-block callout summary (warning + 1 specific tip + slap closer). Full explainer becomes H3 sub-section in body.
+
+**Pass 3 self-check requirement:** bash audit confirms (a) every `<p>` inside callout ≤180 chars, (b) total callout text ≤250 chars, (c) every callout div has ≤4 `<p>` children.
+
+Locked May 3, 2026 (numbers tightened from initial v0.1 of 180 only).
 
 ### Foundation Rule 2 — Section Balance (LOCKED May 3, 2026)
 
@@ -186,13 +198,43 @@ New canonical order: Italic lead → Featured image → Author intro → TL;DR �
 
 Reasoning per Nico Apr 28 publish session: "the text box with the warning for links where there's an affiliation is in the new position. I did it on purpose, you have to leave it there. And you can absolutely put it as a rule." Top-only is non-redundant; reader hits the disclosure at the moment they're about to consume affiliate-loaded content (TL;DR has affiliate links in the "Where to stay" row).
 
-In italics, in Nico voice. Short. Honest. Funny. Does not generic-blog it.
+In Nico voice. Short. Honest. Unobtrusive. Does not generic-blog it.
 
-Example:
+**Canonical HTML (May 3 evening):**
 
-*Heads up: some links here are affiliate links. Price stays the same for you. I get a small cut so I can keep the lights on and avoid begging my cousin for a real job.*
+```html
+<div style="background-color: #f5f5f5; padding: 10px 14px; border-radius: 6px; margin: 15px 0; font-size: 0.75em; color: #888; line-height: 1.4;">
+<em>Heads up. Some links here might be affiliate links. Same price for you. I get a small cut so I can keep doing this and not go work in a bank.</em>
+</div>
+```
+
+**Key specs:** `font-size: 0.75em` (smallest legible), `color: #888` (light grey), "might be" not "are" (less definitive), padding `10px 14px` (smaller box). Present but unobtrusive.
 
 Never use generic "this post may contain affiliate links." Always Maniscalco-flavored.
+
+---
+
+## Affiliate Opportunity Check (LOCKED May 3, 2026)
+
+**Principle: "We don't do things for free."**
+
+For every article (new or rewrite), the writer must check WAP_12 for affiliate opportunities relevant to the article's topic. If a relevant affiliate option exists in WAP_12 and the article naturally discusses that topic without linking, that's a missed revenue opportunity.
+
+**Check applies to:** Booking.com (hotels), GetYourGuide (tours), Discover Cars (rentals).
+
+**When to add:** Article mentions a category that has affiliate inventory in WAP_12. Mention is natural, not forced. Link doesn't disrupt reader flow.
+
+**When NOT to add:** Forcing a link where it doesn't fit. Linking to a competitor's hotel to fill a slot. Mentioning specific restaurants by name (paid-only rule, WAP_03).
+
+**Workflow:**
+1. Phase 1 (tech recon): Architect surfaces affiliate opportunities. Question for Nico: "These WAP_12 options are relevant. Add any?"
+2. Phase 3 (brain dump): Nico answers — which to add, which to skip.
+3. Phase 5 (first draft): writer keeps existing affiliate links + adds new ones from Phase 3.
+4. Phase 8 (auditor): mechanical check that decided affiliate links are present.
+
+Per Nico May 3, 2026: revenue is the goal. Articles must monetize where natural.
+
+---
 
 ### Section Architecture (Hard Rules — Apr 29)
 
@@ -203,11 +245,16 @@ Every H2 section follows this structure. Hard rules.
 3. Body prose in text blocks (each ≤180 characters per Foundation Rule 1)
 4. If section approaches 300-400 words, break with H3 sub-section (Foundation Rule 2)
 5. If a paragraph block is dense, break with an inline image
-6. **Closing callout(s)** — Local's Take / Pick / Warning. Mandatory. Multiple callouts allowed if topic warrants
+6. **Closing callout(s) — MANDATORY for every H2 section, except FAQ + Conclusion sections.** Variants: Local's Take, Local's Pick, Local's Warning. Multiple callouts allowed if topic warrants. Intro section's TL;DR table substitutes for the closing callout requirement (TL;DR serves the summary job).
 
-**Exceptions:** Conclusion section and FAQ section don't follow this — they have their own patterns (see WAP_05b Patterns H and I).
+**Why mandatory:** callouts give the reader a visual anchor at the end of every section. Without one, the section ends in a flat paragraph with no rhythm break before the next H2.
 
-Reference: WAP_05b Pattern B.
+**Exception list (callout NOT required):**
+- Intro section (TL;DR substitutes)
+- FAQ section (own format)
+- Conclusion section (4-job pattern substitutes)
+
+Per WAP_05b Pattern B and Nico clarification May 3, 2026.
 
 ### 6. Main Content — H2 Sections
 
