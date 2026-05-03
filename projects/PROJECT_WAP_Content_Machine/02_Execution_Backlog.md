@@ -1,55 +1,49 @@
-# EXECUTION BACKLOG: WAP Content Machine
+# 02_Execution_Backlog.md — WAP Content Machine
 
-## Phase 1 — Brain Setup
+**Last updated:** May 3, 2026 (pivot to v2.3)
 
-- [x] 1.1 Create WAP Brain GitHub repo and clone locally [Architect] [Est: 20 min | Actual: 24 min ]
-- [x] 1.2 Define WAP Brain folder structure and create empty scaffold [PM] [Est: 20 min | Actual: 3 min ]
-- [x] 1.3 Write WAP_00_INDEX.md — master directory of all Brain docs and SOPs [PM] [Est: 30 min | Actual: 11 min ]
-- [x] 1.4 Write WAP_01_BUSINESS_OVERVIEW.md — what wearepalermo.com is, who Nico is, USP, audience, tone of voice summary, funnel overview [PM] [Est: 45 min | Actual: 2 min ]
-- [x] 1.5 Write WAP_02_TOOLS_STACK.md — WordPress, ConvertKit, Podia, YouTube, Switchy, GA4, GTM, Claude, Gemini [PM] [Est: 30 min | Actual: 2 min ]
-- [x] 1.6 Write WAP_03_MONETIZATION.md — Booking.com, Discover Cars, GetYourGuide affiliate setup + The Sicilian Way funnel [PM] [Est: 40 min | Actual: 1 min ]
-- [x] 1.7 Write WAP_04_CONTENT_INVENTORY.md — catalog of existing 77 posts, 26 pages, 136 YouTube videos with links and view counts [Architect] [Est: 60 min | Actual: 10 min ]
-- [x] 1.8 Research SEO + AIO best practices for 2026: Google organic + AI Overviews. Output: pre-digested rules saved to 05_SEO_AIO_Research.md. [Architect] [Est: 60 min | Actual: 11 min]
-- [x] 1.9 Write WAP_05_VOICE_AND_PERSONA.md — Nico's persona, the Italian-American comedian style, DOs and DON'Ts, good vs. bad output examples. Written by PM directly (not Copywriting agent) because source material was already in chat context. [PM] [Est: 60 min | Actual: 49 min]
-- [x] 1.10 Write WAP_06_CONTENT_FORMAT.md — synthesize SEO/AIO rules from 05_SEO_AIO_Research.md with existing WAP format rules (no wall text, no dashes, text boxes) + WordPress publishing checklist [PM] [Est: 30 min | Actual: 55 min]
-- [x] 1.11 Write WAP_08_STORY_BANK.md — tagged library with Master Index, tag taxonomy, 5 full tagged story entries (Italian Romeos, dark alleys, American tipping, 6:30 PM tourist traps, Sicilian gelato origin), Gap List with high-priority stories to capture, voice preservation rules. [PM] [Est: 40 min | Actual: 30 min]
-- [x] 1.11b Story Bank refactored: monolithic WAP_08_STORY_BANK.md → WAP_08_STORY_BANK_INDEX.md (rich index) + brain/stories/ folder (one file per story). Migrated S001-S006. Added S007 Pony Race + Battiloro to WAP_09 (R044). Out-of-backlog emergent task. [PM] [Est: — | Actual: ~45 min]
-- [x] 1.12 Write WAP_09_PLACES_RESTAURANTS_BARS.md — 43 entries (38 unique venues + Capo/Ballarò markets as catch-all), Master Index, tag taxonomy, Tier A voice treatment for ~11 venues with Nico brain-dump, Tier B baseline for rest, Google Maps URLs auto-generated, TripAdvisor URLs flagged [VERIFY TA URL] for batch population, paid-only content rule enforced at top. [PM] [Est: 30 min | Actual: 110 min]
-- [x] 1.13 Write WAP_10_PLACES_EXPERIENCES.md — 26 experiences catalogued across 2 tiers (Tier 1 = affiliate-monetized GetYourGuide experiences, Tier 2 = non-affiliate but recommend-worthy). Covers city tours, day trips, multi-day destinations, cultural shows, festivals, sporting events, markets. Extracted from the best-tours article and things-to-do-in-Palermo article. GetYourGuide affiliate URLs preserved. Master Index + tag taxonomy + Gap List + affiliate disclosure rule at top. Paid-only rule removed (experiences are free-content-eligible when monetized via affiliate). [PM] [Est: 30 min | Actual: 14 min]
-- [x] 1.14 All Brain docs committed and pushed. Auto-synced to project knowledge via GitHub integration. [Architect] [Est: 15 min | Actual: 5 min]
+## Phase 1 — Build v2.3 MVP (current focus)
 
-## Phase 2 — Content SOPs and Prompts
+- [ ] 1.1 Build mechanical audit checklist working backwards from PASS criteria. 4 categories: A Mechanical (HTML/em-dash/banned words), B Structural (H2 count, callout block count, hotel cards, Pros/Cons, FAQ, Continue Planning), C Affiliate+facts (URL match WAP_12, link 200 OK, schema validates), D Reader-flow (first H2 matches persona first question, technical concepts have callout, section ordering). Output: `tools/audit_post.sh` (or .py). [Architect + PM] [Est: 3-4 hr | Actual: __]
+- [ ] 1.2 Build 2-3 reader personas (general WAP, not per-article). Sources: GA4 demographics, Facebook group, Nico sensations, common reader questions. Personas: First-Timer Foreigner (US/UK/Northern Europe), Returning-Visitor (been to Italy, knows basics), Italo-American Roots-Search. Each with: age, origin, what they know, what they don't, question order, fears, wants. Output: brain/WAP_15_PERSONAS.md. [Nico + PM] [Est: 2-3 hr | Actual: __]
+- [ ] 1.3 Build canonical HTML snippets library. Extract verbatim from /where-to-stay-palermo/ live HTML (just published). Snippets: TL;DR blue-box, callout 3 variants (Take/Pick/Warning), hotel card, Pros/Cons/Advice block (D15), FAQ details/summary, Continue Planning grey-box, affiliate disclosure. Output: brain/WAP_06c_CANONICAL_SNIPPETS.md. [PM] [Est: 1-2 hr | Actual: __]
 
-- [x] 2.1 SOP_01 Update Existing Post drafted (v1.1). 8-step workflow (Intake → Prep → Rewrite → Fact Check → Nico Review → Revision → Images → Publish). School C revision philosophy locked. Reference-by-pointer to WAP_05/06/08/10/12/13 instead of duplicating content. Named business rule enforced via WAP_08 flag system. Monitoring at 6-week mark. Phase 3 validation: test on /where-to-stay-palermo/. 6 follow-on tasks identified (2.7 Scout, 2.8 Image Agent, 2.9 Affiliate Verification SOP, WAP_12 build, WAP_13 build, WAP_10 expansion). [PM] [Est: 75 min | Actual: 115 min]
-- [ ] 2.2 Write SOP_02_Create_New_Post.md — step by step: keyword/topic input, run AI draft prompt (embedded here), Nico review, images, WordPress publish, update inventory [PM + Copywriting] [Est: 75 min | Actual: __ ]
-- [x] 2.3 SOP_03 Add Story to Bank drafted (v1.0). Two-stage, one-agent, one-chat architecture. Stage 1 craft (250-350 word target, 400 hard cap). Stage 2 store (dedupe scan, closed taxonomy, named-business check, stats flag with age-ask, bidirectional pairs-with, voice mode confirmation). Full Story Agent system prompt embedded in SOP. Story file template and index row template included. 6 edge cases covered. Untested — first real run is Task 2.13. [Architect] [Est: 30 min | Actual: 38 min]
-- [x] 2.0 Google Search Console audit: export performance data for all 77 posts, assign LOSING / RANKING / OUTDATED / EVERGREEN status, update WAP_04_CONTENT_INVENTORY.md [Architect] [Est: 60 min | Actual: 35 min] — DONE. Full GSC export analyzed: 109 pages classified. 12 P1 urgent (high decline + revenue-critical), 6 P2, 18 P3, 30 P4, 43 healthy. Site-wide: +16% QoQ (misleading) but -17% YoY (real trend). Key finding: 10 of 12 P1 posts still rank top 10 — decline is CTR collapse from AI Overview cannibalization, not ranking demotion. Results saved to 06_GSC_Audit_Results.md. SOP_01 test sequence recommended: where-to-stay → parking → taormina.
-- [ ] 2.4 Define the weekly content cadence — posts updated per week, new posts per week, what Nico must touch vs. what runs without him [PM + Nico] [Est: 30 min | Actual: __ ]
-- [ ] 2.5 Document cadence in WAP_07_CONTENT_CADENCE.md [PM] [Est: 20 min | Actual: __ ]
-- [ ] 2.6 Commit and push. Update project knowledge. [Architect] [Est: 10 min | Actual: __ ]
-- [x] 2.7 WAP Scout agent v1.0 system prompt drafted. Surgical extraction (skips personal observations, comedic embellishment, invented dialogue, anachronistic asides, hyperbolic comparisons). Tier-ranked sources (T1-T4). Markdown table output. Tools: Claude built-in web_search and web_fetch. Future upgrades parked as Tasks 3.1 (Perplexity Sonar API) and 3.2 (Firecrawl). System prompt at agents/SCOUT_SYSTEM_PROMPT.md. Untested — Phase 3 SOP_01 test on /where-to-stay-palermo/ validates. [PM] [Est: 45 min | Actual: 60 min]
-- [ ] 2.8 Build WAP Image Agent — image sourcing, AI generation, editing, alt text, library management. Until this exists, SOP_01 Step 6.5 is manual (Nico). [PM + Architect] [Est: 60 min | Actual: __ ]
-- [ ] 2.9 Write SOP_05_Verify_Affiliate_Links.md — monthly verification of all links in WAP_12. [PM] [Est: 30 min | Actual: __ ]
-- [x] 2.10 WAP_12 Affiliate Links Registry created (v1.0). 16 Booking.com hotels across 3 areas (Politeama 5, Centro Storico 5, Mondello 5, plus Nico's Via Divisi property as Direct Booking). All 15 Booking URLs manually verified by Nico. Structure for GetYourGuide, Discover Cars, Parclick created as placeholders for future brain-dumps. Verification log established. [PM + Nico] [Est: 45 min | Actual: 55 min]
-- [x] 2.11 WAP_13_GSC_AUDIT_LATEST.md created at brain/WAP_13_GSC_AUDIT_LATEST.md. Migrated April 21 audit data from projects/06_GSC_Audit_Results.md. Preserved P1/P2/P3 post lists with full schema (URL, Status, Tier, Current Clicks, YoY data, Position, Notes), methodology (status classifications, revenue tiering, priority formula), key findings, recommended SOP_01 test sequence (where-to-stay → parking → taormina), and three open investigations (Q-crash, winner reverse-engineering, walking-tour consolidation). Established living-doc pattern: WAP_13 always reflects current state, historical snapshots archived to archive/gsc-audits/[date]_GSC_Audit.md. April 21 audit archived as archive/gsc-audits/2026-04-21_GSC_Audit.md. SOP_01 Step 1 references this filename permanently — no version migration needed when next audit runs. Final Phase 3 blocker cleared. [PM + Architect] [Est: 30 min | Actual: __ ]
-- [x] 2.12 Expanded WAP_10 from 26 to 41 entries plus 3 Avoid Index entries. Added 7 Tier 2 monuments (Palermo Cathedral E027, Palazzo dei Normanni + Palatine Chapel E028, La Martorana E029, Quattro Canti E030, Pretoria Fountain E031, Mount Pellegrino + Saint Rosalia Sanctuary E032, Marina Yachting E033). Added 3 Tier 2 markets (Capo E034, Ballarò E035, Vucciria daytime E036). Added 5 Tier 3 cultural rituals (Aperitivo E037, Standing-in-piazza E038, Vucciria nightlife E039, Acchianata E040, Bar breakfast E041). Added Tier 0 Avoid Index with 3 entries (Horse carriages A001, Ape Car tours A002, Aperitivo tourist traps A003). Tag taxonomy expanded with 4 new categories: Time of Day, Vibe, Cost, Avoid Reason. Source: extracted from wearepalermo.com/things-to-do/ blog article with Nico's voice signatures preserved verbatim ("baroque bellybutton", "Fountain of Shame", "spiritual backyard", etc.). All entries flagged [VERIFY] for prices and hours. [PM] [Est: 45 min | Actual: 75 min]
-- [x] 2.12b Second article ingestion: wearepalermo.com/what-to-see/. Added 23 new Tier 2 entries (E042-E064): Piazza Bellini cluster (Piazza Bellini, San Cataldo, Santa Caterina d'Alessandria + monastery roof), Inquisition history (Palazzo Steri / Chiaramonte), Arab-Norman heritage (La Zisa, Duomo di Monreale, San Giovanni degli Eremiti, Ponte dell'Ammiraglio), Baroque churches (Casa Professa, Oratorio di San Lorenzo with Mafia Caravaggio backstory, Church of Immaculate Conception), dark history (Capuchin Catacombs), museums (Salinas Archaeological, Palazzo Abatellis with Antonello da Messina, Stanze al Genio Majolica), gardens and waterfront (Orto Botanico, Villa Giulia, La Cala, Mura delle Cattive), beach (Mondello with full entry), unusual sights (Qanats underground tunnels, Villino Florio Art Nouveau), anti-mafia memorial (Falcone Tree). Tag taxonomy expanded with 4 new tags: voice-mode-b, dark-history, anti-mafia, photogenic. Three Mode B entries flagged (Palazzo Steri E045, Oratorio San Lorenzo E050, Falcone Tree E062). All entries marked [VERIFY] for current prices and hours. WAP_10 now has 64 E-entries plus 3 A-entries = 67 total. [PM] [Est: 90 min | Actual: 75 min]
+## Phase 2 — Test MVP on 1 article
 
-- [ ] 2.13 First real test run of SOP_03 against a fresh story dump. Validates Story Agent system prompt, dedupe scan, tag assignment flow, flag surfacing, Claude Code execution. Adjustments expected to v1.1 after run. [Nico + Story Agent] [Est: 45 min | Actual: __ ]
-- [ ] 3.1 Upgrade WAP Scout to use Perplexity Sonar API for synthesis-style fact-checks. Replaces or augments built-in web_search. Estimated cost ~$5-15/month at WAP volume. Implement only if Scout v1 UNVERIFIABLE rate exceeds 30% in Phase 3 testing. [Architect] [Est: 90 min | Actual: __ ]
-- [ ] 3.2 Add Firecrawl tool to WAP Scout for full page content extraction when needed. Use when Scout needs to verify a claim against a specific URL's full content. Estimated cost ~$16/month Hobby plan. Implement only if Scout v1 needs page-reading capability that built-in web_fetch can't provide. [Architect] [Est: 60 min | Actual: __ ]
+- [ ] 2.1 Pick test article from WAP_13 P1/P2 list. Criteria: medium difficulty, not flagship, can absorb hand-finishing if needed. Candidates: /palermo-street-food/, /best-beaches-near-palermo/, /palermo-airport-transfers/. [Nico] [Est: 5 min | Actual: __]
+- [ ] 2.2 Run Fase 1 (Tech recon) manually with current Architect tools. Validate: GSC story + SERP top 5 real-time + Scout parallel. Save: 01_Tech_Report.md. [Architect + PM] [Est: 30 min | Actual: __]
+- [ ] 2.3 Run Fase 2 (Persona match). Pull persona scheda from WAP_15. Customize for this article. Save: 02_Persona.md. [PM] [Est: 20 min | Actual: __]
+- [ ] 2.4 Run Fase 3 (Brain dump). Nico raw dump given the 2 reports above. Save: 03_Brain_Dump.md. [Nico + PM] [Est: 30-45 min | Actual: __]
+- [ ] 2.5 Run Fase 4 (Structure). Agent autonomous. Output: H2/H3 ossatura with placeholder markers for callouts/Pros/Cons/FAQ. Cite brain dump where stories go. Save: 04_Struttura.md. [Agent autonomous + PM gate] [Est: 30 min | Actual: __]
+- [ ] 2.6 Run Fase 5 (First draft). Agent autonomous. Fills sections from brain dump + old article (non-obsolete parts). No tone of voice yet. Markdown only. Save: 05_Bozza.md. [Agent autonomous] [Est: 45 min | Actual: __]
+- [ ] 2.7 Run Fase 6 (Tone of voice). Agent autonomous. Rewrites with Nico voice. Pulls from Story Bank + Experience bank. Sets geometry (no walls, paragraph length, callout limits). Markdown still. Save: 06_Voice.md. [Agent autonomous] [Est: 45 min | Actual: __]
+- [ ] 2.8 Run Fase 7 (HTML conversion). Agent autonomous. Converts 06 to HTML using WAP_06c snippets verbatim. No new decisions. Save: 07_Article.html. [Agent autonomous] [Est: 30 min | Actual: __]
+- [ ] 2.9 Run Fase 8 (Mechanical auditor). Run audit_post.sh on 07. Output PASS or FAIL list. If FAIL: return to relevant fase ONCE. If FAIL again: escalate to Nico. [Auditor script] [Est: 5 min | Actual: __]
+- [ ] 2.10 Run Fase 9 (Nico final review + publish). One read. Publish via WordPress UI. [Nico] [Est: 30-45 min | Actual: __]
+- [ ] 2.11 Post-test debrief. What broke. What worked. What to fix in audit checklist or workflow. Document findings. [PM + Nico] [Est: 30 min | Actual: __]
 
-## Phase 3 — Test Run
+## Phase 3 — Write SOP_01 v2.3 (after MVP works)
 
-- [x] 3.1a SOP_01 v2.1 Run 1: /where-to-stay-palermo/ (P1 Tier A, -2,012 clicks YoY). Step 1 Intake complete May 1. Project folder: POST_where-to-stay-palermo/. [PM + Nico] [Est: 5 min | Actual: ~105 min brain dump + intake doc]
-- [x] 3.1b Step 2 Live HTML Snapshot [Architect] [Est: 5 min | Actual: 10 min — issues report depth justified overrun]
-- [x] 3.1c Step 3 Prep [Claude Code partial + Architect supplement] [Est: 15 min | Actual: 32 min total — Claude Code 20 min autonomous pre-execution, Architect 12 min review + supplement, PM 5 min GSC pre-processing not counted in Architect time]
-- [x] 3.1d Step 4 Structural Audit [Architect v1 + PM correction + Architect v2 formalization] [Est: 20 min | Actual: ~60 min total — v1 25 min (rejected, fundamentally backwards structure), PM rewrite + brief ~20 min, v2 formalization ~15 min. Finding #60 logged.]
-- [x] 3.1e Step 6 Scout fact check [Scout] [Est: 20 min | Actual: 30 min — 14 CONFIRMED, 11 UPDATE, 6 PARK to Nico, 0 REMOVE. Critical: 4 of 6 hotel URLs differ from WAP_12 (revenue bug, Finding #70 logged). Train Cefalù = 45-55 min not 1 hour. Il Sole 24 Ore: Palermo 3,936/100k, lower than Milan/Rome/Florence/Naples. B&Bs strip stars per WAP_06b. Dua Lipa wedding CONFIRMED by Nico first-hand local knowledge — Pass 2 states as fact, not "reportedly". Family Affair = single property, use WAP_12 URL family-affair-b-amp-b-palermo (display name "Family Affair Luxury Rooms & Suites" is same listing).]
-- [ ] 3.1f SOP_01 v2.1 Run 1 continued: Steps 7-12 (Pass 2 → Post-Publish Checks). [All agents] [Est: ~2.5 hrs | Actual: __ ]
-- [ ] 3.1c SOP_01 v2.1 Run 2: pick next P1 post from WAP_13 after Run 1 publishes. [PM + Nico] [Est: TBD]
-- [ ] 3.1d SOP_01 v2.1 Run 3: pick next P1 post. [PM + Nico] [Est: TBD]
-- [ ] 3.2 Test SOP_02: pick 1 keyword, run full new post workflow, publish [Nico + Copywriting] [Est: 90 min | Actual: __ ]
-- [ ] 3.3 Post-run debrief: what broke, what was slow, what needs fixing [PM + Nico] [Est: 30 min | Actual: __ ]
-- [ ] 3.4 Update SOPs based on debrief [PM] [Est: 30 min | Actual: __ ]
-- [ ] 3.5 Final commit and push. Mark project complete. Move to archive. [Architect] [Est: 15 min | Actual: __ ]
+- [ ] 3.1 Write SOP_01 v2.3 based on what worked in Phase 2. 9 fasi documented with clear inputs/outputs. Replace v2.2.
+- [ ] 3.2 Update agent system prompts (PM, Architect, Copywriter, Scout) for v2.3 roles.
+- [ ] 3.3 Update WAP_00_INDEX.md and SOPS_INDEX.md.
+
+## Phase 4 — Validate v2.3 on 2-3 more articles
+
+- [ ] 4.1 Test article 2 (different post type than article 1).
+- [ ] 4.2 Test article 3 (different post type again).
+- [ ] 4.3 Refine v2.3 based on test results.
+
+## Phase 5 — Production rollout
+
+- [ ] 5.1 Run v2.3 on remaining P1 posts from WAP_13.
+
+## Parking (deferred — see 03_Parking_Lot.md)
+
+Items deferred until v2.3 is stable:
+- Findings #56-76 patches (most landed in v2.2; remaining go in v2.3)
+- Findings #77-84 patches (May 2 Pass 3 disaster — most landed in WAP_06 patches May 3)
+- SOP_02 v2.3-aligned redesign
+- Newsletter / YouTube / Social workflows
+- Scout Perplexity Sonar upgrade
+- Firecrawl integration
