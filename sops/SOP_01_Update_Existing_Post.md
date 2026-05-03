@@ -285,6 +285,17 @@ Either path is acceptable. Burning 4+ Copywriter cycles is not.
 
 ### Phase C — FINISH
 
+#### Step 7.0 — Live HTML Snapshot Capture (PM/Architect, ~10 min) ⭐ NEW MAY 3, 2026
+
+Before Pass 3 starts, capture live HTML snapshots of:
+1. The target article URL (always)
+2. Every internally-linked WAP article that contributes images or canonical patterns
+3. The most recent published article using the same post-type pattern
+
+Save as `projects/POST_[slug]/00_Live_HTML.md`. Pass 3 cannot start until this exists. Per Finding #82.
+
+---
+
 #### Step 7 — Pass 3 HTML conversion (Architect, ~60-90 min)
 
 Architect converts the locked Pass 2 markdown to canonical WAP HTML per WAP_06 v2.2:

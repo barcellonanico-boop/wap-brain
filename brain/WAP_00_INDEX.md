@@ -1,6 +1,6 @@
 # WAP_00_INDEX.md — WAP Brain Master Index
 
-Last updated: May 2, 2026 (SOP_01 v2.2 procedure redesign, COPYWRITER v2.1 Assembler Principle, PM Hard Rules, WAP_05b Voice Memo Rework Discipline, Findings #71-76)
+Last updated: May 3, 2026 (WAP_06: Foundation Rule 1.5 callout limit + Rule 2 section balance + D15 Pros/Cons + D16 Continue Planning + D14 amendment. SOP_01: Step 7.0 Live HTML Snapshot. Findings #77-84 logged. v2.3 redesign pending.)
 
 This is the master directory of all Brain docs and SOPs in the WAP Brain.
 Read this first in every session to understand what exists and where to find it.

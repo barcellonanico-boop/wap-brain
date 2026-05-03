@@ -46,6 +46,23 @@ Use one-word sentences ("But.") and three-word slams ("Let's be smart.") as rhyt
 
 Reference: WAP_05b Foundation Rules (annotated example with Section 1 of Tourist Info article).
 
+### Foundation Rule 1.5 — Callout content limit (LOCKED May 3, 2026)
+
+The 180-character text-block limit (Foundation Rule 1) applies inside callouts.
+
+- Each `<p>` inside a callout div: ≤180 chars
+- Total text blocks per callout: max 3-4 (excluding the cite header)
+- If callout content exceeds 4 blocks: content moves to body prose H3 section, callout becomes punchy summary
+
+Callouts are visual emphasis, not overflow holding pens. A 9-paragraph callout reads worse than 9 paragraphs in body prose. Per Finding #79.
+
+### Foundation Rule 2 — Section Balance (LOCKED May 3, 2026)
+
+H2 sections: target 300-400 words of body prose.
+H3 sub-sections: target ≥80 words OR merge with parent / sibling.
+
+If H3 sub-section <50 words: it's a fragment, not a section. Either merge with sibling H3 or absorb into parent H2 prose. Per Finding #81.
+
 ---
 
 ## The Content Rule That Overrides Everything
@@ -679,6 +696,30 @@ When SOP_01 updates an existing post, it must ALSO run this audit and fix any fa
 - Do NOT let a post sit untouched for 18+ months without a refresh. Freshness is a ranking factor.
 - Do NOT let low-quality blog comments accumulate. Moderate or disable.
 - Do NOT copy this format blindly onto YouTube scripts or social posts — those have different rules (TBD in future docs).
+
+---
+
+---
+
+## D15 — Pros/Cons/Advice Block Pattern (CANONICAL, LOCKED May 3, 2026)
+
+For destination guides and where-to-stay posts. WordPress legacy `divTable` pattern. Verified against `/where-to-stay-palermo/` live HTML May 2.
+
+Three blocks ALWAYS together: `TablePro` → `TableCons` → `TableAdvice`. Emoji codes: 1f601 (grinning), 1f641 (frowning), 1f44d (thumbs up). Per Finding #77.
+
+---
+
+## D16 — Continue Planning Block (CANONICAL, LOCKED May 3, 2026)
+
+Every guide-tier post ends with grey-box Continue Planning block BEFORE signature. Always 3 items: next-logical-read + conditional-relevant link + Sicilian Way paid pitch. Per Finding #77.
+
+---
+
+## D14 amendment — Image placeholder format (LOCKED May 3, 2026)
+
+Image placeholders are ALWAYS HTML comments: `<!-- NICO: paste body image #5 here -->`. NEVER bracketed text inside `<img src>` tags (renders as broken HTML in WordPress).
+
+PLUS: before using ANY placeholder, search the live site for existing URLs. web_fetch the target article + any internally-linked WAP articles that contribute images. Only after live-search returns no hit: use HTML comment placeholder. Per Findings #82 and original Apr 28 Finding #41.
 
 ---
 
