@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# audit_post.sh — WAP article mechanical auditor v0.3
+# audit_post.sh — WAP article mechanical auditor v0.4
+# v0.4 (May 4 evening): Category B (15 structural checks via BeautifulSoup Python module).
+#                       Italic lead, TL;DR, affiliate disclosure, callout per H2,
+#                       prose/callout char limits, bold ≤5 words, FAQ counts, Continue
+#                       Planning, Bottom Line. Calls tools/audit_category_b.py.
 # v0.3 (May 4): article-container extraction. v0.2 stripped head+comments+styles+scripts
 #               but kept sidebar widgets and user comments section, causing A3 false
 #               positive on em-dash in user comment. v0.3 isolates content to <article>
@@ -118,7 +122,7 @@ print_fail() { printf "${RED}[FAIL]${NC} %s\n" "$1"; [ -n "${2:-}" ] && printf "
 print_warn() { printf "${YELLOW}[WARN]${NC} %s\n" "$1"; WARN_COUNT=$((WARN_COUNT + 1)); }
 
 echo "============================================"
-echo "WAP Article Auditor v0.3 — Category A"
+echo "WAP Article Auditor v0.4 — Category A + B"
 echo "File: $FILE ($(wc -c < "$FILE") bytes)"
 echo "============================================"
 echo ""
@@ -354,6 +358,29 @@ print('NOT_FOUND')
   fi
 fi
 
+# ============================================================
+# Category B — structural checks (Python module)
+# ============================================================
+echo ""
+echo "============================================"
+echo "Category B — Structural checks"
+echo "============================================"
+
+# Resolve path to audit_category_b.py relative to this script
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+CAT_B_OUTPUT=$(cat "$BODY_FILE" | python3 "$SCRIPT_DIR/audit_category_b.py" 2>&1)
+CAT_B_EXIT=$?
+echo "$CAT_B_OUTPUT"
+
+# Parse PASS/FAIL/WARN counts from category B output
+CAT_B_PASS=$(echo "$CAT_B_OUTPUT" | grep -c "^\[PASS\]\|^.*\[PASS\]" || true)
+CAT_B_FAIL=$(echo "$CAT_B_OUTPUT" | grep -c "^\[FAIL\]\|^.*\[FAIL\]" || true)
+CAT_B_WARN=$(echo "$CAT_B_OUTPUT" | grep -c "^\[WARN\]\|^.*\[WARN\]" || true)
+
+PASS_COUNT=$((PASS_COUNT + CAT_B_PASS))
+FAIL_COUNT=$((FAIL_COUNT + CAT_B_FAIL))
+WARN_COUNT=$((WARN_COUNT + CAT_B_WARN))
+
 # Summary
 echo ""
 echo "============================================"
@@ -361,7 +388,7 @@ printf "Summary: ${GREEN}$PASS_COUNT PASS${NC}, ${RED}$FAIL_COUNT FAIL${NC}, ${Y
 echo "============================================"
 
 if [ "$FAIL_COUNT" -eq 0 ]; then
-  echo "Result: CATEGORY A PASSED"
+  echo "Result: ALL CHECKS PASSED"
   exit 0
 else
   echo "Result: $FAIL_COUNT CHECK(S) FAILED"

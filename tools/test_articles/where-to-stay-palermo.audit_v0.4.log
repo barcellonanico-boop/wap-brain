@@ -1,0 +1,56 @@
+============================================
+WAP Article Auditor v0.4 — Category A + B
+File: tools/test_articles/where-to-stay-palermo.html (  260889 bytes)
+============================================
+
+[PASS] A1 File integrity (  260889 bytes)
+[PASS] A2 HTML valid (no tidy errors)
+[PASS] A3 0 em-dashes
+[PASS] A4 0 banned words
+[PASS] A5 0 Italian-name violations
+[PASS] A6 0 placeholders left
+[PASS] A7 Title tag (58 chars)
+[PASS] A8 Meta description (140 chars)
+[WARN] A9 URL slug check (validated at publish time)
+
+Checking images (A10)...
+[PASS] A10 All 51 images return 200
+
+Checking internal links (A11)...
+[PASS] A11 All 4 internal links return 200
+
+Checking affiliate links (A12)...
+[PASS] A12 All 17 affiliate links reachable
+[PASS] A13 All 64 Booking links have aid=918822
+[WARN] A14 Article schema not in HTML (WordPress/Yoast adds at publish)
+[PASS] A15 FAQPage schema VALID (8 questions)
+NOT_FOUND
+
+============================================
+Category B — Structural checks
+============================================
+[PASS] B1 Italic lead exists as first body element
+[PASS] B2 Italic lead 17 words (≤25)
+[PASS] B3 TL;DR table present (5 rows)
+[PASS] B4 Affiliate disclosure present after TL;DR
+[PASS] B5 Every H2 has ≥1 callout (6 checked)
+[PASS] B6 H2 section word counts in range (100-1500)
+[FAIL] B7 Prose paragraph length
+       Reason: 9 over 180 chars. Longest: 'I’m not the umpteenth John from Manchester who took a €3 Ryanair flight and spen...' (201c)
+[PASS] B8 0 callout <p> >180 chars (14 callouts)
+[PASS] B9 0 callouts >250 chars total
+[PASS] B10 0 callouts with >4 paragraphs
+[FAIL] B11 Bold span length
+       Reason: 26 over 5 words, e.g. '39 years here, plus my mom’s nine months of pregnancy' (10w)
+[PASS] B13 FAQ section (8 questions)
+[FAIL] B14 FAQ answer length
+       Reason: 1 out of range: 'Is Mondello worth booking in winter?'=28w
+[PASS] B15 Continue Planning grey-box present
+[PASS] B16 Bottom Line section (223 words)
+
+Category B summary: 12 PASS / 3 FAIL / 0 WARN
+
+============================================
+Summary: 25 PASS, 3 FAIL, 2 WARN
+============================================
+Result: 3 CHECK(S) FAILED
