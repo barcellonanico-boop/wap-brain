@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# audit_post.sh — WAP article mechanical auditor v0.2
+# audit_post.sh — WAP article mechanical auditor v0.3
+# v0.3 (May 4): article-container extraction. v0.2 stripped head+comments+styles+scripts
+#               but kept sidebar widgets and user comments section, causing A3 false
+#               positive on em-dash in user comment. v0.3 isolates content to <article>
+#               or <div class="entry-content"> only.
 # v0.2 (May 4): body extraction strips head/comments/non-JSONLD scripts;
 #               &amp; URL decoding for A10/A11/A12; curl timeout 15s;
 #               WordPress system URL filter for A11; A12 accepts 202,
@@ -44,13 +48,16 @@ import re
 with open('$FILE', 'r', encoding='utf-8', errors='replace') as f:
     content = f.read()
 
-# Strip <head>...</head>
+# Step 1: Strip <head>...</head>
 content = re.sub(r'<head\b[^>]*>.*?</head>', '', content, flags=re.IGNORECASE | re.DOTALL)
 
-# Strip HTML comments (theme/plugin annotations)
+# Step 2: Strip HTML comments
 content = re.sub(r'<!--.*?-->', '', content, flags=re.DOTALL)
 
-# Strip <script> blocks (analytics, etc.) but preserve JSON-LD scripts for schema checks
+# Step 3: Strip <style> blocks
+content = re.sub(r'<style\b[^>]*>.*?</style>', '', content, flags=re.IGNORECASE | re.DOTALL)
+
+# Step 4: Strip <script> blocks (preserve JSON-LD for schema checks)
 def strip_non_jsonld_scripts(match):
     block = match.group(0)
     if 'application/ld+json' in block.lower():
@@ -58,8 +65,40 @@ def strip_non_jsonld_scripts(match):
     return ''
 content = re.sub(r'<script\b[^>]*>.*?</script>', strip_non_jsonld_scripts, content, flags=re.IGNORECASE | re.DOTALL)
 
-# Strip <style> blocks
-content = re.sub(r'<style\b[^>]*>.*?</style>', '', content, flags=re.IGNORECASE | re.DOTALL)
+# Step 5: Extract article container ONLY
+# Try selectors in order of specificity:
+# 1. <div class="entry-content"> ... up to comments/article-close (most precise)
+# 2. <article id="post-..."> (main post article, not comment-body articles)
+# 3. Original full content if no match (last resort)
+
+ec_match = re.search(r'<div\b[^>]*class=["\'][^"\']*entry-content[^"\']*["\'][^>]*>', content, re.IGNORECASE)
+if ec_match:
+    ec_start = ec_match.end()
+    # Find where entry-content ends: before comments section, author box closing,
+    # or the main </article> tag. Use known boundary markers.
+    boundaries = []
+    for pattern in [r'<div\b[^>]*id=["\']comments["\']', r'<div\b[^>]*class=["\'][^"\']*comments-area',
+                    r'<footer\b[^>]*class=["\'][^"\']*entry-meta']:
+        bm = re.search(pattern, content[ec_start:], re.IGNORECASE)
+        if bm:
+            boundaries.append(bm.start())
+    if boundaries:
+        content = content[ec_start:ec_start + min(boundaries)]
+    else:
+        content = content[ec_start:]
+else:
+    # Fallback: try <article id="post-..."> (skip comment-body articles)
+    art_match = re.search(r'<article\b[^>]*id=["\']post-\d+["\'][^>]*>(.*?)</article>', content, re.IGNORECASE | re.DOTALL)
+    if art_match:
+        content = art_match.group(1)
+    # else: keep stripped content as-is
+
+# Step 6: Within article, strip any nested comments, aside, nav, footer
+content = re.sub(r'<div\b[^>]*id=["\']comments["\'][^>]*>.*', '', content, flags=re.IGNORECASE | re.DOTALL)
+content = re.sub(r'<section\b[^>]*class=["\'][^"\']*comments?[^"\']*["\'][^>]*>.*?</section>', '', content, flags=re.IGNORECASE | re.DOTALL)
+content = re.sub(r'<aside\b[^>]*>.*?</aside>', '', content, flags=re.IGNORECASE | re.DOTALL)
+content = re.sub(r'<nav\b[^>]*>.*?</nav>', '', content, flags=re.IGNORECASE | re.DOTALL)
+content = re.sub(r'<footer\b[^>]*>.*?</footer>', '', content, flags=re.IGNORECASE | re.DOTALL)
 
 print(content)
 PYEOF
@@ -79,7 +118,7 @@ print_fail() { printf "${RED}[FAIL]${NC} %s\n" "$1"; [ -n "${2:-}" ] && printf "
 print_warn() { printf "${YELLOW}[WARN]${NC} %s\n" "$1"; WARN_COUNT=$((WARN_COUNT + 1)); }
 
 echo "============================================"
-echo "WAP Article Auditor v0.2 — Category A"
+echo "WAP Article Auditor v0.3 — Category A"
 echo "File: $FILE ($(wc -c < "$FILE") bytes)"
 echo "============================================"
 echo ""

@@ -1,0 +1,32 @@
+============================================
+WAP Article Auditor v0.3 — Category A
+File: tools/test_articles/where-to-stay-palermo.html (  260889 bytes)
+============================================
+
+[PASS] A1 File integrity (  260889 bytes)
+[PASS] A2 HTML valid (no tidy errors)
+[PASS] A3 0 em-dashes
+[PASS] A4 0 banned words
+[PASS] A5 0 Italian-name violations
+[PASS] A6 0 placeholders left
+[PASS] A7 Title tag (58 chars)
+[PASS] A8 Meta description (140 chars)
+[WARN] A9 URL slug check (validated at publish time)
+
+Checking images (A10)...
+[PASS] A10 All 51 images return 200
+
+Checking internal links (A11)...
+[PASS] A11 All 4 internal links return 200
+
+Checking affiliate links (A12)...
+[PASS] A12 All 17 affiliate links reachable
+[PASS] A13 All 64 Booking links have aid=918822
+[WARN] A14 Article schema not in HTML (WordPress/Yoast adds at publish)
+[PASS] A15 FAQPage schema VALID (8 questions)
+NOT_FOUND
+
+============================================
+Summary: 13 PASS, 0 FAIL, 2 WARN
+============================================
+Result: CATEGORY A PASSED
