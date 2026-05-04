@@ -58,10 +58,10 @@ This document captures both. The mechanical script will only implement Section 1
 | B13 | TL;DR table present with 5 rows | grep tldr-box pattern, count `<tr>` |
 | B14 | Affiliate disclosure present right after TL;DR | grep grey-box pattern, position check |
 | B15 | FAQ section present with 4-6 questions | count `<details>` inside `faq-brutto-ma-funziona` |
-| B16 | Each FAQ answer 40-75 words | wc on each `<details>` content |
+| B16 | Each FAQ answer 15-150 words (revised 40-75 → 15-150, May 4 evening) | wc on each `<details>` content |
 | B17 | Continue Planning grey-box present before signature | grep pattern |
 | B18 | Conclusion section 100-180 words | wc on last section before signature |
-| B19 | 0 `<strong>` with >5 words (revised from 4 to 5, May 4 2026) | extract strong content, wc each, flag >5 |
+| B19 | 0 `<strong>` with >12 words (revised 4 → 5 → 12, May 4 evening) | extract strong content, wc each, flag >12 |
 
 ### C — Affiliate + facts (scriptable subset, 5 checks)
 

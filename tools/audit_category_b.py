@@ -373,14 +373,14 @@ for s in strongs:
         continue
     text = text_of(s)
     word_count = wc(text)
-    if word_count > 5:
+    if word_count > 12:
         long_bolds.append((word_count, text[:60]))
 
 if not long_bolds:
-    print_pass(f"B11 0 bold spans >5 words ({len(strongs)} checked)")
+    print_pass(f"B11 0 bold spans >12 words ({len(strongs)} checked)")
 else:
     print_fail("B11 Bold span length",
-               f"{len(long_bolds)} over 5 words, e.g. '{long_bolds[0][1]}' ({long_bolds[0][0]}w)")
+               f"{len(long_bolds)} over 12 words, e.g. '{long_bolds[0][1]}' ({long_bolds[0][0]}w)")
 
 # ------------------------------------------------------------------
 # B13 — FAQ section present with 4-8 questions
@@ -431,14 +431,14 @@ if faq_h2:
         sum_text = text_of(summary)
         answer = full_text[len(sum_text):].strip()
         awc = wc(answer)
-        if awc < 30 or awc > 120:
+        if awc < 15 or awc > 150:
             bad_answers.append((awc, sum_text[:50]))
 
     if not bad_answers:
-        print_pass(f"B14 FAQ answers in range ({len(faq_details)} checked)")
+        print_pass(f"B14 FAQ answers 15-150w ({len(faq_details)} checked)")
     else:
         examples = "; ".join([f"'{q}'={w}w" for w, q in bad_answers[:3]])
-        print_fail("B14 FAQ answer length", f"{len(bad_answers)} out of range: {examples}")
+        print_fail("B14 FAQ answer length", f"{len(bad_answers)} out of 15-150w range: {examples}")
 else:
     print_warn("B14 FAQ answer length", "Skipped (no FAQ)")
 

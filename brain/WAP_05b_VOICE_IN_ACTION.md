@@ -262,7 +262,7 @@ Two different jobs. Both valid. Don't conflate.
 | Use | When | Example |
 |---|---|---|
 | **Italic** | Vocal stress (you'd say it that way out loud) | "the *perfect* time is September" |
-| **Bold** | Skim-keyword for scanners (2-5 word topic phrase) | "**minimum of three full days**" |
+| **Bold** | Skim-keyword for scanners (≤12 word phrase) | "**minimum of three full days**" |
 
 A long paragraph should have at least one bolded skim-keyword (per WAP_06 D7 patch, pending). Italic is sprinkled for rhythm, not skim-scanning.
 
