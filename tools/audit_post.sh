@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# audit_post.sh — WAP article mechanical auditor v0.5
+# audit_post.sh — WAP article mechanical auditor v0.6
+# v0.6 (May 4 evening): B7 exclusions finalized — hotel-card divs (box-shadow)
+#                       and bold data lists (>70% strong). Author intro NOT exempt.
 # v0.5 (May 4 evening): B11 bold threshold 5→12 words (voice phrases valid bold),
 #                       B14 FAQ answer range 30-120→15-150 words.
 # v0.4 (May 4 evening): Category B (15 structural checks via BeautifulSoup Python module).
@@ -124,7 +126,7 @@ print_fail() { printf "${RED}[FAIL]${NC} %s\n" "$1"; [ -n "${2:-}" ] && printf "
 print_warn() { printf "${YELLOW}[WARN]${NC} %s\n" "$1"; WARN_COUNT=$((WARN_COUNT + 1)); }
 
 echo "============================================"
-echo "WAP Article Auditor v0.5 — Category A + B"
+echo "WAP Article Auditor v0.6 — Category A + B"
 echo "File: $FILE ($(wc -c < "$FILE") bytes)"
 echo "============================================"
 echo ""

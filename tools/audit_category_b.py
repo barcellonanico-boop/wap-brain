@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """
 audit_category_b.py — Structural checks (Category B) for WAP article auditor.
-Called by audit_post.sh v0.4. Receives the article-body HTML (already extracted
+Called by audit_post.sh v0.6. Receives the article-body HTML (already extracted
 by the bash wrapper) on stdin. Runs 15 structural checks. Outputs PASS/FAIL/WARN
 lines compatible with the bash wrapper's exit-code aggregation.
+
+v0.6: B7 exclusions finalized (hotel cards + bold data lists only).
+v0.5: B11 bold threshold 5→12, B14 FAQ range 30-120→15-150.
+v0.4: Initial Category B implementation.
 """
 
 import sys
@@ -235,32 +239,74 @@ else:
 # ------------------------------------------------------------------
 # B7 — 0 prose paragraphs >180 chars
 # ------------------------------------------------------------------
+# Exclusions (per Nico May 4 review, FINAL):
+# 1. Paragraphs inside hotel-card divs (box-shadow: 0 1px 3px pattern)
+# 2. Paragraphs dominantly bold (>70% strong = data list, not prose)
+#
+# Author intro signature paragraphs are NOT exempt. Nico said: "Don't make
+# a rule for that. Next time, I'll split it." Voice signature respects 180.
+
+
+def is_inside_hotel_card(p):
+    """Check if <p> is inside a hotel-card div (WAP_06 D3 pattern)."""
+    for parent in p.parents:
+        if hasattr(parent, 'name') and parent.name == 'div':
+            style = parent.get('style', '') or ''
+            if 'box-shadow: 0 1px 3px' in style or 'box-shadow:0 1px 3px' in style:
+                return True
+    return False
+
+
+def is_dominant_bold_data_list(p):
+    """Check if <p> is mostly <strong> tags (data list, not prose)."""
+    full_text = p.get_text(separator=' ', strip=True)
+    bold_text = ' '.join(s.get_text(separator=' ', strip=True)
+                         for s in p.find_all('strong'))
+    if not full_text:
+        return False
+    return len(bold_text) / len(full_text) > 0.70
+
+
 all_p = soup.find_all('p')
 long_p = []
 for p in all_p:
-    # Skip <p> inside callouts (checked by B8), FAQs, grey boxes, tables, TL;DR
+    # Skip <p> inside callouts (checked by B8)
+    if any(hasattr(par, 'name') and is_callout(par) for par in p.parents):
+        continue
+    # Skip <p> inside FAQ
+    if any(hasattr(par, 'name') and par.name in ('details', 'summary')
+           for par in p.parents):
+        continue
+    # Skip <p> inside grey boxes, tables, TL;DR blue box
     skip = False
     for parent in p.parents:
         if not hasattr(parent, 'name'):
             continue
-        if is_callout(parent) or is_grey_box(parent):
+        if is_grey_box(parent):
             skip = True
             break
-        if parent.name in ('details', 'summary', 'table', 'td', 'th'):
+        if parent.name in ('table', 'td', 'th'):
             skip = True
             break
         pstyle = parent.get('style', '') if hasattr(parent, 'get') else ''
-        if '#e3f2fd' in pstyle:  # TL;DR box
+        if '#e3f2fd' in pstyle:
             skip = True
             break
     if skip:
         continue
-    # Skip very short paragraphs that are just image tags
+    # Skip image-only paragraphs
     if p.find('img') and cc(text_of(p)) < 10:
         continue
     # Skip author bio
     if p.get('class') and 'author-description' in p.get('class', []):
         continue
+    # Exclusion 1: hotel-card descriptions
+    if is_inside_hotel_card(p):
+        continue
+    # Exclusion 2: bold data lists (>70% strong text)
+    if is_dominant_bold_data_list(p):
+        continue
+
     text = text_of(p)
     if cc(text) > 180:
         long_p.append((cc(text), text[:80]))
