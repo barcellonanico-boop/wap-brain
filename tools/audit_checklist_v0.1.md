@@ -61,7 +61,7 @@ This document captures both. The mechanical script will only implement Section 1
 | B16 | Each FAQ answer 40-75 words | wc on each `<details>` content |
 | B17 | Continue Planning grey-box present before signature | grep pattern |
 | B18 | Conclusion section 100-180 words | wc on last section before signature |
-| B19 | 0 `<strong>` with >4 words | extract strong content, wc each, flag >4 |
+| B19 | 0 `<strong>` with >5 words (revised from 4 to 5, May 4 2026) | extract strong content, wc each, flag >5 |
 
 ### C — Affiliate + facts (scriptable subset, 5 checks)
 
