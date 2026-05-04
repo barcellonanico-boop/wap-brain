@@ -1,0 +1,34 @@
+============================================
+WAP Article Auditor v0.2 — Category A
+File: tools/test_articles/where-to-stay-palermo.html (  257392 bytes)
+============================================
+
+[PASS] A1 File integrity (  257392 bytes)
+[PASS] A2 HTML valid (no tidy errors)
+[FAIL] A3 0 em-dashes
+       Reason: 1 em-dashes found
+[PASS] A4 0 banned words
+[PASS] A5 0 Italian-name violations
+[PASS] A6 0 placeholders left
+[PASS] A7 Title tag (58 chars)
+[FAIL] A8 Meta description length
+       Reason: 138 chars (need 140-160)
+[WARN] A9 URL slug check (validated at publish time)
+
+Checking images (A10)...
+[PASS] A10 All 57 images return 200
+
+Checking internal links (A11)...
+[PASS] A11 All 28 internal links return 200
+
+Checking affiliate links (A12)...
+[PASS] A12 All 17 affiliate links reachable
+[PASS] A13 All 65 Booking links have aid=918822
+[WARN] A14 Article schema not in HTML (WordPress/Yoast adds at publish)
+[FAIL] A15 FAQPage schema
+       Reason: FAQ section present but no FAQPage JSON-LD found
+
+============================================
+Summary: 10 PASS, 3 FAIL, 2 WARN
+============================================
+Result: 3 CHECK(S) FAILED
