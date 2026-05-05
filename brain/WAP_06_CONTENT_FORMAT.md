@@ -203,12 +203,12 @@ In Nico voice. Short. Honest. Unobtrusive. Does not generic-blog it.
 **Canonical HTML (May 3 evening):**
 
 ```html
-<div style="background-color: #f5f5f5; padding: 10px 14px; border-radius: 6px; margin: 15px 0; font-size: 0.75em; color: #888; line-height: 1.4;">
-<em>Heads up. Some links here might be affiliate links. Same price for you. I get a small cut so I can keep doing this and not go work in a bank.</em>
+<div style="background-color: #f5f5f5; padding: 12px 16px; border-radius: 6px; margin: 20px 0; font-size: 0.85em; color: #555;">
+Heads up. Some links here are affiliate. Same price for you. I get a small cut so I can keep doing this and not go work in a bank.
 </div>
 ```
 
-**Key specs:** `font-size: 0.75em` (smallest legible), `color: #888` (light grey), "might be" not "are" (less definitive), padding `10px 14px` (smaller box). Present but unobtrusive.
+**Key specs:** `font-size: 0.85em` (canonical per /where-to-stay-palermo/ live, May 5 — 0.75em was too small in practice), `color: #555`, padding `12px 16px`. Present but unobtrusive. See WAP_06c for full canonical snippet.
 
 Never use generic "this post may contain affiliate links." Always Maniscalco-flavored.
 
