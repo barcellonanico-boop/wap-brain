@@ -1,6 +1,6 @@
 # WAP_12 — Affiliate Links Registry
 
-**Last updated:** April 24, 2026
+**Last updated:** May 5, 2026
 **Owner:** WAP PM
 **Affiliate ID (Booking.com):** aid=918822
 
@@ -262,6 +262,78 @@ Area character: seaside neighborhood 11 km north of Palermo historic center. Bea
 
 ---
 
+### Acquasanta (1 hotel)
+
+Area character: coastal neighborhood between Palermo and Mondello. Technically not Mondello but in the same direction heading north along the coast. Exclusive, residential, away from tourist noise.
+
+---
+
+**Villa Igiea**
+
+- **Type:** Luxury Hotel (Rocco Forte property)
+- **Stars:** ★★★★★
+- **Area:** Acquasanta, Palermo
+- **Walking distance to Quattro Canti:** N/A (taxi/car required)
+- **Price tier:** ~€2,000/night
+- **Ideal for:** Luxury seekers, beach holiday
+- **Nico's Take:** The only real luxury benchmark in Palermo. Acquasanta, technically not Mondello but in the same direction. Where Dua Lipa is having her wedding this September. Yes, that one.
+- **Affiliate link:** https://www.booking.com/hotel/it/grandhotelvillaigieapalermo.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Image:** https://wearepalermo.com/wp-content/uploads/2026/05/rocco-forte-villa-igiea-palermo.jpg
+- **Last Verified:** May 5, 2026
+
+---
+
+### Cefalù (3 hotels)
+
+Area character: coastal town 70 km east of Palermo. Cathedral town, major beach destination. Popular day trip from Palermo, but also a standalone base for 2-3 nights. Train connection ~1h from Palermo Centrale.
+
+---
+
+**Duomo Apartments Cefalù**
+
+- **Type:** Apartments
+- **Stars:** ★★★★
+- **Area:** Cefalù historic center, by the cathedral
+- **Walking distance to beach:** 5 min
+- **Price tier:** [VERIFY]
+- **Ideal for:** First-timer in Cefalù, walking-distance-to-everything
+- **Nico's Take:** Right by the cathedral. Walking distance to everything. The classic Cefalù-historic-center pick.
+- **Affiliate link:** https://www.booking.com/hotel/it/duomo-apartments-cefalu.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Image:** https://wearepalermo.com/wp-content/uploads/2025/03/duomo-apartments.jpg
+- **Last Verified:** May 5, 2026
+
+---
+
+**Cefalù Sea Palace**
+
+- **Type:** Luxury Hotel
+- **Stars:** ★★★★★
+- **Area:** Cefalù beachfront
+- **Walking distance to beach:** 0 min (beachfront)
+- **Price tier:** €€€€
+- **Ideal for:** Honeymoon, beachfront luxury
+- **Nico's Take:** Beachfront, full luxury treatment. Honeymoon-tier without going Villa Igiea.
+- **Affiliate link:** https://www.booking.com/hotel/it/cefalu-sea-palace.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Image:** https://wearepalermo.com/wp-content/uploads/2025/03/sea-palace-1024x682.jpg
+- **Last Verified:** May 5, 2026
+
+---
+
+**Cuore Della Valle**
+
+- **Type:** Apartments
+- **Stars:** ★★★
+- **Area:** Above Cefalù, countryside
+- **Walking distance to beach:** N/A (car/shuttle required)
+- **Price tier:** [VERIFY]
+- **Ideal for:** Quiet + sea, countryside lovers
+- **Nico's Take:** Above town, in the countryside. Real Sicilian rural feel, sea views from above. For people who want quiet and sea, no compromise.
+- **Affiliate link:** https://www.booking.com/hotel/it/cuore-della-valle.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Image:** https://wearepalermo.com/wp-content/uploads/2025/03/cuore-1024x576.jpg
+- **Last Verified:** May 5, 2026
+
+---
+
 ## Section 2 — GetYourGuide Experiences
 
 [TO BE POPULATED — Nico to provide in a future brain-dump session]
@@ -306,7 +378,7 @@ Area character: seaside neighborhood 11 km north of Palermo historic center. Bea
 - [ ] Discover Cars pickup points (airport, city center, train station)
 - [ ] Parclick parking locations (central, near attractions)
 - [ ] Additional hotels: Vucciria / Kalsa areas
-- [ ] Additional hotels: Cefalù, San Vito Lo Capo, Taormina, other Sicily destinations
+- [ ] Additional hotels: San Vito Lo Capo, Taormina, other Sicily destinations
 - [ ] Airport-area hotels for early flights
 
 ---
@@ -315,4 +387,5 @@ Area character: seaside neighborhood 11 km north of Palermo historic center. Bea
 
 | Date | Scope | Verified by | Notes |
 |---|---|---|---|
+| May 5, 2026 | Added 4 hotels: Villa Igiea (Acquasanta), Duomo Apartments + Sea Palace + Cuore Della Valle (Cefalù) | audit_post.sh v0.7 C1 flag | URLs extracted from /where-to-stay-palermo/ live HTML. All 4 confirmed reachable via A12 check. |
 | Apr 24, 2026 | All 15 Booking.com hotels (Politeama, Centro Storico, Mondello) | Nico manual test | All 15 URLs confirmed working. Structural analysis flagged 5 URLs with `-amp-` or `-39-` encoding patterns — Nico manually confirmed these still resolve to correct hotels. Villa Gabriella URL explicitly re-confirmed. |
