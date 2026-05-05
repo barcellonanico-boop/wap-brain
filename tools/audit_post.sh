@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# audit_post.sh — WAP article mechanical auditor v0.6
+# audit_post.sh — WAP article mechanical auditor v0.7
+# v0.7 (May 5): Category C added — affiliate + facts checks via tools/audit_category_c.py.
 # v0.6 (May 4 evening): B7 exclusions finalized — hotel-card divs (box-shadow)
 #                       and bold data lists (>70% strong). Author intro NOT exempt.
 # v0.5 (May 4 evening): B11 bold threshold 5→12 words (voice phrases valid bold),
@@ -126,7 +127,7 @@ print_fail() { printf "${RED}[FAIL]${NC} %s\n" "$1"; [ -n "${2:-}" ] && printf "
 print_warn() { printf "${YELLOW}[WARN]${NC} %s\n" "$1"; WARN_COUNT=$((WARN_COUNT + 1)); }
 
 echo "============================================"
-echo "WAP Article Auditor v0.6 — Category A + B"
+echo "WAP Article Auditor v0.7 — Category A + B + C"
 echo "File: $FILE ($(wc -c < "$FILE") bytes)"
 echo "============================================"
 echo ""
@@ -384,6 +385,26 @@ CAT_B_WARN=$(echo "$CAT_B_OUTPUT" | grep -c "^\[WARN\]\|^.*\[WARN\]" || true)
 PASS_COUNT=$((PASS_COUNT + CAT_B_PASS))
 FAIL_COUNT=$((FAIL_COUNT + CAT_B_FAIL))
 WARN_COUNT=$((WARN_COUNT + CAT_B_WARN))
+
+# ============================================================
+# Category C — affiliate + facts
+# ============================================================
+echo ""
+echo "============================================"
+echo "Category C — Affiliate + facts"
+echo "============================================"
+
+CAT_C_OUTPUT=$(cat "$BODY_FILE" | python3 "$SCRIPT_DIR/audit_category_c.py" "$FILE" 2>&1)
+CAT_C_EXIT=$?
+echo "$CAT_C_OUTPUT"
+
+CAT_C_PASS=$(echo "$CAT_C_OUTPUT" | grep -c "^.*\[PASS\]" || true)
+CAT_C_FAIL=$(echo "$CAT_C_OUTPUT" | grep -c "^.*\[FAIL\]" || true)
+CAT_C_WARN=$(echo "$CAT_C_OUTPUT" | grep -c "^.*\[WARN\]" || true)
+
+PASS_COUNT=$((PASS_COUNT + CAT_C_PASS))
+FAIL_COUNT=$((FAIL_COUNT + CAT_C_FAIL))
+WARN_COUNT=$((WARN_COUNT + CAT_C_WARN))
 
 # Summary
 echo ""
