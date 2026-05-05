@@ -27,6 +27,21 @@
 | Apr 19, 2026 | ConvertKit integration for WAP | Currently using CK but no documented automation system for WAP. Could mirror the Sheila approach eventually. |
 | Apr 26, 2026 | Scout tool stack research | Comparison done across Tavily, Firecrawl, Perplexity Sonar API, Apify, Serper, News API, Perigon. Decision: ship Scout v1 with built-in Claude tools, defer paid APIs until Phase 3 measures actual UNVERIFIABLE rate. Perplexity Sonar identified as strongest single upgrade (search + synthesis + citations). Firecrawl identified as backup for JS-heavy sites. Skip Apify/Serper/News API — wrong shape for Scout's job. |
 
+### Workflow Finding #1 — Phase 1 source priority (May 5 test)
+**Date:** May 5, 2026
+**Source:** Phase 2 test on /news/comprehensive-guide-visiting-san-vito-lo-capo/
+**Finding:** Phase 1 (Tech Recon) of v2.3 workflow currently prioritizes Ubersuggest. This is wrong. GSC must be the primary source of truth for ranking data, traffic data, and query data. Ubersuggest is satellite (USA-only volume + competitor SERP context).
+**Evidence:** Ubersuggest underestimated traffic by 64% on this article (756/mo stimato vs 1,238/mo GSC reale). Ubersuggest showed position 3 (USA only) while GSC global position is 6.04 — three places worse. Strategic implications change with the real number.
+**Fix required in SOP_01 v2.3:** Phase 1 step order must be (1) GSC YoY + QoQ for the article URL, (2) Ubersuggest only for SERP top 10 + competitor analysis + USA-volume context. NOT the reverse.
+**Status:** to be incorporated when SOP_01 v2.3 is written.
+
+### Workflow Finding #2 — WAP_12 affiliate gap discovery should be in Phase 1, not blocker mid-workflow (May 5 test)
+**Date:** May 5, 2026
+**Source:** Phase 2 test on /news/comprehensive-guide-visiting-san-vito-lo-capo/
+**Finding:** Phase 1 currently does not surface affiliate gaps. The article rewrite for San Vito Lo Capo blocked at "writing time" because WAP_12 has zero San Vito hotels, empty GYG section, empty Discover Cars section. This should have been flagged in Phase 1, not discovered downstream.
+**Fix required in SOP_01 v2.3:** Add Phase 1.5 (or extend Phase 1) — "Affiliate Inventory Check." Cross-reference article topic against WAP_12 sections. If gaps exist, flag them as input for Phase 3 (Brain Dump) — Nico's brain dump naturally extracts affiliate preferences (which hotels he recommends, which tours, etc.) during the topic discussion. Phase 1 → identify gaps → Phase 3 fills WAP_12 → Phase 4+ writes.
+**Status:** to be incorporated when SOP_01 v2.3 is written.
+
 ## Questions for Nico
 
 | Date | Question | Status |
