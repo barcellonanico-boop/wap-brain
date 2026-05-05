@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# audit_post.sh — WAP article mechanical auditor v0.7
+# audit_post.sh — WAP article mechanical auditor v0.8
+# v0.8 (May 5): Category D added — voice + reader-flow checks via tools/audit_category_d.py.
+#               Complete audit: A (15) + B (15) + C (5) + D (4) = 39 checks.
 # v0.7 (May 5): Category C added — affiliate + facts checks via tools/audit_category_c.py.
 # v0.6 (May 4 evening): B7 exclusions finalized — hotel-card divs (box-shadow)
 #                       and bold data lists (>70% strong). Author intro NOT exempt.
@@ -127,7 +129,7 @@ print_fail() { printf "${RED}[FAIL]${NC} %s\n" "$1"; [ -n "${2:-}" ] && printf "
 print_warn() { printf "${YELLOW}[WARN]${NC} %s\n" "$1"; WARN_COUNT=$((WARN_COUNT + 1)); }
 
 echo "============================================"
-echo "WAP Article Auditor v0.7 — Category A + B + C"
+echo "WAP Article Auditor v0.8 — Category A + B + C + D"
 echo "File: $FILE ($(wc -c < "$FILE") bytes)"
 echo "============================================"
 echo ""
@@ -405,6 +407,26 @@ CAT_C_WARN=$(echo "$CAT_C_OUTPUT" | grep -c "^.*\[WARN\]" || true)
 PASS_COUNT=$((PASS_COUNT + CAT_C_PASS))
 FAIL_COUNT=$((FAIL_COUNT + CAT_C_FAIL))
 WARN_COUNT=$((WARN_COUNT + CAT_C_WARN))
+
+# ============================================================
+# Category D — voice + reader-flow checks
+# ============================================================
+echo ""
+echo "============================================"
+echo "Category D — Voice + reader-flow"
+echo "============================================"
+
+CAT_D_OUTPUT=$(cat "$BODY_FILE" | python3 "$SCRIPT_DIR/audit_category_d.py" 2>&1)
+CAT_D_EXIT=$?
+echo "$CAT_D_OUTPUT"
+
+CAT_D_PASS=$(echo "$CAT_D_OUTPUT" | grep -c "^.*\[PASS\]" || true)
+CAT_D_FAIL=$(echo "$CAT_D_OUTPUT" | grep -c "^.*\[FAIL\]" || true)
+CAT_D_WARN=$(echo "$CAT_D_OUTPUT" | grep -c "^.*\[WARN\]" || true)
+
+PASS_COUNT=$((PASS_COUNT + CAT_D_PASS))
+FAIL_COUNT=$((FAIL_COUNT + CAT_D_FAIL))
+WARN_COUNT=$((WARN_COUNT + CAT_D_WARN))
 
 # Summary
 echo ""

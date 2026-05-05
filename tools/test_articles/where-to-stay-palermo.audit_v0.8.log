@@ -1,0 +1,79 @@
+============================================
+WAP Article Auditor v0.8 — Category A + B + C + D
+File: tools/test_articles/where-to-stay-palermo.html (  260889 bytes)
+============================================
+
+[PASS] A1 File integrity (  260889 bytes)
+[PASS] A2 HTML valid (no tidy errors)
+[PASS] A3 0 em-dashes
+[PASS] A4 0 banned words
+[PASS] A5 0 Italian-name violations
+[PASS] A6 0 placeholders left
+[PASS] A7 Title tag (58 chars)
+[PASS] A8 Meta description (140 chars)
+[WARN] A9 URL slug check (validated at publish time)
+
+Checking images (A10)...
+[PASS] A10 All 51 images return 200
+
+Checking internal links (A11)...
+[PASS] A11 All 4 internal links return 200
+
+Checking affiliate links (A12)...
+[PASS] A12 All 17 affiliate links reachable
+[PASS] A13 All 64 Booking links have aid=918822
+[WARN] A14 Article schema not in HTML (WordPress/Yoast adds at publish)
+[PASS] A15 FAQPage schema VALID (8 questions)
+NOT_FOUND
+
+============================================
+Category B — Structural checks
+============================================
+[PASS] B1 Italic lead exists as first body element
+[PASS] B2 Italic lead 17 words (≤25)
+[PASS] B3 TL;DR table present (5 rows)
+[PASS] B4 Affiliate disclosure present after TL;DR
+[PASS] B5 Every H2 has ≥1 callout (6 checked)
+[PASS] B6 H2 section word counts in range (100-1500)
+[FAIL] B7 Prose paragraph length
+       Reason: 6 over 180 chars. Longest: 'I’m not the umpteenth John from Manchester who took a €3 Ryanair flight and spen...' (201c)
+[PASS] B8 0 callout <p> >180 chars (14 callouts)
+[PASS] B9 0 callouts >250 chars total
+[PASS] B10 0 callouts with >4 paragraphs
+[FAIL] B11 Bold span length
+       Reason: 3 over 12 words, e.g. 'Via Maqueda. Corso Vittorio Emanuele. Anywhere within a few ' (16w)
+[PASS] B13 FAQ section (8 questions)
+[PASS] B14 FAQ answers 15-150w (8 checked)
+[PASS] B15 Continue Planning grey-box present
+[PASS] B16 Bottom Line section (223 words)
+
+Category B summary: 13 PASS / 2 FAIL / 0 WARN
+
+============================================
+Category C — Affiliate + facts
+============================================
+[0;32m[PASS][0m C1 All 17 hotel URLs match WAP_12 verbatim
+[0;33m[WARN][0m C2 Affiliate Opportunity Check
+       Skipped (test fixture, not a project)
+[0;33m[WARN][0m C3 Old article images recovered
+       Skipped (test fixture)
+[0;32m[PASS][0m C4 0 named restaurants (43 blacklist entries checked)
+[0;33m[WARN][0m C5 Scout corrections applied
+       Skipped (test fixture)
+
+Category C summary: 2 PASS / 0 FAIL / 3 WARN
+
+============================================
+Category D — Voice + reader-flow
+============================================
+[0;32m[PASS][0m D1 Technical concepts have explainer (2 terms checked: Via dei Tesori, bidet)
+[0;32m[PASS][0m D2 0 generic travel-blog phrases (13 blacklist entries checked)
+[0;32m[PASS][0m D3 0 reflective listening phrases (6 blacklist entries checked)
+[0;32m[PASS][0m D4 Fake enthusiasm threshold (absolutely/definitely each ≤3)
+
+Category D summary: 4 PASS / 0 FAIL / 0 WARN
+
+============================================
+Summary: 32 PASS, 2 FAIL, 5 WARN
+============================================
+Result: 2 CHECK(S) FAILED
