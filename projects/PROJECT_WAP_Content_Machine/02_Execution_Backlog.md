@@ -15,8 +15,8 @@
 **MILESTONE: Audit script complete (May 5, 2026). 39 mechanical checks across 4 categories. Final result on /where-to-stay-palermo/: 32 PASS / 2 FAIL / 5 WARN. The 2 FAIL are legitimate (B7 prose, B11 bold) preserved for next article rewrite. WARNs are manual-gate skips (test fixture not in project folder).**
 
 Phase 1 MVP remaining tasks:
-- [ ] 1.2 WAP_15_PERSONAS.md (2-3 personas: First-Timer Foreigner, Returning-Visitor, Italo-American Roots-Search). Sources: GA4 + Facebook group + Nico sensations. [PM + Nico] [Est: 2-3 hr | Actual: __]
-- [ ] 1.3 WAP_06c_CANONICAL_SNIPPETS.md (extract verbatim from /where-to-stay-palermo/ live HTML: TL;DR blue-box, callout 3 variants, hotel card, Pros/Cons block, FAQ details/summary, Continue Planning, affiliate disclosure). [PM + Nico] [Est: 1-2 hr | Actual: __]
+- [~] 1.2 WAP_15_PERSONAS.md — IN PROGRESS. May 5 evening: 9 datasets analyzed (GA4 demographics + tech, Booking insights + 10 commission invoices, GYG, Stripe, Meta Ads, YouTube Studio, Gemini YouTube psychographics). 3 personas concept defined: A) Anglo Couple Planner 60-70% revenue site-first, B) Italo-American Heritage Seeker 25-35% revenue YouTube+site high LTV, C) Returning Italy Traveler 5-10% revenue. Full audience analysis saved to 08_Audience_Analysis_May5.md. Next session: write WAP_15 full personas with this data + identify top organic landing pages from GSC. [PM + Nico] [Est: 2-3 hr | Actual so far: ~1.5 hr analysis]
+- [x] 1.3 WAP_06c_CANONICAL_SNIPPETS.md — DONE. 7 verbatim HTML patterns extracted from /where-to-stay-palermo/ live HTML: TL;DR blue-box, affiliate disclosure, 3 callout variants (Pick/Take/Warning), hotel card, Pros/Cons/Advice block, FAQ details+JSON-LD, Continue Planning grey-box. WAP_06 affiliate disclosure CSS synced (0.75em→0.85em). WAP_00_INDEX updated. [PM + Claude Code] [Est: 1-2 hr | Actual: ~40 min] (May 5)
 
 ## Phase 2 — Test MVP on 1 article
 
