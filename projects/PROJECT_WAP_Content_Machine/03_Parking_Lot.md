@@ -42,6 +42,30 @@
 **Fix required in SOP_01 v2.3:** Add Phase 1.5 (or extend Phase 1) — "Affiliate Inventory Check." Cross-reference article topic against WAP_12 sections. If gaps exist, flag them as input for Phase 3 (Brain Dump) — Nico's brain dump naturally extracts affiliate preferences (which hotels he recommends, which tours, etc.) during the topic discussion. Phase 1 → identify gaps → Phase 3 fills WAP_12 → Phase 4+ writes.
 **Status:** to be incorporated when SOP_01 v2.3 is written.
 
+### Workflow Finding #3 — Voice Pass not yet built (May 6 refocus)
+**Date:** May 6, 2026
+**Source:** Strategic refocus session — Nico identified gap
+**Finding:** Voice Pass as a workflow phase does NOT exist in operational form. What exists today:
+- WAP_05 Voice and Persona (foundational, descriptive)
+- WAP_05b Voice in Action (technical patches, e.g. bold 2-12 words)
+- audit_post.sh Categoria D (4 MECHANICAL voice checks: D1 technical explainers, D2 generic phrases blacklist, D3 reflective listening, D4 fake enthusiasm)
+What does NOT exist:
+- A defined Phase 6 (Voice Pass) procedure with input → step → output
+- A QUALITATIVE voice checklist beyond the mechanical D-category checks
+- Codification of: bestemmie usage, italianità sprinkling rules, Maniscalco-mode triggers, anti-vlogger jabs ("not the umpteenth John from Manchester"), insider framing ("where I'd send my sister"), brutal honesty calibration
+- Before/after voice comparison protocol
+- Canonical voice-fail vs voice-win examples organized by pattern
+**Evidence:** Where-to-stay-palermo Pass 2 voice failed 4 cycles in May 1-2 rebuild. PM had to abandon automated Pass 2 and Nico hand-finished the article (17 hr disaster). Findings #77-84 captured patches but not a Voice Pass procedure.
+**Fix required:** Build Voice Pass as standalone document FIRST. Then integrate into SOP_01 v2.3. NOT another article test until Voice Pass is solid.
+**Status:** active priority. Work begins May 6 afternoon.
+
+### Workflow Finding #4 — Procedure-fix-first sequencing (May 6 refocus)
+**Date:** May 6, 2026
+**Source:** Strategic refocus session
+**Finding:** PM was incorrectly proposing continuation of San Vito workflow test (Phase 3 Brain Dump) when accumulated findings from 3 test articles already point to systematic procedure gaps. The right sequencing is: (1) audit all accumulated findings; (2) fix all phase gaps starting with Voice Pass; (3) write SOP_01 v2.3 operational document; (4) update agent system prompts for v2.3 roles; (5) ONLY THEN re-validate on San Vito or fresh article.
+**Fix required:** Project Brief next-actions ordering must reflect this. When SOP_01 v2.3 is written, re-test San Vito as validation, not as discovery.
+**Status:** sequencing locked. PM must stop proposing article-level work until SOP_01 v2.3 is written.
+
 ## Questions for Nico
 
 | Date | Question | Status |

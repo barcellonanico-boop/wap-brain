@@ -18,7 +18,15 @@ Phase 1 MVP remaining tasks:
 - [x] 1.2 WAP_15_PERSONAS.md — DONE May 5 evening. 3 personas locked: A Anglo Couple Planner, B Italo-American Heritage Seeker 50+, C Returning Italy Traveler. Each persona has full schede (demographics, psychographics, search/buying behavior, voice match, knowledge gaps, channel, revenue %, top article mapping). Comparison table + Fase 2 workflow integration. Source: 9-dataset analysis + Ubersuggest top 30 organic pages. [PM + Nico] [Est: 2-3 hr | Actual: ~75 min]
 - [x] 1.3 WAP_06c_CANONICAL_SNIPPETS.md — DONE. 7 verbatim HTML patterns extracted from /where-to-stay-palermo/ live HTML: TL;DR blue-box, affiliate disclosure, 3 callout variants (Pick/Take/Warning), hotel card, Pros/Cons/Advice block, FAQ details+JSON-LD, Continue Planning grey-box. WAP_06 affiliate disclosure CSS synced (0.75em→0.85em). WAP_00_INDEX updated. [PM + Claude Code] [Est: 1-2 hr | Actual: ~40 min] (May 5)
 
-## Phase 2 — Test MVP on 1 article
+## Phase 2 — Fix procedure gaps BEFORE further article tests (May 6 refocus)
+
+- [ ] 2.0a Build Voice Pass standalone documentation — qualitative voice checklist beyond Categoria D mechanical checks. Codify bestemmie, italianità, Maniscalco-mode, anti-vlogger framing, insider voice, brutal honesty calibration. Define Phase 6 input → steps → output. Canonical voice-fail vs voice-win examples. NOT another article test before this is done. [Copywriter + Nico] [Est: 2-3 hr | Actual: __]
+- [ ] 2.0b Audit accumulated findings (07_Test_Run_Findings #1-84 + Parking Lot #1-4) and group by SOP_01 v2.3 phase — output: master gap list per phase (Phase 1, 2, 3, 4, 5, 7, 8, 9). Voice Pass already covered in 2.0a. [PM + Nico] [Est: 60-90 min | Actual: __]
+- [ ] 2.0c Write SOP_01 v2.3 operational document covering all 9 phases with inputs / steps / outputs / checks. Based on 2.0a (Voice Pass) + 2.0b (other phase gaps). [PM + Nico] [Est: 3-4 hr | Actual: __]
+- [ ] 2.0d Update agent system prompts (Architect + Copywriter + Scout) for v2.3 roles. [PM + Nico] [Est: 60-90 min | Actual: __]
+- [ ] 2.0e Re-validate full SOP_01 v2.3 on San Vito Lo Capo (resume from Phase 3 Brain Dump using preserved Tech Report + Persona Match in projects/POST_san-vito-lo-capo/). [Nico + agents] [Est: 4-6 hr | Actual: __]
+
+## Phase 2 — Test MVP on 1 article (AFTER procedure gaps fixed)
 
 - [ ] 2.1 Pick test article from WAP_13 P1/P2 list. Criteria: medium difficulty, not flagship, can absorb hand-finishing if needed. Candidates: /palermo-street-food/, /best-beaches-near-palermo/, /palermo-airport-transfers/. [Nico] [Est: 5 min | Actual: __]
 - [ ] 2.2 Run Fase 1 (Tech recon) manually with current Architect tools. Validate: GSC story + SERP top 5 real-time + Scout parallel. Save: 01_Tech_Report.md. [Architect + PM] [Est: 30 min | Actual: __]
