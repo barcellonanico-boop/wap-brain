@@ -76,6 +76,12 @@ What does NOT exist:
 | Apr 19, 2026 | Which WordPress schema plugin is installed on wearepalermo.com? RankMath, Yoast, something else, or none? | Open — blocks proper implementation of Task 1.10 Rule 3.5 |
 | Apr 24, 2026 | Where does the Story Agent live long-term? Claude chat (re-paste prompt each time), dedicated Claude project (persistent), or Claude Code setup? Doesn't block first test run but worth deciding before Story Bank scales. | Open |
 
+### Story candidate — "The Scimunito di Guerra" (May 6, 2026)
+**Source:** Nico's great-grandfather Michele, WWII soldier under Mussolini.
+**Hook:** Today's 20-year-olds count TikTok followers hoping to become "influencers." Michele at 20 counted days alive at war. To communicate between trenches before WhatsApp, the army used the "scimunito di guerra" — the war idiot. Lowest-rank soldier picked daily by the commander, given a bicycle, sent to deliver messages between positions. Got changed every two minutes for obvious reasons.
+**Article ideas:** Sicilian/Italian military history piece, historical Palermo content, generational comparison piece on grit vs digital narcissism, cultural history of Sicilian military tradition.
+**Status:** Parked. To be revisited when content calendar has space for non-travel deep-cuts.
+
 ## Process Flags
 
 - **Apr 22, 2026 — SOP_03 gap exposed.** Copywriting agent produced a Story Bank prompt with 10 invented tags that don't exist in the WAP_08 taxonomy (e.g., palermo-chaos, via-maqueda, rules-and-enforcement, comic-anecdote). PM caught and corrected before Claude Code ran. This will keep happening on every new story intake until SOP_03_Add_Story_To_Bank.md is written (Task 2.3 in Phase 2). SOP must explicitly require the agent to reference the existing tag taxonomy in WAP_08 and only propose new tags via the Parking Lot, never invent them inline. Priority: elevate 2.3 when Phase 2 starts.
