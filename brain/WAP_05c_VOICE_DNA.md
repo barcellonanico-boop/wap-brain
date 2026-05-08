@@ -485,47 +485,11 @@ How to take raw logistical facts and pass them through the Nico filter.
 
 ---
 
-## 7. ENGINEERED CHECKLIST
+## 7. CHECKLIST AND WORKFLOW
 
-The Voice Pass agent applies this checklist to its draft before delivery. Pass / fail per H2 section + globally per article.
+The mechanical checklist that operationalizes this Voice DNA lives in WAP_05d_VOICE_CHECKLIST.md. WAP_05c is descriptive (what the voice IS). WAP_05d is operational (how to enforce voice on a draft).
 
-### H2 SECTIONAL CHECKLIST
-
-Apply to EACH H2 section. Each item answered Y or N.
-
-| # | Question | Y/N |
-|---|---|---|
-| 1 | **Syntax variance:** at least one fragment or 1-3 word sentence in the section? | |
-| 2 | **Italics emphasis:** italics used at least once for spoken word, hypothetical quote, or Italian term? | |
-| 3 | **Reader targeting:** "you/your" used to directly address reader's mistakes/assumptions at least once? | |
-| 4 | **Conversational opening:** section opens with "So,", "Alright,", "Listen,", "Look,", or rhetorical question? | |
-| 5 | **Setup-Pause-Snap:** at least one 3-beat structure (setup → pause → verdict)? | |
-| 6 | **Tough Love:** at least one instance of blunt, uncompromising advice (must / cannot / never / don't)? | |
-| 7 | **Visual hierarchy:** paragraphs strictly 1-3 sentences max? | |
-| 8 | **Absence of fluff (HARD-FAIL):** ZERO banned phrases from Section 5? | |
-
-**Per-section pass criteria:** ≥6 Y out of 8.
-**Hard-fail trigger:** any banned phrase = automatic regeneration regardless of other scores.
-
-### GLOBAL ARTICLE CHECKLIST
-
-Apply once to the full article. Each item answered Y or N.
-
-| # | Question | Y/N |
-|---|---|---|
-| 9 | **Cultural code-switching:** at least 2 Italian/Sicilian words integrated naturally + glossed? | |
-| 10 | **Scam Radar:** at least 1 brutal-honesty moment revealing local scam, lie, or tourist trap? | |
-| 11 | **Anti-Romantic Jab:** at least 1 moment actively mocking romanticized/naive view of travel/Italy? | |
-| 12 | **Accountability Shift:** does the author tell reader at least once that a bad experience is their own fault? | |
-| 13 | **Exaggerated Metaphor:** at least 1 absurdly dramatic metaphor describing mundane scenario? | |
-| 14 | **Italian Roast:** at least 1 self-deprecating Sicilian/Italian observation? | |
-| 15 | **Family/community reference:** at least 1 Nonna Nunzia, father, "us locals," or "we Sicilians" framing? | |
-
-**Per-article pass criteria:** ≥5 Y out of 7.
-
-### TOTAL PASS
-
-Section pass criteria met in EVERY H2 + global pass criteria met. Both conditions required.
+Voice Pass agents use both: WAP_05c first to understand the voice, WAP_05d to apply the checklist.
 
 ---
 
@@ -589,57 +553,9 @@ When prompting an LLM to "write like a sarcastic local," it defaults to predicta
 
 ---
 
-## 9. WORKFLOW INTEGRATION — Voice Pass (Phase 6)
+## 9. WORKFLOW INTEGRATION
 
-### Position in SOP_01 v2.3
-
-```
-Phase 1: Tech Recon (GSC primary, Ubersuggest secondary)
-Phase 1.5: Affiliate Inventory Check (against WAP_12)
-Phase 2: Persona Match (against WAP_15)
-Phase 3: Brain Dump (Nico voice memos verbatim)
-Phase 4: Struttura
-Phase 5: Bozza (Pass 2 = ASSEMBLE brain dump verbatim)
-Phase 6: Voice Pass ← THIS DOC drives this phase
-Phase 7: HTML (canonical snippets from WAP_06c)
-Phase 8: Audit (audit_post.sh v0.8 — 39 mechanical checks)
-Phase 9: Review
-```
-
-### Voice Pass procedure
-
-**Input:**
-- Pass 5 draft (assembled bozza from brain dump)
-- This document (WAP_05c)
-- Brain dump source (for verbatim cross-check)
-
-**Steps:**
-
-1. Agent scans EACH H2 section against the 8 sectional checklist items (Section 7).
-2. Agent counts Y answers per H2. If <6/8 OR any banned phrase present → flag H2.
-3. Agent scans the full article against the 7 global checklist items.
-4. If global <5/7 → flag article-level revision.
-5. Agent produces voice-pass DNA map: per H2, list which traits + devices are present, which are missing.
-
-**Output:**
-- Pass 6 v1 with checklist completed (Y/N for each item, per H2 + global).
-- DNA map showing which traits are present / absent.
-- Pass / fail status per H2.
-
-**Hard rule — agent CANNOT generate voice from rules:**
-
-If H2 fails the checklist, the agent does NOT regenerate the H2 itself. Instead:
-
-1. Agent flags the failing H2 with: "H2 #N failed on items 3, 5, 8. Missing: Setup-Pause-Snap, banned phrase 'hidden gem' present. Need Nico input."
-2. Nico reads the flag + adds voice manually to that H2.
-3. Agent re-runs checklist on Nico's update.
-4. Repeat until pass.
-
-**Hard stop:** Maximum 2 cycles of agent flag → Nico fix → re-check. After 2 cycles, escalate to PM for full H2 rebuild from brain dump.
-
-### When Voice Pass is COMPLETE
-
-All H2 sections pass sectional checklist + article passes global checklist. Then advance to Phase 7 (HTML).
+See WAP_05d_VOICE_CHECKLIST.md Section 5 for the operational workflow integration. WAP_05c does not describe the procedure. WAP_05c describes only the voice itself.
 
 ---
 
