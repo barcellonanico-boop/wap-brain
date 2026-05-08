@@ -288,3 +288,67 @@ Article-level: PASS (all-caps 2, em-dashes 0, rhetorical questions 46)
 ### Next step
 
 v1.2 calibration round targeting the 3 remaining systematic failures. Expected: if all 3 are addressed, most sections should pass (Bottom Line already passes with only avg sentence length failing).
+
+---
+
+## Test 1 — Round 3 (post-calibration v1.2)
+
+**Date:** May 8, 2026 (evening)
+
+### Calibration applied (v1.2 over v1.1)
+- Avg sentence length: lower bound 9 → 7 (PASS if 7-12, WARN 13-15, FAIL >15 or <7)
+- Max paragraphs >3 sentences: 2 → 4 per H2 (or ≤50% threshold, whichever permissive)
+- Ellipsis ≥1 if >300w: demoted from FAIL to WARN (informational only)
+- Introduced WARN vs FAIL distinction (WARNs do not block pass)
+
+### Results post-calibration v1.2
+
+**Sections: 1 PASS / 7 FAIL out of 8 checked (1 FAQ skipped)**
+
+| H2 | Words | Result | Fails | WARNs | Details |
+|---|---|---|---|---|---|
+| #1 The 3 Areas | 366 | FAIL (1) | single-sent 8% | ellipsis 0 | Only single-sent% still failing |
+| #2 Centro Storico | 588 | **PASS** | 0 | ellipsis 0 | First PASS! All mechanical checks green |
+| #3 Politeama | 222 | FAIL (2) | single-sent 24%, avg 5.7w | — | Short section, fragment-heavy |
+| #4 Mondello | 534 | FAIL (2) | avg 6.8w, compound 5 | ellipsis 0 | Avg just below 7w floor |
+| #5 Cefalù | 508 | FAIL (1) | avg 7.0w | ellipsis 0 | avg 7.0 rounds to exactly 7.0 — borderline FAIL at <7 |
+| #6 Apartment/Hotel | 531 | FAIL (1) | compound 4 | ellipsis 0 | Only compound sentences exceeding max 2 |
+| #7 Pricing | 365 | FAIL (1) | compound 5 | ellipsis 0 | Same: compound sentences only |
+| #8 FAQ | 0 | Skipped | — | — | FAQ exempt |
+| #9 Bottom Line | 237 | FAIL (1) | avg 5.3w | — | Short section, fragment-heavy |
+
+Article-level: PASS (all-caps 2, em-dashes 0, rhetorical questions 46)
+
+### Fail pattern analysis v1.2
+
+| Check | v1.0 | v1.1 | v1.2 | Δ trend |
+|---|---|---|---|---|
+| Avg sentence length | 89% | 100% | **50%** | Major improvement (floor 9→7) |
+| Max sentences/paragraph | 89% | 88% | **0%** | **FIXED** (cap 2→4 + 50%) |
+| Ellipsis | 67% | 75% | **0%** | **FIXED** (FAIL→WARN) |
+| Compound sentences | 33% | 38% | **38%** | Persistent — 3 sections still fail |
+| Single-sentence paragraphs | 100% | 25% | **25%** | Stable since v1.1 |
+| Banned phrases | 22% | 0% | **0%** | Fixed since v1.1 |
+
+### Remaining problems (2 checks)
+
+**1. Avg sentence length (50% fail):** 4/8 sections fail with avg 5.3-7.0 words. The 7.0 floor catches sections that are exactly at the boundary. Sections #3 (5.7w), #4 (6.8w), #5 (7.0w), #9 (5.3w) all fail. These are genuinely fragment-heavy sections (Politeama is 222 words of mostly hotel card context, Bottom Line is 237 words of sign-off).
+
+**Root cause:** Short sections (≤300w) and sections with extensive hotel-card-adjacent content have structurally lower avg sentence length because the non-excluded prose around cards is fragmentary (names, prices, brief descriptions). This is a format issue, not a voice issue.
+
+**2. Compound sentences (38% fail):** 3/8 sections have 4-5 compound sentences vs max 2. Sections #4 (Mondello 534w, 5 compounds), #6 (Apartment/Hotel 531w, 4 compounds), #7 (Pricing 365w, 5 compounds). These longer sections naturally contain more compound structures.
+
+**Root cause:** The max-2 flat cap doesn't scale with section length. A 530-word section at 4 compounds is 1 compound per 133 words — not excessive. The flat cap was designed for 200-word sections.
+
+### Diagnosis v1.2
+
+**Significant progress.** From 0/9 PASS (v1.0) → 0/8 PASS (v1.1) → **1/8 PASS (v1.2)**. Centro Storico (the largest prose section at 588 words) passes cleanly, which is the strongest validation signal — the checklist correctly recognizes the meatiest Nico-voice section.
+
+The remaining 7 FAILs are all 1-2 check failures, NOT 4-6 check failures like v1.0. The checklist is close to production-ready. Two more threshold adjustments would likely bring it to 5-6/8 PASS:
+
+1. **Avg sentence length floor 7 → 5** (or remove lower bound entirely for sections ≤300w)
+2. **Compound sentences max 2 → scale to ceil(section_words / 150)** (approximately 1 compound per 150 words)
+
+### Next step
+
+Decision for Nico: accept v1.2 as-is (1/8 PASS but Centro Storico validates core voice recognition), OR do v1.3 with avg-floor and compound-scaling adjustments (expected 5-6/8 PASS).

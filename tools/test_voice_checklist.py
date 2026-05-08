@@ -304,20 +304,16 @@ def check_section(title, fragment, section_num):
     else: fails += 1
     results.append(f"  Italics: {italic_count} (threshold >= {ital_thresh}) -- {status}")
 
-    # 1A-4: Ellipsis (≥1 if >300w)
+    # 1A-4: Ellipsis (WARN only if >300w and 0 — does NOT block pass)
     ellipsis_count = count_ellipsis(text)
-    if words > 300:
-        ell_thresh = 1
-        ok = ellipsis_count >= ell_thresh
-        status = "PASS" if ok else "FAIL"
+    if words > 300 and ellipsis_count == 0:
+        status = "WARN (0 ellipsis in >300w section — informational)"
     else:
-        ell_thresh = 0
-        ok = True
         status = "PASS"
-    check_results["Ellipsis"] = ok
-    if ok: passes += 1
-    else: fails += 1
-    thresh_label = f">= {ell_thresh}" if words > 300 else "N/A (<=300w)"
+    # Ellipsis is always PASS for section result — WARN is informational
+    check_results["Ellipsis"] = True
+    passes += 1
+    thresh_label = "WARN if 0 (>300w)" if words > 300 else "N/A (<=300w)"
     results.append(f"  Ellipsis: {ellipsis_count} (threshold {thresh_label}) -- {status}")
 
     # 1A-5: Banned phrases
@@ -332,19 +328,20 @@ def check_section(title, fragment, section_num):
     else:
         results.append(f"  Banned phrases: 0 found (threshold 0) -- {status}")
 
-    # 1C-1: Max sentences per paragraph (soft cap: max 2 paragraphs may exceed 3 sentences, FAQ exempt)
+    # 1C-1: Max sentences per paragraph (soft cap: max 4 paras OR ≤50% over, FAQ exempt)
     over_paras = sum(1 for p in paragraphs if paragraph_sentence_count(p) >= 4)
     max_sent = max((paragraph_sentence_count(p) for p in paragraphs), default=0)
+    over_ratio = over_paras / total_paras if total_paras > 0 else 0
     if faq:
         ok = True
         status = "EXEMPT (FAQ)"
     else:
-        ok = over_paras <= 2
+        ok = over_paras <= 4 or over_ratio <= 0.50
         status = "PASS" if ok else "FAIL"
     check_results["Max sentences/paragraph"] = ok
     if ok: passes += 1
     else: fails += 1
-    results.append(f"  Max sentences/paragraph: {max_sent} max, {over_paras} paras over 3 (soft cap: max 2 allowed) -- {status}")
+    results.append(f"  Max sentences/paragraph: {max_sent} max, {over_paras} paras over 3 ({over_ratio:.0%}), (soft cap: max 4 or ≤50%) -- {status}")
 
     # 1C-2: Bullet usage
     ul_ol = len(fragment.find_all(["ul", "ol"]))
@@ -358,7 +355,7 @@ def check_section(title, fragment, section_num):
     else: fails += 1
     results.append(f"  Bullet ratio: {ul_ol}/{total_blocks} ({bullet_ratio:.0%}) (threshold <= 30%) -- {status}")
 
-    # 1D-1: Average sentence length
+    # 1D-1: Average sentence length (v1.2: floor 7, target 7-12, warn 13-15, fail >15)
     if sentences:
         avg_len = sum(sentence_word_count(s) for s in sentences) / len(sentences)
     else:
@@ -366,22 +363,22 @@ def check_section(title, fragment, section_num):
     if not sentences:
         ok = True
         status = "PASS (no sentences)"
-    elif 9 <= avg_len <= 12:
+    elif 7 <= avg_len <= 12:
         ok = True
         status = "PASS"
     elif 13 <= avg_len <= 15:
         ok = True
-        status = "WARN (acceptable)"
-    elif avg_len < 9:
+        status = "WARN (13-15w acceptable)"
+    elif avg_len < 7:
         ok = False
-        status = "FAIL (too short)"
+        status = "FAIL (too short, <7w)"
     else:
         ok = False
-        status = "FAIL (too long)"
+        status = "FAIL (too long, >15w)"
     check_results["Avg sentence length"] = ok
     if ok: passes += 1
     else: fails += 1
-    results.append(f"  Avg sentence length: {avg_len:.1f} words (target 9-12) -- {status}")
+    results.append(f"  Avg sentence length: {avg_len:.1f} words (target 7-12, warn 13-15, fail <7 or >15) -- {status}")
 
     # 1D-2: Compound sentences (max 2 per H2)
     compound_count = count_compound_sentences(sentences)
