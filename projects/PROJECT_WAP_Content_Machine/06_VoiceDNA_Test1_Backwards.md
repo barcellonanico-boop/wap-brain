@@ -1,0 +1,213 @@
+# WAP_05d Voice Checklist — Test 1 (Backwards Validation)
+
+## Test setup
+- **Date:** May 8, 2026
+- **Article tested:** tools/test_articles/where-to-stay-palermo.html
+- **Test type:** Backwards — checklist applied to known Nico-approved article. Expected: should PASS most/all sections.
+- **Purpose:** Validate that current WAP_05d thresholds correctly recognize Nico voice as good.
+
+## Methodology
+- Parsed HTML with BeautifulSoup/lxml
+- Extracted entry-content div only
+- Stripped: hotel cards (box-shadow), FAQ details blocks, TL;DR blue box, callout divs, affiliate disclosure, divTable Pros/Cons/Advice blocks, Continue Planning grey box
+- Split at H2 boundaries into 9 sections
+- Applied all WAP_05d Section 1 mechanical checks
+- H2 #8 (FAQ) correctly shows 0 words because all content was inside excluded `<details>` tags
+
+## Results per H2
+
+### H2 #1: The 3 Areas of Palermo (Pick Yours in 30 Seconds) — 366 words — FAIL (4 checks)
+| Check | Value | Threshold | Result |
+|---|---|---|---|
+| Sentences ≤3 words | 20 | ≥2 | PASS |
+| Single-sentence paragraphs | 1/13 (8%) | ≥40% | **FAIL** |
+| Italics | 5 | ≥3 | PASS |
+| Ellipsis | 0 | ≥2 | **FAIL** |
+| Rhetorical questions | 3 | ≥1 | PASS |
+| Banned phrases | 0 | 0 | PASS |
+| Max sentences/paragraph | 10 (4 paras over) | max 3 | **FAIL** |
+| Bullet ratio | 0/13 (0%) | ≤30% | PASS |
+| Avg sentence length | 7.3 words | 9-12 | **FAIL** |
+| Compound sentences | 1 | max 2 | PASS |
+| Contractions density | 82% | ≥80% | PASS |
+
+### H2 #2: Centro Storico, the Real, Raw Heart — 588 words — FAIL (5 checks)
+| Check | Value | Threshold | Result |
+|---|---|---|---|
+| Sentences ≤3 words | 29 | ≥3 | PASS |
+| Single-sentence paragraphs | 15/43 (35%) | ≥40% | **FAIL** |
+| Italics | 11 | ≥3 | PASS |
+| Ellipsis | 0 | ≥2 | **FAIL** |
+| Rhetorical questions | 4 | ≥1 | PASS |
+| Banned phrases | 1 ("charming") | 0 | **HARD-FAIL** |
+| Max sentences/paragraph | 7 (7 paras over) | max 3 | **FAIL** |
+| Bullet ratio | 0/43 (0%) | ≤30% | PASS |
+| Avg sentence length | 6.8 words | 9-12 | **FAIL** |
+| Compound sentences | 2 | max 2 | PASS |
+| Contractions density | 92% | ≥80% | PASS |
+
+### H2 #3: Politeama-Libertà, the Polished Zone — 222 words — FAIL (3 checks)
+| Check | Value | Threshold | Result |
+|---|---|---|---|
+| Sentences ≤3 words | 21 | ≥2 | PASS |
+| Single-sentence paragraphs | 4/17 (24%) | ≥40% | **FAIL** |
+| Italics | 2 | ≥1 | PASS |
+| Ellipsis | 0 | N/A (≤300w) | PASS |
+| Rhetorical questions | 3 | ≥1 | PASS |
+| Banned phrases | 0 | 0 | PASS |
+| Max sentences/paragraph | 12 (4 paras over) | max 3 | **FAIL** |
+| Bullet ratio | 0/17 (0%) | ≤30% | PASS |
+| Avg sentence length | 5.7 words | 9-12 | **FAIL** |
+| Compound sentences | 2 | max 2 | PASS |
+| Contractions density | 100% | ≥80% | PASS |
+
+### H2 #4: Mondello, the Seaside Escape — 534 words — FAIL (5 checks)
+| Check | Value | Threshold | Result |
+|---|---|---|---|
+| Sentences ≤3 words | 25 | ≥3 | PASS |
+| Single-sentence paragraphs | 13/43 (30%) | ≥40% | **FAIL** |
+| Italics | 11 | ≥3 | PASS |
+| Ellipsis | 0 | ≥2 | **FAIL** |
+| Rhetorical questions | 6 | ≥1 | PASS |
+| Banned phrases | 0 | 0 | PASS |
+| Max sentences/paragraph | 5 (4 paras over) | max 3 | **FAIL** |
+| Bullet ratio | 0/43 (0%) | ≤30% | PASS |
+| Avg sentence length | 6.8 words | 9-12 | **FAIL** |
+| Compound sentences | 5 | max 2 | **FAIL** |
+| Contractions density | 91% | ≥80% | PASS |
+
+### H2 #5: Cefalù, the Smarter Alternative — 508 words — FAIL (4 checks)
+| Check | Value | Threshold | Result |
+|---|---|---|---|
+| Sentences ≤3 words | 37 | ≥3 | PASS |
+| Single-sentence paragraphs | 10/34 (29%) | ≥40% | **FAIL** |
+| Italics | 7 | ≥3 | PASS |
+| Ellipsis | 0 | ≥2 | **FAIL** |
+| Rhetorical questions | 6 | ≥1 | PASS |
+| Banned phrases | 0 | 0 | PASS |
+| Max sentences/paragraph | 6 (7 paras over) | max 3 | **FAIL** |
+| Bullet ratio | 2/36 (6%) | ≤30% | PASS |
+| Avg sentence length | 6.4 words | 9-12 | **FAIL** |
+| Compound sentences | 1 | max 2 | PASS |
+| Contractions density | 85% | ≥80% | PASS |
+
+### H2 #6: Apartment, B&B, Hotel, or Villa? — 531 words — FAIL (6 checks)
+| Check | Value | Threshold | Result |
+|---|---|---|---|
+| Sentences ≤3 words | 20 | ≥3 | PASS |
+| Single-sentence paragraphs | 12/40 (30%) | ≥40% | **FAIL** |
+| Italics | 9 | ≥3 | PASS |
+| Ellipsis | 0 | ≥2 | **FAIL** |
+| Rhetorical questions | 10 | ≥1 | PASS |
+| Banned phrases | 1 ("charming") | 0 | **HARD-FAIL** |
+| Max sentences/paragraph | 6 (4 paras over) | max 3 | **FAIL** |
+| Bullet ratio | 0/40 (0%) | ≤30% | PASS |
+| Avg sentence length | 7.1 words | 9-12 | **FAIL** |
+| Compound sentences | 4 | max 2 | **FAIL** |
+| Contractions density | 95% | ≥80% | PASS |
+
+### H2 #7: Pricing Reality 2026 — 365 words — FAIL (5 checks)
+| Check | Value | Threshold | Result |
+|---|---|---|---|
+| Sentences ≤3 words | 14 | ≥2 | PASS |
+| Single-sentence paragraphs | 10/28 (36%) | ≥40% | **FAIL** |
+| Italics | 10 | ≥3 | PASS |
+| Ellipsis | 0 | ≥2 | **FAIL** |
+| Rhetorical questions | 3 | ≥1 | PASS |
+| Banned phrases | 0 | 0 | PASS |
+| Max sentences/paragraph | 5 (4 paras over) | max 3 | **FAIL** |
+| Bullet ratio | 0/28 (0%) | ≤30% | PASS |
+| Avg sentence length | 7.3 words | 9-12 | **FAIL** |
+| Compound sentences | 5 | max 2 | **FAIL** |
+| Contractions density | 92% | ≥80% | PASS |
+
+### H2 #8: FAQ — 0 words — FAIL (5 checks, expected — all content excluded)
+All content correctly excluded (inside `<details>` tags). Section is an empty shell. This section should be SKIPPED by the checklist, not counted.
+
+### H2 #9: Bottom Line — 237 words — FAIL (3 checks)
+| Check | Value | Threshold | Result |
+|---|---|---|---|
+| Sentences ≤3 words | 18 | ≥2 | PASS |
+| Single-sentence paragraphs | 4/11 (36%) | ≥40% | **FAIL** |
+| Italics | 8 | ≥1 | PASS |
+| Ellipsis | 0 | N/A (≤300w) | PASS |
+| Rhetorical questions | 7 | ≥1 | PASS |
+| Banned phrases | 0 | 0 | PASS |
+| Max sentences/paragraph | 4 (1 para over) | max 3 | **FAIL** |
+| Bullet ratio | 1/12 (8%) | ≤30% | PASS |
+| Avg sentence length | 4.9 words | 9-12 | **FAIL** |
+| Compound sentences | 0 | max 2 | PASS |
+| Contractions density | 100% | ≥80% | PASS |
+
+## Article-level summary
+
+| Check | Value | Threshold | Result |
+|---|---|---|---|
+| All-caps words | 10 | ≥1 | PASS |
+| Em-dashes | 0 | 0 | PASS |
+
+**Sections: 0 PASS / 9 FAIL out of 9 total**
+**Article-level: PASS**
+
+## Fail Pattern Analysis
+
+| Check | Sections failed | % | Classification |
+|---|---|---|---|
+| Single-sentence paragraphs | 9/9 | 100% | **THRESHOLD TOO HIGH** or **PARSER ISSUE** |
+| Max sentences/paragraph | 8/9 | 89% | **PARSER ISSUE** (likely) |
+| Avg sentence length | 8/9 | 89% | **PARSER ISSUE** (avg 4.9-7.3 vs target 9-12 — sentences over-split) |
+| Ellipsis | 6/9 | 67% | **THRESHOLD MAYBE TOO HIGH** or Nico doesn't use ellipsis in this article |
+| Compound sentences | 3/9 | 33% | **THRESHOLD TOO TIGHT** (max 2 per H2 too aggressive for 500+ word sections) |
+| Banned phrases | 2/9 | 22% | **REAL FINDING** — "charming" appears twice in the Nico-approved article |
+| Sentences ≤3 words | 1/9 | 11% | OK (only FAQ empty section) |
+| Italics | 1/9 | 11% | OK (only FAQ empty section) |
+| Rhetorical questions | 1/9 | 11% | OK (only FAQ empty section) |
+| Bullet ratio | 0/9 | 0% | OK |
+| Contractions density | 0/9 | 0% | OK |
+
+## Diagnosis
+
+**The checklist FAILS its own gold-standard article.** 0/9 sections pass. This means the thresholds are miscalibrated — they reject known-good Nico voice as bad.
+
+### Root causes (3 categories):
+
+#### 1. PARSER ISSUES (must fix in script, not thresholds)
+
+**Avg sentence length 4.9-7.3 words (target 9-12):** The sentence splitter is over-splitting. HTML content has inline elements, abbreviations, numbers with periods, and hotel card data remnants that create false sentence boundaries. Real Nico sentences average 9-12 words as measured by Gemini on the Tourist Info script. The parser needs to be smarter about sentence boundaries (ignore periods inside abbreviations, numbers, etc.) or the threshold needs to accommodate HTML-specific deflation.
+
+**Max sentences/paragraph 89% fail:** Same root cause. If sentences are over-split, paragraphs appear to have more sentences than they actually do. A paragraph with 2 real sentences might register as 5 if the splitter fragments on "Dr.", "€59.", "No. 1", etc.
+
+**Single-sentence paragraphs 100% fail at 40%:** Partially parser (if paragraphs are counted incorrectly due to HTML structure) and partially threshold. The 40% target was calibrated against the Tourist Info VIDEO SCRIPT, which has more staccato rhythm than a formatted HTML article with hotel cards and structured data.
+
+#### 2. THRESHOLD ISSUES (must recalibrate)
+
+**Ellipsis 67% fail:** Nico uses ellipsis in video scripts but NOT in this HTML article. The where-to-stay article uses em-dashes (wait — that's banned!) and bold/italic for pauses instead. The ellipsis threshold should be relaxed: minimum 1 (not 2) for >300w sections, OR make ellipsis a WARN not FAIL.
+
+**Compound sentences max 2 per H2:** Too tight for 500+ word sections. Sections 4, 6, 7 have 4-5 compound sentences each. For long sections (>400 words), the threshold should scale — suggest max ceil(section_words / 200) instead of flat 2.
+
+**Single-sentence paragraphs 40%:** Too high for HTML articles. HTML has structural paragraphs (containing images, links, callouts) that aren't single-sentence prose. Suggest lowering to 25-30%.
+
+#### 3. REAL FINDINGS (article issues, not threshold issues)
+
+**"charming" banned phrase in sections 2 and 6:** This is a legitimate catch. The word "charming" appears in the Nico-approved article and IS on the banned list. Whether to remove it from the banned list (Nico uses it intentionally in context) or fix the article is Nico's call.
+
+### Summary classification
+
+| Issue type | Checks affected | Action |
+|---|---|---|
+| Parser over-splitting sentences | avg sentence length, max sentences/para, single-sentence % | Fix parser |
+| Threshold too tight for HTML articles | ellipsis, compound sentences, single-sentence % | Recalibrate WAP_05d v1.1 |
+| Real article finding | banned phrase "charming" | Nico decision |
+
+## Calibration recommendations for WAP_05d v1.1
+
+1. **Fix sentence splitter** — use NLTK or spaCy sentence tokenizer instead of naive regex on `.!?`. This alone would likely fix avg sentence length + max sentences/para.
+2. **Ellipsis threshold** — change from "minimum 2 if >300w" to "minimum 1 if >300w" OR make it WARN not FAIL.
+3. **Compound sentences** — change from "max 2 per H2" to "max ceil(section_words / 200)" (scales with section size).
+4. **Single-sentence paragraphs** — lower from 40% to 25%.
+5. **FAQ section** — add explicit skip rule: if H2 has 0 words after exclusions, skip it entirely (don't count as FAIL).
+6. **"charming" on banned list** — review with Nico. May need context-dependent exception.
+
+## Next step
+
+Draft WAP_05d v1.1 with calibrated thresholds + improved parser. Then re-run Test 1 to confirm gold-standard article passes.
