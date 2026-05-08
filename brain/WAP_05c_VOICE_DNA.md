@@ -397,7 +397,17 @@ Density rule: 1 Italian word per ~200 words. Always glossed on first use unless 
 The following are hard-fail triggers. If any appear, the section is regenerated.
 
 **Banned adjectives:**
-stunning, breathtaking, magical, charming, picturesque, vibrant, bustling, hidden gem, wanderlust, delightful, lovely, quaint
+stunning, breathtaking, magical, picturesque, vibrant, bustling, hidden gem, wanderlust, delightful, lovely, quaint
+
+**Banned composite phrases targeting "charming" AI-generic usage:**
+- "charming little"
+- "charming village"
+- "charming streets"
+- "charming neighborhood"
+- "charming town"
+- "charming alleys"
+
+Note: standalone word "charming" is allowed when used in retoric/contrastive constructs (e.g., "chaos with their charm"). Composite phrases above target the AI-generic descriptive pattern.
 
 **Banned phrases:**
 - "Whether you're looking for…"

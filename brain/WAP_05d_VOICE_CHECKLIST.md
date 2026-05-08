@@ -51,10 +51,9 @@ For each H2 section, count and report:
 | Metric | Threshold | Rule |
 |---|---|---|
 | Sentences ≤3 words | minimum 1 every 200 words of section | PASS if count ≥ ceil(section_words / 200) |
-| Single-sentence paragraphs | minimum 40% of paragraphs in section | PASS if (single-sentence paragraphs / total paragraphs) ≥ 0.40 |
-| Italics instances | minimum 3 if section >300 words; minimum 1 if section ≤300 words | PASS if count meets threshold for the section size |
-| Ellipsis "…" instances | minimum 2 if section >300 words; not required if section ≤300 | PASS if count meets threshold |
-| Rhetorical questions | minimum 1 per H2 | PASS if count ≥1 |
+| Single-sentence paragraphs | minimum 25% of paragraphs in section | PASS if (single-sentence paragraphs / total paragraphs) ≥ 0.25 |
+| Italics instances | minimum 3 if section >300 words; minimum 1 if section >100 and ≤300 words; not required if section ≤100 words | PASS if count meets threshold for the section size |
+| Ellipsis "…" instances | minimum 1 if section >300 words; not required if section ≤300 | PASS if count meets threshold |
 | Banned phrases | 0 | HARD-FAIL if count ≥1 — section must regenerate |
 
 Banned phrases list (scan literal substrings, case-insensitive):
@@ -66,12 +65,13 @@ stunning, breathtaking, magical, charming, picturesque, vibrant, bustling, hidde
 |---|---|---|
 | All-caps words/phrases | minimum 1 per article | PASS if count ≥1 article-wide |
 | Em-dashes ("—") | 0 (zero) | HARD-FAIL if count ≥1 — article must regenerate the offending paragraphs |
+| Rhetorical questions | minimum 1 per article (article-wide count) | PASS if count ≥1 across entire article body |
 
 ### 1C. Paragraph-level checks (per paragraph in each H2)
 
 | Metric | Threshold | Rule |
 |---|---|---|
-| Sentences per paragraph | maximum 3 (hard cap) | FAIL if any paragraph has ≥4 sentences |
+| Sentences per paragraph | max 2 paragraphs in section may exceed 3 sentences (soft cap) | FAIL if more than 2 paragraphs have ≥4 sentences |
 | Bullet usage | maximum 30% of paragraphs in section | FAIL if (bulleted blocks / total paragraphs in section) > 0.30 |
 
 ### 1D. Sentence-level checks (per H2)
@@ -81,6 +81,15 @@ stunning, breathtaking, magical, charming, picturesque, vibrant, bustling, hidde
 | Average sentence length per H2 | 9-12 words target; 13-15 words acceptable only if compensated | PASS if avg ≤12, OR if avg 13-15 AND H2 contains ≥3 sentences ≤3 words within the 30 sentences before/after |
 | Compound sentences with "and"/"because"/"however"/"although" connecting 2 independent clauses | maximum 2 per H2 | FAIL if count >2 in a single H2 |
 | Contractions density | minimum 80% (count contractions / count of expandable verb forms) | PASS if ≥80%; expandable forms include "do not", "you will", "it is", "we are", "I am", "they are", "would not", "could not", "should not", "is not", "was not", "were not", "have not", "has not", "had not", "will not" |
+
+### 1E. FAQ section skip rule
+
+Sections that match ANY of these conditions are EXEMPT from single-sentence paragraphs % check AND paragraph length check:
+- Section heading contains "FAQ" or "Frequently Asked Questions"
+- Section is wrapped in `<div class="faq-brutto-ma-funziona">`
+- Section uses `<details>/<summary>` Q&A pattern
+
+Reason: FAQ format is inherently Q&A with longer answer paragraphs. Voice checklist H2-level structural rules don't apply to Q&A format.
 
 ---
 
@@ -215,3 +224,4 @@ The procedure stops fighting this reality.
 ## CHANGELOG
 
 - v1.0 — May 8, 2026 — Initial mechanical engineering. Separated from WAP_05c (which retains descriptive voice DNA only). Pair WAP_05c + WAP_05d cover Voice Pass: WAP_05c describes the voice, WAP_05d enforces it.
+- v1.1 — May 8, 2026 — Calibration round 1 after Test 1 backwards validation. Single-sentence paragraphs threshold 40% → 25%. Paragraph length hard cap → soft cap (max 2 paragraphs may exceed 3 sentences per H2). Ellipsis threshold lowered. Italics skip rule added for sections ≤100 words. Rhetorical questions moved from per-H2 to article-level. FAQ skip rule added (Section 1E). Banned phrases: "charming" replaced with composite phrases targeting AI-generic usage (see Section 5 of WAP_05c).

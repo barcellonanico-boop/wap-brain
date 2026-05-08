@@ -211,3 +211,80 @@ All content correctly excluded (inside `<details>` tags). Section is an empty sh
 ## Next step
 
 Draft WAP_05d v1.1 with calibrated thresholds + improved parser. Then re-run Test 1 to confirm gold-standard article passes.
+
+---
+
+## Test 1 — Round 2 (post-calibration v1.1)
+
+**Date:** May 8, 2026 (evening)
+
+### Calibration applied
+- Parser fixed (NLTK sent_tokenize replacing naive regex — fixes over-splitting on abbreviations/prices)
+- Single-sentence paragraphs: 40% → 25%
+- Paragraph length: hard cap 3 → soft cap (max 2 paragraphs may exceed 3 sentences per H2)
+- Ellipsis if >300w: ≥2 → ≥1
+- Italics: skip rule for sections ≤100 words
+- Rhetorical questions: moved from per-H2 to article-level (≥1 article-wide)
+- FAQ skip rule added (single-sentence% + paragraph cap exempt for Q&A sections)
+- Banned: "charming" removed as standalone, added composite phrases ("charming little", "charming village", etc.)
+
+### Results post-calibration
+
+**Sections: 0 PASS / 8 FAIL out of 8 checked (1 skipped — FAQ correctly excluded)**
+
+| H2 | Words | Fails | Failed checks |
+|---|---|---|---|
+| #1 The 3 Areas | 366 | 4 | single-sent 8%, ellipsis 0, max sent/para 4 over, avg 7.8w |
+| #2 Centro Storico | 588 | 3 | ellipsis 0, max sent/para 5 over, avg 7.9w |
+| #3 Politeama | 222 | 3 | single-sent 24%, max sent/para 4 over, avg 5.7w |
+| #4 Mondello | 534 | 4 | ellipsis 0, max sent/para 4 over, avg 6.8w, compound 5 |
+| #5 Cefalù | 508 | 3 | ellipsis 0, max sent/para 5 over, avg 7.0w |
+| #6 Apartment/Hotel | 531 | 4 | ellipsis 0, max sent/para 4 over, avg 7.1w, compound 4 |
+| #7 Pricing | 365 | 4 | ellipsis 0, max sent/para 4 over, avg 7.3w, compound 5 |
+| #8 FAQ | 0 | — | Skipped (FAQ exempt) |
+| #9 Bottom Line | 237 | 1 | avg 5.3w |
+
+Article-level: PASS (all-caps 2, em-dashes 0, rhetorical questions 46)
+
+### Fail pattern analysis post-calibration
+
+| Check | Sections failed v1.0 | Sections failed v1.1 | Δ |
+|---|---|---|---|
+| Avg sentence length | 8/9 (89%) | 8/8 (100%) | **PERSISTENT — primary remaining issue** |
+| Max sentences/paragraph | 8/9 (89%) | 7/8 (88%) | Marginal improvement (soft cap helped Bottom Line pass) |
+| Ellipsis | 6/9 (67%) | 6/8 (75%) | Lowered threshold helped but 0 ellipsis in entire article |
+| Compound sentences | 3/9 (33%) | 3/8 (38%) | No change |
+| Single-sentence paragraphs | 9/9 (100%) | 2/8 (25%) | **FIXED** (40%→25% threshold + better NLTK counting) |
+| Banned phrases | 2/9 (22%) | 0/8 (0%) | **FIXED** ("charming" standalone removed) |
+
+### Improvements from v1.0 → v1.1
+
+1. **Single-sentence paragraphs: 100% fail → 25% fail.** The 40%→25% threshold + NLTK fix was the right move. 6/8 sections now pass this check.
+2. **Banned phrases: 22% fail → 0% fail.** "charming" standalone removed, composite phrases added. No false positives.
+3. **FAQ section correctly skipped** instead of counting as FAIL.
+4. **Rhetorical questions now article-level** — 46 found, easily passes.
+
+### Remaining problems (3 checks still systematically failing)
+
+**1. Average sentence length (100% fail):** avg 5.3-7.9 words across all sections. Target 9-12. NLTK improved from 4.9-7.3 to 5.3-7.9 but not enough. Root cause: HTML articles have many structural fragments (bold hotel names, price lines, standalone numbers) that NLTK correctly treats as sentences but that aren't "prose sentences." The 9-12 target was calibrated from Nico's VIDEO SCRIPTS which are continuous prose. HTML articles structurally have shorter average because they mix prose with data.
+
+**Recommendation:** Lower target to 7-12 words for HTML articles. Or make avg sentence length a WARN not FAIL.
+
+**2. Max sentences/paragraph (88% fail):** NLTK counts are better but HTML paragraphs with rich formatting (bold + italic + links) still register as multi-sentence. The soft cap (max 2 paras over 3 sentences) helped Bottom Line (#9) pass but larger sections still have 4-5 paragraphs over.
+
+**Recommendation:** Raise soft cap to max 4 paragraphs exceeding 3 sentences per H2. Or make it proportional: max ceil(section_paragraphs * 0.15).
+
+**3. Ellipsis (75% fail):** Nico simply does NOT use ellipsis in this article. Zero across the entire article. The threshold assumes ellipsis is a voice marker but in HTML articles, Nico uses other pause devices (bold, italics, short fragments).
+
+**Recommendation:** Make ellipsis WARN not FAIL. Or remove from required checks entirely (track but don't enforce).
+
+### Diagnosis post-calibration
+
+**WAP_05d v1.1 is NOT ready for production.** 0/8 sections pass. The three remaining issues are all threshold/classification problems, not parser problems. Need one more calibration round (v1.2) targeting:
+1. Avg sentence length: lower target or make WARN
+2. Max sentences/paragraph: raise soft cap
+3. Ellipsis: make WARN or remove
+
+### Next step
+
+v1.2 calibration round targeting the 3 remaining systematic failures. Expected: if all 3 are addressed, most sections should pass (Bottom Line already passes with only avg sentence length failing).
