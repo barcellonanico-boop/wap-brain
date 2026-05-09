@@ -34,6 +34,14 @@ Read this first in every session to understand what exists and where to find it.
 
 ---
 
+## SOP_01 v2.3 Phase Documents
+
+| File | Purpose | When to use | When to update |
+|---|---|---|---|
+| sops/SOP_01_phases/PHASE_01_Tech_Recon.md | Tech Recon procedure + checklist + canonical output. Architect agent uses this in Phase 1 of SOP_01 v2.3. GSC YoY+QoQ analysis, keyword cluster identification, Ubersuggest SERP analysis, strategic implications. Threshold definitions for emerging/cannibalized clusters. | Reference at start of every article refresh. Architect reads this doc, applies procedure, fills checklist (17 items), produces 01_Tech_Report.md. | When threshold definitions need calibration based on corpus learnings, OR when GSC/Ubersuggest data sources change. |
+
+---
+
 ## SOP Map
 
 | File | What It Does | When to Use |
