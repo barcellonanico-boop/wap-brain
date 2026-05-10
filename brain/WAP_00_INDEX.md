@@ -34,6 +34,12 @@ Read this first in every session to understand what exists and where to find it.
 
 ---
 
+## SOP_01 v2.3 Master Document
+
+| File | Purpose | When to use | When to update |
+|---|---|---|---|
+| sops/SOP_01_v2.3.md | Master document for SOP_01 v2.3 Article Refresh Workflow. Unifies the 11 individual phase documents with complete workflow flow, entry/exit criteria, agent assignments (Architect/Scout/Copywriter/Script/Nico), human intervention points (Phase 5 Brain Dump + Phase 11 Sign-off), cross-phase dependency map, file output map per article, failure handling and loop-back rules per phase, Cowork orchestration pattern with pause-resume mechanism, calibration history (v1.0→v2.3 evolution), status snapshot. | Reference whenever planning workflow execution, debugging phase transitions, calibrating loop-back behavior, or onboarding new agent. Treat as the single source of truth for SOP architecture. | When phases added/removed/restructured, when human intervention points change, when Cowork orchestration pattern evolves, when calibration findings warrant architecture-level changes. |
+
 ## SOP_01 v2.3 Phase Documents
 
 | File | Purpose | When to use | When to update |
