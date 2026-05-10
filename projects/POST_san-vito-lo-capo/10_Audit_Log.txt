@@ -1,0 +1,79 @@
+============================================
+WAP Article Auditor v0.8 — Category A + B + C + D
+File: projects/POST_san-vito-lo-capo/09_Final.html (   49045 bytes)
+============================================
+
+[PASS] A1 File integrity (   49045 bytes)
+[FAIL] A2 HTML valid
+       Reason: 6 tidy errors found
+[PASS] A3 0 em-dashes
+[PASS] A4 0 banned words
+[PASS] A5 0 Italian-name violations
+[PASS] A6 0 placeholders left
+[WARN] A7 Title tag not present in body HTML
+[WARN] A8 Meta description not present
+[WARN] A9 URL slug check (validated at publish time)
+
+Checking images (A10)...
+[PASS] A10 All 3 images return 200
+
+Checking internal links (A11)...
+[PASS] A11 All 2 internal links return 200
+
+Checking affiliate links (A12)...
+[PASS] A12 All 9 affiliate links reachable
+[PASS] A13 All 21 Booking links have aid=918822
+[WARN] A14 Article schema not in HTML (WordPress/Yoast adds at publish)
+[PASS] A15 FAQPage schema VALID (4 questions)
+NOT_FOUND
+
+============================================
+Category B — Structural checks
+============================================
+[PASS] B1 Italic lead exists as first body element
+[PASS] B2 Italic lead 6 words (≤25)
+[PASS] B3 TL;DR table present (5 rows)
+[PASS] B4 Affiliate disclosure present after TL;DR
+[PASS] B5 Every H2 has ≥1 callout (10 checked)
+[PASS] B6 H2 section word counts in range (100-1500)
+[PASS] B7 0 prose paragraphs >180 chars
+[PASS] B8 0 callout <p> >180 chars (11 callouts)
+[PASS] B9 0 callouts >250 chars total
+[PASS] B10 0 callouts with >4 paragraphs
+[PASS] B11 0 bold spans >12 words (86 checked)
+[PASS] B13 FAQ section (4 questions)
+[PASS] B14 FAQ answers 15-150w (4 checked)
+[PASS] B15 Continue Planning grey-box present
+[PASS] B16 Bottom Line section (144 words)
+
+Category B summary: 15 PASS / 0 FAIL / 0 WARN
+
+============================================
+Category C — Affiliate + facts
+============================================
+[0;31m[FAIL][0m C1 Hotel URL = WAP_12 verbatim
+       Reason: 9 URLs not in WAP_12: ['https://www.booking.com/hotel/it/talos-apartments.en.html?aid=918822&no_rooms=1&group_adults=2', 'https://www.booking.com/hotel/it/casa-vacanze-il-faro-e-la-luna.en.html?aid=918822&no_rooms=1&group_adults=2', 'https://www.booking.com/hotel/it/ipupi-accomodation.en.html?aid=918822&no_rooms=1&group_adults=2']
+[0;31m[FAIL][0m C2 Affiliate Opportunity Check
+       Reason: 02_Prep.md not found
+[0;33m[WARN][0m C3 Old article images
+       00_Live_HTML.md not found (only required for rewrites)
+[0;32m[PASS][0m C4 0 named restaurants (43 blacklist entries checked)
+[0;33m[WARN][0m C5 Scout corrections
+       No Scout_Verification file found
+
+Category C summary: 1 PASS / 2 FAIL / 2 WARN
+
+============================================
+Category D — Voice + reader-flow
+============================================
+[0;32m[PASS][0m D1 Technical concepts have explainer (0 terms checked: )
+[0;32m[PASS][0m D2 0 generic travel-blog phrases (13 blacklist entries checked)
+[0;32m[PASS][0m D3 0 reflective listening phrases (6 blacklist entries checked)
+[0;32m[PASS][0m D4 Fake enthusiasm threshold (absolutely/definitely each ≤3)
+
+Category D summary: 4 PASS / 0 FAIL / 0 WARN
+
+============================================
+Summary: 30 PASS, 3 FAIL, 6 WARN
+============================================
+Result: 3 CHECK(S) FAILED
