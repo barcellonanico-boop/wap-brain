@@ -83,6 +83,8 @@ When the agent needs to render a TL;DR, callout, hotel card, etc. — it copies 
 
 ## 3. Callout — 3 Variants
 
+**Critical sizing rule:** All callouts contain MAX 3 short sentences or ~40 words. See brain/WAP_06_CONTENT_FORMAT.md → Callout size limit. Verify against the live examples below: each one respects this limit. If a topic needs more, it's not a callout — it's an H3 or H2.
+
 **Purpose:** Closing punctuation for each H2 section (except FAQ + Bottom Line).
 
 **Variants by content type:**

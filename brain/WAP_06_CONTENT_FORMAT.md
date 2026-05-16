@@ -68,6 +68,14 @@ Use line breaks to keep visual rhythm. Don't pile sentences into a single block.
 
 Locked May 3, 2026 (numbers tightened from initial v0.1 of 180 only).
 
+### Callout size limit (CRITICAL)
+
+A callout (Local's Take, Local's Pick, Local's Warning) contains MAX 3 short sentences or ~40 words total. If content requires more, it is NOT a callout — it is an H3 sub-section, an H2 dedicated section, or a paragraph in the body.
+
+Live reference examples: see WAP_06c §3 — every live callout from /where-to-stay-palermo/ respects this limit.
+
+**Why this rule exists:** callouts are atomic pills that interrupt the body for emphasis. Stuffing paragraphs into a callout breaks the reader's flow and produces wall-of-text rendering. If a topic deserves a paragraph, it deserves its own H3 or H2.
+
 ### Foundation Rule 2 — Section Balance (LOCKED May 3, 2026)
 
 H2 sections: target 300-400 words of body prose.
@@ -342,6 +350,16 @@ These come from the voice doc. Re-stated here because they're structural require
 - **Internal links:** 3-5 per post to related WAP posts, plus 1-2 to hub pages.
 - **External links:** only to reliable sources (UNESCO, official tourism boards, Google Maps).
 - **Image alt text:** descriptive, include keyword only if it fits naturally, never stuffed.
+
+### External Link Rules
+
+| Link type | `rel` attribute |
+|---|---|
+| Affiliate link (Booking, GYG, Discover Cars, Podia/SW) | `rel="nofollow noopener"` |
+| External link to official/authoritative site (government, official tourism board, official service provider e.g. russoautoservizi.it, riservazingaro.it, couscousfest.it) | `rel="noopener noreferrer"` — NO nofollow |
+| External link to third-party generic site, blog, forum, social platform | `rel="nofollow noopener noreferrer"` |
+
+**Rationale:** Google's 2026 best practice rewards articles that link to authoritative external sources without nofollow as a quality signal. Adding nofollow to authoritative official sites unnecessarily blocks the SEO benefit. Adding nofollow to generic/untrusted sites prevents passing link equity to questionable destinations. Affiliate links always carry nofollow per FTC + SEO convention.
 - **Publish date + "last updated" date** visible on every post.
 
 ### Keyword Strategy

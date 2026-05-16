@@ -1,6 +1,6 @@
 # PHASE 4 — Persona Match
 
-**Last updated:** May 9, 2026
+**Last updated:** May 16, 2026 (v2.3.1)
 **Position in workflow:** Fourth phase of SOP_01 v2.3
 **Agent:** Architect
 **Pairs with:** PHASE_01_Tech_Recon (GSC queries verbatim), PHASE_02_Search_Intent (preliminary hypothesis + Point A→B), PHASE_03_Article_Audit (existing structure + EXTRANEOUS-CONVERT macro-topics), brain/WAP_15_PERSONAS.md
@@ -87,10 +87,18 @@ For each macro-topic, define:
   - Persona B: cultural-validating, heritage-resonant, intimate
   - Persona C: efficient, comparative, no-bullshit
 - **Persona concerns to address:** specific pains/questions THIS persona has on this topic
-- **Cultural references / examples:** touchpoints that resonate with THIS persona
+- **Cultural references / examples (resonance):** touchpoints that resonate WITH this persona's lived experience
   - Persona A: US/UK comfort references, scam warnings, comparison to Disneyland-grade safety
   - Persona B: family stories, dialect references, Nonna Nunzia parallels, generational continuity
   - Persona C: comparison to other Italian cities they may know, efficiency math
+
+- **Knowledge gaps to translate (cultural translation):** Italian/Sicilian concepts this persona would NOT decode without explanation. The Copywriter (Phase 7) must adapt or explain these. Format: list specific items with brief context.
+  - Persona A examples: superstitions (toccarsi i coglioni for luck, malocchio, corno), food terms with no English equivalent (caldofreddo, sfincione, panelle), family-cast Italian words kept untranslated (nonna, zio, bisnonno), dialectal expressions (futtitinni, allora, minchia, camurria), unspoken local conventions (lido vs free beach, ZTL implications for tourists meaning "you can't drive there")
+  - Persona B examples: fewer gaps because heritage readers decode most — but flag dialectal Sicilian (vs standard Italian) and ultra-local refs (specific Palermo neighborhoods)
+  - Persona C examples: gaps where Sicilian differs from northern Italian (Italo-Romance differences they may not know)
+
+  AVOID: bureaucratic acronyms (ZTL/AMAT/SS187) listed without context — these are facts the article will explain naturally, not cultural gaps. Focus on emotive, culinary, family-cast, superstition, and dialectal material that requires Copywriter adaptation in Phase 7.
+
 - **A→B contribution:** how this section helps THIS persona move from pain to transformation
 
 ### Step 6 — Strategic implications for downstream phases
@@ -230,7 +238,7 @@ The Architect agent applies this checklist before delivering.
 | 12 | EVERY macro-topic from Phase 2 + Phase 3 EXTRANEOUS-CONVERT + Phase 3 MISSING has persona framing assigned | |
 | 13 | For each macro-topic: tone defined for primary persona | |
 | 14 | For each macro-topic: persona concerns identified | |
-| 15 | For each macro-topic: cultural refs/examples specific to persona noted | |
+| 15 | For each macro-topic: cultural refs/examples noted (resonance) AND knowledge gaps to translate noted (translation, with concrete examples — NOT bureaucratic acronyms) | |
 | 16 | For each macro-topic: A→B contribution articulated for THIS persona | |
 | 17 | Phase 5 Brain Dump direction: persona-specific question angles documented | |
 | 18 | Phase 6 Struttura ordering implications noted | |
@@ -288,4 +296,5 @@ If Phase 4 simply rubber-stamped Phase 2, it would be redundant. The independent
 
 ## Changelog
 
+- v2.3.1 — May 16, 2026 — Step 5 cultural references split into two categories: resonance (refs that land for the persona) and translation (knowledge gaps the Copywriter must adapt in Phase 7). Persona A examples now include superstitions (toccarsi i coglioni), food terms (caldofreddo, sfincione, panelle), family-cast words, dialectal expressions, unspoken local conventions. Bureaucratic acronyms explicitly excluded as cultural-translation material. Checklist item #15 updated. Fix derived from May 12 Test Run Findings (San Vito Lo Capo) Phase 4 audit.
 - v1.0 — May 9, 2026 — Initial creation. Documents Persona Match as independent verification of Phase 2 hypothesis with 7-step procedure (inputs, verbatim GSC evidence per persona, Point A→B alignment scoring, verdict CONFIRMED/REFINED/REJECTED, persona-specific framing per macro-topic, strategic implications for Phases 5/6/8, output). 20-item checklist with hard-fail on <40% match, all-weak alignment, missing macro-topic framing, or rubber-stamping Phase 2 without verification.

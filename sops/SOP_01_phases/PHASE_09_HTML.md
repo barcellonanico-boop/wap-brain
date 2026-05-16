@@ -1,6 +1,6 @@
 # PHASE 9 — HTML
 
-**Last updated:** May 10, 2026
+**Last updated:** May 16, 2026 (v2.3.1)
 **Position in workflow:** Ninth phase of SOP_01 v2.3
 **Agent:** Copywriter (assemblage role only)
 **Pairs with:** brain/WAP_06c_CANONICAL_SNIPPETS.md (HTML patterns), brain/WAP_12_AFFILIATE_LINKS.md (verbatim hotel/tour URLs)
@@ -58,7 +58,12 @@ Critical rule (Finding #77): hotel URLs MUST match WAP_12 verbatim. Inventing UR
 | 1 | All H2 from Phase 8 present in HTML | |
 | 2 | TL;DR uses WAP_06c snippet | |
 | 3 | Pros/Cons use WAP_06c snippet (if applicable) | |
-| 4 | Hotel cards use WAP_06c snippet | |
+| 4a | Hotel cards: outer div uses WAP_06c CSS verbatim (background, border-radius, padding, box-shadow) | |
+| 4b | Hotel cards: number + name + type label line present per WAP_06c format | |
+| 4c | Hotel cards: tagline line present per WAP_06c format | |
+| 4d | Hotel cards: `<img>` inside clickable link present for EVERY hotel card. If image URL not in WAP_12, MUST use `[NICO: paste image URL]` placeholder. NO hotel card may be image-less. | |
+| 4e | Hotel cards: description paragraph 30-60 words | |
+| 4f | Hotel cards: CTA button "Check it out →" with WAP_06c styling | |
 | 5 | Hotel URLs match WAP_12 verbatim (Finding #77 BLOCKER) | |
 | 6 | GYG cards use WAP_06c snippet (if applicable) | |
 | 7 | GYG URLs match WAP_12 verbatim | |
@@ -85,6 +90,7 @@ Critical rule (Finding #77): hotel URLs MUST match WAP_12 verbatim. Inventing UR
 - JSON-LD malformed → REGENERATE
 - Affiliate URL non-200 → BLOCKER
 - Inline CSS invented → REGENERATE
+- Hotel card without `<img>` and without `[NICO: paste image URL]` placeholder → BLOCKER (WAP_06 Image Inference Ban rule, applies per-card not per-template)
 
 ---
 
@@ -98,4 +104,5 @@ Critical rule (Finding #77): hotel URLs MUST match WAP_12 verbatim. Inventing UR
 
 ## Changelog
 
+- v2.3.1 — May 16, 2026 — Hotel cards checklist item #4 split into 6 sub-checks (4a-4f) covering outer CSS, header line, tagline, mandatory inner `<img>` (with NICO placeholder fallback), description, CTA. New hard-fail trigger on missing image per-card. Fix derived from May 12 Test Run Findings (San Vito Lo Capo) Phase 9 audit (9 hotel cards, 0 images, 0 placeholders).
 - v1.0 — May 10, 2026 — Initial creation. 7-step Markdown-to-HTML using WAP_06c snippets + WAP_12 verbatim URLs + JSON-LD. 20-item checklist with HARD-FAIL on URL mismatch (Finding #77).
