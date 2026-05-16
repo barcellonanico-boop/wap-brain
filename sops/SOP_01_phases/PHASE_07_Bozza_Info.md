@@ -1,6 +1,6 @@
 # PHASE 7 — Bozza Informativa
 
-**Last updated:** May 10, 2026
+**Last updated:** May 16, 2026 (v2.3.4)
 **Position in workflow:** Seventh phase of SOP_01 v2.3
 **Agent:** Copywriter
 **Pairs with:** PHASE_06_Struttura (blueprint), all source phase outputs
@@ -46,6 +46,29 @@ The Copywriter MUST adapt cultural references to the primary persona (Phase 4). 
 
 The cultural adaptation is the Copywriter's main craft in this phase. Verbatim copy of Italian ironies into an English article for Anglo readers fails.
 
+### Cultural adaptation evidence requirement
+
+The Copywriter MUST produce a Cultural Adaptation Log as part of the Phase 7 output. The log lists every Brain Dump segment containing one of the following, and documents the adaptation chosen:
+
+- Italian idiom or proverb
+- Bodily-fluid imagery (piscio, sputo, etc.)
+- Family-cast reference (nonna, papà, zio, bisnonno, etc.)
+- Sicilian dialect expression (futtitinni, allora, minchia, camurria, etc.)
+- Untranslated food term (caldofreddo, sfincione, panelle, etc.)
+- Superstition reference (toccarsi i coglioni, malocchio, corno, etc.)
+- Pop culture reference specific to Italian audience (Maniscalco, Italian TV, etc.)
+- Hyperbolic/scatological imagery that may not land for Persona A
+
+Format per row:
+
+| Brain Dump segment (verbatim Italian) | Adapted output (English, primary persona) | Adaptation type |
+|---|---|---|
+| "[verbatim quote]" | "[adapted English]" | drop / translate-sentiment / keep-italics / cultural-equivalent |
+
+If a Brain Dump segment is left verbatim in the draft (zero adaptation), the log must document WHY (e.g., "Maniscalco kept for Persona B — verbatim acceptable") OR the draft is non-compliant.
+
+**Hard-fail trigger:** Cultural Adaptation Log missing OR Brain Dump segments matching the categories above present in the draft without a corresponding log entry → REGENERATE.
+
 ---
 
 ## Procedure
@@ -76,6 +99,8 @@ For each H2 from Phase 6 Structure, integrate the 4 sources:
 - Find Brain Dump segments that touch this topic
 - Parse meaning, voice signals, ironies, references
 - Adapt culturally for primary persona
+- Convert dictation rhythm to writing rhythm: Brain Dump is dictated speech. Speech has run-on cadence, repetitions, fillers, and rhythm that reads as transcript when written verbatim. The Copywriter reshapes each Brain Dump excerpt into prose rhythm: tighter sentences, sentence-length variation per WAP_05c, no transcript artifacts. Read the rewritten passage aloud — if it sounds like dictation, rewrite.
+- Log every adaptation in the Cultural Adaptation Log (see "Cultural adaptation evidence requirement" above)
 
 **Step 3c — Fill gaps with AI knowledge**
 - Maintain voice (write AI-knowledge content in Nico's voice, not Wikipedia voice)
@@ -124,7 +149,7 @@ Save `07_Draft_Info.md` to `projects/POST_[article-slug]/`.
 | 4 | TL;DR sources documented | |
 | 5 | Every H2 has content from at least 1 of the 4 sources | |
 | 6 | H2 sources tracking: most use 2-3 sources combined | |
-| 7 | Cultural adaptation applied: Italian ironies/idioms adapted for primary persona | |
+| 7 | Cultural Adaptation Log present and complete: every Brain Dump segment matching the 8 categories (Italian idiom, bodily-fluid imagery, family-cast reference, Sicilian dialect, untranslated food term, superstition, Italian-audience pop culture, hyperbolic/scatological imagery) has a log entry with verbatim Italian + adapted English + adaptation type. | |
 | 8 | Voice signals present: at least 3 ironies/asides/family refs across the article | |
 | 9 | Each H2 word count within ±15% of Phase 6 target | |
 | 10 | Total article word count within ±10% of Phase 6 target | |
@@ -138,8 +163,10 @@ Save `07_Draft_Info.md` to `projects/POST_[article-slug]/`.
 | 18 | Search Intent verification: each H2 answers its assigned reader question | |
 | 19 | Phase 3 UPDATE specifics actually refreshed | |
 | 20 | Phase 3 KILL sections NOT included | |
+| 21 | Dictation rhythm converted to writing rhythm: no transcript-style run-on passages from Brain Dump. Sentence-length variation per WAP_05c applied. | |
+| 22 | If any Brain Dump segment in the 8 categories is kept verbatim, the Cultural Adaptation Log documents WHY (persona match justifying verbatim retention). | |
 
-**Pass criteria:** 20/20 Y. All required.
+**Pass criteria:** 22/22 Y. All required.
 
 ### Hard-fail triggers
 
@@ -147,6 +174,8 @@ Save `07_Draft_Info.md` to `projects/POST_[article-slug]/`.
 - Cultural adaptation absent: Italian ironies copied verbatim into English for Anglo persona → REGENERATE
 - HTML markup present → REGENERATE (Phase 9 territory)
 - Phase 3 KILL sections included → REGENERATE
+- Cultural Adaptation Log missing → REGENERATE
+- Brain Dump segments in the 8 categories present in draft without corresponding log entry → REGENERATE
 
 ---
 
@@ -168,4 +197,5 @@ The corrected Phase 7 integrates four sources, with cultural adaptation as the C
 
 ## Changelog
 
+- v2.3.4 — May 16, 2026 — Added Cultural Adaptation Log requirement: every Brain Dump segment matching 8 categories (Italian idiom, bodily-fluid imagery, family-cast, Sicilian dialect, untranslated food term, superstition, Italian-audience pop culture, hyperbolic/scatological imagery) must have a log entry with verbatim Italian + adapted English + adaptation type. Added Step 3b dictation-to-writing rhythm conversion. Checklist item #7 rewritten; items #21 #22 added (Pass criteria 22/22). Two new hard-fail triggers added.
 - v1.0 — May 10, 2026 — Initial creation. Four-source integration phase with mandatory cultural adaptation per primary persona. 20-item checklist. Hard-fail on missing H2, literal translation, HTML markup leak.
