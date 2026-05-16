@@ -1,6 +1,6 @@
 # PHASE 6 — Struttura
 
-**Last updated:** May 16, 2026 (v2.3.2)
+**Last updated:** May 16, 2026 (v2.3.3)
 **Position in workflow:** Sixth phase of SOP_01 v2.3
 **Agent:** Architect
 **Pairs with:** All previous phase outputs (1-5)
@@ -97,6 +97,25 @@ Exception: affiliate CTAs of DIFFERENT typologies (e.g. 1 GYG boat tour + 1 Disc
 
 **Hard-fail trigger:** H2 with >2 affiliate CTAs of the same typology → REGENERATE with hero + supporting pick.
 
+### Step 4.7 — Article opening sequence (CRITICAL)
+
+Every article opens with the 8-step Author Intro Architecture from brain/WAP_06_CONTENT_FORMAT.md → "Author Intro Architecture (8 Steps — canonical Apr 29)". Phase 6 documents these 8 opening elements explicitly before the first content H2.
+
+The 8 canonical opening steps in order:
+
+1. **Italic lead** — promise/USP in <25 words, italic, above featured image. Specific and strong. NOT generic ("the only guide you need").
+2. **Featured image** — plain `<img>`, no `[caption]` shortcode. Placeholder reference here, actual asset in Phase 11.
+3. **Disarming opener block** — "I know, I know" or equivalent. Acknowledges reader skepticism BEFORE they voice it.
+4. **Name + credibility + sales hook** — one paragraph ~80-100 words. Nico self-introduces with concrete sensory specifics. Bold on identity, italic on emphasis.
+5. **Three bullet points: "what you'll learn"** — concrete and specific, proves article delivers on USP.
+6. **One sentence: time-vs-benefit framing** — short, frames why reading beats the alternative.
+7. **TL;DR table** — structured `<table>` per WAP_06c §1, 4-row default + optional 5th "Where to stay" row.
+8. **Affiliate disclosure box** — small grey neutral, Nico-voiced, AFTER TL;DR per WAP_06.
+
+Phase 6 deliverable for the opening: list all 8 elements with per-article content notes (italic lead angle, disarming opener angle, Nico self-intro tailored to persona, 3-bullet content, time-vs-benefit one-liner, TL;DR row content, affiliate disclosure text). Phase 7 Copywriter writes the prose; Phase 6 maps the architecture.
+
+**Hard-fail trigger:** Article opening sequence missing any of the 8 elements → REGENERATE.
+
 ### Step 5 — Article framework
 
 Beyond H2 list, define:
@@ -123,11 +142,10 @@ The last sections of every article follow this fixed order:
 2. Bottom Line H2 (decision summary, 80-200 words)
 3. FAQ section (4-8 Q&A, `<details>/<summary>` snippet)
 4. Continue Planning block (3 internal links, grey box per WAP_06c)
-5. Author bio (3 italic paragraphs per WAP_06c)
 
-Bottom Line closes the article's emotional arc with a decisive call. FAQ follows as the safety net for residual research questions. Continue Planning sits after FAQ as the natural next-step CTA.
+Author bio is NOT an end-of-article H2 in the structure. WordPress renders the canonical author box widget automatically below every post. Author bio updates apply to the WordPress author profile, not to article content.
 
-**Hard-fail trigger:** FAQ placed BEFORE Bottom Line → REGENERATE. Continue Planning missing → REGENERATE.
+**Hard-fail trigger:** FAQ placed BEFORE Bottom Line → REGENERATE. Continue Planning missing → REGENERATE. "About author" / "Author bio" H2 present in end-of-article structure → REGENERATE (handled by WordPress widget, not article body).
 
 ### Step 7 — Generate output
 
@@ -163,8 +181,10 @@ Save `06_Structure.md` to `projects/POST_[article-slug]/`.
 | 22 | End-of-article order verified: Bottom Line → FAQ → Continue Planning → Author bio | |
 | 23 | Every macro-topic mapped to H2 / H3 / callout by content volume rule (Step 4.5). NO macro-topic >50 words assigned to a callout. | |
 | 24 | Affiliate CTA saturation rule: no H2 has >2 CTAs of the same typology. Cross-typology CTAs allowed. | |
+| 25 | Article opening sequence documents all 8 elements per Step 4.7 (italic lead + featured image + disarming opener + Nico self-intro + 3 bullets + time-vs-benefit + TL;DR + affiliate disclosure). NOT only TL;DR. | |
+| 26 | End-of-article structure has NO "About author" / "Author bio" H2 (WordPress widget handles author box automatically). | |
 
-**Pass criteria:** 24/24 Y. All required.
+**Pass criteria:** 26/26 Y. All required.
 
 ### Hard-fail triggers
 
@@ -178,6 +198,8 @@ Save `06_Structure.md` to `projects/POST_[article-slug]/`.
 - Continue Planning block missing → REGENERATE
 - Phase 2 macro-topic mapped to callout when content exceeds 50 words → REGENERATE
 - H2 with >2 affiliate CTAs of the same typology → REGENERATE
+- Article opening sequence missing any of the 8 canonical elements from WAP_06 Author Intro Architecture → REGENERATE
+- "About author" / "Author bio" H2 present in end-of-article structure → REGENERATE (WordPress widget handles automatically)
 
 ---
 
@@ -191,6 +213,7 @@ Save `06_Structure.md` to `projects/POST_[article-slug]/`.
 
 ## Changelog
 
+- v2.3.3 — May 16, 2026 — Added Step 4.7 Article opening sequence (mandatory 8-step Author Intro Architecture from WAP_06: italic lead + featured image + disarming opener + Nico self-intro + 3 bullets + time-vs-benefit + TL;DR + affiliate disclosure). Corrected Step 6.5 end-of-article order: removed Author bio as structural H2; WordPress widget handles author box automatically. Checklist items #25 #26 added. Two new hard-fail triggers added.
 - v2.3.2 — May 16, 2026 — Step 6.5 end-of-article order corrected: Bottom Line → FAQ → Continue Planning → Author bio (Bottom Line first for emotional close, FAQ as safety net after, not before). Added Step 4.5 Promotion rule (H2 vs H3 vs callout by content volume, hard-fail on macro-topic >50 words mapped to callout). Added Step 4.6 Affiliate CTA saturation rule (max 2 same-typology CTAs per H2, hard-fail on more). Checklist items #23 #24 added. Two new hard-fail triggers added. Fix derived from May 16 Phase 6 v1 test on San Vito Lo Capo where Cous Cous Fest was erroneously mapped to a callout despite >50 words of content, and 4 GYG tours saturated H2 5 Beaches.
 - v2.3.1 — May 16, 2026 — Added Step 1.5 Scaffold rule mandating existing article (Phase 3 KEEP/UPDATE/MISSING/EXTRANEOUS-CONVERT) as structural source for refreshes; Brain Dump explicitly forbidden as structural source. Added Step 6.5 End-of-article canonical order (FAQ → Bottom Line → Continue Planning → Author bio). Checklist items #21 #22 added. Two new hard-fail triggers added (H2 sourced only from Brain Dump, FAQ after Bottom Line, Continue Planning missing). Fix derived from May 12 Test Run Findings (San Vito Lo Capo) Phase 6 root-cause audit.
 - v1.0 — May 10, 2026 — Initial creation. 7-step procedure with H2 ordering rationale (AI-reasoned per persona psychology), per-H2 mapping with 4-source integration framework (existing article + Brain Dump + AI knowledge + Search Intent), word count targets, affiliate placements, internal links, H3 sub-sections, TL;DR + FAQ definition, coverage stats. 20-item checklist with hard-fail on coverage gaps and missing source assignments.
