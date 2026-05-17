@@ -1,6 +1,6 @@
 # PHASE 6 — Struttura
 
-**Last updated:** May 16, 2026 (v2.3.3)
+**Last updated:** May 16, 2026 (v2.3.5)
 **Position in workflow:** Sixth phase of SOP_01 v2.3
 **Agent:** Architect
 **Pairs with:** All previous phase outputs (1-5)
@@ -105,7 +105,7 @@ The 8 canonical opening steps in order:
 
 1. **Italic lead** — promise/USP in <25 words, italic, above featured image. Specific and strong. NOT generic ("the only guide you need").
 2. **Featured image** — plain `<img>`, no `[caption]` shortcode. Placeholder reference here, actual asset in Phase 11.
-3. **Disarming opener block** — "I know, I know" or equivalent. Acknowledges reader skepticism BEFORE they voice it.
+3. **Disarming opener block** — Acknowledges reader skepticism BEFORE they voice it. Tone-only specification: the Copywriter writes the actual opener in their own words. NO template phrases to copy.
 4. **Name + credibility + sales hook** — one paragraph ~80-100 words. Nico self-introduces with concrete sensory specifics. Bold on identity, italic on emphasis.
 5. **Three bullet points: "what you'll learn"** — concrete and specific, proves article delivers on USP.
 6. **One sentence: time-vs-benefit framing** — short, frames why reading beats the alternative.
@@ -213,6 +213,7 @@ Save `06_Structure.md` to `projects/POST_[article-slug]/`.
 
 ## Changelog
 
+- v2.3.5 — May 16, 2026 — Step 4.7 disarming opener spec corrected: removed quoted template phrase "I know, I know" which had been treated as literal template by downstream Copywriter. Disarming opener is now tone-only specification; Copywriter writes the actual phrasing.
 - v2.3.3 — May 16, 2026 — Added Step 4.7 Article opening sequence (mandatory 8-step Author Intro Architecture from WAP_06: italic lead + featured image + disarming opener + Nico self-intro + 3 bullets + time-vs-benefit + TL;DR + affiliate disclosure). Corrected Step 6.5 end-of-article order: removed Author bio as structural H2; WordPress widget handles author box automatically. Checklist items #25 #26 added. Two new hard-fail triggers added.
 - v2.3.2 — May 16, 2026 — Step 6.5 end-of-article order corrected: Bottom Line → FAQ → Continue Planning → Author bio (Bottom Line first for emotional close, FAQ as safety net after, not before). Added Step 4.5 Promotion rule (H2 vs H3 vs callout by content volume, hard-fail on macro-topic >50 words mapped to callout). Added Step 4.6 Affiliate CTA saturation rule (max 2 same-typology CTAs per H2, hard-fail on more). Checklist items #23 #24 added. Two new hard-fail triggers added. Fix derived from May 16 Phase 6 v1 test on San Vito Lo Capo where Cous Cous Fest was erroneously mapped to a callout despite >50 words of content, and 4 GYG tours saturated H2 5 Beaches.
 - v2.3.1 — May 16, 2026 — Added Step 1.5 Scaffold rule mandating existing article (Phase 3 KEEP/UPDATE/MISSING/EXTRANEOUS-CONVERT) as structural source for refreshes; Brain Dump explicitly forbidden as structural source. Added Step 6.5 End-of-article canonical order (FAQ → Bottom Line → Continue Planning → Author bio). Checklist items #21 #22 added. Two new hard-fail triggers added (H2 sourced only from Brain Dump, FAQ after Bottom Line, Continue Planning missing). Fix derived from May 12 Test Run Findings (San Vito Lo Capo) Phase 6 root-cause audit.

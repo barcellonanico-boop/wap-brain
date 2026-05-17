@@ -1,10 +1,10 @@
 # PHASE 8 — Voice Pass
 
-**Last updated:** May 10, 2026
+**Last updated:** May 17, 2026 (v2.3.6)
 **Position in workflow:** Eighth phase of SOP_01 v2.3
 **Agent:** Copywriter
 **Status:** Implementation complete. Voice DNA + checklist validated on Nico corpus (3/3 PASS).
-**Pairs with:** brain/WAP_05c_VOICE_DNA.md (descriptive DNA), brain/WAP_05d_VOICE_CHECKLIST.md (operational checklist v2.0), tools/test_voice_checklist.py (mechanical detector)
+**Pairs with:** brain/WAP_05c_VOICE_DNA.md (descriptive DNA), brain/WAP_05d_VOICE_CHECKLIST.md (operational checklist v2.0), tools/test_voice_checklist.py v2.0 (multi-format: Markdown + HTML)
 
 ---
 
@@ -33,7 +33,7 @@ This PHASE_08 document is a wrapper that points to the canonical sources.
 
 ### Step 6 — Failure mode detection (6 modes per WAP_05d)
 
-### Step 7 — Run `python3 tools/test_voice_checklist.py` on draft
+### Step 7 — Run `python3 tools/test_voice_checklist.py <draft>` on draft (.md or .html accepted)
 
 ### Step 8 — Iterate if FAIL
 
@@ -67,4 +67,5 @@ Validated May 9, 2026: where-to-stay 9/9 PASS, tourist-information 21/22 PASS, f
 
 ## Changelog
 
+- v2.3.6 — May 17, 2026 — tools/test_voice_checklist.py upgraded from v1.1 (HTML-only) to v2.0 (multi-format). Markdown path added: `##` → H2 splits, `**` → `<strong>`, `*` → `<em>`, blank lines → `<p>`, list items → `<ul><li>`. Affiliate placeholders and table rows stripped before analysis. Extension auto-detection: `.md` → Markdown path, any other extension → existing HTML path. Step 7 updated to note both formats accepted. All 21 detectors, FAQ exemption, banned phrases, em-dash HARD-FAIL unchanged. Backup of v1.1 preserved at tools/test_voice_checklist_v1.1_backup.py.
 - v1.0 — May 10, 2026 — Wrapper. Implementation in WAP_05c (May 6) + WAP_05d v2.0 (May 9) + test_voice_checklist.py.

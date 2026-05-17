@@ -1,20 +1,14 @@
 #!/usr/bin/env python3
 """
-WAP_05d Voice Checklist — Multi-format Voice DNA Compliance Detector.
-Usage: python3 test_voice_checklist.py <path_to_html_or_md>
-
-v2.0 — May 17, 2026 multi-format upgrade:
-- Markdown input path added (.md extension auto-detected)
-- Markdown parser: ## → H2, ** → <strong>, * → <em>, blank-line → <p>
-- HTML input path unchanged (existing v1.1 logic)
-- FAQ exemption, banned phrases, all 21 detectors preserved
+WAP_05d Voice Checklist — Mechanical checks on an HTML article.
+Usage: python3 test_voice_checklist.py <path_to_html>
 
 v1.1 — May 8, 2026 calibration:
 - NLTK sent_tokenize replaces naive regex (fixes over-splitting)
 - Single-sentence paragraphs threshold 40% → 25%
 - Paragraph cap: hard 3 → soft (max 2 paragraphs may exceed 3 sentences)
-- Ellipsis >300w: >=2 → >=1
-- Italics: skip for sections <=100 words
+- Ellipsis >300w: ≥2 → ≥1
+- Italics: skip for sections ≤100 words
 - Rhetorical questions: moved from per-H2 to article-level
 - FAQ skip rule: sections with FAQ/details exempt from structural checks
 - Banned: "charming" standalone removed, composite phrases added
@@ -87,106 +81,7 @@ COMPOUND_MARKERS = re.compile(
 )
 
 # ---------------------------------------------------------------------------
-# Markdown parser helpers
-# ---------------------------------------------------------------------------
-
-def _md_inline(text):
-    """Convert inline Markdown formatting to HTML."""
-    # Bold: **text** → <strong>text</strong>
-    text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
-    # Italic: *text* (not **) → <em>text</em>
-    text = re.sub(r'(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)', r'<em>\1</em>', text)
-    # Strip Markdown links: [text](url) → text
-    text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
-    # Strip inline code: `code` → code
-    text = re.sub(r'`([^`]+)`', r'\1', text)
-    return text
-
-
-def load_markdown(path):
-    """
-    Parse a Markdown file into a BeautifulSoup entry-content element.
-    ## → <h2>, ### → <h3>, blank lines → paragraph breaks,
-    ** → <strong>, * → <em>, list items → <ul><li>.
-    Affiliate placeholder lines ([GYG_CARD:...] etc.) are stripped.
-    Table rows (lines starting with |) are stripped.
-    """
-    with open(path, encoding='utf-8') as f:
-        content = f.read()
-
-    html_lines = ['<div class="entry-content">']
-    in_list = False
-    paragraph_buf = []
-
-    def flush_para():
-        nonlocal paragraph_buf
-        if paragraph_buf:
-            joined = ' '.join(paragraph_buf)
-            html_lines.append(f'<p>{_md_inline(joined)}</p>')
-            paragraph_buf = []
-
-    def flush_list():
-        nonlocal in_list
-        if in_list:
-            html_lines.append('</ul>')
-            in_list = False
-
-    for line in content.split('\n'):
-        stripped = line.strip()
-
-        # Skip table rows and horizontal rules
-        if stripped.startswith('|') or stripped in ('---', '***', '___'):
-            flush_para()
-            flush_list()
-            continue
-
-        # Skip affiliate placeholders: [GYG_CARD:...], [HOTEL_CARD:...], etc.
-        if re.match(r'^\[[A-Z_]+[:\]]', stripped):
-            flush_para()
-            flush_list()
-            continue
-
-        # H3 must be checked before H2
-        if re.match(r'^### ', stripped):
-            flush_para()
-            flush_list()
-            html_lines.append(f'<h3>{_md_inline(stripped[4:].strip())}</h3>')
-        elif re.match(r'^## ', stripped):
-            flush_para()
-            flush_list()
-            html_lines.append(f'<h2>{_md_inline(stripped[3:].strip())}</h2>')
-        elif re.match(r'^# ', stripped):
-            flush_para()
-            flush_list()
-            # Article H1 title — included for completeness, not a section split
-            html_lines.append(f'<h1>{_md_inline(stripped[2:].strip())}</h1>')
-        elif re.match(r'^[-*]\s+', stripped) or re.match(r'^\d+\.\s+', stripped):
-            flush_para()
-            if not in_list:
-                html_lines.append('<ul>')
-                in_list = True
-            item = re.sub(r'^[-*]\s+', '', stripped)
-            item = re.sub(r'^\d+\.\s+', '', item)
-            html_lines.append(f'<li>{_md_inline(item)}</li>')
-        elif stripped == '':
-            flush_para()
-            flush_list()
-        else:
-            # Regular text line — accumulate into paragraph buffer
-            flush_list()
-            paragraph_buf.append(stripped)
-
-    flush_para()
-    flush_list()
-    html_lines.append('</div>')
-
-    html_str = '\n'.join(html_lines)
-    soup = BeautifulSoup(html_str, 'lxml')
-    return soup.find('div', class_='entry-content')
-
-
-# ---------------------------------------------------------------------------
-# HTML loader and content extractor
+# Helpers
 # ---------------------------------------------------------------------------
 
 def load_html(path):
@@ -233,10 +128,6 @@ def extract_entry_content(soup):
 
     return ec
 
-
-# ---------------------------------------------------------------------------
-# Shared helpers (used by both HTML and Markdown paths)
-# ---------------------------------------------------------------------------
 
 def split_by_h2(ec):
     sections = []
@@ -394,11 +285,11 @@ def check_section(title, fragment, section_num):
     else: fails += 1
     results.append(f"  Single-sentence paragraphs: {single_sent_paras}/{total_paras} ({ratio:.0%}) (threshold >= 25%) -- {status}")
 
-    # 1A-3: Italics (skip if <=100 words)
+    # 1A-3: Italics (skip if ≤100 words)
     italic_count = len(italics)
     if words <= 100:
         ok = True
-        status = "EXEMPT (<=100w)"
+        status = "EXEMPT (≤100w)"
         ital_thresh = 0
     elif words > 300:
         ital_thresh = 3
@@ -437,7 +328,7 @@ def check_section(title, fragment, section_num):
     else:
         results.append(f"  Banned phrases: 0 found (threshold 0) -- {status}")
 
-    # 1C-1: Max sentences per paragraph (soft cap: max 4 paras OR <=50% over, FAQ exempt)
+    # 1C-1: Max sentences per paragraph (soft cap: max 4 paras OR ≤50% over, FAQ exempt)
     over_paras = sum(1 for p in paragraphs if paragraph_sentence_count(p) >= 4)
     max_sent = max((paragraph_sentence_count(p) for p in paragraphs), default=0)
     over_ratio = over_paras / total_paras if total_paras > 0 else 0
@@ -450,7 +341,7 @@ def check_section(title, fragment, section_num):
     check_results["Max sentences/paragraph"] = ok
     if ok: passes += 1
     else: fails += 1
-    results.append(f"  Max sentences/paragraph: {max_sent} max, {over_paras} paras over 3 ({over_ratio:.0%}), (soft cap: max 4 or <=50%) -- {status}")
+    results.append(f"  Max sentences/paragraph: {max_sent} max, {over_paras} paras over 3 ({over_ratio:.0%}), (soft cap: max 4 or ≤50%) -- {status}")
 
     # 1C-2: Bullet usage
     ul_ol = len(fragment.find_all(["ul", "ol"]))
@@ -464,7 +355,7 @@ def check_section(title, fragment, section_num):
     else: fails += 1
     results.append(f"  Bullet ratio: {ul_ol}/{total_blocks} ({bullet_ratio:.0%}) (threshold <= 30%) -- {status}")
 
-    # 1D-1: Average sentence length (floor 7, target 7-12, warn 13-15, fail >15)
+    # 1D-1: Average sentence length (v1.2: floor 7, target 7-12, warn 13-15, fail >15)
     if sentences:
         avg_len = sum(sentence_word_count(s) for s in sentences) / len(sentences)
     else:
@@ -538,7 +429,7 @@ def check_article_level(ec):
     if not ok: fails += 1
     results.append(f"  Em-dashes: {em_count} found (threshold 0) -- {status}")
 
-    # 1B-3: Rhetorical questions (article-level)
+    # 1B-3: Rhetorical questions (moved from per-H2 to article-level)
     rhet_q = count_rhetorical_questions(sentences)
     ok = rhet_q >= 1
     status = "PASS" if ok else "FAIL"
@@ -577,25 +468,18 @@ def fail_pattern_analysis(section_results_map):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 test_voice_checklist.py <path_to_html_or_md>")
+        print("Usage: python3 test_voice_checklist.py <path_to_html>")
         sys.exit(1)
 
     path = sys.argv[1]
     filename = os.path.basename(path)
-    ext = os.path.splitext(path)[1].lower()
 
-    if ext == '.md':
-        ec = load_markdown(path)
-        fmt = 'Markdown'
-    else:
-        soup = load_html(path)
-        ec = extract_entry_content(soup)
-        fmt = 'HTML'
-
+    soup = load_html(path)
+    ec = extract_entry_content(soup)
     sections = split_by_h2(ec)
 
-    print(f"=== WAP_05d Voice Checklist v2.0 — Multi-format Voice DNA Compliance Detector ===")
-    print(f"Article: {filename} [{fmt}]")
+    print(f"=== WAP_05d Voice Checklist v1.1 — Test Results ===")
+    print(f"Article: {filename}")
     print(f"Total H2 sections: {len(sections)}")
 
     total_pass_sections = 0

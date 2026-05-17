@@ -1,6 +1,6 @@
 # PHASE 7 — Bozza Informativa
 
-**Last updated:** May 16, 2026 (v2.3.4)
+**Last updated:** May 16, 2026 (v2.3.5)
 **Position in workflow:** Seventh phase of SOP_01 v2.3
 **Agent:** Copywriter
 **Pairs with:** PHASE_06_Struttura (blueprint), all source phase outputs
@@ -58,6 +58,7 @@ The Copywriter MUST produce a Cultural Adaptation Log as part of the Phase 7 out
 - Superstition reference (toccarsi i coglioni, malocchio, corno, etc.)
 - Pop culture reference specific to Italian audience (Maniscalco, Italian TV, etc.)
 - Hyperbolic/scatological imagery that may not land for Persona A
+- Untranslated Italian or Sicilian term not globally known (any noun, place-type, civic acronym, or cultural concept that an Anglo reader from Manchester or Chicago would NOT recognize). NON-EXAMPLES (globally known, no gloss needed): pizza, pasta, espresso, cappuccino, gelato, panini. EXAMPLES (require gloss): pane cunzato, ZTL, passeggiata, nonno/nonna, sfincione, panelle, pareo, lungomare, tonnaroto, mattanza, lido, agriturismo, baglio.
 
 Format per row:
 
@@ -67,7 +68,9 @@ Format per row:
 
 If a Brain Dump segment is left verbatim in the draft (zero adaptation), the log must document WHY (e.g., "Maniscalco kept for Persona B — verbatim acceptable") OR the draft is non-compliant.
 
-**Hard-fail trigger:** Cultural Adaptation Log missing OR Brain Dump segments matching the categories above present in the draft without a corresponding log entry → REGENERATE.
+**Italian/Sicilian term gloss rule:** the first occurrence of any term in category 9 (untranslated Italian/Sicilian term not globally known) MUST be immediately followed by either (a) an inline English gloss in parentheses, e.g. "nonno (grandfather)", "ZTL (the restricted-traffic zone in Italian city centres)", "pane cunzato (a topped Sicilian flatbread)"; OR (b) a self-explanatory surrounding sentence that makes the meaning unambiguous within the same paragraph. Proper-noun dish names (e.g. caldo freddo, busiate, pesto alla Trapanese) treated as named items are exempt from inline gloss IF the surrounding sentence describes the dish. Second and subsequent occurrences of the same term do NOT require gloss.
+
+**Hard-fail trigger:** Cultural Adaptation Log missing → REGENERATE. Brain Dump segments matching categories 1-8 present in the draft without a corresponding log entry → REGENERATE. Category-9 term present in the draft without inline gloss or self-explanatory surrounding sentence at first occurrence → REGENERATE.
 
 ---
 
@@ -101,6 +104,14 @@ For each H2 from Phase 6 Structure, integrate the 4 sources:
 - Adapt culturally for primary persona
 - Convert dictation rhythm to writing rhythm: Brain Dump is dictated speech. Speech has run-on cadence, repetitions, fillers, and rhythm that reads as transcript when written verbatim. The Copywriter reshapes each Brain Dump excerpt into prose rhythm: tighter sentences, sentence-length variation per WAP_05c, no transcript artifacts. Read the rewritten passage aloud — if it sounds like dictation, rewrite.
 - Log every adaptation in the Cultural Adaptation Log (see "Cultural adaptation evidence requirement" above)
+
+**Step 3b-bis — Affiliate CTA cross-reference rule**
+
+When the draft mentions an affiliated product or service that was already CTA-placed in an earlier H2 ("the boat tour above," "the rental I mentioned," "the hotel I recommended," "see the operator above"), the Copywriter MUST re-place the affiliate placeholder (`[GYG_CARD: ...]`, `[DC_CALLOUT]`, `[HOTEL_CARD: slug]`, etc.) inline at the new mention, even if it appears redundant with the earlier placement. NEVER use a text-only cross-reference ("above," "earlier," "as I mentioned") to point the reader back to an affiliate item without re-placing the placeholder.
+
+Rationale:
+- Monetisation: the reader clicks on a CTA they see, not on a text instruction to scroll back.
+- UX: forcing the reader to scroll up to find a previously placed item breaks reading flow and degrades the article.
 
 **Step 3c — Fill gaps with AI knowledge**
 - Maintain voice (write AI-knowledge content in Nico's voice, not Wikipedia voice)
@@ -165,8 +176,10 @@ Save `07_Draft_Info.md` to `projects/POST_[article-slug]/`.
 | 20 | Phase 3 KILL sections NOT included | |
 | 21 | Dictation rhythm converted to writing rhythm: no transcript-style run-on passages from Brain Dump. Sentence-length variation per WAP_05c applied. | |
 | 22 | If any Brain Dump segment in the 8 categories is kept verbatim, the Cultural Adaptation Log documents WHY (persona match justifying verbatim retention). | |
+| 23 | Category-9 Italian/Sicilian terms requiring gloss: every first occurrence has either an inline English gloss in parentheses or a self-explanatory surrounding sentence. | |
+| 24 | Affiliate CTA cross-reference rule: no text-only "above" / "earlier" / "I mentioned" references to an affiliate item without the corresponding placeholder re-placed inline at the new mention. | |
 
-**Pass criteria:** 22/22 Y. All required.
+**Pass criteria:** 24/24 Y. All required.
 
 ### Hard-fail triggers
 
@@ -176,6 +189,8 @@ Save `07_Draft_Info.md` to `projects/POST_[article-slug]/`.
 - Phase 3 KILL sections included → REGENERATE
 - Cultural Adaptation Log missing → REGENERATE
 - Brain Dump segments in the 8 categories present in draft without corresponding log entry → REGENERATE
+- Category-9 Italian/Sicilian term present in draft without inline gloss or self-explanatory surrounding sentence at first occurrence → REGENERATE
+- Text-only cross-reference to a previously placed affiliate item ("above," "earlier," "I mentioned") without the placeholder re-placed inline at the new mention → REGENERATE
 
 ---
 
@@ -197,5 +212,6 @@ The corrected Phase 7 integrates four sources, with cultural adaptation as the C
 
 ## Changelog
 
+- v2.3.5 — May 16, 2026 — Added Cultural Adaptation Log category 9 (untranslated Italian/Sicilian term not globally known) with non-example and example lists. Added Italian/Sicilian term gloss rule: first occurrence of any category-9 term requires inline English gloss in parentheses or self-explanatory surrounding sentence. Added Step 3b-bis Affiliate CTA cross-reference rule: text-only "above" / "earlier" references to a previously CTA-placed affiliate item forbidden — placeholder must be re-placed inline at every mention. Checklist items #23 #24 added (Pass criteria 24/24). Two new hard-fail triggers added.
 - v2.3.4 — May 16, 2026 — Added Cultural Adaptation Log requirement: every Brain Dump segment matching 8 categories (Italian idiom, bodily-fluid imagery, family-cast, Sicilian dialect, untranslated food term, superstition, Italian-audience pop culture, hyperbolic/scatological imagery) must have a log entry with verbatim Italian + adapted English + adaptation type. Added Step 3b dictation-to-writing rhythm conversion. Checklist item #7 rewritten; items #21 #22 added (Pass criteria 22/22). Two new hard-fail triggers added.
 - v1.0 — May 10, 2026 — Initial creation. Four-source integration phase with mandatory cultural adaptation per primary persona. 20-item checklist. Hard-fail on missing H2, literal translation, HTML markup leak.
