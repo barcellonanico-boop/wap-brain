@@ -40,9 +40,7 @@ A couple sits across from me at a bar in Palermo and asks: *"Nico, should we act
 
 My answer, every time, in thirty seconds: **it depends.**
 
-San Vito is sea, food, nap, repeat. That's the whole operating system.
-
-If two days of switching off your brain sounds like a religious experience, go. Two nights, three nights, no regrets.
+San Vito is sea, food, nap, repeat. That's the whole operating system. If two days of switching off your brain sounds like a religious experience, go. Two nights, three nights, no regrets.
 
 If your fantasy involves nightlife, baroque churches, museums, or hikes that pay off in views, San Vito will bore you to tears. That's Palermo. That's Catania. That's Ragusa.
 
@@ -52,15 +50,9 @@ I would not set foot in San Vito in August. Half of Italy parks itself here, and
 
 Those crystal-water shots in every guide? Taken when nobody is there.
 
-Show up August 14 and the sea often runs the colour of stale beer. The sand keeps shifting.
+Show up August 14 and the sea often runs the colour of stale beer. The sand keeps shifting. The kids treat the water as a private bathroom. The heat sits on your chest and refuses to leave.
 
-The kids treat the water as a private bathroom. The heat sits on your chest and refuses to leave.
-
-"But Nico, my company holiday is in August." Fine.
-
-Just know the postcard is not booking you a slot. The window where the photos actually look like the photos is late May, all of June, all of September, and early October.
-
-That's when I go. That's when locals go.
+"But Nico, my company holiday is in August." Fine. Just know the postcard is not booking you a slot. The window where the photos actually look like the photos is late May, all of June, all of September, and early October. That's when I go. That's when locals go.
 
 If August is the only card you've been dealt and you still want a Western Sicily beach week, quietly switch to Castellammare del Golfo. Wider beaches, room to swing a beach towel, water still gorgeous, village big enough to absorb the crowd.
 
@@ -114,15 +106,11 @@ Standard public-transport route. The Russo Autoservizi coach pulls out of **Piaz
 
 Travel time: **2h15** for 95 km. I'm pretty sure my grandmother on horseback could beat that. Blame the SS187, which hugs the coast like a clingy cousin.
 
-In summer there are usually two runs a day each direction. Off-season the timetable thins out fast and sometimes a run just doesn't show.
-
-Management and the drivers probably play rock-paper-scissors every morning to decide whether the bus exists. Welcome to Sicily.
+In summer there are usually two runs a day each direction. Off-season the timetable thins out fast and sometimes a run just doesn't show. Management and the drivers probably play rock-paper-scissors every morning to decide whether the bus exists. Welcome to Sicily.
 
 **Always check the timetable the day you're planning.**
 
-The fare lands in the **€11-12 range** one-way. Bring a bottle of water. The air-con works most days.
-
-Build a buffer on the way back, because the schedule is more of a suggestion than a contract.
+The fare lands in the **€11-12 range** one-way. Bring a bottle of water. The air-con works most days. Build a buffer on the way back, because the schedule is more of a suggestion than a contract.
 
 External link: [russoautoservizi.it](https://www.russoautoservizi.it/) (the Italian root. The old `/en/home-english/` page is dead.)
 
@@ -138,9 +126,7 @@ Landing late at Palermo airport with luggage, two kids, and zero tolerance for b
 
 A guy named Salvatore meets you at arrivals with a sign where your name is spelled creatively. One hour and fifteen minutes later, you're in San Vito ordering wine. Expect around **€100-130** for the car.
 
-Book ahead, because Salvatore does not exist to serve your last-minute fantasy. He has a van, a cousin's wedding, and a deep ancestral need to do nothing on Wednesdays.
-
-[GYG_CARD: t140526] Flying into Trapani airport instead? [GYG_CARD: t140538], same setup, shorter drive.
+Book ahead, because Salvatore does not exist to serve your last-minute fantasy. He has a van, a cousin's wedding, and a deep ancestral need to do nothing on Wednesdays. [GYG_CARD: t140526] Flying into Trapani airport instead? [GYG_CARD: t140538], same setup, shorter drive.
 
 ### By rental car
 
@@ -152,11 +138,7 @@ Route from Palermo: **A29 → exit Castellammare del Golfo → SP16 → San Vito
 
 One warning: **do not drive inside San Vito itself.**
 
-The centre is small, pedestrianised, and parking is a blood sport in season. The local police make their entire year's salary in three peak months by ticketing tourists who park where they shouldn't.
-
-Park at the hotel, park in a paid lot, or, if your Italian is up to it, ask the nearest *nonno* (that's grandpa) on a bench. The *nonni* always know which strip of curb is free and legal.
-
-They've been studying that curb since 1962. [DC_CALLOUT]
+The centre is small, pedestrianised, and parking is a blood sport in season. The local police make their entire year's salary in three peak months by ticketing tourists who park where they shouldn't. Park at the hotel, park in a paid lot, or, if your Italian is up to it, ask the nearest *nonno* (that's grandpa) on a bench. The *nonni* always know which strip of curb is free and legal. They've been studying that curb since 1962. [DC_CALLOUT]
 
 ---
 
@@ -206,9 +188,7 @@ Show up at 8 AM with a thermos, or accept that you'll be wedged between *zio Nun
 
 ### Lido beaches: Lido Sabbione, Mamitas, Bue Marino
 
-Lidos in San Vito are seasonal animals. **2026 pricing runs roughly €28-30 per day in June and climbs to about €35 in peak August**, for the standard setup of umbrella plus two loungers.
-
-A few euros up or down depending on lido and row, with front-row sea costing more and back rows costing less. For that money you get the umbrella, the loungers, showers, bathrooms, and usually a small bar pouring lukewarm spritz.
+Lidos in San Vito are seasonal animals. **2026 pricing runs roughly €28-30 per day in June and climbs to about €35 in peak August**, for the standard setup of umbrella plus two loungers. A few euros up or down depending on lido and row, with front-row sea costing more and back rows costing less. For that money you get the umbrella, the loungers, showers, bathrooms, and usually a small bar pouring lukewarm spritz.
 
 Two names worth knowing: **Lido Sabbione**, solid and central, and **Mamitas Beach**, bookable online and therefore the first to fill. **Bue Marino** also works, no fireworks.
 
@@ -234,9 +214,7 @@ Trade-off: rocky bottom, not soft sand. Bring water shoes unless you want to red
 
 The Zingaro reserve is the single best reason to spend a second day up here. Seven kilometres of protected coast between San Vito Lo Capo and Scopello: no construction, no roads, just trails, coves, and water clear enough to count pebbles at the bottom. About **15 minutes by car** from San Vito to the gate.
 
-This is obviously not the move for everyone. I once asked my buddy Ciccio to hike Zingaro with me.
-
-He grabbed his belly with both hands and looked at me dead in the eye: *"Do you know how much I've invested in this belly? You want to ruin my life's work?"*
+This is obviously not the move for everyone. I once asked my buddy Ciccio to hike Zingaro with me. He grabbed his belly with both hands and looked at me dead in the eye: *"Do you know how much I've invested in this belly? You want to ruin my life's work?"*
 
 For those who haven't built a similar monument, here's the brief.
 
@@ -258,9 +236,7 @@ The main coastal path runs along the cliffs with **little coves dropping down on
 
 Honest reality check: it's **hot.** The sun in this part of Sicily, in summer, will cook your brain.
 
-There's almost no shade on the trail. **Bring more water than you think you need** (2 litres per person minimum), hat, sunscreen, real shoes, not flip-flops.
-
-The coves are gorgeous but the bottoms are rocky, so lounging for hours is a fantasy unless you enjoy bruised tailbones. Water shoes help.
+There's almost no shade on the trail. **Bring more water than you think you need** (2 litres per person minimum), hat, sunscreen, real shoes, not flip-flops. The coves are gorgeous but the bottoms are rocky, so lounging for hours is a fantasy unless you enjoy bruised tailbones. Water shoes help.
 
 **The lazy man's Zingaro is the boat tour.** Boats leaving San Vito pass through these same coves and drop you into transparent water without the trail and the cooked brain. Want both? Hike one morning, boat another day. See the boat tour above.
 
@@ -280,11 +256,7 @@ Back in the day, jobless San Vito fishermen emigrated there for work. When they 
 
 Mediterranean-North-African fusion, hard to find in this form elsewhere. Don't skip it.
 
-I generally don't name restaurants here, because owners change and quality wobbles. The exception, consistently, is **Profumi di Couscous**.
-
-Order the **cous cous di pesce**, the house specialty. Expect **€25-35 per head** in 2026.
-
-Everywhere else, walk into a place packed with locals and you'll be fine.
+I generally don't name restaurants here, because owners change and quality wobbles. The exception, consistently, is **Profumi di Couscous**. Order the **cous cous di pesce**, the house specialty. Expect **€25-35 per head** in 2026. Everywhere else, walk into a place packed with locals and you'll be fine.
 
 > **Cous Cous Fest 2026.** Runs **18-27 September 2026**. Chefs from around the world, packed evenings, music in the piazza. Full programme on [couscousfest.it](https://www.couscousfest.it). Time your trip to the second weekend if you want the full experience. Skip it if crowds give you hives.
 
@@ -294,27 +266,19 @@ The other thing you have to try is the **caldo freddo**: a terracotta cup with r
 
 A hot-and-cold combo that fires you straight to dessert heaven. You look at it and say, *"There's no way I can finish this."* Two bites in, you're licking the inside of the cup.
 
-The origin story splits. Some say Trapani, at a gelato shop wiped off the map by Hitler's bombs.
-
-Others credit a San Vito gelato guy who opened a place in the US. They bolted on the whipped cream, chocolate, and sponge cake because **Americans wanted their gelato on steroids**.
-
-Nobody knows.
+The origin story splits. Some say Trapani, at a gelato shop wiped off the map by Hitler's bombs. Others credit a San Vito gelato guy who opened a place in the US and bolted on the whipped cream, chocolate, and sponge cake because **Americans wanted their gelato on steroids**. Nobody knows.
 
 ### 3. Busiate
 
 Sicily has more pasta shapes than a Kardashian has selfies. Up in Trapani the grandmothers still hand-roll this fresh spiral pasta called **busiate**, ridiculous-looking and ridiculously good, best with the **local pesto, pesto alla Trapanese**.
 
-Classic pesto is green and from Genoa. The Trapanese version is red. Why?
-
-The Sicilians couldn't stand pine nuts, so they swapped in almonds. And they made it red, maybe because the Genoese also got on their nerves.
+Classic pesto is green and from Genoa. The Trapanese version is red. Why? The Sicilians couldn't stand pine nuts, so they swapped in almonds. And they made it red, maybe because the Genoese also got on their nerves.
 
 ### 4. Tuna
 
 Not the sad mushed-up stuff from a can. The real thing: fins, eyes, the whole package.
 
-The San Vito sea is full of big red tuna, basically the **Kobe beef of the fish world**. You'll find it in every form here: grilled, raw, marinated, in pasta, smoked.
-
-We even take the dried, salted eggs and eat them like caviar. *Buonissimo*.
+The San Vito sea is full of big red tuna, basically the **Kobe beef of the fish world**. You'll find it in every form here: grilled, raw, marinated, in pasta, smoked. We even take the dried, salted eggs and eat them like caviar. *Buonissimo*.
 
 > **The Mattanza, in one paragraph.** Before regulation kicked in, the local tuna hunt was called the *mattanza*. Fishermen dropped 4-5 km of nets to funnel tuna into a final chamber, the boats closed in, and harpoons finished the job. The water turned the colour of *nonna's* tomato sauce. The last full mattanza in the area happened in 1969. Today's tuna fishing is much more civilised, but the history is everywhere, especially at the old Tonnara del Secco.
 
@@ -339,13 +303,9 @@ The shape is obvious: **late May, all of June, all of September, early October**
 
 Outside that, you're either freezing or fighting for sand.
 
-If August is your only window because of work or school, take it, eyes open. Book the room early (the good places sell out by April).
+If August is your only window because of work or school, take it, eyes open. Book the room early (the good places sell out by April). Reserve your lido umbrella on [spiaggia.it](https://www.spiaggia.it). Accept peak prices and get to the free beach before 9 AM.
 
-Reserve your lido umbrella on [spiaggia.it](https://www.spiaggia.it). Accept peak prices and get to the free beach before 9 AM.
-
-Plenty of local friends who own houses up here? They literally **rent them out for the whole peak period** and go on holiday somewhere else.
-
-Even *they* don't want to deal with August San Vito. Let that sit for a second.
+Plenty of local friends who own houses up here? They literally **rent them out for the whole peak period** and go on holiday somewhere else. Even *they* don't want to deal with August San Vito. Let that sit for a second.
 
 ---
 
@@ -391,9 +351,7 @@ Pick the format that matches the rhythm you actually want.
 
 The elephant in the room. **Expensive or cheap?** Depends entirely on the comparison.
 
-Coming from Manhattan, you'll think it's a steal. Coming from Sofia, you'll have a small heart attack at the first menu.
-
-As we say in Sicily: *Quantu spenni, manci*. You get what you pay for.
+Coming from Manhattan, you'll think it's a steal. Coming from Sofia, you'll have a small heart attack at the first menu. As we say in Sicily: *Quantu spenni, manci*. You get what you pay for.
 
 Here's the honest 2026 peak-season picture for two adults.
 
@@ -414,11 +372,7 @@ Like everywhere on earth, you can find a doghouse for €40 and a luxury suite f
 
 Pay attention to what you're ordering. The good stuff is worth the small difference.
 
-One last practical note. **Pre-booking is the single biggest lever you have.**
-
-Lido umbrellas booked on [spiaggia.it](https://www.spiaggia.it) in March cost the same as walk-up rates in August, except you actually get a spot. Hotels locked in by April hold the lower end of the range.
-
-The same room in late June is often 30-50% more, or simply gone. Boat tours sell out the week before. Rental cars roughly double in price between January and July for the same August week.
+One last practical note. **Pre-booking is the single biggest lever you have.** Lido umbrellas booked on [spiaggia.it](https://www.spiaggia.it) in March cost the same as walk-up rates in August, except you actually get a spot. Hotels locked in by April hold the lower end of the range. The same room in late June is often 30-50% more, or simply gone. Boat tours sell out the week before. Rental cars roughly double in price between January and July for the same August week.
 
 The pattern is consistent. In San Vito, planning is paid in money. Wing it and the town will charge you for the privilege.
 
@@ -442,25 +396,15 @@ Short answers, no fluff, to the questions readers keep asking after the main pie
 
 **Is San Vito Lo Capo in Sicily?**
 
-Yes. North-western Sicily, Province of Trapani, about 95 km west of Palermo.
-
-The town sits at the tip of a small cape where Monte Monaco meets the sea, which is where the "Lo Capo" part of the name comes from. *Capo* means headland.
+Yes. North-western Sicily, Province of Trapani, about 95 km west of Palermo. The town sits at the tip of a small cape where Monte Monaco meets the sea, which is where the "Lo Capo" part of the name comes from. *Capo* means headland.
 
 **Is there a train to San Vito Lo Capo?**
 
-No. No train station in San Vito at all.
-
-The nearest is **Castellammare del Golfo**, about 30 km away. From Palermo, your only realistic public-transport route is the **Russo Autoservizi coach** (about 2h15) from Piazza Cairoli.
-
-Otherwise: rental car or a private transfer.
+No. No train station in San Vito at all. The nearest is **Castellammare del Golfo**, about 30 km away. From Palermo, your only realistic public-transport route is the **Russo Autoservizi coach** (about 2h15) from Piazza Cairoli. Otherwise: rental car or a private transfer.
 
 **Do I need a car in San Vito Lo Capo?**
 
-Inside the town itself, **no**. The centre walks end to end in ten minutes and parking is a hassle.
-
-**But** if you're staying more than a day and want to see Zingaro, the alternative beaches, Scopello, Trapani, or Erice, a car pays off massively. Park it at the hotel or in a paid lot.
-
-Don't risk free parking on the wrong strip of curb. The local police are watching.
+Inside the town itself, **no**. The centre walks end to end in ten minutes and parking is a hassle. **But** if you're staying more than a day and want to see Zingaro, the alternative beaches, Scopello, Trapani, or Erice, a car pays off massively. Park it at the hotel or in a paid lot. Don't risk free parking on the wrong strip of curb. The local police are watching.
 
 **When is the Cous Cous Fest in 2026?**
 
@@ -468,17 +412,11 @@ Don't risk free parking on the wrong strip of curb. The local police are watchin
 
 **Is August a bad time to visit San Vito Lo Capo?**
 
-Honestly, yes. The crowd is brutal: half of Italy lands here.
-
-The water often runs murky from sand churn and overuse. Lido prices peak. Free beach spots are gone by 9 AM.
-
-The locals I know who own houses up here rent them out for August and go on holiday somewhere else. If August is your only window, plan it down to the last detail. Otherwise, June or September.
+Honestly, yes. The crowd is brutal: half of Italy lands here. The water often runs murky from sand churn and overuse. Lido prices peak. Free beach spots are gone by 9 AM. The locals I know who own houses up here rent them out for August and go on holiday somewhere else. If August is your only window, plan it down to the last detail. Otherwise, June or September.
 
 **Which beach has clearer water than the main one?**
 
-Two answers. **Baia di Santa Margherita** (between Castelluzzo and Macari, much less crowded, sandy with some rocks) and **Tonnara del Secco** (3 km west of San Vito, historic ground, rocky bottom, much clearer water).
-
-Both involve a short drive. Bring water shoes for Tonnara del Secco unless you enjoy bruised feet.
+Two answers. **Baia di Santa Margherita** (between Castelluzzo and Macari, much less crowded, sandy with some rocks) and **Tonnara del Secco** (3 km west of San Vito, historic ground, rocky bottom, much clearer water). Both involve a short drive. Bring water shoes for Tonnara del Secco unless you enjoy bruised feet.
 
 ---
 
