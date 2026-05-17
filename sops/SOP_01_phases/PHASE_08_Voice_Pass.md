@@ -1,71 +1,114 @@
-# PHASE 8 — Voice Pass
+# PHASE 08 — Voice Pass
 
-**Last updated:** May 17, 2026 (v2.3.6)
-**Position in workflow:** Eighth phase of SOP_01 v2.3
-**Agent:** Copywriter
-**Status:** Implementation complete. Voice DNA + checklist validated on Nico corpus (3/3 PASS).
-**Pairs with:** brain/WAP_05c_VOICE_DNA.md (descriptive DNA), brain/WAP_05d_VOICE_CHECKLIST.md (operational checklist v2.0), tools/test_voice_checklist.py v2.0 (multi-format: Markdown + HTML)
+**Last updated:** May 17, 2026 (v2.4.0)
+**Owner agent:** Copywriter (Cowork)
+**Pairs with:** brain/voice_corpus/phase_08_translation_prompt.md (operational prompt), brain/voice_corpus/nico_canon_01-04 (gold standard references), tools/test_voice_checklist.py v2.0 (post-check geometric detector)
 
 ---
 
 ## Purpose
 
-Take Phase 7 Bozza Informativa Markdown draft and apply voice geometry + DNA trait amplification. Output is `08_Draft_Voice.md`. This phase has TWO existing artifacts that ARE the operational documentation:
-- **WAP_05c_VOICE_DNA.md** — descriptive: 11 traits, family cast, lexical profile, transformation examples, failure modes
-- **WAP_05d_VOICE_CHECKLIST.md v2.0** — operational: 21 detectors, banned phrases (10 AI-generic composite phrases HARD-FAIL), em-dash HARD-FAIL, scare-quote exemption
+Translate the Phase 7 information draft (07_Draft_Info.md) into Nico Barcellona's voice. Output is 08_Draft_Voice.md in the same project folder.
 
-This PHASE_08 document is a wrapper that points to the canonical sources.
+This phase is a TRANSLATION operation, not a voice-engineering operation. The voice is defined by four canon reference texts hand-written by Nico. The Copywriter agent receives the canon, applies eight operational moves, follows rhythm rules, and produces a Nico-grade output.
+
+The mechanical detector tools/test_voice_checklist.py runs at the end as a geometric post-check (em-dashes, banned phrases, paragraph length, all-caps, rhetorical questions). It validates the shell, not the soul. The soul is in the prompt.
+
+---
+
+## Inputs
+
+- projects/POST_<slug>/07_Draft_Info.md (the information draft from Phase 7)
+- brain/voice_corpus/phase_08_translation_prompt.md (the operational prompt)
+- brain/voice_corpus/nico_canon_01_intro_san_vito.md (loaded inline in the prompt)
+- brain/voice_corpus/nico_canon_02_worth_visiting.md (loaded inline in the prompt)
+- brain/voice_corpus/nico_canon_03_base_or_daytrip.md (loaded inline in the prompt)
+- brain/voice_corpus/nico_canon_04_getting_there.md (loaded inline in the prompt)
 
 ---
 
 ## Procedure
 
-### Step 1 — Inputs
-- `07_Draft_Info.md`, `04_Persona_Match.md`, WAP_05c, WAP_05d
+### Step 1 — Load operational prompt
 
-### Step 2 — DNA trait amplification per persona (Phase 4 lands-hardest list)
+Open brain/voice_corpus/phase_08_translation_prompt.md. Copy the entire prompt block (from "You are a copywriter" through "Now translate."). The four canon references are inlined in the prompt; no separate file loads are required.
 
-### Step 3 — Voice geometry (WAP_05d sections 1A-1D)
+### Step 2 — Insert Phase 7 draft into the prompt
 
-### Step 4 — Banned phrases enforcement (10 composite phrases, Option B)
+In the prompt, locate the placeholder `[INSERT TEXT HERE]` under "THE NEUTRAL TEXT:". Replace it with the full content of 07_Draft_Info.md from the active project folder.
 
-### Step 5 — Trait verbatim evidence (11/12 traits minimum)
+### Step 3 — Execute the translation
 
-### Step 6 — Failure mode detection (6 modes per WAP_05d)
+Open a fresh Cowork chat with the Copywriter agent. Paste the complete filled prompt as a single message. Do not attach any knowledge folder or external files. The prompt is self-contained.
 
-### Step 7 — Run `python3 tools/test_voice_checklist.py <draft>` on draft (.md or .html accepted)
+### Step 4 — Capture output
 
-### Step 8 — Iterate if FAIL
+The Copywriter agent returns the translated text directly in the chat. Save the output verbatim as projects/POST_<slug>/08_Draft_Voice.md.
 
-### Step 9 — Output `08_Draft_Voice.md`
+### Step 5 — Run geometric post-check
 
-See WAP_05d_VOICE_CHECKLIST.md for full operational details on each step.
+Execute:
+
+python3 tools/test_voice_checklist.py projects/POST_<slug>/08_Draft_Voice.md
+
+Expected results on a properly translated draft:
+- Em-dashes: 0 (HARD-FAIL if > 0)
+- Banned phrases (stunning, embark on, don't miss, hidden gem, must-see): 0 (HARD-FAIL if > 0)
+- All-caps phrases: at least 1 (verdict words)
+- Rhetorical questions: at least 1 (reader engagement)
+- Per-section sentence-length and compound-sentence metrics: PASS on at least 80% of H2 sections
+
+### Step 6 — Iterate if geometric fail
+
+If em-dashes > 0 or banned phrases > 0, re-run Step 3 with a brief instruction prepended: "The previous output contained N em-dashes and N banned phrases. Re-translate the source, ensuring zero em-dashes and zero banned phrases in the output." Then re-save and re-test.
+
+Other geometric soft-fails (sentence length, compound sentences) typically resolve naturally with the canon-driven translation. If they persist after one re-run, the draft is still acceptable; geometric metrics validate the shell, the canon validates the soul.
+
+### Step 7 — Final acceptance
+
+The draft is accepted when:
+- Geometric post-check PASS on em-dashes and banned phrases (HARD)
+- Subjective comparison to canon: a reader who knows the canon would not feel a tone drop-off
+- All facts, prices, and named entities from 07_Draft_Info.md preserved in 08_Draft_Voice.md
 
 ---
 
-## Checklist
+## Output
 
-The operational checklist IS `WAP_05d_VOICE_CHECKLIST.md v2.0`. Mechanical run: `python3 tools/test_voice_checklist.py [draft.md]`
-
-**Pass criteria:** ≥80% H2 sections PASS, 0 banned composite phrases, 0 em-dashes, ≥11/12 traits with verbatim evidence, 0 failure modes.
+projects/POST_<slug>/08_Draft_Voice.md — voice-translated draft, ready for Phase 9 (HTML conversion).
 
 ---
 
-## Validation history
+## Checklist (10 items)
 
-Validated May 9, 2026: where-to-stay 9/9 PASS, tourist-information 21/22 PASS, favignana 16/17 PASS. Non-Nico stress test FAILS clearly.
+| # | Check | Y/N |
+|---|---|---|
+| 1 | The full prompt from phase_08_translation_prompt.md was loaded, including all four canon references. | |
+| 2 | The Phase 7 draft 07_Draft_Info.md was inserted verbatim at the `[INSERT TEXT HERE]` placeholder. | |
+| 3 | Translation executed in a fresh Cowork chat with the Copywriter agent. | |
+| 4 | Output saved verbatim as 08_Draft_Voice.md in the project folder. | |
+| 5 | test_voice_checklist.py executed on the output. | |
+| 6 | Em-dashes in output: 0. | |
+| 7 | Banned phrases (stunning, embark on, don't miss, hidden gem, must-see): 0. | |
+| 8 | At least 80% of H2 sections PASS the script's per-section metrics. | |
+| 9 | All facts, prices, and named entities from 07_Draft_Info.md preserved in 08_Draft_Voice.md. | |
+| 10 | Subjective canon comparison: output reads consistently with nico_canon_01-04 in tone, rhythm, and density of named characters. | |
+
+**Pass criteria:** items 1-7 and 9 are HARD. Items 8 and 10 are SOFT (recommended but not blocking).
 
 ---
 
-## Workflow integration
+## Hard-fail triggers
 
-**Input:** `07_Draft_Info.md` + `04_Persona_Match.md` + WAP_05c + WAP_05d
-**Output:** `08_Draft_Voice.md`
-**Next phase:** Phase 9 — HTML
+- Em-dashes > 0 in 08_Draft_Voice.md → re-translate
+- Banned phrase ("stunning", "embark on", "don't miss", "hidden gem", "must-see") present in 08_Draft_Voice.md → re-translate
+- Phase 7 facts altered (prices changed, places renamed, claims invented) → re-translate with explicit instruction to preserve facts
+- Output empty or truncated → re-execute Step 3
 
 ---
 
 ## Changelog
 
-- v2.3.6 — May 17, 2026 — tools/test_voice_checklist.py upgraded from v1.1 (HTML-only) to v2.0 (multi-format). Markdown path added: `##` → H2 splits, `**` → `<strong>`, `*` → `<em>`, blank lines → `<p>`, list items → `<ul><li>`. Affiliate placeholders and table rows stripped before analysis. Extension auto-detection: `.md` → Markdown path, any other extension → existing HTML path. Step 7 updated to note both formats accepted. All 21 detectors, FAQ exemption, banned phrases, em-dash HARD-FAIL unchanged. Backup of v1.1 preserved at tools/test_voice_checklist_v1.1_backup.py.
-- v1.0 — May 10, 2026 — Wrapper. Implementation in WAP_05c (May 6) + WAP_05d v2.0 (May 9) + test_voice_checklist.py.
+- v2.4.0 — May 17, 2026 — Major architectural rewrite. Replaced WAP_05c trait-descriptive approach with operational translation prompt (brain/voice_corpus/phase_08_translation_prompt.md) using 4 hand-written canon references (nico_canon_01-04) and 8 operational moves. Validated on 4 test runs (Cefalù food x2, NYE Palermo, Solo Female Travel Safety). Previous v2.3.6 wrapper around test_voice_checklist.py preserved as PHASE_08_Voice_Pass_v2.3.6_backup.md. test_voice_checklist.py now serves as geometric post-check only, not as primary voice validator. Checklist reduced from 21 voice-DNA items to 10 procedural items focused on translation workflow.
+- v2.3.6 — May 16, 2026 — test_voice_checklist.py upgraded to v2.0 multi-format. Script now accepts Markdown (.md) natively in addition to HTML (.html). Step 7 simplified — direct run on draft.md without HTML conversion.
+- v2.3 — May 10, 2026 — Initial wrapper around WAP_05c/05d + test_voice_checklist.py.
