@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-rhythm_detector.py — v1.2
+rhythm_detector.py — v1.3
 Detects paragraphs in a Markdown file that violate Nico's rhythm rules.
 
 Rules (from PHASE_08_Voice_Pass.md v2.4.0):
@@ -13,14 +13,14 @@ Rhythmic list exemption (v1.2):
 A paragraph is exempt from Rule C if EITHER:
   - All sentences in the paragraph are <= 12 words, OR
   - Median sentence length across the paragraph is <= 6 words.
-Rationale: canon 2 and canon 3 contain intentional staccato sequences
-mixing one setup sentence with a sequence of short verdicts. Median is
-more robust than mean to a single long opener.
 
-Output: numbered list of violating paragraphs with reason.
+Output modes (v1.3):
+  default: human-readable report
+  --json:  machine-readable JSON for downstream rhythm-fix pass
 
 Usage:
   python3 tools/rhythm_detector.py <path-to-md-file>
+  python3 tools/rhythm_detector.py <path-to-md-file> --json
 """
 
 import sys
@@ -126,17 +126,29 @@ def detect_violations(md_text: str) -> list[dict]:
 
 
 def main():
-    if len(sys.argv) != 2:
-        print('Usage: python3 tools/rhythm_detector.py <path-to-md-file>')
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print('Usage: python3 tools/rhythm_detector.py <path-to-md-file> [--json]')
         sys.exit(1)
 
     path = Path(sys.argv[1])
+    json_mode = (len(sys.argv) == 3 and sys.argv[2] == '--json')
+
     if not path.exists():
         print(f'File not found: {path}')
         sys.exit(1)
 
     md_text = path.read_text(encoding='utf-8')
     violations = detect_violations(md_text)
+
+    if json_mode:
+        import json
+        payload = {
+            'file': str(path),
+            'total_violations': len(violations),
+            'violations': violations,
+        }
+        print(json.dumps(payload, ensure_ascii=False, indent=2))
+        return
 
     print('=' * 70)
     print(f'RHYTHM DETECTOR REPORT — {path.name}')
