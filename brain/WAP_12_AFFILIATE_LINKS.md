@@ -1,6 +1,6 @@
 # WAP_12 — Affiliate Links Registry
 
-**Last updated:** May 5, 2026
+**Last updated:** May 17, 2026
 **Owner:** WAP PM
 **Affiliate ID (Booking.com):** aid=918822
 
@@ -334,15 +334,218 @@ Area character: coastal town 70 km east of Palermo. Cathedral town, major beach 
 
 ---
 
+### San Vito Lo Capo (9 hotels)
+
+Area character: small Sicilian beach village 95 km west of Palermo, walkable centre pedestrianised, lidos and seafront, very seasonal (May-October). Ideal for 2-3 nights of beach + decompression. All hotels below within walking distance of the centre and beach unless noted.
+
+---
+
+**Andromeda Hotel**
+
+- **Type:** Hotel
+- **Stars:** [VERIFY]
+- **Area:** San Vito Lo Capo, walkable centre
+- **Price tier:** Mid-range (€100-200/night peak)
+- **Ideal for:** Couples, mid-range comfort
+- **Nico's Take:** Recently renovated. Strong breakfast. Walking distance to everything. Default mid-range pick when you want comfort without paying boutique prices.
+- **URL:** https://www.booking.com/hotel/it/andromeda-san-vito-lo-capo.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**Hotel Iride**
+
+- **Type:** Hotel
+- **Stars:** [VERIFY]
+- **Area:** San Vito Lo Capo, central
+- **Price tier:** Mid-range (€100-200/night peak)
+- **Ideal for:** Couples, mid-range comfort, rooftop terrace lovers
+- **Nico's Take:** Large rooms. Rooftop sun terrace. Reliable mid-range backup when Andromeda is full.
+- **URL:** https://www.booking.com/hotel/it/iride.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**Il Vecchio Mulino (formerly Artemide Hotel)**
+
+- **Type:** Hotel
+- **Stars:** [VERIFY]
+- **Area:** San Vito Lo Capo, central
+- **Price tier:** Mid-range (€100-200/night peak)
+- **Ideal for:** Couples, international breakfast, prime location
+- **Nico's Take:** Big rooms. International breakfast. Perfect location when available. Note: this property has historically been anchored in WAP content as "Artemide Hotel"; the Booking URL resolves to "Il Vecchio Mulino" which is the canonical name going forward.
+- **URL:** https://www.booking.com/hotel/it/il-vecchio-mulino-san-vito-lo-capo.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**San Vito Accommodations (Ipupi)**
+
+- **Type:** Apartments
+- **Stars:** N/A (apartments)
+- **Area:** San Vito Lo Capo, close to beach
+- **Price tier:** Mid-range (€100-200/night peak)
+- **Ideal for:** Couples wanting middle ground between hotel and full apartment
+- **Nico's Take:** Cosy rooms with kitchenettes. Close to the beach. Middle ground between a hotel and an apartment.
+- **URL:** https://www.booking.com/hotel/it/ipupi-accomodation.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**Isule Rooms & Breakfast**
+
+- **Type:** B&B
+- **Stars:** N/A (B&B, extra-alberghiera, no Giata stars per WAP_06b)
+- **Area:** San Vito Lo Capo
+- **Price tier:** Mid-range (€100-200/night peak)
+- **Ideal for:** Couples, B&B experience
+- **Nico's Take:** Confirmed bulk. Solid B&B option.
+- **URL:** https://www.booking.com/hotel/it/affittacamere-isule.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**La Nicchia**
+
+- **Type:** Hotel
+- **Stars:** [VERIFY]
+- **Area:** San Vito Lo Capo
+- **Price tier:** Mid-to-upper-range
+- **Ideal for:** Couples who want a small treat-yourself moment
+- **Nico's Take:** Rooftop terrace with hot tub. Big rooms. Strong breakfast. Slightly more upmarket pick.
+- **URL:** https://www.booking.com/hotel/it/la-nicchia-san-vito-lo-capo1.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**Il Faro e la Luna Beach Apartments**
+
+- **Type:** Apartments
+- **Stars:** N/A (apartments)
+- **Area:** San Vito Lo Capo, beach-side
+- **Price tier:** Mid-range (€100-200/night peak)
+- **Ideal for:** Couples on 3+ night stays who want kitchen independence
+- **Nico's Take:** Beach-apartment format with a real kitchen. Best for stays of 3+ nights and for couples who want independence (no daily breakfast routine).
+- **URL:** https://www.booking.com/hotel/it/casa-vacanze-il-faro-e-la-luna.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**BeachSide Rooms & Suites**
+
+- **Type:** Apartments
+- **Stars:** N/A (apartments)
+- **Area:** San Vito Lo Capo
+- **Price tier:** Mid-range (€100-200/night peak)
+- **Ideal for:** Long weekends, couples wanting sea views and balconies
+- **Nico's Take:** Spacious rooms with balconies. Sea views from many. In-room kitchens. Great for a long weekend.
+- **URL:** https://www.booking.com/hotel/it/beachside-rooms.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**Talos Apartments**
+
+- **Type:** Apartments
+- **Stars:** N/A (apartments)
+- **Area:** San Vito Lo Capo
+- **Price tier:** Mid-range
+- **Ideal for:** Couples on 5+ night stays wanting kitchen flexibility
+- **Nico's Take:** Apartment format. Solid for long-stay couples.
+- **URL:** https://www.booking.com/hotel/it/talos-apartments.en.html?aid=918822&no_rooms=1&group_adults=2
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
 ## Section 2 — GetYourGuide Experiences
 
-[TO BE POPULATED — Nico to provide in a future brain-dump session]
+### San Vito Lo Capo — Tours and Transfers (6)
+
+---
+
+**Private Transfer from Palermo Airport to San Vito Lo Capo**
+
+- **Type:** Private airport transfer
+- **GYG ID:** t140526
+- **Ideal for:** Late arrivals, families with luggage, anti-swearing travelers
+- **Price tier:** €100-130 for the car
+- **Nico's Take:** A guy named Salvatore meets you at arrivals. One hour fifteen later you're in San Vito. The anti-bus, anti-rental-car move for landing at PMO.
+- **URL:** https://www.getyourguide.com/monreale-l2175/private-transfers-from-palermo-airport-to-san-vito-lo-capo-t140526/
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**Private Transfer from Trapani Airport to San Vito Lo Capo**
+
+- **Type:** Private airport transfer
+- **GYG ID:** t140538
+- **Ideal for:** Travelers flying into TPS, same anti-swearing crowd as PMO transfer
+- **Price tier:** Lower than PMO transfer (shorter drive)
+- **Nico's Take:** Shorter drive than from Palermo, less money. Same Salvatore-with-creative-spelling-sign experience.
+- **URL:** https://www.getyourguide.com/trapani-l1159/private-transfers-from-trapani-airport-to-san-vito-lo-capo-t140538/
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**San Vito Lo Capo Boat Tour to Zingaro and Scopello (hero)**
+
+- **Type:** Boat tour
+- **GYG short ID:** j3w3JiS3
+- **Ideal for:** Anyone with at least one day on the water in San Vito
+- **Price tier:** ~€50/head
+- **Nico's Take:** Goes to Zingaro and Scopello. Three swim stops. Snacks on board. The natural pools you reach from the water are simply not reachable from land in the same way. The single best add-on for a beach week here. €452 commission top-revenue item per Tech Report.
+- **URL:** https://gyg.me/j3w3JiS3
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**San Vito Lo Capo Boat Tour (variant Eu9qYQ3b)**
+
+- **Type:** Boat tour variant
+- **GYG short ID:** Eu9qYQ3b
+- **Ideal for:** Alternative boat tour option
+- **Nico's Take:** Variant CTA for the boat tour cluster. Verify booking page in browser before each refresh.
+- **URL:** https://gyg.me/Eu9qYQ3b
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**San Vito Lo Capo Boat Tour (variant R9HmCNf4)**
+
+- **Type:** Boat tour variant
+- **GYG short ID:** R9HmCNf4
+- **Ideal for:** Alternative boat tour option
+- **Nico's Take:** Variant CTA for the boat tour cluster.
+- **URL:** https://gyg.me/R9HmCNf4
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
+
+---
+
+**San Vito Lo Capo Boat Tour (variant Yorxy9uf)**
+
+- **Type:** Boat tour variant
+- **GYG short ID:** Yorxy9uf
+- **Ideal for:** Alternative boat tour option
+- **Nico's Take:** Variant CTA for the boat tour cluster.
+- **URL:** https://gyg.me/Yorxy9uf
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
 
 ---
 
 ## Section 3 — Discover Cars
 
-[TO BE POPULATED — Nico to provide in a future brain-dump session]
+### Western Sicily — Rental Car
+
+---
+
+**Discover Cars (generic landing, Sicily-wide)**
+
+- **Type:** Rental car aggregator landing page
+- **Affiliate ID:** a_aid=nico0141
+- **Ideal for:** All Sicily rental car CTAs, including San Vito Lo Capo via Trapani or Palermo pickup
+- **Nico's Take:** The default Discover Cars CTA. User enters pickup/dropoff locations on the site (can be different). Generic landing keeps CTA usable across articles.
+- **URL:** https://www.discovercars.com/?a_aid=nico0141
+- **Last Verified:** May 12, 2026 (Nico bulk confirm)
 
 ---
 
